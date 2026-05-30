@@ -668,7 +668,7 @@
 
         .zscore-legend-axis {
             position: relative;
-            height: 18px;
+            height: 32px;
             font-size: 10px;
             font-weight: 700;
             color: var(--text-muted);
@@ -679,6 +679,11 @@
             position: absolute;
             transform: translateX(-50%);
             white-space: nowrap;
+            top: 0;
+        }
+
+        .zscore-tick.stagger {
+            top: 14px;
         }
 
         /* Recommendation Box */
@@ -1165,10 +1170,10 @@
                     </div>
                     <div class="zscore-legend-axis">
                         <span class="zscore-tick" style="left: 0%; transform: none;">-4.0</span>
-                        <span class="zscore-tick" style="left: 12.5%;" data-lang-id="axis_haz_severe_stunted">-3.0 (Sangat Pendek)</span>
+                        <span class="zscore-tick stagger" style="left: 12.5%;" data-lang-id="axis_haz_severe_stunted">-3.0 (Sangat Pendek)</span>
                         <span class="zscore-tick" style="left: 25%;" data-lang-id="axis_haz_stunted">-2.0 (Pendek)</span>
                         <span class="zscore-tick" style="left: 50%;">0.0</span>
-                        <span class="zscore-tick" style="left: 87.5%;" data-lang-id="axis_haz_tall">+3.0 (Tinggi)</span>
+                        <span class="zscore-tick stagger" style="left: 87.5%;" data-lang-id="axis_haz_tall">+3.0 (Tinggi)</span>
                         <span class="zscore-tick" style="left: 100%; transform: translateX(-100%);">+4.0</span>
                     </div>
                 </div>
@@ -1184,10 +1189,10 @@
                     </div>
                     <div class="zscore-legend-axis">
                         <span class="zscore-tick" style="left: 0%; transform: none;">-4.0</span>
-                        <span class="zscore-tick" style="left: 12.5%;" data-lang-id="axis_waz_severe_underweight">-3.0 (Gizi Buruk)</span>
+                        <span class="zscore-tick stagger" style="left: 12.5%;" data-lang-id="axis_waz_severe_underweight">-3.0 (Gizi Buruk)</span>
                         <span class="zscore-tick" style="left: 25%;" data-lang-id="axis_waz_underweight">-2.0 (Gizi Kurang)</span>
                         <span class="zscore-tick" style="left: 50%;">0.0</span>
-                        <span class="zscore-tick" style="left: 75%;" data-lang-id="axis_waz_overweight">+2.0 (Risiko Lebih)</span>
+                        <span class="zscore-tick stagger" style="left: 75%;" data-lang-id="axis_waz_overweight">+2.0 (Risiko Lebih)</span>
                         <span class="zscore-tick" style="left: 100%; transform: translateX(-100%);">+4.0</span>
                     </div>
                 </div>
