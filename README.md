@@ -15,7 +15,7 @@ This repository contains a comprehensive analysis framework for childhood stunti
 
 ### Machine Learning Approaches
 
-- **Classification**: XGBoost for binary stunting status prediction with data leakage analysis
+- **Classification**: XGBoost for binary stunting status prediction using physical features
 - **Clustering**: K-Means and hierarchical clustering for regional health profile identification
 - **Regression**: LightGBM for continuous Z-score estimation (Height-for-Age and Weight-for-Age)
 
@@ -106,7 +106,6 @@ python -m http.server 8000
 
 - Model: XGBoost
 - Primary metrics: Accuracy, F1-score, confusion matrix analysis
-- Data leakage evaluation included
 
 ### Regional Clustering
 
