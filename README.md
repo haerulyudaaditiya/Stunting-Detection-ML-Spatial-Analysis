@@ -37,15 +37,23 @@ Stunting-Detection-ML-Spatial-Analysis/
 │   ├── Stunting Wasting Dataset (Synthetic)/
 │   └── z-scores who/
 ├── results/                                   # Output artifacts
-│   ├── stunting_dashboard.html               # Interactive web dashboard
-│   ├── stunting_xgb_classifier.joblib        # Trained classification model
-│   ├── stunting_lgbm_reg_haz.joblib          # HAZ regression model
-│   ├── stunting_lgbm_reg_waz.joblib          # WAZ regression model
-│   └── [visualizations and supporting files]
+│   ├── classification/                       # Classification model & visual outputs
+│   │   ├── stunting_xgb_classifier.joblib
+│   │   ├── stunting_target_encoder.joblib
+│   │   ├── stunting_gender_encoder.joblib
+│   │   └── [plots: confusion matrix, distributions, SHAP summary/waterfall]
+│   ├── clustering/                           # Clustering maps & visual outputs
+│   │   ├── indonesia_stunting_map.html
+│   │   └── [plots: evaluations, correlation, scatter, dendrogram]
+│   ├── regression/                           # Regression models & visual outputs
+│   │   ├── stunting_lgbm_reg_haz.joblib
+│   │   ├── stunting_lgbm_reg_waz.joblib
+│   │   └── [plots: residual analysis, jointplot, SHAP summary]
+│   └── dashboard/                            # Interactive web dashboard & JS files
+│       └── stunting_dashboard.html
 ├── requirements.txt                           # Python dependencies
 ├── README.md                                  # This file
 └── .gitignore
-
 ```
 
 ## Installation
@@ -94,10 +102,10 @@ jupyter notebook Stunting_Regression_Analysis.ipynb
 After model generation, open the interactive dashboard:
 
 ```bash
-open results/stunting_dashboard.html
+open results/dashboard/stunting_dashboard.html
 # or serve via local web server
 python -m http.server 8000
-# Navigate to http://localhost:8000/results/stunting_dashboard.html
+# Navigate to http://localhost:8000/results/dashboard/stunting_dashboard.html
 ```
 
 ## Key Results

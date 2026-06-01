@@ -90,3 +90,6 @@ local/
 scratch/
 test_results/
 temp/
+
+# Large/New Datasets
+dataset/new/
