@@ -68,12 +68,14 @@
         }
 
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             background-color: var(--bg-body);
             color: var(--text-primary);
             min-height: 100vh;
             line-height: 1.5;
-            padding: 24px;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
         }
 
         /* Focus styles for keyboard accessibility */
@@ -82,45 +84,229 @@
             outline-offset: 2px;
         }
 
-        .app-container {
-            max-width: 1440px;
-            margin: 0 auto;
+        /* Layout Container */
+        .app-layout {
             display: flex;
-            flex-direction: column;
-            gap: 24px;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
         }
 
-        /* Clean Academic Header */
-        header {
+        /* Sidebar Styling (Light Cohesive Theme) */
+        .sidebar {
+            width: 280px;
             background-color: var(--bg-card);
+            color: var(--text-secondary);
+            padding: 24px 20px;
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid var(--border-color);
+            flex-shrink: 0;
+        }
+
+        .sidebar-brand {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 32px;
+            padding: 0 8px;
+        }
+
+        .brand-icon {
+            font-size: 24px;
+            color: var(--primary-color);
+        }
+
+        .brand-text h3 {
+            font-size: 16px;
+            font-weight: 800;
+            color: var(--text-primary);
+            margin: 0;
+        }
+
+        .brand-text span {
+            font-size: 11px;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .sidebar-nav {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            flex-grow: 1;
+        }
+
+        .nav-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 16px;
+            border-radius: var(--border-radius-sm);
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            background: none;
+            border: none;
+            text-align: left;
+            width: 100%;
+        }
+
+        .nav-item i {
+            width: 18px;
+            text-align: center;
+            color: var(--text-muted);
+            transition: color 0.2s ease;
+        }
+
+        .nav-item:hover {
+            color: var(--text-primary);
+            background-color: var(--bg-input-hover);
+        }
+
+        .nav-item:hover i {
+            color: var(--text-primary);
+        }
+
+        .nav-item.active {
+            color: var(--primary-color);
+            background-color: var(--primary-bg);
+            box-shadow: none;
+            position: relative;
+        }
+
+        .nav-item.active i {
+            color: var(--primary-color);
+        }
+
+        .nav-item.active::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 20%;
+            height: 60%;
+            width: 4px;
+            background-color: var(--primary-color);
+            border-radius: 0 4px 4px 0;
+        }
+
+        .sidebar-footer {
+            margin-top: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            padding-top: 16px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .sidebar-footer .lang-switch-container {
+            background-color: var(--bg-input);
             border: 1px solid var(--border-color);
-            border-radius: var(--border-radius);
-            padding: 24px 32px;
+            padding: 2px;
+        }
+
+        .sidebar-footer .lang-btn {
+            color: var(--text-secondary);
+            padding: 6px 12px;
+            flex: 1;
+            text-align: center;
+        }
+
+        .sidebar-footer .lang-btn.active {
+            background-color: var(--bg-card);
+            color: var(--text-primary);
             box-shadow: var(--box-shadow);
         }
 
-        .header-content {
+        .sidebar-copyright {
+            font-size: 11px;
+            color: var(--text-muted);
+            text-align: center;
+        }
+
+        /* Main Content Styling */
+        .main-content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            overflow: hidden;
+            background-color: var(--bg-body);
+        }
+
+        .topbar {
+            background-color: var(--bg-card);
+            border-bottom: 1px solid var(--border-color);
+            padding: 16px 32px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 70px;
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            flex-shrink: 0;
+        }
+
+        .topbar-left h2 {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .content-container {
+            padding: 24px 32px;
+            overflow-y: auto;
+            flex-grow: 1;
+        }
+
+        .page-section {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.25s ease-in-out;
+        }
+
+        .page-section.active {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            opacity: 1;
+        }
+
+        /* Card Panels */
+        .card-panel {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius);
+            padding: 24px;
+            box-shadow: var(--box-shadow);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .card-panel-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 16px;
         }
 
-        .title-area h1 {
-            font-size: 24px;
+        .card-panel-title {
+            font-size: 18px;
             font-weight: 700;
             color: var(--text-primary);
-            margin-bottom: 4px;
-        }
-
-        .title-area p {
-            font-size: 14px;
-            color: var(--text-secondary);
         }
 
         /* Grid Statistics Cards */
         .summary-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 20px;
         }
 
@@ -133,6 +319,12 @@
             display: flex;
             flex-direction: column;
             gap: 8px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .summary-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--box-shadow-hover);
         }
 
         .summary-card-label {
@@ -168,7 +360,7 @@
         /* Main Dashboard Grid layout */
         .main-grid {
             display: grid;
-            grid-template-columns: 1.1fr 0.9fr;
+            grid-template-columns: 1.15fr 0.85fr;
             gap: 24px;
         }
 
@@ -176,32 +368,6 @@
             .main-grid {
                 grid-template-columns: 1fr;
             }
-        }
-
-        /* Card Panels */
-        .card-panel {
-            background-color: var(--bg-card);
-            border: 1px solid var(--border-color);
-            border-radius: var(--border-radius);
-            padding: 24px;
-            box-shadow: var(--box-shadow);
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        .card-panel-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid #e2e8f0;
-            padding-bottom: 16px;
-        }
-
-        .card-panel-title {
-            font-size: 18px;
-            font-weight: 700;
-            color: var(--text-primary);
         }
 
         /* Map Controls */
@@ -425,13 +591,13 @@
         .cluster-desc-text {
             font-size: 13px;
             color: var(--text-secondary);
-            line-height: 1.4;
+            line-height: 1.45;
         }
 
         /* Dynamic Diagnostics Predictor Section */
         .predictor-grid {
             display: grid;
-            grid-template-columns: 0.8fr 1.2fr;
+            grid-template-columns: 0.85fr 1.15fr;
             gap: 32px;
         }
 
@@ -786,7 +952,7 @@
 
         .cluster-profile-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
             gap: 12px;
         }
 
@@ -817,402 +983,551 @@
 </head>
 <body>
 
-<div class="app-container">
-    <!-- Header -->
-    <header role="banner">
-        <div class="header-content">
-            <div class="title-area">
-                <h1 data-lang-id="title">Analisis Spasial dan Diagnosa Stunting Balita Nasional</h1>
-                <p data-lang-id="subtitle">Visualisasi Indikator Kesehatan Regional dan Estimasi Z-Score Berbasis Pembelajaran Mesin</p>
+<div class="app-layout">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar" role="navigation">
+        <div class="sidebar-brand">
+            <div class="brand-text">
+                <h3 data-lang-id="menu_brand">Stunting Analytics</h3>
+                <!-- <span>ML & Spatial Portal</span> -->
             </div>
+        </div>
+
+        <nav class="sidebar-nav">
+            <button class="nav-item active" data-target="section-home">
+                <i class="fa-solid fa-house"></i>
+                <span data-lang-id="menu_home">Beranda</span>
+            </button>
+            <button class="nav-item" data-target="section-clustering">
+                <i class="fa-solid fa-map-location-dot"></i>
+                <span data-lang-id="menu_clustering">Analisis Spasial</span>
+            </button>
+            <button class="nav-item" data-target="section-classification">
+                <i class="fa-solid fa-stethoscope"></i>
+                <span data-lang-id="menu_classification">Diagnosa Klasifikasi</span>
+            </button>
+            <button class="nav-item" data-target="section-regression">
+                <i class="fa-solid fa-chart-line"></i>
+                <span data-lang-id="menu_regression">Estimasi Z-Score</span>
+            </button>
+        </nav>
+
+        <div class="sidebar-footer">
             <div class="lang-switch-container">
                 <button type="button" class="lang-btn active" id="btn-lang-id">ID</button>
                 <button type="button" class="lang-btn" id="btn-lang-en">EN</button>
             </div>
-        </div>
-    </header>
-
-    <!-- Medical Glossary Panel (Collapsible for Clean UX) -->
-    <section class="card-panel" aria-labelledby="glossary-panel-title" style="margin-bottom: 24px;">
-        <details id="glossary-details" class="glossary-container">
-            <summary class="glossary-summary" style="list-style: none; display: flex; justify-content: space-between; align-items: center; cursor: pointer; outline: none; font-weight: 700;">
-                <h2 class="card-panel-title" id="glossary-panel-title" style="margin: 0; display: inline-flex; align-items: center; gap: 8px; font-size: 16px;">
-                    <span style="display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; border-radius: 50%; background-color: var(--success-bg); color: var(--success-text); font-size: 12px; font-weight: 700; border: 1px solid var(--success-border);">i</span>
-                    <span data-lang-id="glossary_title">Panduan Istilah Medis & Glosarium (Edukasi Publik)</span>
-                </h2>
-                <span class="glossary-toggle-icon" id="glossary-toggle-btn" style="font-size: 12px; font-weight: 600; color: var(--text-secondary); background-color: var(--bg-input); padding: 4px 10px; border-radius: 4px; border: 1px solid var(--border-color);" data-lang-id="glossary_toggle_show">[ Tampilkan Panduan ]</span>
-            </summary>
-            
-            <div class="glossary-content" style="margin-top: 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; border-top: 1px solid #e2e8f0; padding-top: 20px;">
-                <div class="glossary-item" style="display: flex; flex-direction: column; gap: 6px;">
-                    <strong style="color: var(--text-primary); font-size: 14px; display: flex; align-items: center; gap: 6px;">
-                        <span style="width: 8px; height: 8px; background-color: var(--primary-color); border-radius: 50%;"></span>
-                        <span data-lang-id="glossary_stunting_title">Stunting (Gagal Tumbuh)</span>
-                    </strong>
-                    <p style="margin: 0; font-size: 13px; color: var(--text-secondary); line-height: 1.5;" data-lang-id="glossary_stunting_desc">
-                        Kondisi gagal tumbuh pada anak balita akibat kekurangan gizi kronis dan infeksi berulang terutama pada 1.000 Hari Pertama Kehidupan (HPK). Ditandai dengan tinggi badan anak yang berada di bawah standar kurva pertumbuhan WHO (kurang dari -2 Standar Deviasi).
-                    </p>
-                </div>
-
-                <div class="glossary-item" style="display: flex; flex-direction: column; gap: 6px;">
-                    <strong style="color: var(--text-primary); font-size: 14px; display: flex; align-items: center; gap: 6px;">
-                        <span style="width: 8px; height: 8px; background-color: var(--warning-text); border-radius: 50%;"></span>
-                        <span data-lang-id="glossary_kek_title">KEK (Kekurangan Energi Kronis)</span>
-                    </strong>
-                    <p style="margin: 0; font-size: 13px; color: var(--text-secondary); line-height: 1.5;" data-lang-id="glossary_kek_desc">
-                        Kondisi ibu hamil yang menderita kekurangan asupan makanan bernutrisi secara menahun. Diukur berdasarkan Lingkar Lengan Atas (LILA) kurang dari 23,5 cm. KEK pada ibu hamil meningkatkan risiko melahirkan bayi dengan berat lahir rendah (BBLR).
-                    </p>
-                </div>
-
-                <div class="glossary-item" style="display: flex; flex-direction: column; gap: 6px;">
-                    <strong style="color: var(--text-primary); font-size: 14px; display: flex; align-items: center; gap: 6px;">
-                        <span style="width: 8px; height: 8px; background-color: var(--danger-text); border-radius: 50%;"></span>
-                        <span data-lang-id="glossary_bblr_title">BBLR (Bayi Berat Lahir Rendah)</span>
-                    </strong>
-                    <p style="margin: 0; font-size: 13px; color: var(--text-secondary); line-height: 1.5;" data-lang-id="glossary_bblr_desc">
-                        Bayi yang lahir dengan berat badan kurang dari 2.500 gram (2,5 kg), terlepas dari usia kandungan saat lahir. BBLR merupakan faktor risiko utama mortalitas bayi dan memiliki keterkaitan erat dengan kejadian stunting di kemudian hari.
-                    </p>
-                </div>
-
-                <div class="glossary-item" style="display: flex; flex-direction: column; gap: 6px;">
-                    <strong style="color: var(--text-primary); font-size: 14px; display: flex; align-items: center; gap: 6px;">
-                        <span style="width: 8px; height: 8px; background-color: var(--success-text); border-radius: 50%;"></span>
-                        <span data-lang-id="glossary_idl_title">Imunisasi Dasar Lengkap (IDL)</span>
-                    </strong>
-                    <p style="margin: 0; font-size: 13px; color: var(--text-secondary); line-height: 1.5;" data-lang-id="glossary_idl_desc">
-                        Rangkaian vaksinasi wajib bagi bayi usia 0-11 bulan untuk mencegah penyakit menular berbahaya. Anak yang tidak mendapatkan IDL lebih rentan terkena infeksi berulang yang mengganggu penyerapan zat gizi dan memicu stunting.
-                    </p>
-                </div>
-
-                <div class="glossary-item" style="display: flex; flex-direction: column; gap: 6px;">
-                    <strong style="color: var(--text-primary); font-size: 14px; display: flex; align-items: center; gap: 6px;">
-                        <span style="width: 8px; height: 8px; background-color: var(--info-text); border-radius: 50%;"></span>
-                        <span data-lang-id="glossary_zscore_title">Z-Score (Skor Standar Deviasi)</span>
-                    </strong>
-                    <p style="margin: 0; font-size: 13px; color: var(--text-secondary); line-height: 1.5;" data-lang-id="glossary_zscore_desc">
-                        Nilai statistik untuk mengukur seberapa jauh penyimpangan pertumbuhan fisik anak dari rata-rata populasi rujukan internasional WHO. Dinyatakan dalam satuan Standar Deviasi (SD). Nilai 0.0 SD menunjukkan rata-rata anak normal sedunia.
-                    </p>
-                </div>
-
-                <div class="glossary-item" style="display: flex; flex-direction: column; gap: 6px;">
-                    <strong style="color: var(--text-primary); font-size: 14px; display: flex; align-items: center; gap: 6px;">
-                        <span style="width: 8px; height: 8px; background-color: #4f46e5; border-radius: 50%;"></span>
-                        <span data-lang-id="glossary_haz_title">HAZ (Height-for-Age Z-Score)</span>
-                    </strong>
-                    <p style="margin: 0; font-size: 13px; color: var(--text-secondary); line-height: 1.5;" data-lang-id="glossary_haz_desc">
-                        Indikator Tinggi Badan menurut Umur. Mengukur pertumbuhan linier anak. Anak dikategorikan <strong>Sangat Pendek</strong> (Severely Stunted) jika HAZ &lt; -3 SD, <strong>Pendek</strong> (Stunted) jika HAZ antara -3 SD hingga -2 SD, dan <strong>Normal</strong> jika HAZ &ge; -2 SD.
-                    </p>
-                </div>
-
-                <div class="glossary-item" style="display: flex; flex-direction: column; gap: 6px;">
-                    <strong style="color: var(--text-primary); font-size: 14px; display: flex; align-items: center; gap: 6px;">
-                        <span style="width: 8px; height: 8px; background-color: #06b6d4; border-radius: 50%;"></span>
-                        <span data-lang-id="glossary_waz_title">WAZ (Weight-for-Age Z-Score)</span>
-                    </strong>
-                    <p style="margin: 0; font-size: 13px; color: var(--text-secondary); line-height: 1.5;" data-lang-id="glossary_waz_desc">
-                        Indikator Berat Badan menurut Umur. Mengukur massa tubuh anak secara umum. Anak dikategorikan <strong>Gizi Buruk</strong> (Severely Underweight) jika WAZ &lt; -3 SD, <strong>Gizi Kurang</strong> (Underweight) jika WAZ antara -3 SD hingga -2 SD, dan <strong>Gizi Baik</strong> jika WAZ &ge; -2 SD.
-                    </p>
-                </div>
-
-                <div class="glossary-item" style="display: flex; flex-direction: column; gap: 6px;">
-                    <strong style="color: var(--text-primary); font-size: 14px; display: flex; align-items: center; gap: 6px;">
-                        <span style="width: 8px; height: 8px; background-color: #8b5cf6; border-radius: 50%;"></span>
-                        <span data-lang-id="glossary_hpk_title">1.000 Hari Pertama Kehidupan (HPK)</span>
-                    </strong>
-                    <p style="margin: 0; font-size: 13px; color: var(--text-secondary); line-height: 1.5;" data-lang-id="glossary_hpk_desc">
-                        Masa keemasan tumbuh kembang anak sejak hari pertama kehamilan (270 hari) hingga anak berusia 2 tahun (730 hari). Ini merupakan jendela krusial untuk mencegah dampak stunting yang bersifat permanen pada perkembangan kognitif anak.
-                    </p>
-                </div>
-            </div>
-        </details>
-    </section>
-
-    <!-- National Statistics Cards -->
-    <section class="summary-grid" aria-label="Rata-Rata Statistik Nasional">
-        <div class="summary-card">
-            <span class="summary-card-label" data-lang-id="nat_stunting_label">Rata-Rata Stunting Nasional</span>
-            <span class="summary-card-value">27,67%</span>
-            <span class="summary-card-desc" data-lang-id="nat_stunting_desc">Balita dengan kondisi tinggi badan kurang dari standar usianya (akibat kurang gizi kronis).</span>
-            <span class="summary-card-badge" id="nat-stunting-badge" style="color: var(--danger-text); background-color: var(--danger-bg);" data-lang-id="nat_stunting_badge">Prevalensi Tinggi</span>
-        </div>
-        <div class="summary-card">
-            <span class="summary-card-label" data-lang-id="nat_kek_label">Prevalensi KEK Ibu Hamil</span>
-            <span class="summary-card-value">18,06%</span>
-            <span class="summary-card-desc" data-lang-id="nat_kek_desc">Ibu hamil dengan Kekurangan Energi Kronis (lingkar lengan atas &lt; 23,5 cm).</span>
-            <span class="summary-card-badge" id="nat-kek-badge" style="color: var(--warning-text); background-color: var(--warning-bg);" data-lang-id="nat_kek_badge">Kondisi Waspada</span>
-        </div>
-        <div class="summary-card">
-            <span class="summary-card-label" data-lang-id="nat_bblr_label">Rata-Rata BBLR Nasional</span>
-            <span class="summary-card-value">6,65%</span>
-            <span class="summary-card-desc" data-lang-id="nat_bblr_desc">Bayi yang lahir dengan berat badan rendah (kurang dari 2.500 gram / 2,5 kg).</span>
-            <span class="summary-card-badge" id="nat-bblr-badge" style="color: var(--info-text); background-color: var(--info-bg);" data-lang-id="nat_bblr_badge">Batas Terkendali</span>
-        </div>
-        <div class="summary-card">
-            <span class="summary-card-label" data-lang-id="nat_imun_label">Imunisasi Dasar Lengkap</span>
-            <span class="summary-card-value">57,24%</span>
-            <span class="summary-card-desc" data-lang-id="nat_imun_desc">Bayi &lt; 1 tahun yang telah menerima seluruh paket vaksin wajib nasional.</span>
-            <span class="summary-card-badge" id="nat-imun-badge" style="color: var(--success-text); background-color: var(--success-bg);" data-lang-id="nat_imun_badge">Perlu Peningkatan</span>
-        </div>
-    </section>
-
-    <!-- Spatial & Regional Analysis Row -->
-    <div class="main-grid">
-        <!-- Map Panel -->
-        <section class="card-panel" aria-labelledby="map-panel-title">
-            <div class="card-panel-header">
-                <h2 class="card-panel-title" id="map-panel-title" data-lang-id="map_title">Visualisasi Spasial Provinsi</h2>
-            </div>
-
-            <div class="controls-row">
-                <div class="field-group">
-                    <label for="map-metric-selector" class="field-label" data-lang-id="map_metric_lbl">Parameter Peta</label>
-                    <select id="map-metric-selector" class="form-select">
-                        <option value="Stunting_2019" data-lang-id="opt_stunting">Angka Kejadian Stunting (%)</option>
-                        <option value="KEK_Ibu_Hamil" data-lang-id="opt_kek">KEK Ibu Hamil (%)</option>
-                        <option value="Imunisasi_Dasar_Lengkap" data-lang-id="opt_idl">Cakupan Imunisasi Lengkap (%)</option>
-                        <option value="BBLR" data-lang-id="opt_bblr">Bayi Berat Lahir Rendah (%)</option>
-                    </select>
-                </div>
-                <div class="field-group">
-                    <label for="map-cluster-selector" class="field-label" data-lang-id="map_cluster_lbl">Overlay Model Klaster</label>
-                    <select id="map-cluster-selector" class="form-select">
-                        <option value="none" data-lang-id="opt_clust_none">Tanpa Overlay Klaster</option>
-                        <option value="Klaster_KMeans" data-lang-id="opt_clust_kmeans">Klaster K-Means</option>
-                        <option value="Klaster_GMM" data-lang-id="opt_clust_gmm">Klaster Gaussian Mixture Model</option>
-                        <option value="Klaster_HC" data-lang-id="opt_clust_hc">Klaster Hierarchical (Ward)</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="map-container">
-                <div id="spatial-map" role="img" aria-label="Peta Tematik Distribusi Stunting Provinsi Indonesia"></div>
-                <div class="legend-box" id="map-legend" aria-live="polite"></div>
-            </div>
-
-            <!-- Dynamic Cluster Profile Explanation Panel -->
-            <div class="cluster-profile-panel" id="cluster-profile-panel" style="display: none;">
-                <div class="cluster-profile-title">
-                    <span style="display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; border-radius: 50%; background-color: var(--success-bg); color: var(--success-text); font-size: 11px; font-weight: 700; border: 1px solid var(--success-border);">i</span>
-                    <span data-lang-id="cluster_profile_title">Profil Karakteristik Klaster</span>
-                </div>
-                <div class="cluster-profile-grid" id="cluster-profile-grid">
-                    <!-- Populated dynamically via JavaScript -->
-                </div>
-            </div>
-        </section>
-
-        <!-- Analytics Tab Panel -->
-        <section class="card-panel" aria-labelledby="analytics-panel-title">
-            <div class="card-panel-header">
-                <h2 class="card-panel-title" id="analytics-panel-title" data-lang-id="analytics_title">Analisis Deskriptif Wilayah</h2>
-                <div style="width: 180px;">
-                    <label for="province-selector" class="sr-only" style="display:none;">Pilih Provinsi</label>
-                    <select id="province-selector" class="form-select" aria-label="Pilih Provinsi Detail">
-                        <!-- Populated via JS -->
-                    </select>
-                </div>
-            </div>
-
-            <div class="tabs-header" role="tablist">
-                <button class="tab-trigger active" id="tab-trigger-metrics" role="tab" aria-selected="true" aria-controls="tab-panel-metrics" data-lang-id="tab_metrics">Statistik Pokok</button>
-                <button class="tab-trigger" id="tab-trigger-clusters" role="tab" aria-selected="false" aria-controls="tab-panel-clusters" data-lang-id="tab_clusters">Hasil Klasterisasi</button>
-            </div>
-
-            <!-- Tab Content 1: Metrics -->
-            <div class="tab-panel active" id="tab-panel-metrics" role="tabpanel" aria-labelledby="tab-trigger-metrics">
-                <div class="regional-metrics-grid">
-                    <div class="metric-card">
-                        <span class="metric-card-label" data-lang-id="lbl_prov_stunting">Angka Stunting (2019)</span>
-                        <span class="metric-card-value" id="prov-stunting-val">-</span>
-                        <div class="bar-track">
-                            <div class="bar-fill" id="prov-stunting-bar" style="background-color: var(--primary-color)"></div>
-                        </div>
-                    </div>
-                    <div class="metric-card">
-                        <span class="metric-card-label" data-lang-id="lbl_prov_kek">KEK Ibu Hamil</span>
-                        <span class="metric-card-value" id="prov-kek-val">-</span>
-                        <div class="bar-track">
-                            <div class="bar-fill" id="prov-kek-bar" style="background-color: var(--primary-color)"></div>
-                        </div>
-                    </div>
-                    <div class="metric-card">
-                        <span class="metric-card-label" data-lang-id="lbl_prov_bblr">Bayi Berat Lahir Rendah</span>
-                        <span class="metric-card-value" id="prov-bblr-val">-</span>
-                        <div class="bar-track">
-                            <div class="bar-fill" id="prov-bblr-bar" style="background-color: var(--primary-color)"></div>
-                        </div>
-                    </div>
-                    <div class="metric-card">
-                        <span class="metric-card-label" data-lang-id="lbl_prov_imunisasi">Imunisasi Dasar Lengkap</span>
-                        <span class="metric-card-value" id="prov-imunisasi-val">-</span>
-                        <div class="bar-track">
-                            <div class="bar-fill" id="prov-imunisasi-bar" style="background-color: var(--primary-color)"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div style="border-top: 1px solid #e2e8f0; padding-top: 16px;">
-                    <h3 style="font-size: 13px; font-weight: 700; color: var(--text-secondary); margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.05em;" data-lang-id="comparison_title">Perbandingan Terhadap Batas Rerata Nasional</h3>
-                    <div class="radar-chart-wrapper">
-                        <canvas id="comparison-radar-chart"></canvas>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Tab Content 2: Clusters -->
-            <div class="tab-panel" id="tab-panel-clusters" role="tabpanel" aria-labelledby="tab-trigger-clusters">
-                <div style="display: flex; flex-direction: column; gap: 16px;">
-                    <div class="cluster-info-card" id="kmeans-info-card">
-                        <div class="cluster-status-indicator" style="background-color: #2563eb;"></div>
-                        <div class="cluster-desc-block">
-                            <span class="cluster-desc-title"><span data-lang-id="opt_clust_kmeans">Klaster K-Means</span>: <span id="kmeans-cluster-num">-</span></span>
-                            <span class="cluster-desc-text" id="kmeans-cluster-desc">-</span>
-                        </div>
-                    </div>
-
-                    <div class="cluster-info-card" id="gmm-info-card">
-                        <div class="cluster-status-indicator" style="background-color: #0891b2;"></div>
-                        <div class="cluster-desc-block">
-                            <span class="cluster-desc-title"><span data-lang-id="opt_clust_gmm">Klaster Gaussian Mixture Model</span>: <span id="gmm-cluster-num">-</span></span>
-                            <span class="cluster-desc-text" id="gmm-cluster-desc">-</span>
-                        </div>
-                    </div>
-
-                    <div class="cluster-info-card" id="hc-info-card">
-                        <div class="cluster-status-indicator" style="background-color: #059669;"></div>
-                        <div class="cluster-desc-block">
-                            <span class="cluster-desc-title"><span data-lang-id="opt_clust_hc">Klaster Hierarchical (Ward)</span>: <span id="hc-cluster-num">-</span></span>
-                            <span class="cluster-desc-text" id="hc-cluster-desc">-</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div style="background-color: var(--bg-body); padding: 16px; border-radius: var(--border-radius-sm); border: 1px solid var(--border-color); font-size: 12px; color: var(--text-secondary); line-height: 1.45;" data-lang-id="cluster_methodology">
-                    <strong>Metodologi Klasterisasi:</strong> Klasterisasi dibangun menggunakan kombinasi 4 dimensi regional setelah standardisasi statistika (Z-Score scaling) untuk menghilangkan bias skala satuan data.
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <!-- Diagnostic Predictor Panel -->
-    <section class="card-panel" aria-labelledby="predictor-panel-title">
-        <div class="card-panel-header">
-            <h2 class="card-panel-title" id="predictor-panel-title" data-lang-id="predictor_title">Kalkulator Diagnosis Mandiri Tumbuh Kembang Balita</h2>
-            <div style="font-size: 11px; font-weight: 700; color: var(--text-muted); background-color: var(--bg-input); padding: 4px 10px; border-radius: var(--border-radius-sm); text-transform: uppercase;" data-lang-id="predictor_subtitle">
-                Mesin Inferensi Offline (XGBoost & LightGBM)
+            <div class="sidebar-copyright">
+                &copy; 2026 Riset Stunting Nasional
             </div>
         </div>
+    </aside>
 
-        <div class="predictor-grid">
-            <!-- Form Inputs -->
-            <div>
-                <form id="predictor-form" onsubmit="return false;">
-                    <div class="field-group" style="margin-bottom: 20px;">
-                        <label class="field-label" data-lang-id="gender_label">Jenis Kelamin</label>
-                        <div class="segmented-control" role="radiogroup" aria-label="Jenis Kelamin Balita">
-                            <button type="button" class="segment-btn active" id="btn-gender-male" role="radio" aria-checked="true" data-lang-id="gender_male">Laki-laki</button>
-                            <button type="button" class="segment-btn" id="btn-gender-female" role="radio" aria-checked="false" data-lang-id="gender_female">Perempuan</button>
-                        </div>
-                    </div>
-
-                    <div class="slider-wrapper">
-                        <div class="slider-label-row">
-                            <label for="slider-age" class="field-label" data-lang-id="age_label">Usia Balita (Bulan)</label>
-                            <span class="slider-number-output" id="lbl-age-val">24 bulan</span>
-                        </div>
-                        <input type="range" id="slider-age" class="accessible-slider" min="0" max="60" value="24" aria-valuemin="0" aria-valuemax="60" aria-valuenow="24">
-                    </div>
-
-                    <div class="slider-wrapper">
-                        <div class="slider-label-row">
-                            <label for="slider-height" class="field-label" data-lang-id="height_label">Tinggi Badan (cm)</label>
-                            <span class="slider-number-output" id="lbl-height-val">85.0 cm</span>
-                        </div>
-                        <input type="range" id="slider-height" class="accessible-slider" min="30" max="120" step="0.1" value="85.0" aria-valuemin="30" aria-valuemax="120" aria-valuenow="85">
-                    </div>
-
-                    <div class="slider-wrapper">
-                        <div class="slider-label-row">
-                            <label for="slider-weight" class="field-label" data-lang-id="weight_label">Berat Badan (kg)</label>
-                            <span class="slider-number-output" id="lbl-weight-val">11.5 kg</span>
-                        </div>
-                        <input type="range" id="slider-weight" class="accessible-slider" min="2" max="30" step="0.1" value="11.5" aria-valuemin="2" aria-valuemax="30" aria-valuenow="11.5">
-                    </div>
-                </form>
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <!-- Top bar (header) -->
+        <header class="topbar" role="banner">
+            <div class="topbar-left">
+                <h2 id="current-page-title" data-lang-id="title">Analisis Spasial dan Diagnosa Stunting Balita Nasional</h2>
             </div>
+        </header>
 
-            <!-- Prediction Results -->
-            <div class="diagnostic-results-panel">
-                <span class="diagnostic-header" data-lang-id="diag_header">Diagnosis Status Tumbuh Kembang</span>
-
-                <div class="diagnostic-badge-wrapper">
-                    <span class="status-badge status-normal" id="diagnosis-result-badge">Normal</span>
-                </div>
-
-                <div class="confidence-indicator">
-                    <div class="confidence-label-row">
-                        <span data-lang-id="confidence_lbl">Tingkat Keyakinan Klasifikasi (XGBoost)</span>
-                        <span id="confidence-val">98,5%</span>
-                    </div>
-                    <div class="bar-track" style="height: 8px;">
-                        <div class="bar-fill" id="confidence-bar-fill" style="width: 98.5%; background-color: var(--success-text);"></div>
-                    </div>
-                </div>
-
-                <!-- Z-Score Range 1: HAZ -->
-                <div class="zscore-graph-block">
-                    <div class="zscore-label-row">
-                        <span data-lang-id="z_haz_lbl">HAZ (Tinggi Badan menurut Umur / Indikator Stunting)</span>
-                        <span class="zscore-value-output" id="val-z-haz">0.00 SD</span>
-                    </div>
-                    <div class="zscore-spectrum-bar haz-gradient">
-                        <div class="zscore-pointer" id="pointer-z-haz" style="left: 50%;"></div>
-                    </div>
-                    <div class="zscore-legend-axis">
-                        <span class="zscore-tick" style="left: 0%; transform: none;">-4.0</span>
-                        <span class="zscore-tick stagger" style="left: 12.5%;" data-lang-id="axis_haz_severe_stunted">-3.0 (Sangat Pendek)</span>
-                        <span class="zscore-tick" style="left: 25%;" data-lang-id="axis_haz_stunted">-2.0 (Pendek)</span>
-                        <span class="zscore-tick" style="left: 50%;">0.0</span>
-                        <span class="zscore-tick stagger" style="left: 87.5%;" data-lang-id="axis_haz_tall">+3.0 (Tinggi)</span>
-                        <span class="zscore-tick" style="left: 100%; transform: translateX(-100%);">+4.0</span>
+        <!-- Content Container -->
+        <div class="content-container">
+            <!-- Section 1: Home -->
+            <section id="section-home" class="page-section active">
+                <!-- Gorgeous Interactive Hero Banner -->
+                <div class="hero-banner" style="background: linear-gradient(135deg, #1e40af 0%, #1d4ed8 100%); color: #ffffff; padding: 40px; border-radius: var(--border-radius); box-shadow: 0 10px 15px -3px rgba(29, 78, 216, 0.15); display: flex; flex-direction: column; gap: 16px; position: relative; overflow: hidden; margin-bottom: 8px;">
+                    <!-- Decorative background shapes for artistic touch -->
+                    <div style="position: absolute; top: -20px; right: -20px; width: 150px; height: 150px; background-color: rgba(255,255,255,0.06); border-radius: 50%;"></div>
+                    <div style="position: absolute; bottom: -50px; left: 10%; width: 200px; height: 200px; background-color: rgba(255,255,255,0.03); border-radius: 50%;"></div>
+                    
+                    <span style="align-self: flex-start; background-color: rgba(255, 255, 255, 0.15); color: #ffffff; font-size: 11px; font-weight: 700; padding: 4px 12px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.05em;" data-lang-id="menu_brand">Riset & Deteksi Dini Stunting</span>
+                    
+                    <h1 style="font-size: 26px; font-weight: 800; line-height: 1.25; margin: 0;" data-lang-id="welcome_title">Selamat Datang di Portal Analisis Stunting</h1>
+                    <p style="font-size: 14.5px; line-height: 1.6; color: rgba(255, 255, 255, 0.85); max-width: 780px; margin: 0;" data-lang-id="welcome_desc">
+                        Portal ini menyajikan platform terintegrasi untuk deteksi dini stunting, pemodelan spasial regional, dan estimasi z-score antropometri balita nasional menggunakan model machine learning XGBoost dan LightGBM.
+                    </p>
+                    
+                    <!-- Quick action buttons to jump to features -->
+                    <div style="display: flex; gap: 12px; margin-top: 12px; flex-wrap: wrap; z-index: 2;">
+                        <button onclick="document.querySelector('[data-target=\'section-clustering\']').click()" style="background-color: #ffffff; color: var(--primary-color); border: none; padding: 10px 20px; font-size: 13px; font-weight: 700; border-radius: var(--border-radius-sm); cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; display: inline-flex; align-items: center; gap: 8px;">
+                            <i class="fa-solid fa-map-location-dot"></i> <span data-lang-id="menu_clustering">Analisis Spasial</span>
+                        </button>
+                        <button onclick="document.querySelector('[data-target=\'section-classification\']').click()" style="background-color: rgba(255, 255, 255, 0.15); color: #ffffff; border: 1px solid rgba(255, 255, 255, 0.25); padding: 10px 20px; font-size: 13px; font-weight: 700; border-radius: var(--border-radius-sm); cursor: pointer; transition: background 0.2s; display: inline-flex; align-items: center; gap: 8px;">
+                            <i class="fa-solid fa-stethoscope"></i> <span data-lang-id="menu_classification">Diagnosa Klasifikasi</span>
+                        </button>
                     </div>
                 </div>
 
-                <!-- Z-Score Range 2: WAZ -->
-                <div class="zscore-graph-block">
-                    <div class="zscore-label-row">
-                        <span data-lang-id="z_waz_lbl">WAZ (Berat Badan menurut Umur / Indikator Gizi)</span>
-                        <span class="zscore-value-output" id="val-z-waz">0.00 SD</span>
+                <!-- National Statistics Cards with Rich Aesthetics -->
+                <div class="summary-grid">
+                    <div class="summary-card" style="border-left: 4px solid var(--danger-border);">
+                        <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 12px;">
+                            <span class="summary-card-label" data-lang-id="nat_stunting_label">Rata-Rata Stunting Nasional</span>
+                            <div style="width: 32px; height: 32px; border-radius: 50%; background-color: var(--danger-bg); color: var(--danger-text); display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0;">
+                                <i class="fa-solid fa-baby"></i>
+                            </div>
+                        </div>
+                        <span class="summary-card-value" style="color: var(--danger-text);">27,67%</span>
+                        <span class="summary-card-desc" data-lang-id="nat_stunting_desc">Balita dengan kondisi tinggi badan kurang dari standar usianya (akibat kurang gizi kronis).</span>
+                        <span class="summary-card-badge" id="nat-stunting-badge" style="color: var(--danger-text); background-color: var(--danger-bg);" data-lang-id="nat_stunting_badge">Prevalensi Tinggi</span>
                     </div>
-                    <div class="zscore-spectrum-bar waz-gradient">
-                        <div class="zscore-pointer" id="pointer-z-waz" style="left: 50%;"></div>
+                    
+                    <div class="summary-card" style="border-left: 4px solid var(--warning-border);">
+                        <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 12px;">
+                            <span class="summary-card-label" data-lang-id="nat_kek_label">Prevalensi KEK Ibu Hamil</span>
+                            <div style="width: 32px; height: 32px; border-radius: 50%; background-color: var(--warning-bg); color: var(--warning-text); display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0;">
+                                <i class="fa-solid fa-person-pregnant"></i>
+                            </div>
+                        </div>
+                        <span class="summary-card-value" style="color: var(--warning-text);">18,06%</span>
+                        <span class="summary-card-desc" data-lang-id="nat_kek_desc">Ibu hamil dengan Kekurangan Energi Kronis (lingkar lengan atas &lt; 23,5 cm).</span>
+                        <span class="summary-card-badge" id="nat-kek-badge" style="color: var(--warning-text); background-color: var(--warning-bg);" data-lang-id="nat_kek_badge">Kondisi Waspada</span>
                     </div>
-                    <div class="zscore-legend-axis">
-                        <span class="zscore-tick" style="left: 0%; transform: none;">-4.0</span>
-                        <span class="zscore-tick stagger" style="left: 12.5%;" data-lang-id="axis_waz_severe_underweight">-3.0 (Gizi Buruk)</span>
-                        <span class="zscore-tick" style="left: 25%;" data-lang-id="axis_waz_underweight">-2.0 (Gizi Kurang)</span>
-                        <span class="zscore-tick" style="left: 50%;">0.0</span>
-                        <span class="zscore-tick stagger" style="left: 75%;" data-lang-id="axis_waz_overweight">+2.0 (Risiko Lebih)</span>
-                        <span class="zscore-tick" style="left: 100%; transform: translateX(-100%);">+4.0</span>
+                    
+                    <div class="summary-card" style="border-left: 4px solid var(--info-border);">
+                        <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 12px;">
+                            <span class="summary-card-label" data-lang-id="nat_bblr_label">Rata-Rata BBLR Nasional</span>
+                            <div style="width: 32px; height: 32px; border-radius: 50%; background-color: var(--info-bg); color: var(--info-text); display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0;">
+                                <i class="fa-solid fa-weight-scale"></i>
+                            </div>
+                        </div>
+                        <span class="summary-card-value" style="color: var(--info-text);">6,65%</span>
+                        <span class="summary-card-desc" data-lang-id="nat_bblr_desc">Bayi yang lahir dengan berat badan rendah (kurang dari 2.500 gram / 2,5 kg).</span>
+                        <span class="summary-card-badge" id="nat-bblr-badge" style="color: var(--info-text); background-color: var(--info-bg);" data-lang-id="nat_bblr_badge">Batas Terkendali</span>
+                    </div>
+                    
+                    <div class="summary-card" style="border-left: 4px solid var(--success-border);">
+                        <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 12px;">
+                            <span class="summary-card-label" data-lang-id="nat_imun_label">Imunisasi Dasar Lengkap</span>
+                            <div style="width: 32px; height: 32px; border-radius: 50%; background-color: var(--success-bg); color: var(--success-text); display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0;">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+                        </div>
+                        <span class="summary-card-value" style="color: var(--success-text);">57,24%</span>
+                        <span class="summary-card-desc" data-lang-id="nat_imun_desc">Bayi &lt; 1 tahun yang telah menerima seluruh paket vaksin wajib nasional.</span>
+                        <span class="summary-card-badge" id="nat-imun-badge" style="color: var(--success-text); background-color: var(--success-bg);" data-lang-id="nat_imun_badge">Perlu Peningkatan</span>
                     </div>
                 </div>
 
-                <!-- Recommendation box -->
-                <div class="action-plan-box" id="diagnostic-action-box">
-                    <div class="action-plan-icon" id="action-icon" style="color: var(--success-text);">
-                        <i class="fa-solid fa-circle-check"></i>
+                <!-- Medical Glossary Panel (Collapsible for Clean UX) -->
+                <div class="card-panel" aria-labelledby="glossary-panel-title">
+                    <details id="glossary-details" class="glossary-container">
+                        <summary class="glossary-summary" style="list-style: none; display: flex; justify-content: space-between; align-items: center; cursor: pointer; outline: none; font-weight: 700;">
+                            <h2 class="card-panel-title" id="glossary-panel-title" style="margin: 0; display: inline-flex; align-items: center; gap: 8px; font-size: 16px;">
+                                <span style="display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; border-radius: 50%; background-color: var(--success-bg); color: var(--success-text); font-size: 12px; font-weight: 700; border: 1px solid var(--success-border);">i</span>
+                                <span data-lang-id="glossary_title">Panduan Istilah Medis & Glosarium (Edukasi Publik)</span>
+                            </h2>
+                            <span class="glossary-toggle-icon" id="glossary-toggle-btn" style="font-size: 12px; font-weight: 600; color: var(--text-secondary); background-color: var(--bg-input); padding: 4px 10px; border-radius: 4px; border: 1px solid var(--border-color);" data-lang-id="glossary_toggle_show">[ Tampilkan Panduan ]</span>
+                        </summary>
+
+                        <div class="glossary-content" style="margin-top: 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; border-top: 1px solid #e2e8f0; padding-top: 20px;">
+                            <div class="glossary-item" style="display: flex; flex-direction: column; gap: 6px;">
+                                <strong style="color: var(--text-primary); font-size: 14px; display: flex; align-items: center; gap: 6px;">
+                                    <span style="width: 8px; height: 8px; background-color: var(--primary-color); border-radius: 50%;"></span>
+                                    <span data-lang-id="glossary_stunting_title">Stunting (Gagal Tumbuh)</span>
+                                </strong>
+                                <p style="margin: 0; font-size: 13px; color: var(--text-secondary); line-height: 1.5;" data-lang-id="glossary_stunting_desc">
+                                    Kondisi gagal tumbuh pada anak balita akibat kekurangan gizi kronis dan infeksi berulang terutama pada 1.000 Hari Pertama Kehidupan (HPK). Ditandai dengan tinggi badan anak yang berada di bawah standar kurva pertumbuhan WHO (kurang dari -2 Standar Deviasi).
+                                </p>
+                            </div>
+
+                            <div class="glossary-item" style="display: flex; flex-direction: column; gap: 6px;">
+                                <strong style="color: var(--text-primary); font-size: 14px; display: flex; align-items: center; gap: 6px;">
+                                    <span style="width: 8px; height: 8px; background-color: var(--warning-text); border-radius: 50%;"></span>
+                                    <span data-lang-id="glossary_kek_title">KEK (Kekurangan Energi Kronis)</span>
+                                </strong>
+                                <p style="margin: 0; font-size: 13px; color: var(--text-secondary); line-height: 1.5;" data-lang-id="glossary_kek_desc">
+                                    Kondisi ibu hamil yang menderita kekurangan asupan makanan bernutrisi secara menahun. Diukur berdasarkan Lingkar Lengan Atas (LILA) kurang dari 23,5 cm. KEK pada ibu hamil meningkatkan risiko melahirkan bayi dengan berat lahir rendah (BBLR).
+                                </p>
+                            </div>
+
+                            <div class="glossary-item" style="display: flex; flex-direction: column; gap: 6px;">
+                                <strong style="color: var(--text-primary); font-size: 14px; display: flex; align-items: center; gap: 6px;">
+                                    <span style="width: 8px; height: 8px; background-color: var(--danger-text); border-radius: 50%;"></span>
+                                    <span data-lang-id="glossary_bblr_title">BBLR (Bayi Berat Lahir Rendah)</span>
+                                </strong>
+                                <p style="margin: 0; font-size: 13px; color: var(--text-secondary); line-height: 1.5;" data-lang-id="glossary_bblr_desc">
+                                    Bayi yang lahir dengan berat badan kurang dari 2.500 gram (2,5 kg), terlepas dari usia kandungan saat lahir. BBLR merupakan faktor risiko utama mortalitas bayi dan memiliki keterkaitan erat dengan kejadian stunting di kemudian hari.
+                                </p>
+                            </div>
+
+                            <div class="glossary-item" style="display: flex; flex-direction: column; gap: 6px;">
+                                <strong style="color: var(--text-primary); font-size: 14px; display: flex; align-items: center; gap: 6px;">
+                                    <span style="width: 8px; height: 8px; background-color: var(--success-text); border-radius: 50%;"></span>
+                                    <span data-lang-id="glossary_idl_title">Imunisasi Dasar Lengkap (IDL)</span>
+                                </strong>
+                                <p style="margin: 0; font-size: 13px; color: var(--text-secondary); line-height: 1.5;" data-lang-id="glossary_idl_desc">
+                                    Rangkaian vaksinasi wajib bagi bayi usia 0-11 bulan untuk mencegah penyakit menular berbahaya. Anak yang tidak mendapatkan IDL lebih rentan terkena infeksi berulang yang mengganggu penyerapan zat gizi dan memicu stunting.
+                                </p>
+                            </div>
+
+                            <div class="glossary-item" style="display: flex; flex-direction: column; gap: 6px;">
+                                <strong style="color: var(--text-primary); font-size: 14px; display: flex; align-items: center; gap: 6px;">
+                                    <span style="width: 8px; height: 8px; background-color: var(--info-text); border-radius: 50%;"></span>
+                                    <span data-lang-id="glossary_zscore_title">Z-Score (Skor Standar Deviasi)</span>
+                                </strong>
+                                <p style="margin: 0; font-size: 13px; color: var(--text-secondary); line-height: 1.5;" data-lang-id="glossary_zscore_desc">
+                                    Nilai statistik untuk mengukur seberapa jauh penyimpangan pertumbuhan fisik anak dari rata-rata populasi rujukan internasional WHO. Dinyatakan dalam satuan Standar Deviasi (SD). Nilai 0.0 SD menunjukkan rata-rata anak normal sedunia.
+                                </p>
+                            </div>
+
+                            <div class="glossary-item" style="display: flex; flex-direction: column; gap: 6px;">
+                                <strong style="color: var(--text-primary); font-size: 14px; display: flex; align-items: center; gap: 6px;">
+                                    <span style="width: 8px; height: 8px; background-color: #4f46e5; border-radius: 50%;"></span>
+                                    <span data-lang-id="glossary_haz_title">HAZ (Height-for-Age Z-Score)</span>
+                                </strong>
+                                <p style="margin: 0; font-size: 13px; color: var(--text-secondary); line-height: 1.5;" data-lang-id="glossary_haz_desc">
+                                    Indikator Tinggi Badan menurut Umur. Mengukur pertumbuhan linier anak. Anak dikategorikan <strong>Sangat Pendek</strong> (Severely Stunted) jika HAZ &lt; -3 SD, <strong>Pendek</strong> (Stunted) jika HAZ antara -3 SD hingga -2 SD, dan <strong>Normal</strong> jika HAZ &ge; -2 SD.
+                                </p>
+                            </div>
+
+                            <div class="glossary-item" style="display: flex; flex-direction: column; gap: 6px;">
+                                <strong style="color: var(--text-primary); font-size: 14px; display: flex; align-items: center; gap: 6px;">
+                                    <span style="width: 8px; height: 8px; background-color: #06b6d4; border-radius: 50%;"></span>
+                                    <span data-lang-id="glossary_waz_title">WAZ (Weight-for-Age Z-Score)</span>
+                                </strong>
+                                <p style="margin: 0; font-size: 13px; color: var(--text-secondary); line-height: 1.5;" data-lang-id="glossary_waz_desc">
+                                    Indikator Berat Badan menurut Umur. Mengukur massa tubuh anak secara umum. Anak dikategorikan <strong>Gizi Buruk</strong> (Severely Underweight) jika WAZ &lt; -3 SD, <strong>Gizi Kurang</strong> (Underweight) jika WAZ antara -3 SD hingga -2 SD, dan <strong>Gizi Baik</strong> jika WAZ &ge; -2 SD.
+                                </p>
+                            </div>
+
+                            <div class="glossary-item" style="display: flex; flex-direction: column; gap: 6px;">
+                                <strong style="color: var(--text-primary); font-size: 14px; display: flex; align-items: center; gap: 6px;">
+                                    <span style="width: 8px; height: 8px; background-color: #8b5cf6; border-radius: 50%;"></span>
+                                    <span data-lang-id="glossary_hpk_title">1.000 Hari Pertama Kehidupan (HPK)</span>
+                                </strong>
+                                <p style="margin: 0; font-size: 13px; color: var(--text-secondary); line-height: 1.5;" data-lang-id="glossary_hpk_desc">
+                                    Masa keemasan tumbuh kembang anak sejak hari pertama kehamilan (270 hari) hingga anak berusia 2 tahun (730 hari). Ini merupakan jendela krusial untuk mencegah dampak stunting yang bersifat permanen pada perkembangan kognitif anak.
+                                </p>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+            </section>
+
+            <!-- Section 2: Spatial & Clustering -->
+            <section id="section-clustering" class="page-section">
+                <div class="main-grid">
+                    <!-- Map Panel -->
+                    <section class="card-panel" aria-labelledby="map-panel-title">
+                        <div class="card-panel-header">
+                            <h2 class="card-panel-title" id="map-panel-title" data-lang-id="map_title">Visualisasi Spasial Provinsi</h2>
+                        </div>
+
+                        <div class="controls-row">
+                            <div class="field-group">
+                                <label for="map-metric-selector" class="field-label" data-lang-id="map_metric_lbl">Parameter Peta</label>
+                                <select id="map-metric-selector" class="form-select">
+                                    <option value="Stunting_2019" data-lang-id="opt_stunting">Angka Kejadian Stunting (%)</option>
+                                    <option value="KEK_Ibu_Hamil" data-lang-id="opt_kek">KEK Ibu Hamil (%)</option>
+                                    <option value="Imunisasi_Dasar_Lengkap" data-lang-id="opt_idl">Cakupan Imunisasi Lengkap (%)</option>
+                                    <option value="BBLR" data-lang-id="opt_bblr">Bayi Berat Lahir Rendah (%)</option>
+                                </select>
+                            </div>
+                            <div class="field-group">
+                                <label for="map-cluster-selector" class="field-label" data-lang-id="map_cluster_lbl">Overlay Model Klaster</label>
+                                <select id="map-cluster-selector" class="form-select">
+                                    <option value="none" data-lang-id="opt_clust_none">Tanpa Overlay Klaster</option>
+                                    <option value="Klaster_KMeans" data-lang-id="opt_clust_kmeans">Klaster K-Means</option>
+                                    <option value="Klaster_GMM" data-lang-id="opt_clust_gmm">Klaster Gaussian Mixture Model</option>
+                                    <option value="Klaster_HC" data-lang-id="opt_clust_hc">Klaster Hierarchical (Ward)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="map-container">
+                            <div id="spatial-map" role="img" aria-label="Peta Tematik Distribusi Stunting Provinsi Indonesia"></div>
+                            <div class="legend-box" id="map-legend" aria-live="polite"></div>
+                        </div>
+
+                        <!-- Dynamic Cluster Profile Explanation Panel -->
+                        <div class="cluster-profile-panel" id="cluster-profile-panel" style="display: none;">
+                            <div class="cluster-profile-title">
+                                <span style="display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; border-radius: 50%; background-color: var(--success-bg); color: var(--success-text); font-size: 11px; font-weight: 700; border: 1px solid var(--success-border);">i</span>
+                                <span data-lang-id="cluster_profile_title">Profil Karakteristik Klaster</span>
+                            </div>
+                            <div class="cluster-profile-grid" id="cluster-profile-grid">
+                                <!-- Populated dynamically via JavaScript -->
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Analytics Tab Panel -->
+                    <section class="card-panel" aria-labelledby="analytics-panel-title">
+                        <div class="card-panel-header">
+                            <h2 class="card-panel-title" id="analytics-panel-title" data-lang-id="analytics_title">Analisis Deskriptif Wilayah</h2>
+                            <div style="width: 180px;">
+                                <label for="province-selector" class="sr-only" style="display:none;">Pilih Provinsi</label>
+                                <select id="province-selector" class="form-select" aria-label="Pilih Provinsi Detail">
+                                    <!-- Populated via JS -->
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="tabs-header" role="tablist">
+                            <button class="tab-trigger active" id="tab-trigger-metrics" role="tab" aria-selected="true" aria-controls="tab-panel-metrics" data-lang-id="tab_metrics">Statistik Pokok</button>
+                            <button class="tab-trigger" id="tab-trigger-clusters" role="tab" aria-selected="false" aria-controls="tab-panel-clusters" data-lang-id="tab_clusters">Hasil Klasterisasi</button>
+                        </div>
+
+                        <!-- Tab Content 1: Metrics -->
+                        <div class="tab-panel active" id="tab-panel-metrics" role="tabpanel" aria-labelledby="tab-trigger-metrics">
+                            <div class="regional-metrics-grid">
+                                <div class="metric-card">
+                                    <span class="metric-card-label" data-lang-id="lbl_prov_stunting">Angka Stunting (2019)</span>
+                                    <span class="metric-card-value" id="prov-stunting-val">-</span>
+                                    <div class="bar-track">
+                                        <div class="bar-fill" id="prov-stunting-bar" style="background-color: var(--primary-color)"></div>
+                                    </div>
+                                </div>
+                                <div class="metric-card">
+                                    <span class="metric-card-label" data-lang-id="lbl_prov_kek">KEK Ibu Hamil</span>
+                                    <span class="metric-card-value" id="prov-kek-val">-</span>
+                                    <div class="bar-track">
+                                        <div class="bar-fill" id="prov-kek-bar" style="background-color: var(--primary-color)"></div>
+                                    </div>
+                                </div>
+                                <div class="metric-card">
+                                    <span class="metric-card-label" data-lang-id="lbl_prov_bblr">Bayi Berat Lahir Rendah</span>
+                                    <span class="metric-card-value" id="prov-bblr-val">-</span>
+                                    <div class="bar-track">
+                                        <div class="bar-fill" id="prov-bblr-bar" style="background-color: var(--primary-color)"></div>
+                                    </div>
+                                </div>
+                                <div class="metric-card">
+                                    <span class="metric-card-label" data-lang-id="lbl_prov_imunisasi">Imunisasi Dasar Lengkap</span>
+                                    <span class="metric-card-value" id="prov-imunisasi-val">-</span>
+                                    <div class="bar-track">
+                                        <div class="bar-fill" id="prov-imunisasi-bar" style="background-color: var(--primary-color)"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="border-top: 1px solid #e2e8f0; padding-top: 16px;">
+                                <h3 style="font-size: 13px; font-weight: 700; color: var(--text-secondary); margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.05em;" data-lang-id="comparison_title">Perbandingan Terhadap Batas Rerata Nasional</h3>
+                                <div class="radar-chart-wrapper">
+                                    <canvas id="comparison-radar-chart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tab Content 2: Clusters -->
+                        <div class="tab-panel" id="tab-panel-clusters" role="tabpanel" aria-labelledby="tab-trigger-clusters">
+                            <div style="display: flex; flex-direction: column; gap: 16px;">
+                                <div class="cluster-info-card" id="kmeans-info-card">
+                                    <div class="cluster-status-indicator" style="background-color: #2563eb;"></div>
+                                    <div class="cluster-desc-block">
+                                        <span class="cluster-desc-title"><span data-lang-id="opt_clust_kmeans">Klaster K-Means</span>: <span id="kmeans-cluster-num">-</span></span>
+                                        <span class="cluster-desc-text" id="kmeans-cluster-desc">-</span>
+                                    </div>
+                                </div>
+
+                                <div class="cluster-info-card" id="gmm-info-card">
+                                    <div class="cluster-status-indicator" style="background-color: #0891b2;"></div>
+                                    <div class="cluster-desc-block">
+                                        <span class="cluster-desc-title"><span data-lang-id="opt_clust_gmm">Klaster Gaussian Mixture Model</span>: <span id="gmm-cluster-num">-</span></span>
+                                        <span class="cluster-desc-text" id="gmm-cluster-desc">-</span>
+                                    </div>
+                                </div>
+
+                                <div class="cluster-info-card" id="hc-info-card">
+                                    <div class="cluster-status-indicator" style="background-color: #059669;"></div>
+                                    <div class="cluster-desc-block">
+                                        <span class="cluster-desc-title"><span data-lang-id="opt_clust_hc">Klaster Hierarchical (Ward)</span>: <span id="hc-cluster-num">-</span></span>
+                                        <span class="cluster-desc-text" id="hc-cluster-desc">-</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="background-color: var(--bg-body); padding: 16px; border-radius: var(--border-radius-sm); border: 1px solid var(--border-color); font-size: 12px; color: var(--text-secondary); line-height: 1.45;" data-lang-id="cluster_methodology">
+                                <strong>Metodologi Klasterisasi:</strong> Klasterisasi dibangun menggunakan kombinasi 4 dimensi regional setelah standardisasi statistika (Z-Score scaling) untuk menghilangkan bias skala satuan data.
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+
+            <!-- Section 3: Classification -->
+            <section id="section-classification" class="page-section">
+                <div class="card-panel">
+                    <div class="card-panel-header">
+                        <h2 class="card-panel-title" data-lang-id="lbl_classification_results">Skrining Status Gizi (Klasifikasi)</h2>
+                        <div style="font-size: 11px; font-weight: 700; color: var(--text-muted); background-color: var(--bg-input); padding: 4px 10px; border-radius: var(--border-radius-sm); text-transform: uppercase;">
+                            XGBoost Classifier
+                        </div>
                     </div>
-                    <div class="action-plan-details">
-                        <span class="action-plan-title" id="action-title">Pertumbuhan Sesuai Standar</span>
-                        <p class="action-plan-desc" id="action-desc">Status gizi anak dinilai baik. Pertahankan pemberian makanan bergizi seimbang, stimulasi tumbuh kembang aktif, dan lanjutkan pemantauan rutin di Posyandu.</p>
+
+                    <div class="predictor-grid">
+                        <!-- Inputs Form -->
+                        <div>
+                            <form id="predictor-form-class" onsubmit="return false;">
+                                <div class="field-group" style="margin-bottom: 20px;">
+                                    <label class="field-label" data-lang-id="gender_label">Jenis Kelamin</label>
+                                    <div class="segmented-control" role="radiogroup" aria-label="Jenis Kelamin Balita">
+                                        <button type="button" class="segment-btn active" id="btn-gender-male-class" role="radio" aria-checked="true" data-lang-id="gender_male">Laki-laki</button>
+                                        <button type="button" class="segment-btn" id="btn-gender-female-class" role="radio" aria-checked="false" data-lang-id="gender_female">Perempuan</button>
+                                    </div>
+                                </div>
+
+                                <div class="slider-wrapper">
+                                    <div class="slider-label-row">
+                                        <label for="slider-age-class" class="field-label" data-lang-id="age_label">Usia Balita (Bulan)</label>
+                                        <span class="slider-number-output" id="lbl-age-val-class">24 bulan</span>
+                                    </div>
+                                    <input type="range" id="slider-age-class" class="accessible-slider" min="0" max="60" value="24" aria-valuemin="0" aria-valuemax="60" aria-valuenow="24">
+                                </div>
+
+                                <div class="slider-wrapper">
+                                    <div class="slider-label-row">
+                                        <label for="slider-height-class" class="field-label" data-lang-id="height_label">Tinggi Badan (cm)</label>
+                                        <span class="slider-number-output" id="lbl-height-val-class">85.0 cm</span>
+                                    </div>
+                                    <input type="range" id="slider-height-class" class="accessible-slider" min="30" max="120" step="0.1" value="85.0" aria-valuemin="30" aria-valuemax="120" aria-valuenow="85">
+                                </div>
+
+                                <div class="slider-wrapper">
+                                    <div class="slider-label-row">
+                                        <label for="slider-weight-class" class="field-label" data-lang-id="weight_label">Berat Badan (kg)</label>
+                                        <span class="slider-number-output" id="lbl-weight-val-class">11.5 kg</span>
+                                    </div>
+                                    <input type="range" id="slider-weight-class" class="accessible-slider" min="2" max="30" step="0.1" value="11.5" aria-valuemin="2" aria-valuemax="30" aria-valuenow="11.5">
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- Results Panel -->
+                        <div class="diagnostic-results-panel">
+                            <span class="diagnostic-header" data-lang-id="diag_header">Hasil Diagnosa Status Tumbuh Kembang</span>
+
+                            <div class="diagnostic-badge-wrapper">
+                                <span class="status-badge status-normal" id="diagnosis-result-badge">Normal</span>
+                            </div>
+
+                            <div class="confidence-indicator">
+                                <div class="confidence-label-row">
+                                    <span data-lang-id="confidence_lbl">Tingkat Keyakinan Klasifikasi (XGBoost)</span>
+                                    <span id="confidence-val">98,5%</span>
+                                </div>
+                                <div class="bar-track" style="height: 8px;">
+                                    <div class="bar-fill" id="confidence-bar-fill" style="width: 98.5%; background-color: var(--success-text);"></div>
+                                </div>
+                            </div>
+
+                            <!-- Recommendation Box -->
+                            <div class="action-plan-box" id="diagnostic-action-box">
+                                <div class="action-plan-icon" id="action-icon" style="color: var(--success-text);">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
+                                <div class="action-plan-details">
+                                    <span class="action-plan-title" id="action-title">Pertumbuhan Sesuai Standar</span>
+                                    <p class="action-plan-desc" id="action-desc">Status gizi anak dinilai baik. Pertahankan pemberian makanan bergizi seimbang, stimulasi tumbuh kembang aktif, dan lanjutkan pemantauan rutin di Posyandu.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div style="font-size: 11px; color: var(--text-secondary); text-align: right; margin-top: 8px; font-weight: 500;" data-lang-id="who_disclaimer">
-                    *Z-Score (SD / Standar Deviasi) mengacu pada standar kurva pertumbuhan balita WHO.
+            </section>
+
+            <!-- Section 4: Regression -->
+            <section id="section-regression" class="page-section">
+                <div class="card-panel">
+                    <div class="card-panel-header">
+                        <h2 class="card-panel-title" data-lang-id="lbl_regression_results">Estimasi Deviasi Tumbuh Kembang (Regresi)</h2>
+                        <div style="font-size: 11px; font-weight: 700; color: var(--text-muted); background-color: var(--bg-input); padding: 4px 10px; border-radius: var(--border-radius-sm); text-transform: uppercase;">
+                            LightGBM Regressor
+                        </div>
+                    </div>
+
+                    <div class="predictor-grid">
+                        <!-- Inputs Form -->
+                        <div>
+                            <form id="predictor-form-reg" onsubmit="return false;">
+                                <div class="field-group" style="margin-bottom: 20px;">
+                                    <label class="field-label" data-lang-id="gender_label">Jenis Kelamin</label>
+                                    <div class="segmented-control" role="radiogroup" aria-label="Jenis Kelamin Balita">
+                                        <button type="button" class="segment-btn active" id="btn-gender-male-reg" role="radio" aria-checked="true" data-lang-id="gender_male">Laki-laki</button>
+                                        <button type="button" class="segment-btn" id="btn-gender-female-reg" role="radio" aria-checked="false" data-lang-id="gender_female">Perempuan</button>
+                                    </div>
+                                </div>
+
+                                <div class="slider-wrapper">
+                                    <div class="slider-label-row">
+                                        <label for="slider-age-reg" class="field-label" data-lang-id="age_label">Usia Balita (Bulan)</label>
+                                        <span class="slider-number-output" id="lbl-age-val-reg">24 bulan</span>
+                                    </div>
+                                    <input type="range" id="slider-age-reg" class="accessible-slider" min="0" max="60" value="24" aria-valuemin="0" aria-valuemax="60" aria-valuenow="24">
+                                </div>
+
+                                <div class="slider-wrapper">
+                                    <div class="slider-label-row">
+                                        <label for="slider-height-reg" class="field-label" data-lang-id="height_label">Tinggi Badan (cm)</label>
+                                        <span class="slider-number-output" id="lbl-height-val-reg">85.0 cm</span>
+                                    </div>
+                                    <input type="range" id="slider-height-reg" class="accessible-slider" min="30" max="120" step="0.1" value="85.0" aria-valuemin="30" aria-valuemax="120" aria-valuenow="85">
+                                </div>
+
+                                <div class="slider-wrapper">
+                                    <div class="slider-label-row">
+                                        <label for="slider-weight-reg" class="field-label" data-lang-id="weight_label">Berat Badan (kg)</label>
+                                        <span class="slider-number-output" id="lbl-weight-val-reg">11.5 kg</span>
+                                    </div>
+                                    <input type="range" id="slider-weight-reg" class="accessible-slider" min="2" max="30" step="0.1" value="11.5" aria-valuemin="2" aria-valuemax="30" aria-valuenow="11.5">
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- Results Panel -->
+                        <div class="diagnostic-results-panel">
+                            <span class="diagnostic-header" data-lang-id="lbl_regression_results">Estimasi Nilai Z-Score Secara Kuantitatif</span>
+
+                            <!-- Z-Score Range 1: HAZ -->
+                            <div class="zscore-graph-block">
+                                <div class="zscore-label-row">
+                                    <span data-lang-id="z_haz_lbl">HAZ (Tinggi Badan menurut Umur / Indikator Stunting)</span>
+                                    <span class="zscore-value-output" id="val-z-haz">0.00 SD</span>
+                                </div>
+                                <div class="zscore-spectrum-bar haz-gradient">
+                                    <div class="zscore-pointer" id="pointer-z-haz" style="left: 50%;"></div>
+                                </div>
+                                <div class="zscore-legend-axis">
+                                    <span class="zscore-tick" style="left: 0%; transform: none;">-4.0</span>
+                                    <span class="zscore-tick stagger" style="left: 12.5%;" data-lang-id="axis_haz_severe_stunted">-3.0 (Sangat Pendek)</span>
+                                    <span class="zscore-tick" style="left: 25%;" data-lang-id="axis_haz_stunted">-2.0 (Pendek)</span>
+                                    <span class="zscore-tick" style="left: 50%;">0.0</span>
+                                    <span class="zscore-tick stagger" style="left: 87.5%;" data-lang-id="axis_haz_tall">+3.0 (Tinggi)</span>
+                                    <span class="zscore-tick" style="left: 100%; transform: translateX(-100%);">+4.0</span>
+                                </div>
+                            </div>
+
+                            <!-- Z-Score Range 2: WAZ -->
+                            <div class="zscore-graph-block">
+                                <div class="zscore-label-row">
+                                    <span data-lang-id="z_waz_lbl">WAZ (Berat Badan menurut Umur / Indikator Gizi)</span>
+                                    <span class="zscore-value-output" id="val-z-waz">0.00 SD</span>
+                                </div>
+                                <div class="zscore-spectrum-bar waz-gradient">
+                                    <div class="zscore-pointer" id="pointer-z-waz" style="left: 50%;"></div>
+                                </div>
+                                <div class="zscore-legend-axis">
+                                    <span class="zscore-tick" style="left: 0%; transform: none;">-4.0</span>
+                                    <span class="zscore-tick stagger" style="left: 12.5%;" data-lang-id="axis_waz_severe_underweight">-3.0 (Gizi Buruk)</span>
+                                    <span class="zscore-tick" style="left: 25%;" data-lang-id="axis_waz_underweight">-2.0 (Gizi Kurang)</span>
+                                    <span class="zscore-tick" style="left: 50%;">0.0</span>
+                                    <span class="zscore-tick stagger" style="left: 75%;" data-lang-id="axis_waz_overweight">+2.0 (Risiko Lebih)</span>
+                                    <span class="zscore-tick" style="left: 100%; transform: translateX(-100%);">+4.0</span>
+                                </div>
+                            </div>
+
+                            <div style="font-size: 11px; color: var(--text-secondary); text-align: right; margin-top: 8px; font-weight: 500;" data-lang-id="who_disclaimer">
+                                *Z-Score (SD / Standar Deviasi) mengacu pada standar kurva pertumbuhan balita WHO.
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </section>
         </div>
-    </section>
+    </main>
 </div>
 
 <!-- Scripts -->
@@ -1249,13 +1564,12 @@
         'SUMATERA SELATAN': 'Sumatera Selatan', 'SUMATERA UTARA': 'Sumatera Utara'
     };
 
-    // Colors styled with high contrast to pass WCAG guidelines
     const COLOR_STEPS = {
         Stunting_2019: ['#fef0d9', '#fdcc8a', '#fc8d59', '#e34a33', '#b30000'],
         KEK_Ibu_Hamil: ['#fee5d9', '#fcae91', '#fb6a4a', '#de2d26', '#a50f15'],
         Imunisasi_Dasar_Lengkap: ['#f7fcf5', '#c7e9c0', '#74c476', '#238b45', '#005a32'],
         BBLR: ['#f7fbff', '#c6dbef', '#6baed6', '#2171b5', '#08306b'],
-        Clusters: ['#2563eb', '#dc2626', '#d97706'] // Blue, Red, Yellow-Brown
+        Clusters: ['#2563eb', '#dc2626', '#d97706']
     };
 
     let currentLang = 'id';
@@ -1264,6 +1578,15 @@
         id: {
             title: 'Analisis Spasial dan Skrining Antropometri Stunting Balita Nasional',
             subtitle: 'Visualisasi Indikator Kesehatan Regional dan Estimasi Z-Score Berbasis Pembelajaran Mesin',
+            menu_brand: 'Stunting Analytics',
+            menu_home: 'Beranda',
+            menu_clustering: 'Analisis Spasial',
+            menu_classification: 'Diagnosa Klasifikasi',
+            menu_regression: 'Estimasi Z-Score',
+            welcome_title: 'Selamat Datang di Portal Analisis Stunting',
+            welcome_desc: 'Portal ini menyajikan platform terintegrasi untuk deteksi dini stunting, pemodelan spasial regional (klasterisasi), dan estimasi kuantitatif penyimpangan tumbuh kembang balita menggunakan model kecerdasan buatan (XGBoost & LightGBM).',
+            lbl_classification_results: 'Skrining Status Gizi (Klasifikasi)',
+            lbl_regression_results: 'Estimasi Deviasi Tumbuh Kembang (Regresi)',
             glossary_title: 'Panduan Istilah Medis & Glosarium (Edukasi Publik)',
             glossary_toggle_show: '[ Tampilkan Panduan ]',
             glossary_toggle_hide: '[ Sembunyikan Panduan ]',
@@ -1278,9 +1601,9 @@
             glossary_zscore_title: 'Z-Score (Skor Standar Deviasi)',
             glossary_zscore_desc: 'Nilai statistik untuk mengukur seberapa jauh penyimpangan pertumbuhan fisik anak dari rata-rata populasi rujukan internasional WHO. Dinyatakan dalam satuan Standar Deviasi (SD). Nilai 0.0 SD menunjukkan rata-rata anak normal sedunia.',
             glossary_haz_title: 'HAZ (Height-for-Age Z-Score)',
-            glossary_haz_desc: 'Indikator Tinggi Badan menurut Umur. Mengukur pertumbuhan linier anak. Anak dikategorikan <strong>Sangat Pendek</strong> (Severely Stunted) jika HAZ &lt; -3 SD, <strong>Pendek</strong> (Stunted) jika HAZ antara -3 SD hingga -2 SD, dan <strong>Normal</strong> jika HAZ &ge; -2 SD.',
+            glossary_haz_desc: 'Indikator Tinggi Badan menurut Umur. Mengukur pertumbuhan linier anak. Anak dikategorikan <strong>Sangat Pendek</strong> (Severely Stunted) jika HAZ &lt; -3 SD, <strong>Pendek</strong> (Pendek) jika HAZ antara -3 SD hingga -2 SD, dan <strong>Normal</strong> jika HAZ &ge; -2 SD.',
             glossary_waz_title: 'WAZ (Weight-for-Age Z-Score)',
-            glossary_waz_desc: 'Indikator Berat Badan menurut Umur. Mengukur massa tubuh anak secara umum. Anak dikategorikan <strong>Gizi Buruk</strong> (Severely Underweight) jika WAZ &lt; -3 SD, <strong>Gizi Kurang</strong> (Underweight) jika WAZ antara -3 SD hingga -2 SD, dan <strong>Gizi Baik</strong> jika WAZ &ge; -2 SD.',
+            glossary_waz_desc: 'Indikator Berat Badan menurut Umur. Mengukur massa tubuh anak secara umum. Anak dikategorikan <strong>Gizi Buruk</strong> (Severely Underweight) jika WAZ &lt; -3 SD, <strong>Gizi Kurang</strong> (Gizi Kurang) jika WAZ antara -3 SD hingga -2 SD, dan <strong>Gizi Baik</strong> jika WAZ &ge; -2 SD.',
             glossary_hpk_title: '1.000 Hari Pertama Kehidupan (HPK)',
             glossary_hpk_desc: 'Masa keemasan tumbuh kembang anak sejak hari pertama kehamilan (270 hari) hingga anak berusia 2 tahun (730 hari). Ini merupakan jendela krusial untuk mencegah dampak stunting yang bersifat permanen pada perkembangan kognitif anak.',
             nat_stunting_label: 'Rata-Rata Stunting Nasional',
@@ -1339,6 +1662,15 @@
         en: {
             title: 'Spatial Analysis & Anthropometric Screening of National Child Stunting',
             subtitle: 'Visualization of Regional Health Indicators and Machine Learning-Based Z-Score Estimation',
+            menu_brand: 'Stunting Analytics',
+            menu_home: 'Home',
+            menu_clustering: 'Spatial Analysis',
+            menu_classification: 'Classification Diagnosis',
+            menu_regression: 'Z-Score Regression',
+            welcome_title: 'Welcome to the Stunting Analytics Portal',
+            welcome_desc: 'This portal presents an integrated platform for early stunting detection, regional spatial modeling (clustering), and child anthropometric z-score estimation using artificial intelligence (XGBoost & LightGBM).',
+            lbl_classification_results: 'Nutrition Status Screening (Classification)',
+            lbl_regression_results: 'Growth Deviation Estimation (Regression)',
             glossary_title: 'Medical Terminology Guide & Glossary (Public Education)',
             glossary_toggle_show: '[ Show Guide ]',
             glossary_toggle_hide: '[ Hide Guide ]',
@@ -1438,7 +1770,7 @@
             {
                 id: 1,
                 title: { id: 'Klaster Resiko Sangat Tinggi (Krisis)', en: 'Very High Risk Cluster (Crisis)' },
-                desc: { id: 'Krisis gizi dan kesehatan kritis: stunting sangat tinggi (~35.6%), cakupan imunisasi sangat rendah (~37.8%), dan KEK hamil sangat tinggi.', en: 'Critical nutritional and health crisis: very high stunting (~35.6%), very low immunization coverage (~37.8%), and very high maternal Chronic Energy Deficiency (CED).' }
+                desc: { id: 'Krisis gizi dan kesehatan kritis: stunting sangat tinggi (~35.6%), cakupan imunisasi sangat rendah (~37.8%), and KEK hamil sangat tinggi.', en: 'Critical nutritional and health crisis: very high stunting (~35.6%), very low immunization coverage (~37.8%), and very high maternal Chronic Energy Deficiency (CED).' }
             },
             {
                 id: 2,
@@ -1498,48 +1830,110 @@
     let selectedGender = 'Laki-laki';
 
     // ----------------------------------------------------
-    // Province Data Finder
+    // Utility & Core Logic
     // ----------------------------------------------------
     function getProvData(name) {
-        return PROVINCE_DATA.find(p => p.Provinsi === name || p.Provinsi_Map === name || GEOJSON_MAP[name.toUpperCase()] === p.Provinsi);
+        const key = GEOJSON_MAP[name.toUpperCase()] || name;
+        return PROVINCE_DATA.find(d => d.Provinsi.toLowerCase() === key.toLowerCase() || d.Provinsi_Map.toLowerCase() === key.toLowerCase());
     }
 
     function initProvinceSelector() {
-        const selector = document.getElementById('province-selector');
-        selector.innerHTML = '';
-        const sorted = [...PROVINCE_DATA].sort((a,b) => a.Provinsi.localeCompare(b.Provinsi));
-        sorted.forEach(p => {
+        const sel = document.getElementById('province-selector');
+        sel.innerHTML = '';
+
+        // Sort alphabetically
+        const sorted = [...PROVINCE_DATA].sort((a, b) => a.Provinsi.localeCompare(b.Provinsi));
+        sorted.forEach(d => {
             const opt = document.createElement('option');
-            opt.value = p.Provinsi;
-            opt.textContent = p.Provinsi;
-            if (p.Provinsi === activeProvince) opt.selected = true;
-            selector.appendChild(opt);
+            opt.value = d.Provinsi;
+            opt.textContent = d.Provinsi;
+            if (d.Provinsi === activeProvince) opt.selected = true;
+            sel.appendChild(opt);
         });
 
-        selector.addEventListener('change', (e) => {
+        sel.addEventListener('change', (e) => {
             changeActiveProvince(e.target.value);
         });
     }
 
-    // ----------------------------------------------------
-    // Comparison Radar Chart
-    // ----------------------------------------------------
+    function changeActiveProvince(name) {
+        activeProvince = name;
+        const pData = getProvData(name);
+        if (!pData) return;
+
+        // Update selector
+        document.getElementById('province-selector').value = name;
+
+        // Highlight Leaflet Layer
+        highlightLeafletLayer(name);
+
+        // Update text labels
+        document.getElementById('prov-stunting-val').textContent = pData.Stunting_2019.toFixed(2) + '%';
+        document.getElementById('prov-kek-val').textContent = (pData.KEK_Ibu_Hamil * 100).toFixed(2) + '%';
+        document.getElementById('prov-bblr-val').textContent = (pData.BBLR * 100).toFixed(2) + '%';
+        document.getElementById('prov-imunisasi-val').textContent = (pData.Imunisasi_Dasar_Lengkap * 100).toFixed(2) + '%';
+
+        // Update progress bars
+        document.getElementById('prov-stunting-bar').style.width = pData.Stunting_2019 + '%';
+        document.getElementById('prov-kek-bar').style.width = (pData.KEK_Ibu_Hamil * 100) + '%';
+        document.getElementById('prov-bblr-bar').style.width = (pData.BBLR * 100) + '%';
+        document.getElementById('prov-imunisasi-bar').style.width = (pData.Imunisasi_Dasar_Lengkap * 100) + '%';
+
+        // Update cluster detail info boxes
+        renderClusterDetail('kmeans', 'Klaster_KMeans', pData.Klaster_KMeans);
+        renderClusterDetail('gmm', 'Klaster_GMM', pData.Klaster_GMM);
+        renderClusterDetail('hc', 'Klaster_HC', pData.Klaster_HC);
+
+        // Update Radar Chart data values
+        if (comparisonChart) {
+            comparisonChart.data.datasets[0].label = pData.Provinsi;
+            comparisonChart.data.datasets[0].data = [
+                pData.Stunting_2019,
+                pData.KEK_Ibu_Hamil * 100,
+                pData.Imunisasi_Dasar_Lengkap * 100,
+                pData.BBLR * 100
+            ];
+            comparisonChart.update();
+        }
+    }
+
+    function renderClusterDetail(prefix, key, clusterIdx) {
+        const numLabel = document.getElementById(`${prefix}-cluster-num`);
+        const descLabel = document.getElementById(`${prefix}-cluster-desc`);
+
+        if (numLabel && descLabel) {
+            numLabel.textContent = clusterIdx;
+
+            const list = CLUSTER_METRICS[key];
+            const match = list.find(c => c.id === clusterIdx);
+            if (match) {
+                const text = typeof match.desc === 'string' ? match.desc : match.desc[currentLang];
+                const titleText = typeof match.title === 'string' ? match.title : match.title[currentLang];
+                descLabel.innerHTML = `<strong>${titleText}</strong><br>${text}`;
+            } else {
+                descLabel.textContent = '-';
+            }
+        }
+    }
+
     function initRadarChart() {
         const ctx = document.getElementById('comparison-radar-chart').getContext('2d');
-
         comparisonChart = new Chart(ctx, {
             type: 'radar',
             data: {
                 labels: ['Stunting (%)', 'KEK Ibu Hamil (%)', 'Imunisasi Dasar (%)', 'BBLR (%)'],
                 datasets: [
                     {
-                        label: 'Provinsi Terpilih',
+                        label: 'Provinsi Aktif',
                         data: [0, 0, 0, 0],
-                        backgroundColor: 'rgba(37, 99, 235, 0.15)',
-                        borderColor: '#2563eb',
-                        borderWidth: 2,
-                        pointBackgroundColor: '#2563eb',
-                        pointBorderColor: '#fff'
+                        fill: true,
+                        backgroundColor: 'rgba(29, 78, 216, 0.2)',
+                        borderColor: 'rgb(29, 78, 216)',
+                        pointBackgroundColor: 'rgb(29, 78, 216)',
+                        pointBorderColor: '#fff',
+                        pointHoverBackgroundColor: '#fff',
+                        pointHoverBorderColor: 'rgb(29, 78, 216)',
+                        borderWidth: 2
                     },
                     {
                         label: 'Rata-Rata Nasional',
@@ -1549,152 +1943,63 @@
                             NATION_AVERAGES.Imunisasi_Dasar_Lengkap * 100,
                             NATION_AVERAGES.BBLR * 100
                         ],
-                        backgroundColor: 'rgba(100, 116, 139, 0.05)',
-                        borderColor: '#64748b',
+                        fill: true,
+                        backgroundColor: 'rgba(100, 116, 139, 0.15)',
+                        borderColor: 'rgba(100, 116, 139, 0.8)',
+                        pointBackgroundColor: 'rgba(100, 116, 139, 0.8)',
+                        pointBorderColor: '#fff',
+                        pointHoverBackgroundColor: '#fff',
+                        pointHoverBorderColor: 'rgba(100, 116, 139, 0.8)',
                         borderWidth: 1.5,
-                        borderDash: [4, 4],
-                        pointBackgroundColor: '#64748b',
-                        pointBorderColor: '#fff'
+                        borderDash: [4, 4]
                     }
                 ]
             },
             options: {
                 responsive: true,
                 maintainAspectRatio: false,
-                plugins: {
-                    legend: {
-                        labels: {
-                            color: '#0f172a',
-                            font: { family: 'Inter', size: 12, weight: '600' }
-                        }
-                    }
-                },
                 scales: {
                     r: {
-                        grid: { color: '#e2e8f0' },
-                        angleLines: { color: '#e2e8f0' },
+                        angleLines: { color: '#cbd5e1' },
+                        grid: { color: '#cbd5e1' },
                         pointLabels: {
                             color: '#475569',
-                            font: { family: 'Inter', size: 11, weight: '600' }
+                            font: { family: 'Inter', size: 10.5, weight: '600' }
                         },
-                        ticks: { display: false },
+                        ticks: {
+                            color: '#64748b',
+                            backdropColor: 'transparent',
+                            font: { family: 'Inter', size: 9 }
+                        },
                         suggestedMin: 0,
-                        suggestedMax: 100
+                        suggestedMax: 80
+                    }
+                },
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            color: '#0f172a',
+                            font: { family: 'Inter', size: 11, weight: '500' },
+                            boxWidth: 12,
+                            padding: 10
+                        }
                     }
                 }
             }
         });
     }
 
-    function updateRadarChart(pData) {
-        if (!comparisonChart) return;
-        const stunting = pData.Stunting_2019;
-        const kek = pData.KEK_Ibu_Hamil * 100;
-        const idl = pData.Imunisasi_Dasar_Lengkap * 100;
-        const bblr = pData.BBLR * 100;
+    function getMetricColor(val, metric) {
+        const colors = COLOR_STEPS[metric];
 
-        comparisonChart.data.datasets[0].data = [stunting, kek, idl, bblr];
-        comparisonChart.data.datasets[0].label = pData.Provinsi;
-        comparisonChart.update();
-    }
-
-    // ----------------------------------------------------
-    // Change active selected state
-    // ----------------------------------------------------
-    function changeActiveProvince(name) {
-        activeProvince = name;
-        const selector = document.getElementById('province-selector');
-        if (selector.value !== name) selector.value = name;
-
-        const pData = getProvData(name);
-        if (!pData) return;
-
-        // Render Values
-        document.getElementById('prov-stunting-val').textContent = pData.Stunting_2019.toFixed(2) + '%';
-        document.getElementById('prov-kek-val').textContent = (pData.KEK_Ibu_Hamil * 100).toFixed(2) + '%';
-        document.getElementById('prov-bblr-val').textContent = (pData.BBLR * 100).toFixed(2) + '%';
-        document.getElementById('prov-imunisasi-val').textContent = (pData.Imunisasi_Dasar_Lengkap * 100).toFixed(2) + '%';
-
-        // Set visual bars
-        document.getElementById('prov-stunting-bar').style.width = pData.Stunting_2019 + '%';
-        document.getElementById('prov-kek-bar').style.width = (pData.KEK_Ibu_Hamil * 100) + '%';
-        document.getElementById('prov-bblr-bar').style.width = (pData.BBLR * 100) + '%';
-        document.getElementById('prov-imunisasi-bar').style.width = (pData.Imunisasi_Dasar_Lengkap * 100) + '%';
-
-        // Render Clusters
-        renderClusterDetail('kmeans', 'Klaster_KMeans', pData.Klaster_KMeans);
-        renderClusterDetail('gmm', 'Klaster_GMM', pData.Klaster_GMM);
-        renderClusterDetail('hc', 'Klaster_HC', pData.Klaster_HC);
-
-        // Update Charts
-        updateRadarChart(pData);
-
-        // Highlight Leaflet layer
-        highlightLeafletLayer(name);
-    }
-
-    function renderClusterDetail(domPrefix, key, idx) {
-        const list = CLUSTER_METRICS[key];
-        const match = list.find(c => c.id === idx);
-        if (match) {
-            const titleText = typeof match.title === 'string' ? match.title : match.title[currentLang];
-            const descText = typeof match.desc === 'string' ? match.desc : match.desc[currentLang];
-            document.getElementById(`${domPrefix}-cluster-num`).textContent = `${idx} (${titleText})`;
-            document.getElementById(`${domPrefix}-cluster-desc`).textContent = descText;
-            
-            const indicator = document.querySelector(`#${domPrefix}-info-card .cluster-status-indicator`);
-            if (indicator) {
-                indicator.style.backgroundColor = getClusterColor(key, idx);
-            }
-        } else {
-            document.getElementById(`${domPrefix}-cluster-num`).textContent = '-';
-            document.getElementById(`${domPrefix}-cluster-desc`).textContent = '-';
-        }
-    }
-
-    // Tab switcher events
-    document.getElementById('tab-trigger-metrics').addEventListener('click', (e) => {
-        switchTabs('metrics');
-    });
-    document.getElementById('tab-trigger-clusters').addEventListener('click', (e) => {
-        switchTabs('clusters');
-    });
-
-    function switchTabs(target) {
-        const triggerMetrics = document.getElementById('tab-trigger-metrics');
-        const triggerClusters = document.getElementById('tab-trigger-clusters');
-        const panelMetrics = document.getElementById('tab-panel-metrics');
-        const panelClusters = document.getElementById('tab-panel-clusters');
-
-        if (target === 'metrics') {
-            triggerMetrics.classList.add('active');
-            triggerMetrics.setAttribute('aria-selected', 'true');
-            triggerClusters.classList.remove('active');
-            triggerClusters.setAttribute('aria-selected', 'false');
-            panelMetrics.classList.add('active');
-            panelClusters.classList.remove('active');
-        } else {
-            triggerClusters.classList.add('active');
-            triggerClusters.setAttribute('aria-selected', 'true');
-            triggerMetrics.classList.remove('active');
-            triggerMetrics.setAttribute('aria-selected', 'false');
-            panelClusters.classList.add('active');
-            panelMetrics.classList.remove('active');
-        }
-    }
-
-    // ----------------------------------------------------
-    // Spatial Map Integration (Leaflet)
-    // ----------------------------------------------------
-    function getMetricColor(val, key) {
-        const colors = COLOR_STEPS[key];
         let limits = [];
-        if (key === 'Stunting_2019') limits = [20, 25, 30, 35];
-        else if (key === 'KEK_Ibu_Hamil') limits = [0.12, 0.15, 0.18, 0.22];
-        else if (key === 'Imunisasi_Dasar_Lengkap') limits = [0.45, 0.55, 0.65, 0.75];
-        else if (key === 'BBLR') limits = [0.05, 0.06, 0.07, 0.09];
+        if (metric === 'Stunting_2019') limits = [20, 25, 30, 35];
+        else if (metric === 'KEK_Ibu_Hamil') limits = [0.12, 0.15, 0.18, 0.22];
+        else if (metric === 'Imunisasi_Dasar_Lengkap') limits = [0.45, 0.55, 0.65, 0.75];
+        else if (metric === 'BBLR') limits = [0.05, 0.06, 0.07, 0.09];
 
-        if (key === 'Imunisasi_Dasar_Lengkap') {
+        if (metric === 'Imunisasi_Dasar_Lengkap') {
             // Higher is better
             if (val >= limits[3]) return colors[4];
             if (val >= limits[2]) return colors[3];
@@ -1715,16 +2020,16 @@
         const list = CLUSTER_METRICS[key];
         const match = list.find(c => c.id === idx);
         if (!match) return '#cbd5e1';
-        
+
         const titleText = typeof match.title === 'string' ? match.title : match.title.en;
         const lower = titleText.toLowerCase();
-        
+
         if (lower.includes('low risk') || lower.includes('rendah') || lower.includes('aman')) {
-            return '#2563eb'; // Blue for Low Risk / Safe
+            return '#2563eb';
         } else if (lower.includes('crisis') || lower.includes('krisis') || lower.includes('sangat tinggi')) {
-            return '#dc2626'; // Red for Crisis / Critical
+            return '#dc2626';
         } else if (lower.includes('high risk') || lower.includes('tinggi') || lower.includes('waspada')) {
-            return '#d97706'; // Amber/Yellow for High Risk
+            return '#d97706';
         }
         return '#64748b';
     }
@@ -1785,29 +2090,28 @@
         } else {
             panel.style.display = 'block';
             grid.innerHTML = '';
-            
+
             const list = CLUSTER_METRICS[clusterOverlay];
-            
-            // Sort by severity: Low Risk -> High Risk -> Very High Risk (Crisis)
+
             const sortedList = [...list].sort((a, b) => {
                 const getOrder = (item) => {
                     const titleStr = (typeof item.title === 'string' ? item.title : item.title.en).toLowerCase();
                     if (titleStr.includes('low') || titleStr.includes('rendah') || titleStr.includes('aman')) return 0;
                     if (titleStr.includes('crisis') || titleStr.includes('krisis') || titleStr.includes('sangat')) return 2;
-                    return 1; // High Risk
+                    return 1;
                 };
                 return getOrder(a) - getOrder(b);
             });
-            
+
             sortedList.forEach((item) => {
                 const card = document.createElement('div');
                 card.className = 'cluster-profile-card';
-                
+
                 const titleText = typeof item.title === 'string' ? item.title : item.title[currentLang];
                 const descText = typeof item.desc === 'string' ? item.desc : item.desc[currentLang];
                 const label = currentLang === 'id' ? `Klaster ${item.id}` : `Cluster ${item.id}`;
                 const col = getClusterColor(clusterOverlay, item.id);
-                
+
                 card.innerHTML = `
                     <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
                         <span class="cluster-profile-badge" style="background-color: ${col}; color: white; padding: 2px 8px; border-radius: 4px; font-size: 10px; font-weight: 700;">${label}</span>
@@ -1830,16 +2134,15 @@
 
             const title = currentLang === 'id' ? `Klaster ${label}` : `${label} Clusters`;
             box.innerHTML = `<span class="legend-title">${title}</span>`;
-            
+
             const list = CLUSTER_METRICS[clusterOverlay];
 
-            // Sort by severity: Low Risk -> High Risk -> Very High Risk (Crisis)
             const sortedList = [...list].sort((a, b) => {
                 const getOrder = (item) => {
                     const titleStr = (typeof item.title === 'string' ? item.title : item.title.en).toLowerCase();
                     if (titleStr.includes('low') || titleStr.includes('rendah') || titleStr.includes('aman')) return 0;
                     if (titleStr.includes('crisis') || titleStr.includes('krisis') || titleStr.includes('sangat')) return 2;
-                    return 1; // High Risk
+                    return 1;
                 };
                 return getOrder(a) - getOrder(b);
             });
@@ -1847,7 +2150,7 @@
             sortedList.forEach((item) => {
                 const titleText = typeof item.title === 'string' ? item.title : item.title[currentLang];
                 const col = getClusterColor(clusterOverlay, item.id);
-                
+
                 const r = document.createElement('div');
                 r.className = 'legend-row';
                 r.innerHTML = `
@@ -1885,11 +2188,9 @@
     }
 
     function initMap() {
-        // Centered around geographic coordinates of Indonesia
         mapObject = L.map('spatial-map', { zoomControl: false }).setView([-2.5489, 118.0149], 5);
         L.control.zoom({ position: 'topright' }).addTo(mapObject);
 
-        // Standard light mode map layers
         L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
             maxZoom: 20
@@ -1904,10 +2205,10 @@
                 layer.bindTooltip(() => {
                     const prov = getProvData(fName);
                     if (!prov) return `<strong>${mapped}</strong>`;
-                    
+
                     let content = `<div style="font-family: 'Inter', sans-serif;">`;
                     content += `<strong style="font-size: 13px; color: var(--text-primary); display: block; margin-bottom: 4px;">${mapped}</strong>`;
-                    
+
                     if (clusterOverlay !== 'none') {
                         const idx = prov[clusterOverlay];
                         const keyLabel = clusterOverlay === 'Klaster_KMeans' ? 'K-Means'
@@ -1935,7 +2236,7 @@
                         }
                         content += `<span style="font-size: 11px; color: var(--text-secondary);">${metricLabel}: <strong style="color: var(--primary-color);">${formattedVal}</strong></span>`;
                     }
-                    
+
                     content += `</div>`;
                     return content;
                 }, {
@@ -1961,7 +2262,6 @@
             }
         }).addTo(mapObject);
 
-        // Bind events to dropdown selectors
         const metricSel = document.getElementById('map-metric-selector');
         const clusterSel = document.getElementById('map-cluster-selector');
 
@@ -1981,54 +2281,121 @@
     }
 
     // ----------------------------------------------------
-    // Growth Predictor Model Engine Interface
+    // Growth Predictor Model Engine Interface & Sync
     // ----------------------------------------------------
-    const ageSlider = document.getElementById('slider-age');
-    const heightSlider = document.getElementById('slider-height');
-    const weightSlider = document.getElementById('slider-weight');
-    const ageValLabel = document.getElementById('lbl-age-val');
-    const heightValLabel = document.getElementById('lbl-height-val');
-    const weightValLabel = document.getElementById('lbl-weight-val');
-    const maleBtn = document.getElementById('btn-gender-male');
-    const femaleBtn = document.getElementById('btn-gender-female');
+    const ageSliderClass = document.getElementById('slider-age-class');
+    const heightSliderClass = document.getElementById('slider-height-class');
+    const weightSliderClass = document.getElementById('slider-weight-class');
+    const ageValLabelClass = document.getElementById('lbl-age-val-class');
+    const heightValLabelClass = document.getElementById('lbl-height-val-class');
+    const weightValLabelClass = document.getElementById('lbl-weight-val-class');
+    const maleBtnClass = document.getElementById('btn-gender-male-class');
+    const femaleBtnClass = document.getElementById('btn-gender-female-class');
 
-    maleBtn.addEventListener('click', () => {
+    const ageSliderReg = document.getElementById('slider-age-reg');
+    const heightSliderReg = document.getElementById('slider-height-reg');
+    const weightSliderReg = document.getElementById('slider-weight-reg');
+    const ageValLabelReg = document.getElementById('lbl-age-val-reg');
+    const heightValLabelReg = document.getElementById('lbl-height-val-reg');
+    const weightValLabelReg = document.getElementById('lbl-weight-val-reg');
+    const maleBtnReg = document.getElementById('btn-gender-male-reg');
+    const femaleBtnReg = document.getElementById('btn-gender-female-reg');
+
+    function syncForms(source) {
+        const targetGender = selectedGender;
+
+        if (source === 'class') {
+            ageSliderReg.value = ageSliderClass.value;
+            heightSliderReg.value = heightSliderClass.value;
+            weightSliderReg.value = weightSliderClass.value;
+
+            maleBtnReg.classList.toggle('active', targetGender === 'Laki-laki');
+            maleBtnReg.setAttribute('aria-checked', targetGender === 'Laki-laki' ? 'true' : 'false');
+            femaleBtnReg.classList.toggle('active', targetGender === 'Perempuan');
+            femaleBtnReg.setAttribute('aria-checked', targetGender === 'Perempuan' ? 'true' : 'false');
+        } else {
+            ageSliderClass.value = ageSliderReg.value;
+            heightSliderClass.value = heightSliderReg.value;
+            weightSliderClass.value = weightSliderReg.value;
+
+            maleBtnClass.classList.toggle('active', targetGender === 'Laki-laki');
+            maleBtnClass.setAttribute('aria-checked', targetGender === 'Laki-laki' ? 'true' : 'false');
+            femaleBtnClass.classList.toggle('active', targetGender === 'Perempuan');
+            femaleBtnClass.setAttribute('aria-checked', targetGender === 'Perempuan' ? 'true' : 'false');
+        }
+
+        const age = ageSliderClass.value;
+        const height = parseFloat(heightSliderClass.value).toFixed(1);
+        const weight = parseFloat(weightSliderClass.value).toFixed(1);
+
+        ageValLabelClass.textContent = age + (currentLang === 'id' ? ' bulan' : ' months');
+        ageValLabelReg.textContent = age + (currentLang === 'id' ? ' bulan' : ' months');
+
+        heightValLabelClass.textContent = height + ' cm';
+        heightValLabelReg.textContent = height + ' cm';
+
+        weightValLabelClass.textContent = weight + ' kg';
+        weightValLabelReg.textContent = weight + ' kg';
+    }
+
+    maleBtnClass.addEventListener('click', () => {
         selectedGender = 'Laki-laki';
-        maleBtn.classList.add('active');
-        maleBtn.setAttribute('aria-checked', 'true');
-        femaleBtn.classList.remove('active');
-        femaleBtn.setAttribute('aria-checked', 'false');
+        syncForms('class');
         runModelInference();
     });
 
-    femaleBtn.addEventListener('click', () => {
+    femaleBtnClass.addEventListener('click', () => {
         selectedGender = 'Perempuan';
-        femaleBtn.classList.add('active');
-        femaleBtn.setAttribute('aria-checked', 'true');
-        maleBtn.classList.remove('active');
-        maleBtn.setAttribute('aria-checked', 'false');
+        syncForms('class');
         runModelInference();
     });
 
-    ageSlider.addEventListener('input', (e) => {
-        ageValLabel.textContent = e.target.value + (currentLang === 'id' ? ' bulan' : ' months');
+    ageSliderClass.addEventListener('input', () => {
+        syncForms('class');
         runModelInference();
     });
 
-    heightSlider.addEventListener('input', (e) => {
-        heightValLabel.textContent = parseFloat(e.target.value).toFixed(1) + ' cm';
+    heightSliderClass.addEventListener('input', () => {
+        syncForms('class');
         runModelInference();
     });
 
-    weightSlider.addEventListener('input', (e) => {
-        weightValLabel.textContent = parseFloat(e.target.value).toFixed(1) + ' kg';
+    weightSliderClass.addEventListener('input', () => {
+        syncForms('class');
+        runModelInference();
+    });
+
+    maleBtnReg.addEventListener('click', () => {
+        selectedGender = 'Laki-laki';
+        syncForms('reg');
+        runModelInference();
+    });
+
+    femaleBtnReg.addEventListener('click', () => {
+        selectedGender = 'Perempuan';
+        syncForms('reg');
+        runModelInference();
+    });
+
+    ageSliderReg.addEventListener('input', () => {
+        syncForms('reg');
+        runModelInference();
+    });
+
+    heightSliderReg.addEventListener('input', () => {
+        syncForms('reg');
+        runModelInference();
+    });
+
+    weightSliderReg.addEventListener('input', () => {
+        syncForms('reg');
         runModelInference();
     });
 
     function runModelInference() {
-        const age = parseInt(ageSlider.value);
-        const height = parseFloat(heightSlider.value);
-        const weight = parseFloat(weightSlider.value);
+        const age = parseInt(ageSliderClass.value);
+        const height = parseFloat(heightSliderClass.value);
+        const weight = parseFloat(weightSliderClass.value);
 
         try {
             const res = predictStunting(selectedGender, age, height, weight);
@@ -2047,10 +2414,8 @@
         const pointerHaz = document.getElementById('pointer-z-haz');
         const pointerWaz = document.getElementById('pointer-z-waz');
 
-        // Style status badges
         badge.className = 'status-badge';
-        
-        // Translate child classification status
+
         const translatedClass = classTranslations[currentLang][res.class] || res.class;
         badge.textContent = translatedClass;
 
@@ -2068,16 +2433,13 @@
         }
         badge.classList.add(cClass);
 
-        // Probability confidence bar
         confidenceLabel.textContent = res.confidence.toFixed(2) + '%';
         confidenceBar.style.width = res.confidence + '%';
         confidenceBar.style.backgroundColor = barColor;
 
-        // Show continuous Z-Scores values
         hazText.textContent = (res.haz > 0 ? '+' : '') + res.haz.toFixed(2) + ' SD';
         wazText.textContent = (res.waz > 0 ? '+' : '') + res.waz.toFixed(2) + ' SD';
 
-        // Scale maps [-4.0, +4.0] to [0%, 100%]
         const hazPercent = Math.min(Math.max((res.haz + 4) / 8 * 100, 0), 100);
         const wazPercent = Math.min(Math.max((res.waz + 4) / 8 * 100, 0), 100);
 
@@ -2164,7 +2526,6 @@
     function setLanguage(lang) {
         currentLang = lang;
 
-        // Toggle button states
         const btnId = document.getElementById('btn-lang-id');
         const btnEn = document.getElementById('btn-lang-en');
         if (btnId && btnEn) {
@@ -2172,7 +2533,6 @@
             btnEn.classList.toggle('active', lang === 'en');
         }
 
-        // Translate nodes with data-lang-id
         document.querySelectorAll('[data-lang-id]').forEach(el => {
             const id = el.getAttribute('data-lang-id');
             if (TRANSLATIONS[lang] && TRANSLATIONS[lang][id]) {
@@ -2189,20 +2549,20 @@
             }
         });
 
-        // Translate search input placeholder
-        const searchInput = document.getElementById('map-search-input');
-        if (searchInput) {
-            searchInput.placeholder = lang === 'id' ? 'Cari Provinsi (misal: Jawa Barat)...' : 'Search Province (e.g. West Java)...';
+        // Translate current page title header dynamically based on active section
+        const activeNav = document.querySelector('.nav-item.active');
+        if (activeNav) {
+            const targetId = activeNav.getAttribute('data-target');
+            updateTopbarTitle(targetId);
         }
 
-        // Translate slider output labels
-        ageValLabel.textContent = ageSlider.value + (lang === 'id' ? ' bulan' : ' months');
+        const ageVal = ageSliderClass.value;
+        ageValLabelClass.textContent = ageVal + (lang === 'id' ? ' bulan' : ' months');
+        ageValLabelReg.textContent = ageVal + (lang === 'id' ? ' bulan' : ' months');
 
-        // Update map features overlay & details
         updateMapLegend();
         updateClusterProfilePanel();
 
-        // Update details descriptive panels
         const pData = getProvData(activeProvince);
         if (pData) {
             renderClusterDetail('kmeans', 'Klaster_KMeans', pData.Klaster_KMeans);
@@ -2210,10 +2570,9 @@
             renderClusterDetail('hc', 'Klaster_HC', pData.Klaster_HC);
         }
 
-        // Translate Radar chart
         if (comparisonChart) {
             comparisonChart.options.plugins.legend.labels.color = '#0f172a';
-            comparisonChart.data.labels = lang === 'id' 
+            comparisonChart.data.labels = lang === 'id'
                 ? ['Stunting (%)', 'KEK Ibu Hamil (%)', 'Imunisasi Dasar (%)', 'BBLR (%)']
                 : ['Stunting (%)', 'Maternal CED (%)', 'Basic Immunization (%)', 'Low Birth Weight (%)'];
             comparisonChart.data.datasets[1].label = lang === 'id' ? 'Rata-Rata Nasional' : 'National Average';
@@ -2223,22 +2582,104 @@
             comparisonChart.update();
         }
 
-        // Re-run diagnostic updates for status/descriptions translations
         runModelInference();
+    }
+
+    function updateTopbarTitle(targetId) {
+        const titleHeader = document.getElementById('current-page-title');
+        if (!titleHeader) return;
+
+        if (targetId === 'section-home') {
+            titleHeader.textContent = currentLang === 'id'
+                ? 'Portal Analisis Stunting & Skrining Nasional'
+                : 'National Stunting Analytics & Screening Portal';
+        } else if (targetId === 'section-clustering') {
+            titleHeader.textContent = currentLang === 'id'
+                ? 'Analisis Spasial & Pemodelan Klaster Regional'
+                : 'Spatial Analysis & Regional Cluster Modeling';
+        } else if (targetId === 'section-classification') {
+            titleHeader.textContent = currentLang === 'id'
+                ? 'Diagnosa & Klasifikasi Risiko Stunting Balita'
+                : 'Diagnosis & Classification of Child Stunting Risk';
+        } else if (targetId === 'section-regression') {
+            titleHeader.textContent = currentLang === 'id'
+                ? 'Estimasi Kuantitatif Z-Score Antropometri'
+                : 'Quantitative Anthropometric Z-Score Estimation';
+        }
+    }
+
+    function initNavigation() {
+        document.querySelectorAll('.nav-item').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('data-target');
+
+                // Toggle active nav class
+                document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+                this.classList.add('active');
+
+                // Toggle active section class
+                document.querySelectorAll('.page-section').forEach(s => s.classList.remove('active'));
+                const targetSection = document.getElementById(targetId);
+                if (targetSection) {
+                    targetSection.classList.add('active');
+                }
+
+                // Update topbar title
+                updateTopbarTitle(targetId);
+
+                // Leaflet Map invalidateSize bug prevention
+                if (targetId === 'section-clustering' && mapObject) {
+                    setTimeout(() => {
+                        mapObject.invalidateSize();
+                    }, 100);
+                }
+            });
+        });
+    }
+
+    function initTabs() {
+        const triggers = document.querySelectorAll('.tab-trigger');
+        triggers.forEach(trig => {
+            trig.addEventListener('click', function() {
+                const parent = this.closest('.card-panel');
+
+                // Deactivate all triggers in this panel
+                parent.querySelectorAll('.tab-trigger').forEach(t => {
+                    t.classList.remove('active');
+                    t.setAttribute('aria-selected', 'false');
+                });
+
+                // Activate clicked trigger
+                this.classList.add('active');
+                this.setAttribute('aria-selected', 'true');
+
+                // Hide all panels
+                parent.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+
+                // Show matched panel
+                const targetId = this.getAttribute('aria-controls');
+                const targetPanel = document.getElementById(targetId);
+                if (targetPanel) {
+                    targetPanel.classList.add('active');
+                }
+            });
+        });
     }
 
     // ----------------------------------------------------
     // Start Application
     // ----------------------------------------------------
     window.addEventListener('DOMContentLoaded', () => {
+        initNavigation();
+        initTabs();
         initProvinceSelector();
         initRadarChart();
         initMap();
-        
-        // Initialize default active province data immediately on load
+
         changeActiveProvince(activeProvince);
-        
-        // Bind language toggle events
+
         const btnId = document.getElementById('btn-lang-id');
         const btnEn = document.getElementById('btn-lang-en');
         if (btnId && btnEn) {
@@ -2246,10 +2687,8 @@
             btnEn.addEventListener('click', () => setLanguage('en'));
         }
 
-        // Set initial language (Indonesian)
         setLanguage('id');
 
-        // Glossary details toggle listener
         const glossaryDetails = document.getElementById('glossary-details');
         if (glossaryDetails) {
             glossaryDetails.addEventListener('toggle', (e) => {
