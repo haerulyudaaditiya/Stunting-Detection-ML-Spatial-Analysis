@@ -43,8 +43,11 @@ class StuntingPredictor {
         } else if (modelName === 'xgb') {
             const base = modelData.base_scores || modelData.base_score;
             scores = Array.isArray(base) ? [...base] : [base, base, base, base]; // XGB base_score
-            for (const tree of modelData.trees) {
-                scores[tree.tree_info] += this.evalXgbClassNode(tree, features);
+            // XGB multi-class trees cycle through classes: tree i → class (i % num_classes)
+            for (let i = 0; i < modelData.trees.length; i++) {
+                const tree = modelData.trees[i];
+                const classIdx = tree.tree_info !== undefined ? tree.tree_info : (i % 4);
+                scores[classIdx] += this.evalXgbClassNode(tree, features);
             }
         } else if (modelName === 'lgbm') {
             for (const tree of modelData.tree_info) {
@@ -125,7 +128,9 @@ class StuntingPredictor {
                 nodeIdx |= (1 << depth);
             }
         }
-        return tree.leaf_values[nodeIdx];
+        // Multi-class: leaf_values are interleaved [c0_l0, c1_l0, c2_l0, c3_l0, c0_l1, ...]
+        const base = nodeIdx * 4;
+        return tree.leaf_values.slice(base, base + 4);
     }
 
     // --- REGRESSION INFERENCE LOGIC --- //
