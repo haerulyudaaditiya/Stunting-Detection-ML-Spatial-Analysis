@@ -21,6 +21,7 @@ This repository supports ICDEES 2026 paper 1571345184: provincial clustering, st
 
 ## Repository maintenance
 
+- Write repository documentation, code comments, and commit messages in English. Preserve original source labels and quoted material.
 - Maintain one root `README.md` and one `requirements.txt`. Keep documentation concise and based on files and behavior that actually exist.
 - Respect `.gitignore` for local conference documents, scratch files, tool settings, and detailed outputs. Review its exceptions before changing artifact tracking.
 - Report what changed and what was verified. Distinguish static inspection, automated checks, browser checks, and unperformed checks.
