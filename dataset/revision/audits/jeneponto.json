@@ -1,0 +1,109 @@
+{
+  "rows": 31740,
+  "rows_age_0_to_24": 10429,
+  "rows_age_24": 666,
+  "date_weights_restored": 20158,
+  "weight_parse_errors": {},
+  "source_label_mismatches": 449,
+  "source_label_comparison_denominator": 10426,
+  "primary_source_label_mismatches": 430,
+  "primary_source_label_comparison_denominator": 9760,
+  "age24_source_label_mismatches": 19,
+  "flags": {
+    "Flag_Age": 21311,
+    "Flag_Gender": 0,
+    "Flag_Height": 0,
+    "Flag_Weight": 0,
+    "Flag_Source_Label": 0,
+    "Flag_HAZ": 11,
+    "Flag_WAZ": 8
+  },
+  "valid_all_age_0_to_24": {
+    "Classification": 10421,
+    "HAZ": 10426,
+    "WAZ": 10424
+  },
+  "valid_primary_age_lt_24": {
+    "Classification": 9755,
+    "HAZ": 9760,
+    "WAZ": 9758
+  },
+  "valid_sensitivity_age_24": {
+    "Classification": 666,
+    "HAZ": 666,
+    "WAZ": 666
+  },
+  "primary_binary_counts": {
+    "0": 7311,
+    "1": 2444
+  },
+  "primary_profiles": {
+    "four_features": {
+      "unique": 7318,
+      "repeat_excess": 2437,
+      "max_group_size": 10
+    },
+    "sex_age_height": {
+      "unique": 3190,
+      "repeat_excess": 6565,
+      "max_group_size": 35
+    },
+    "sex_age_weight": {
+      "unique": 1840,
+      "repeat_excess": 7915,
+      "max_group_size": 47
+    }
+  },
+  "all_age_0_to_24_profiles": {
+    "four_features": {
+      "unique": 7790,
+      "repeat_excess": 2631,
+      "max_group_size": 10
+    },
+    "sex_age_height": {
+      "unique": 3379,
+      "repeat_excess": 7042,
+      "max_group_size": 35
+    },
+    "sex_age_weight": {
+      "unique": 1947,
+      "repeat_excess": 8474,
+      "max_group_size": 47
+    }
+  },
+  "age_groups": {
+    "0–5": 1258,
+    "6–11": 2306,
+    "12–17": 2869,
+    "18–23": 3330,
+    "24": 666
+  },
+  "reference": "Primary WHO monthly LMS: length below 24 months, height at 24; restricted WAZ tails.",
+  "limitations": [
+    "No unique child identifier: No. is a source row ordinal; repeated profiles are not proven repeat visits.",
+    "Measurement position is unavailable; values are used as recorded, with age-based reference assumptions and no 0.7 cm conversion.",
+    "Monthly recalculated Z-scores are not exact-day clinical gold standards; supplied binary labels are preserved.",
+    "A single regional dataset does not establish national representativeness or prospective prediction."
+  ],
+  "source": {
+    "url": "https://data.mendeley.com/public-files/datasets/wzwpc9j5bx/files/43dc7b64-13fe-4ab7-ac00-1eb26c98f612/file_downloaded",
+    "sha256": "4bd5e56aa0839f3ecdb39cc60dfc194a5bb12e0f300b49c8fc7ec0e43d010faf",
+    "bytes": 1992815,
+    "retrieved_at_utc": "2026-10-13T02:47:10.441224+00:00",
+    "verified_at_utc": "2026-10-13T06:25:42.138597+00:00",
+    "doi": "10.17632/wzwpc9j5bx.4",
+    "landing_page": "https://data.mendeley.com/datasets/wzwpc9j5bx/4",
+    "title": "Dataset Stunting and Nutritional Status of Toddler from Jeneponto Regency, South Sulawesi, Indonesia",
+    "creators": [
+      "Asmaul Husna RS",
+      "Purnamawati Purnamawati",
+      "Hendra Jaya",
+      "Anas Arfandi",
+      "Iwan Suhardi",
+      "Slamet Widodo",
+      "Syahrani Lonang"
+    ],
+    "licence": "CC BY 4.0",
+    "cohort": "Jeneponto 2024, source measurements; not a national sample"
+  }
+}

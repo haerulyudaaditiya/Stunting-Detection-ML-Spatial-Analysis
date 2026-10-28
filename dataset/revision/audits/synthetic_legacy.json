@@ -1,0 +1,60 @@
+{
+  "source": "dataset/Stunting Wasting Dataset (Synthetic)/stunting_wasting_dataset.csv",
+  "sha256": "1093bc5463e4740c84f8e054edacf12212e8285cd30d0b8cbaa39e1375000f1f",
+  "rows": 100000,
+  "reference": "legacy",
+  "original_classification_labels_preserved": true,
+  "class_counts": {
+    "Normal": 72312,
+    "Stunted": 16160,
+    "Severely Stunted": 5819,
+    "Tall": 5709
+  },
+  "label_vs_recomputed_haz_mismatches": 2107,
+  "profiles": {
+    "four_features": {
+      "unique": 92692,
+      "repeat_excess": 7308,
+      "max_group_size": 5
+    },
+    "sex_age_height": {
+      "unique": 8545,
+      "repeat_excess": 91455,
+      "max_group_size": 28
+    },
+    "sex_age_weight": {
+      "unique": 4091,
+      "repeat_excess": 95909,
+      "max_group_size": 60
+    }
+  },
+  "age_counts": {
+    "0": 3897,
+    "1": 3967,
+    "2": 3975,
+    "3": 4044,
+    "4": 4115,
+    "5": 4093,
+    "6": 3943,
+    "7": 4041,
+    "8": 3911,
+    "9": 4024,
+    "10": 4028,
+    "11": 4041,
+    "12": 4148,
+    "13": 3865,
+    "14": 3926,
+    "15": 4060,
+    "16": 4024,
+    "17": 4022,
+    "18": 3994,
+    "19": 3963,
+    "20": 3902,
+    "21": 4019,
+    "22": 4075,
+    "23": 3969,
+    "24": 3954
+  },
+  "finite_haz": 100000,
+  "finite_waz": 100000
+}

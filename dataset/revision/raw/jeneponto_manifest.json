@@ -1,0 +1,21 @@
+{
+  "url": "https://data.mendeley.com/public-files/datasets/wzwpc9j5bx/files/43dc7b64-13fe-4ab7-ac00-1eb26c98f612/file_downloaded",
+  "sha256": "4bd5e56aa0839f3ecdb39cc60dfc194a5bb12e0f300b49c8fc7ec0e43d010faf",
+  "bytes": 1992815,
+  "retrieved_at_utc": "2026-10-13T02:47:10.441224+00:00",
+  "verified_at_utc": "2026-10-13T06:25:42.138597+00:00",
+  "doi": "10.17632/wzwpc9j5bx.4",
+  "landing_page": "https://data.mendeley.com/datasets/wzwpc9j5bx/4",
+  "title": "Dataset Stunting and Nutritional Status of Toddler from Jeneponto Regency, South Sulawesi, Indonesia",
+  "creators": [
+    "Asmaul Husna RS",
+    "Purnamawati Purnamawati",
+    "Hendra Jaya",
+    "Anas Arfandi",
+    "Iwan Suhardi",
+    "Slamet Widodo",
+    "Syahrani Lonang"
+  ],
+  "licence": "CC BY 4.0",
+  "cohort": "Jeneponto 2024, source measurements; not a national sample"
+}
