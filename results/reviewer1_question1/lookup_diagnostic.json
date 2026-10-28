@@ -1,0 +1,51 @@
+{
+  "purpose": "Post-hoc explanatory diagnostic, not model selection or clinical validation.",
+  "rule": "Look up the training label for an identical sex-age-height profile; use training majority class only for unseen profiles.",
+  "source_sha256": "1093bc5463e4740c84f8e054edacf12212e8285cd30d0b8cbaa39e1375000f1f",
+  "split": "Original stratified 5-fold, shuffle=True, seed=42",
+  "folds": [
+    {
+      "fold": 1,
+      "n_valid": 20000,
+      "seen_profile_rows": 19995,
+      "unseen_profile_rows": 5,
+      "fallback_from_training": "Normal",
+      "accuracy": 0.99995
+    },
+    {
+      "fold": 2,
+      "n_valid": 20000,
+      "seen_profile_rows": 19998,
+      "unseen_profile_rows": 2,
+      "fallback_from_training": "Normal",
+      "accuracy": 0.9999
+    },
+    {
+      "fold": 3,
+      "n_valid": 20000,
+      "seen_profile_rows": 19996,
+      "unseen_profile_rows": 4,
+      "fallback_from_training": "Normal",
+      "accuracy": 1.0
+    },
+    {
+      "fold": 4,
+      "n_valid": 20000,
+      "seen_profile_rows": 19997,
+      "unseen_profile_rows": 3,
+      "fallback_from_training": "Normal",
+      "accuracy": 1.0
+    },
+    {
+      "fold": 5,
+      "n_valid": 20000,
+      "seen_profile_rows": 19999,
+      "unseen_profile_rows": 1,
+      "fallback_from_training": "Normal",
+      "accuracy": 1.0
+    }
+  ],
+  "pooled_accuracy": 0.99997,
+  "pooled_macro_f1": 0.9999303535673167,
+  "interpretation_limit": "Shows that a lookup can achieve high accuracy on this random split; does not establish that RF memorized or reveal the original label generator."
+}

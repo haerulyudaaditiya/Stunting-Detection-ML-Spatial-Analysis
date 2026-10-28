@@ -1,0 +1,4 @@
+Algorithm A,Algorithm B,ARI
+K-Means,GMM,0.19971469329529243
+K-Means,Hierarchical,0.03296016366426095
+GMM,Hierarchical,0.5458960660514813

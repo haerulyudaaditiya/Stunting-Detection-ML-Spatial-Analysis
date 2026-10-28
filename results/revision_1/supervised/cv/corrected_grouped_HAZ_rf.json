@@ -1,0 +1,77 @@
+{
+  "protocol": "grouped",
+  "reference": "corrected",
+  "task": "HAZ",
+  "model": "Random Forest",
+  "fingerprint": "5834166a3c526cf8fa5a8eec733a751dee68c07f0d8a29145804d4c8c0741be8",
+  "mean": {
+    "mae": 0.03733451709345875,
+    "rmse": 0.04182848305713267,
+    "r2": 0.9995475209727142
+  },
+  "sd": {
+    "mae": 0.0009566680045702504,
+    "rmse": 0.002662156443316434,
+    "r2": 5.9062486411716364e-05
+  },
+  "folds": [
+    {
+      "mae": 0.035636637295253265,
+      "rmse": 0.038724723109461734,
+      "r2": 0.9996208664604909
+    },
+    {
+      "mae": 0.038384059374998,
+      "rmse": 0.04664627502029153,
+      "r2": 0.999442949453315
+    },
+    {
+      "mae": 0.037658287278383676,
+      "rmse": 0.04102137873581467,
+      "r2": 0.9995656991615456
+    },
+    {
+      "mae": 0.037030842372836575,
+      "rmse": 0.04050087301984403,
+      "r2": 0.9995729069407787
+    },
+    {
+      "mae": 0.03796275914582227,
+      "rmse": 0.04224916540025141,
+      "r2": 0.9995351828474409
+    }
+  ],
+  "training_seconds": 4.069053281999004,
+  "diagnostics": {
+    "n": 100000,
+    "unique_decision_groups": 8545,
+    "validation_input_overlap_by_fold": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "max_validation_input_overlap": 0.0
+  },
+  "parameters": {
+    "bootstrap": true,
+    "ccp_alpha": 0.0,
+    "criterion": "squared_error",
+    "max_depth": null,
+    "max_features": 1.0,
+    "max_leaf_nodes": null,
+    "max_samples": null,
+    "min_impurity_decrease": 0.0,
+    "min_samples_leaf": 1,
+    "min_samples_split": 2,
+    "min_weight_fraction_leaf": 0.0,
+    "monotonic_cst": null,
+    "n_estimators": 30,
+    "n_jobs": 4,
+    "oob_score": false,
+    "random_state": 42,
+    "verbose": 0,
+    "warm_start": false
+  }
+}

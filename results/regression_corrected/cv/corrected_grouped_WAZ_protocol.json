@@ -1,0 +1,11 @@
+{
+  "versions": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.3",
+    "scikit-learn": "1.8.0",
+    "xgboost": "3.2.0",
+    "lightgbm": "4.6.0",
+    "catboost": "1.2.10"
+  },
+  "validation_folds_sha256": "bf9523afe7c0ca67ac449a171c9c0f5720254e78e3fc591acbb54f4de1dd4ea7"
+}

@@ -1,0 +1,256 @@
+{
+  "tests": {
+    "python_unittest": 24,
+    "node_tests": 6,
+    "all_passed": true
+  },
+  "native_javascript_parity": {
+    "checked_at_utc": "2026-10-13T06:31:22.504Z",
+    "tolerance": 1e-05,
+    "predictor_sha256": "cb6322f896ffad3f7bbff7f41f01552b9a678cec86696ff81ed4d1e418e3a807",
+    "checks": [
+      {
+        "filename": "rf.json",
+        "predictions": 60,
+        "maximum_absolute_error": 1.1102230246251565e-16,
+        "sha256": "a19e19d313286c827efc2fdae0625c65a6b99979938343d7fc683734ee1e4bef"
+      },
+      {
+        "filename": "et.json",
+        "predictions": 60,
+        "maximum_absolute_error": 2.220446049250313e-16,
+        "sha256": "05744da32fbc498931178ee27d3e0a90b4b42cc73918c2f5cc4968ba9da6c3be"
+      },
+      {
+        "filename": "xgb.json",
+        "predictions": 60,
+        "maximum_absolute_error": 7.78292139624881e-08,
+        "sha256": "28f21715c3a7ea6697c0a18f7399782b3460e05fb84a5f41547994ec3b28a4f9"
+      },
+      {
+        "filename": "lgbm.json",
+        "predictions": 60,
+        "maximum_absolute_error": 1.734723475976807e-18,
+        "sha256": "309b68a34109c824a5be9ae175f5cb42c71105c7d77136b10a6f9295149b3a72"
+      },
+      {
+        "filename": "cb.json",
+        "predictions": 60,
+        "maximum_absolute_error": 1.1102230246251565e-16,
+        "sha256": "893831594b8b63fc04bf86552dd6ed255d4be4d69701189cbd4125a6614934b3"
+      },
+      {
+        "filename": "rf_haz.json",
+        "predictions": 60,
+        "maximum_absolute_error": 2.220446049250313e-16,
+        "sha256": "f06d0657e2b8f6bc82d31c772a155cf7310203145dad816ecf82046eabdca4a1"
+      },
+      {
+        "filename": "xgb_haz.json",
+        "predictions": 60,
+        "maximum_absolute_error": 8.121035417474332e-07,
+        "sha256": "bf91edf9489bd6cebd3be3fab312063fc9b9b72b7e5935c0ef215e7d5fa6a995"
+      },
+      {
+        "filename": "lgbm_haz.json",
+        "predictions": 60,
+        "maximum_absolute_error": 0,
+        "sha256": "00fb298d28d27d66f9c9a0329d43a2c36faf3a7b22ff9e55c00b5d2e62385450"
+      },
+      {
+        "filename": "cb_haz.json",
+        "predictions": 60,
+        "maximum_absolute_error": 0,
+        "sha256": "c243a2d8a750eb2a679c97768cc9b17387a9d9116bee6d53e4813b930963cb1a"
+      },
+      {
+        "filename": "rf_waz.json",
+        "predictions": 60,
+        "maximum_absolute_error": 4.440892098500626e-16,
+        "sha256": "fd26835614df48788265b4e6d52fa0772ec249c0e73a32a817cd25c1f079c23b"
+      },
+      {
+        "filename": "xgb_waz.json",
+        "predictions": 60,
+        "maximum_absolute_error": 9.866397379099112e-07,
+        "sha256": "5981f549bd311187e668c922beede4292be0bb7de2c9d6f502d611d1320b58ae"
+      },
+      {
+        "filename": "lgbm_waz.json",
+        "predictions": 60,
+        "maximum_absolute_error": 0,
+        "sha256": "dec42a4c1ef3c6f86bc4cb797c0c7ec957781a20141ba6230cd77763b877e250"
+      },
+      {
+        "filename": "cb_waz.json",
+        "predictions": 60,
+        "maximum_absolute_error": 0,
+        "sha256": "0d9c7b0ffdd7b0bca2a8e7a8a62ba609dd331048d435c3fc2aeec3b01347793c"
+      }
+    ],
+    "total_predictions": 780
+  },
+  "dashboard": {
+    "checks": [
+      {
+        "section": "classification",
+        "visible": true
+      },
+      {
+        "section": "regression",
+        "visible": true
+      },
+      {
+        "section": "clustering",
+        "visible": true
+      }
+    ],
+    "console_errors": [],
+    "page_errors": [],
+    "selected_models": {
+      "classification": "et",
+      "regression": "selected"
+    },
+    "result": "Normal",
+    "probability": "100.00%",
+    "z_scores": {
+      "HAZ": "-0.69 SD",
+      "WAZ": "-0.49 SD"
+    },
+    "map_tile_images": 0,
+    "province_options": 34,
+    "english_probability_label": "Model class probability (uncalibrated)",
+    "ui_native_fixture": {
+      "features": {
+        "Gender_Encoded": 0,
+        "Age (months)": 1.0,
+        "Height (cm)": 54.6,
+        "Weight (kg)": 7.0
+      },
+      "class": "Normal",
+      "probability_percent": 100.0
+    },
+    "age_limits": [
+      {
+        "id": "slider-age-class",
+        "min": "0",
+        "max": "24"
+      },
+      {
+        "id": "slider-age-reg",
+        "min": "0",
+        "max": "24"
+      }
+    ],
+    "viewport_768": "rendered"
+  },
+  "original_sources_unchanged": {
+    "paper/rev_1/1571345184 paper.pdf": true,
+    "paper/rev_1/ICDEES v6.pdf": true,
+    "paper/rev_1/ICDEES v6.docx": true
+  },
+  "original_user_gitignore_unchanged": true,
+  "manual_author_steps": [
+    "Provide author emails and verify EDAS metadata",
+    "Review revised scientific claims and disclosure",
+    "Complete and sign competing interests",
+    "Obtain genuine Turnitin similarity and AI reports",
+    "Register/pay and submit by organizer deadlines"
+  ],
+  "checked_at_utc": "2026-10-13T07:46:47.110134+00:00",
+  "documents": {
+    "source_sha256": "156ad033f6d873144069bfaf1589a3f53c79b8a3bb2542bc04c1cc54a007c090",
+    "files": {
+      "1571345184_ICDEES2026_CompetingInterest_DRAFT.docx": {
+        "bytes": 38024,
+        "sha256": "5c0bd6d48cd22a182dd94ebadb0ea72bea08bed93e730d3ce004f29c0f0c307e"
+      },
+      "1571345184_ICDEES2026_CameraReady.docx": {
+        "bytes": 724171,
+        "sha256": "66fdc458324e0fe65dd7e72c84ca29044b01e9df0a9e79c76c4100830b9d45c8"
+      },
+      "1571345184_ICDEES2026_RevisedPaper.docx": {
+        "bytes": 724325,
+        "sha256": "94a9915cc797b0b6a98c1126bc644972df04fbbc67aef16e9d075683ecc73c58"
+      },
+      "1571345184_ICDEES2026_RevisionReport.docx": {
+        "bytes": 42551,
+        "sha256": "2604d80ceef41eba384576deae3e60f5d2c218f8a10a1eb71d9c2afa64e1f130"
+      },
+      "1571345184_ICDEES2026_CompetingInterest_DRAFT.pdf": {
+        "bytes": 74683,
+        "sha256": "0be31abc06b36e346792da463946c1af240534741ad647956a6c45dade2dbf6a",
+        "pages": 1,
+        "a4": true,
+        "size_within_limit": true
+      },
+      "1571345184_ICDEES2026_CameraReady.pdf": {
+        "bytes": 387065,
+        "sha256": "31bb7d9292e089ecba96871f725f7de538ee17d3ee86de3db21f53bc5a90d8d9",
+        "pages": 5,
+        "a4": true,
+        "size_within_limit": true,
+        "page_limit_satisfied": true
+      },
+      "1571345184_ICDEES2026_CameraReady.doc": {
+        "bytes": 240128,
+        "sha256": "8931a2b441c45c84a77fc1238e3dc903f4296e80f81621c2a670903533c9c08f",
+        "size_within_limit": true
+      },
+      "1571345184_ICDEES2026_RevisedPaper.pdf": {
+        "bytes": 387895,
+        "sha256": "172bbef58f0f75a1e1a657737497cd336311efd1977d60520406dc53a844cdd8",
+        "pages": 5,
+        "a4": true
+      },
+      "1571345184_ICDEES2026_RevisedPaper.doc": {
+        "bytes": 240640,
+        "sha256": "e35172be823bf9a6ad2f259a8826a4cacedc14e93330ca9909aad1204dc70061",
+        "size_within_limit": true
+      },
+      "1571345184_ICDEES2026_RevisionReport.pdf": {
+        "bytes": 139474,
+        "sha256": "db352f5d38b9428b94be29b5c839a08f218d4791a77991b1e78c74f5c4e56929",
+        "pages": 3,
+        "a4": true,
+        "size_within_limit": true
+      }
+    },
+    "manual_blockers": [
+      "All author emails and EDAS metadata must be checked by authors.",
+      "Competing-interest declaration requires actual answers and signature.",
+      "Turnitin similarity and AI reports must be obtained for the final camera ready.",
+      "Authors must review and approve every revised scientific statement and AI disclosure.",
+      "Registration/payment/presentation and copyright transfer remain external author actions."
+    ]
+  },
+  "document_review": {
+    "checked_at_utc": "2026-10-13T07:46:47.110134+00:00",
+    "clean_and_marked_scientific_content_identical": true,
+    "marked_only_extra_paragraph": "Revision key",
+    "individual_reviewer_responses": 18,
+    "abstract_words": 165,
+    "all_five_manuscript_pages_visually_inspected": true,
+    "table_columns_complete": true,
+    "figure_captions_kept_with_images": true,
+    "revision_report_page_references_checked": true,
+    "word97_roundtrip": {
+      "CameraReady": {
+        "source_doc_sha256": "8931a2b441c45c84a77fc1238e3dc903f4296e80f81621c2a670903533c9c08f",
+        "text_and_tables_retained": true,
+        "pages": 5,
+        "a4": true,
+        "layout_difference": "Minor line wrapping changes in LibreOffice; all content retained and page count unchanged."
+      },
+      "RevisedPaper": {
+        "source_doc_sha256": "e35172be823bf9a6ad2f259a8826a4cacedc14e93330ca9909aad1204dc70061",
+        "text_and_tables_retained": true,
+        "pages": 5,
+        "a4": true,
+        "layout_difference": "Minor line wrapping changes in LibreOffice; all content retained and page count unchanged."
+      }
+    }
+  },
+  "frozen_model_files_hash_checked": 26,
+  "git_diff_check_passed": true
+}

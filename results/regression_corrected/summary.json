@@ -1,0 +1,700 @@
+{
+  "purpose": "Corrected regression training and supplementary validation for Reviewer 2",
+  "targets": [
+    {
+      "target": "HAZ",
+      "changed_records": 3954,
+      "changed_below_24": 0,
+      "changed_age_24": 3954
+    },
+    {
+      "target": "WAZ",
+      "changed_records": 22063,
+      "changed_below_24": 21601,
+      "changed_age_24": 462
+    }
+  ],
+  "selection": {
+    "HAZ": "Random Forest",
+    "WAZ": "Random Forest"
+  },
+  "selection_basis": "Primary random five-fold CV on synthetic data; grouped CV supplementary; external data not used",
+  "cv_metrics": [
+    {
+      "protocol": "random",
+      "reference": "corrected",
+      "task": "HAZ",
+      "model": "Linear Regression",
+      "mae": 0.6200847816404083,
+      "rmse": 0.8381951171006976,
+      "r2": 0.8190745902127778,
+      "mae_sd": 0.002689753885957032,
+      "rmse_sd": 0.0063135705304491595,
+      "r2_sd": 0.0030290495908712758,
+      "training_seconds_5_folds": 0.09404505900602089
+    },
+    {
+      "protocol": "random",
+      "reference": "corrected",
+      "task": "HAZ",
+      "model": "Ridge Regression",
+      "mae": 0.6200841550352141,
+      "rmse": 0.838195117564499,
+      "r2": 0.819074590271985,
+      "mae_sd": 0.0026897290130463774,
+      "rmse_sd": 0.006313509148013774,
+      "r2_sd": 0.003029022349871758,
+      "training_seconds_5_folds": 0.07647964200441493
+    },
+    {
+      "protocol": "random",
+      "reference": "corrected",
+      "task": "HAZ",
+      "model": "Random Forest",
+      "mae": 0.00010639512137268565,
+      "rmse": 0.0008002000915595126,
+      "r2": 0.9999998327794313,
+      "mae_sd": 1.223914326415364e-06,
+      "rmse_sd": 9.520442192484184e-05,
+      "r2_sd": 3.948758894233374e-08,
+      "training_seconds_5_folds": 3.7522434320053435
+    },
+    {
+      "protocol": "random",
+      "reference": "corrected",
+      "task": "HAZ",
+      "model": "XGBoost",
+      "mae": 0.042182333359723934,
+      "rmse": 0.05686713712791366,
+      "r2": 0.9991669205511775,
+      "mae_sd": 0.0009794216085307658,
+      "rmse_sd": 0.0012194396541820069,
+      "r2_sd": 3.5256954601259154e-05,
+      "training_seconds_5_folds": 1.038632513002085
+    },
+    {
+      "protocol": "random",
+      "reference": "corrected",
+      "task": "HAZ",
+      "model": "LightGBM",
+      "mae": 0.07552343384273617,
+      "rmse": 0.09771155378365506,
+      "r2": 0.997539870627774,
+      "mae_sd": 0.0016675541089106686,
+      "rmse_sd": 0.0023153854382434716,
+      "r2_sd": 0.00012016893046498224,
+      "training_seconds_5_folds": 1.2193571509997128
+    },
+    {
+      "protocol": "random",
+      "reference": "corrected",
+      "task": "HAZ",
+      "model": "CatBoost",
+      "mae": 0.026598674237249497,
+      "rmse": 0.04076095660946072,
+      "r2": 0.9995721579943933,
+      "mae_sd": 0.00015412798968546273,
+      "rmse_sd": 0.0003839087226860366,
+      "r2_sd": 7.156920028917899e-06,
+      "training_seconds_5_folds": 27.45352663599624
+    },
+    {
+      "protocol": "random",
+      "reference": "corrected",
+      "task": "WAZ",
+      "model": "Linear Regression",
+      "mae": 0.5964514930433392,
+      "rmse": 0.8566160044103075,
+      "r2": 0.8605089104074812,
+      "mae_sd": 0.0023004657644856924,
+      "rmse_sd": 0.005276294117957122,
+      "r2_sd": 0.001780330961394376,
+      "training_seconds_5_folds": 0.045259168997290544
+    },
+    {
+      "protocol": "random",
+      "reference": "corrected",
+      "task": "WAZ",
+      "model": "Ridge Regression",
+      "mae": 0.5964505928374446,
+      "rmse": 0.8566160030735173,
+      "r2": 0.8605089106022298,
+      "mae_sd": 0.002300449986812576,
+      "rmse_sd": 0.0052762922978221855,
+      "r2_sd": 0.0017803493665092512,
+      "training_seconds_5_folds": 0.05654868800047552
+    },
+    {
+      "protocol": "random",
+      "reference": "corrected",
+      "task": "WAZ",
+      "model": "Random Forest",
+      "mae": 2.3712728558927507e-06,
+      "rmse": 0.00013614509672838193,
+      "r2": 0.9999999955350329,
+      "mae_sd": 1.2184239626778925e-06,
+      "rmse_sd": 6.96942887252109e-05,
+      "r2_sd": 3.222706189051108e-09,
+      "training_seconds_5_folds": 3.4245574360029423
+    },
+    {
+      "protocol": "random",
+      "reference": "corrected",
+      "task": "WAZ",
+      "model": "XGBoost",
+      "mae": 0.029301951722923138,
+      "rmse": 0.0394897358950828,
+      "r2": 0.9997034008726239,
+      "mae_sd": 0.000536320085219251,
+      "rmse_sd": 0.0009882733974276834,
+      "r2_sd": 1.447649926167956e-05,
+      "training_seconds_5_folds": 0.8931956909946166
+    },
+    {
+      "protocol": "random",
+      "reference": "corrected",
+      "task": "WAZ",
+      "model": "LightGBM",
+      "mae": 0.04594625523927211,
+      "rmse": 0.06096061883123227,
+      "r2": 0.9992934162917987,
+      "mae_sd": 0.0007813245682332927,
+      "rmse_sd": 0.0010551546029713055,
+      "r2_sd": 2.3589978500040838e-05,
+      "training_seconds_5_folds": 1.0496440249989973
+    },
+    {
+      "protocol": "random",
+      "reference": "corrected",
+      "task": "WAZ",
+      "model": "CatBoost",
+      "mae": 0.010320935662631908,
+      "rmse": 0.013098785685525638,
+      "r2": 0.9999673509302834,
+      "mae_sd": 0.0003138426927630184,
+      "rmse_sd": 0.0004252531035616891,
+      "r2_sd": 2.141930560448766e-06,
+      "training_seconds_5_folds": 24.47509696999623
+    },
+    {
+      "protocol": "grouped",
+      "reference": "corrected",
+      "task": "HAZ",
+      "model": "Linear Regression",
+      "mae": 0.6204069207315053,
+      "rmse": 0.838471124637657,
+      "r2": 0.8188531949155344,
+      "mae_sd": 0.009021919797289954,
+      "rmse_sd": 0.017143780102212163,
+      "r2_sd": 0.008026034956314413,
+      "training_seconds_5_folds": 0.04276431299513206
+    },
+    {
+      "protocol": "grouped",
+      "reference": "corrected",
+      "task": "HAZ",
+      "model": "Ridge Regression",
+      "mae": 0.6204062828131816,
+      "rmse": 0.8384711022326838,
+      "r2": 0.8188532013294687,
+      "mae_sd": 0.00902236078848775,
+      "rmse_sd": 0.017144224137772873,
+      "r2_sd": 0.00802620487156267,
+      "training_seconds_5_folds": 0.03728226901148446
+    },
+    {
+      "protocol": "grouped",
+      "reference": "corrected",
+      "task": "HAZ",
+      "model": "Random Forest",
+      "mae": 0.037334517093458766,
+      "rmse": 0.04182848305713267,
+      "r2": 0.9995475209727142,
+      "mae_sd": 0.0009566680045702507,
+      "rmse_sd": 0.0026621564433164367,
+      "r2_sd": 5.9062486411716364e-05,
+      "training_seconds_5_folds": 3.308439657994313
+    },
+    {
+      "protocol": "grouped",
+      "reference": "corrected",
+      "task": "HAZ",
+      "model": "XGBoost",
+      "mae": 0.056230609729736834,
+      "rmse": 0.07382808658723536,
+      "r2": 0.9985948791787239,
+      "mae_sd": 0.0012362296026611243,
+      "rmse_sd": 0.0023627630342854286,
+      "r2_sd": 9.090169655324564e-05,
+      "training_seconds_5_folds": 0.9801894549891585
+    },
+    {
+      "protocol": "grouped",
+      "reference": "corrected",
+      "task": "HAZ",
+      "model": "LightGBM",
+      "mae": 0.08714372866002876,
+      "rmse": 0.11154067845759323,
+      "r2": 0.9967930692430574,
+      "mae_sd": 0.002507092565062666,
+      "rmse_sd": 0.0036493137505283846,
+      "r2_sd": 0.0002013565890632723,
+      "training_seconds_5_folds": 1.2905993439999293
+    },
+    {
+      "protocol": "grouped",
+      "reference": "corrected",
+      "task": "HAZ",
+      "model": "CatBoost",
+      "mae": 0.030560746818878177,
+      "rmse": 0.04689845135744532,
+      "r2": 0.9994292357150275,
+      "mae_sd": 0.0010117523981043358,
+      "rmse_sd": 0.004082477813478516,
+      "r2_sd": 0.00010101376739587607,
+      "training_seconds_5_folds": 37.99483255598898
+    },
+    {
+      "protocol": "grouped",
+      "reference": "corrected",
+      "task": "WAZ",
+      "model": "Linear Regression",
+      "mae": 0.5968899891418202,
+      "rmse": 0.8568965396405647,
+      "r2": 0.8597983938873357,
+      "mae_sd": 0.027681170478970334,
+      "rmse_sd": 0.034583403224350405,
+      "r2_sd": 0.01347530992198697,
+      "training_seconds_5_folds": 0.05866767599945888
+    },
+    {
+      "protocol": "grouped",
+      "reference": "corrected",
+      "task": "WAZ",
+      "model": "Ridge Regression",
+      "mae": 0.596889064688179,
+      "rmse": 0.8568965335443963,
+      "r2": 0.8597984021337396,
+      "mae_sd": 0.027681045931020002,
+      "rmse_sd": 0.034583315094771715,
+      "r2_sd": 0.0134752250453063,
+      "training_seconds_5_folds": 0.04433804299333133
+    },
+    {
+      "protocol": "grouped",
+      "reference": "corrected",
+      "task": "WAZ",
+      "model": "Random Forest",
+      "mae": 0.07750678261881783,
+      "rmse": 0.09943635475910412,
+      "r2": 0.9981113283408366,
+      "mae_sd": 0.0032572736749302694,
+      "rmse_sd": 0.004241551485833002,
+      "r2_sd": 0.00019231388228880305,
+      "training_seconds_5_folds": 2.906144820000918
+    },
+    {
+      "protocol": "grouped",
+      "reference": "corrected",
+      "task": "WAZ",
+      "model": "XGBoost",
+      "mae": 0.05829346652367949,
+      "rmse": 0.08106873365107854,
+      "r2": 0.9987469040699344,
+      "mae_sd": 0.0015751157769293982,
+      "rmse_sd": 0.0038004256013561984,
+      "r2_sd": 0.00010557728581225344,
+      "training_seconds_5_folds": 0.9155201660032617
+    },
+    {
+      "protocol": "grouped",
+      "reference": "corrected",
+      "task": "WAZ",
+      "model": "LightGBM",
+      "mae": 0.0692448814201122,
+      "rmse": 0.09414806846355353,
+      "r2": 0.9983125277233194,
+      "mae_sd": 0.00331809606410999,
+      "rmse_sd": 0.0047623279763961196,
+      "r2_sd": 0.00011935323034208244,
+      "training_seconds_5_folds": 1.0180941539947526
+    },
+    {
+      "protocol": "grouped",
+      "reference": "corrected",
+      "task": "WAZ",
+      "model": "CatBoost",
+      "mae": 0.016965811773499734,
+      "rmse": 0.028130285711818546,
+      "r2": 0.9998422400900239,
+      "mae_sd": 0.0011860622397795975,
+      "rmse_sd": 0.006203505754394477,
+      "r2_sd": 6.851205388385819e-05,
+      "training_seconds_5_folds": 28.1874519960038
+    }
+  ],
+  "initial_rf_cv_cache": [],
+  "historical_cache_reproduction": [
+    {
+      "protocol": "random",
+      "task": "HAZ",
+      "model": "Linear Regression",
+      "maximum_fold_metric_difference": 0.0
+    },
+    {
+      "protocol": "random",
+      "task": "HAZ",
+      "model": "Ridge Regression",
+      "maximum_fold_metric_difference": 0.0
+    },
+    {
+      "protocol": "random",
+      "task": "HAZ",
+      "model": "Random Forest",
+      "maximum_fold_metric_difference": 2.6020852139652106e-18
+    },
+    {
+      "protocol": "random",
+      "task": "HAZ",
+      "model": "XGBoost",
+      "maximum_fold_metric_difference": 0.0
+    },
+    {
+      "protocol": "random",
+      "task": "HAZ",
+      "model": "LightGBM",
+      "maximum_fold_metric_difference": 0.0
+    },
+    {
+      "protocol": "random",
+      "task": "HAZ",
+      "model": "CatBoost",
+      "maximum_fold_metric_difference": 0.0
+    },
+    {
+      "protocol": "random",
+      "task": "WAZ",
+      "model": "Linear Regression",
+      "maximum_fold_metric_difference": 0.0
+    },
+    {
+      "protocol": "random",
+      "task": "WAZ",
+      "model": "Ridge Regression",
+      "maximum_fold_metric_difference": 0.0
+    },
+    {
+      "protocol": "random",
+      "task": "WAZ",
+      "model": "Random Forest",
+      "maximum_fold_metric_difference": 2.112500170452225e-18
+    },
+    {
+      "protocol": "random",
+      "task": "WAZ",
+      "model": "XGBoost",
+      "maximum_fold_metric_difference": 0.0
+    },
+    {
+      "protocol": "random",
+      "task": "WAZ",
+      "model": "LightGBM",
+      "maximum_fold_metric_difference": 0.0
+    },
+    {
+      "protocol": "random",
+      "task": "WAZ",
+      "model": "CatBoost",
+      "maximum_fold_metric_difference": 0.0
+    },
+    {
+      "protocol": "grouped",
+      "task": "HAZ",
+      "model": "Linear Regression",
+      "maximum_fold_metric_difference": 0.0
+    },
+    {
+      "protocol": "grouped",
+      "task": "HAZ",
+      "model": "Ridge Regression",
+      "maximum_fold_metric_difference": 0.0
+    },
+    {
+      "protocol": "grouped",
+      "task": "HAZ",
+      "model": "Random Forest",
+      "maximum_fold_metric_difference": 6.938893903907228e-18
+    },
+    {
+      "protocol": "grouped",
+      "task": "HAZ",
+      "model": "XGBoost",
+      "maximum_fold_metric_difference": 0.0
+    },
+    {
+      "protocol": "grouped",
+      "task": "HAZ",
+      "model": "LightGBM",
+      "maximum_fold_metric_difference": 0.0
+    },
+    {
+      "protocol": "grouped",
+      "task": "HAZ",
+      "model": "CatBoost",
+      "maximum_fold_metric_difference": 0.0
+    },
+    {
+      "protocol": "grouped",
+      "task": "WAZ",
+      "model": "Linear Regression",
+      "maximum_fold_metric_difference": 0.0
+    },
+    {
+      "protocol": "grouped",
+      "task": "WAZ",
+      "model": "Ridge Regression",
+      "maximum_fold_metric_difference": 0.0
+    },
+    {
+      "protocol": "grouped",
+      "task": "WAZ",
+      "model": "Random Forest",
+      "maximum_fold_metric_difference": 1.3877787807814457e-17
+    },
+    {
+      "protocol": "grouped",
+      "task": "WAZ",
+      "model": "XGBoost",
+      "maximum_fold_metric_difference": 0.0
+    },
+    {
+      "protocol": "grouped",
+      "task": "WAZ",
+      "model": "LightGBM",
+      "maximum_fold_metric_difference": 0.0
+    },
+    {
+      "protocol": "grouped",
+      "task": "WAZ",
+      "model": "CatBoost",
+      "maximum_fold_metric_difference": 0.0
+    }
+  ],
+  "holdout_fit_metrics": [
+    {
+      "task": "HAZ",
+      "model": "Linear Regression",
+      "mae": 0.6165677929354302,
+      "rmse": 0.8318501708271793,
+      "r2": 0.8219705898190501,
+      "fit_seconds": 0.014911812002537772
+    },
+    {
+      "task": "HAZ",
+      "model": "Ridge Regression",
+      "mae": 0.6165671539386354,
+      "rmse": 0.8318501887887896,
+      "r2": 0.821970582130899,
+      "fit_seconds": 0.012093397999706212
+    },
+    {
+      "task": "HAZ",
+      "model": "Random Forest",
+      "mae": 9.994912277673445e-05,
+      "rmse": 0.0007768101740043134,
+      "r2": 0.9999998447500952,
+      "fit_seconds": 0.7550854240034823
+    },
+    {
+      "task": "HAZ",
+      "model": "XGBoost",
+      "mae": 0.04312387727902602,
+      "rmse": 0.05814165125355481,
+      "r2": 0.9991302864099957,
+      "fit_seconds": 0.2736009380023461
+    },
+    {
+      "task": "HAZ",
+      "model": "LightGBM",
+      "mae": 0.07562280869912844,
+      "rmse": 0.09795025349149673,
+      "r2": 0.9975316163489045,
+      "fit_seconds": 0.23681852599838749
+    },
+    {
+      "task": "HAZ",
+      "model": "CatBoost",
+      "mae": 0.026562449157430446,
+      "rmse": 0.04110668932987818,
+      "r2": 0.9995652630698872,
+      "fit_seconds": 4.978095155995106
+    },
+    {
+      "task": "WAZ",
+      "model": "Linear Regression",
+      "mae": 0.595627650155161,
+      "rmse": 0.8488483153001725,
+      "r2": 0.8633274851951896,
+      "fit_seconds": 0.019065458000113722
+    },
+    {
+      "task": "WAZ",
+      "model": "Ridge Regression",
+      "mae": 0.5956266577223392,
+      "rmse": 0.848848247134852,
+      "r2": 0.8633275071456966,
+      "fit_seconds": 0.017131940003309865
+    },
+    {
+      "task": "WAZ",
+      "model": "Random Forest",
+      "mae": 9.790911687318638e-07,
+      "rmse": 6.586504362991158e-05,
+      "r2": 0.9999999991771304,
+      "fit_seconds": 0.6105425229980028
+    },
+    {
+      "task": "WAZ",
+      "model": "XGBoost",
+      "mae": 0.029917864302628095,
+      "rmse": 0.040250977537545404,
+      "r2": 0.9996926919988766,
+      "fit_seconds": 0.18421362899971427
+    },
+    {
+      "task": "WAZ",
+      "model": "LightGBM",
+      "mae": 0.04554751237797691,
+      "rmse": 0.059771964798682846,
+      "r2": 0.9993223334213237,
+      "fit_seconds": 0.24744707000354538
+    },
+    {
+      "task": "WAZ",
+      "model": "CatBoost",
+      "mae": 0.010415222122955975,
+      "rmse": 0.013227883228627028,
+      "r2": 0.9999668104236856,
+      "fit_seconds": 4.76353143400047
+    }
+  ],
+  "split": {
+    "rows": 100000,
+    "training_rows": 80000,
+    "test_rows": 20000,
+    "test_size": 0.2,
+    "random_state": 42,
+    "stratify": null,
+    "train_indices_sha256": "ef3bced59bd91267ce96aabffa2c42a88d6e6d1c96d0c92a45161aba7d71a308",
+    "test_indices_sha256": "692739318bcfb943f7cf5ea1a17d5f7a1a70a15c7231dcbaec2023d4af4c7084"
+  },
+  "plots": {
+    "scatter_combined_haz": {
+      "figure_inches": [
+        18.0,
+        10.0
+      ],
+      "png_pixels": [
+        8920,
+        4920
+      ],
+      "dpi": 500,
+      "font_family": [
+        "sans-serif"
+      ]
+    },
+    "scatter_combined_waz": {
+      "figure_inches": [
+        18.0,
+        10.0
+      ],
+      "png_pixels": [
+        8920,
+        4920
+      ],
+      "dpi": 500,
+      "font_family": [
+        "sans-serif"
+      ]
+    },
+    "shap_summary_komparasi": {
+      "figure_inches": [
+        16.0,
+        6.0
+      ],
+      "png_pixels": [
+        7743,
+        2920
+      ],
+      "dpi": 500,
+      "font_family": [
+        "sans-serif"
+      ]
+    }
+  },
+  "shap_ranking": [
+    {
+      "task": "HAZ",
+      "rank": 1,
+      "feature": "Height (cm)",
+      "mean_absolute_shap": 1.4754804041669771
+    },
+    {
+      "task": "HAZ",
+      "rank": 2,
+      "feature": "Age (months)",
+      "mean_absolute_shap": 1.1355879880548565
+    },
+    {
+      "task": "HAZ",
+      "rank": 3,
+      "feature": "Gender_Encoded",
+      "mean_absolute_shap": 0.2689853552538594
+    },
+    {
+      "task": "WAZ",
+      "rank": 1,
+      "feature": "Weight (kg)",
+      "mean_absolute_shap": 1.808070976116927
+    },
+    {
+      "task": "WAZ",
+      "rank": 2,
+      "feature": "Age (months)",
+      "mean_absolute_shap": 1.1025860260643057
+    },
+    {
+      "task": "WAZ",
+      "rank": 3,
+      "feature": "Gender_Encoded",
+      "mean_absolute_shap": 0.23757500705904333
+    }
+  ],
+  "shap_seconds": {
+    "HAZ": 17.1330809439969,
+    "WAZ": 7.208330528002989
+  },
+  "model_freeze_manifest": "results/regression_corrected/model_freeze_manifest.json",
+  "python": "3.12.3",
+  "versions": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.3",
+    "scikit-learn": "1.8.0",
+    "xgboost": "3.2.0",
+    "lightgbm": "4.6.0",
+    "catboost": "1.2.10",
+    "shap": "0.52.0",
+    "matplotlib": "3.10.9",
+    "seaborn": "0.13.2",
+    "joblib": "1.5.3"
+  },
+  "limitations": [
+    "Monthly ages, assumed length/height convention; measurement position unavailable",
+    "Synthetic targets are deterministic reference calculations from the inputs",
+    "Random CV contains repeated input profiles across folds",
+    "Grouped WAZ ranks CatBoost above RF; selected RF follows primary random CV only",
+    "Fit-held-out SHAP rows participated in model-selection CV",
+    "These regression scores do not establish independent clinical validity",
+    "No external outcomes are used here; dashboard and Word are not modified"
+  ]
+}

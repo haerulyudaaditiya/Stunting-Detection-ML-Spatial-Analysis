@@ -1,0 +1,150 @@
+{
+  "frozen_at_utc": "2026-10-17T22:02:32.319116+00:00",
+  "selection_basis": "Primary random five-fold CV on synthetic data; grouped CV supplementary; external data not used",
+  "training_data": {
+    "path": "dataset/Stunting Wasting Dataset (Synthetic)/stunting_wasting_dataset.csv",
+    "sha256": "1093bc5463e4740c84f8e054edacf12212e8285cd30d0b8cbaa39e1375000f1f"
+  },
+  "reference": {
+    "path": "dataset/revision/references/who_monthly_corrected.csv",
+    "sha256": "bbd729d0d0aefd3856f0ff99654dcc95483e0692309c54c0072510c8da2930ec",
+    "convention": "LFA for completed months 0\u201323; HFA for completed months 24\u201360; no measurement-position conversion when unknown.",
+    "waz_tail": "WHO restricted LMS: extrapolate beyond +/-3 SD using distances between SD2 and SD3 measurements."
+  },
+  "training_split": {
+    "rows": 100000,
+    "training_rows": 80000,
+    "test_rows": 20000,
+    "test_size": 0.2,
+    "random_state": 42,
+    "stratify": null,
+    "train_indices_sha256": "ef3bced59bd91267ce96aabffa2c42a88d6e6d1c96d0c92a45161aba7d71a308",
+    "test_indices_sha256": "692739318bcfb943f7cf5ea1a17d5f7a1a70a15c7231dcbaec2023d4af4c7084"
+  },
+  "models": {
+    "HAZ": {
+      "path": "results/regression_corrected/models/stunting_random_forest_reg_haz.joblib",
+      "sha256": "36e28b6785989d9697cc3c9b602000019f57699d54804e897957e1d78531f61e",
+      "features": [
+        "Gender_Encoded",
+        "Age (months)",
+        "Height (cm)"
+      ],
+      "class": "RandomForestRegressor",
+      "parameters": {
+        "bootstrap": true,
+        "ccp_alpha": 0.0,
+        "criterion": "squared_error",
+        "max_depth": null,
+        "max_features": 1.0,
+        "max_leaf_nodes": null,
+        "max_samples": null,
+        "min_impurity_decrease": 0.0,
+        "min_samples_leaf": 1,
+        "min_samples_split": 2,
+        "min_weight_fraction_leaf": 0.0,
+        "monotonic_cst": null,
+        "n_estimators": 30,
+        "n_jobs": 4,
+        "oob_score": false,
+        "random_state": 42,
+        "verbose": 0,
+        "warm_start": false
+      },
+      "training_rows": 80000
+    },
+    "WAZ": {
+      "path": "results/regression_corrected/models/stunting_random_forest_reg_waz.joblib",
+      "sha256": "f14b90ed11d9a4b339663a4fe10f8e20e4b6b5c533ccf1578f9f365d53525ee5",
+      "features": [
+        "Gender_Encoded",
+        "Age (months)",
+        "Weight (kg)"
+      ],
+      "class": "RandomForestRegressor",
+      "parameters": {
+        "bootstrap": true,
+        "ccp_alpha": 0.0,
+        "criterion": "squared_error",
+        "max_depth": null,
+        "max_features": 1.0,
+        "max_leaf_nodes": null,
+        "max_samples": null,
+        "min_impurity_decrease": 0.0,
+        "min_samples_leaf": 1,
+        "min_samples_split": 2,
+        "min_weight_fraction_leaf": 0.0,
+        "monotonic_cst": null,
+        "n_estimators": 30,
+        "n_jobs": 4,
+        "oob_score": false,
+        "random_state": 42,
+        "verbose": 0,
+        "warm_start": false
+      },
+      "training_rows": 80000
+    },
+    "classification": {
+      "path": "results/classification/stunting_random_forest_classifier.joblib",
+      "sha256": "00e19bf56386ae8bc3d40bb182d4c583dece89b264d9bb98550da1d84a78b9b0",
+      "features": [
+        "Gender_Encoded",
+        "Age (months)",
+        "Height (cm)",
+        "Weight (kg)"
+      ],
+      "class": "RandomForestClassifier",
+      "parameters": {
+        "bootstrap": true,
+        "ccp_alpha": 0.0,
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": null,
+        "max_features": "sqrt",
+        "max_leaf_nodes": null,
+        "max_samples": null,
+        "min_impurity_decrease": 0.0,
+        "min_samples_leaf": 1,
+        "min_samples_split": 2,
+        "min_weight_fraction_leaf": 0.0,
+        "monotonic_cst": null,
+        "n_estimators": 50,
+        "n_jobs": -1,
+        "oob_score": false,
+        "random_state": 42,
+        "verbose": 0,
+        "warm_start": false
+      },
+      "training_rows": 80000
+    }
+  },
+  "classification_class_mapping": {
+    "0": "Normal",
+    "1": "Severely Stunted",
+    "2": "Stunted",
+    "3": "Tall"
+  },
+  "external_protocol": {
+    "primary_age_months": [
+      0,
+      23
+    ],
+    "supplementary_age_months": [
+      24,
+      24
+    ],
+    "classification_decision": "Original four-class argmax, then Severe/Stunted vs Normal/Tall",
+    "classification_reference": "Preserved source binary label",
+    "regression_reference": "Recomputed corrected monthly HAZ/WAZ; not independent clinical outcomes",
+    "external_data_used_for_fitting_or_selection": false
+  },
+  "versions": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.3",
+    "scikit-learn": "1.8.0",
+    "xgboost": "3.2.0",
+    "lightgbm": "4.6.0",
+    "catboost": "1.2.10",
+    "joblib": "1.5.3"
+  }
+}

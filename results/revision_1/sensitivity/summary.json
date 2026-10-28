@@ -1,0 +1,122 @@
+{
+  "majority_baselines": [
+    {
+      "cohort": "synthetic_four_class",
+      "n": 100000,
+      "constant_class": "Normal",
+      "training_source": "synthetic labels only",
+      "accuracy": 0.72312,
+      "balanced_accuracy": 0.25,
+      "macro_f1": 0.2098286828543572,
+      "weighted_f1": 0.6069252685825711,
+      "confusion_matrix": "[[72312, 0, 0, 0], [5819, 0, 0, 0], [16160, 0, 0, 0], [5709, 0, 0, 0]]"
+    },
+    {
+      "cohort": "synthetic_binary",
+      "n": 100000,
+      "constant_class": "Normal",
+      "training_source": "same frozen synthetic four-class majority, collapsed",
+      "accuracy": 0.78021,
+      "balanced_accuracy": 0.5,
+      "macro_f1": 0.43826851888260376,
+      "weighted_f1": 0.6838829622347925,
+      "confusion_matrix": "[[78021, 0], [21979, 0]]",
+      "sensitivity": 0.0,
+      "specificity": 1.0
+    },
+    {
+      "cohort": "external_primary_binary",
+      "n": 9755,
+      "constant_class": "Normal",
+      "training_source": "same frozen synthetic four-class majority, collapsed",
+      "accuracy": 0.7494618144541261,
+      "balanced_accuracy": 0.5,
+      "macro_f1": 0.42839564045470524,
+      "weighted_f1": 0.6421323479988417,
+      "confusion_matrix": "[[7311, 0], [2444, 0]]",
+      "sensitivity": 0.0,
+      "specificity": 1.0
+    }
+  ],
+  "majority_grouped_cv": {
+    "mean": {
+      "accuracy": 0.723120001223125,
+      "balanced_accuracy": 0.25,
+      "macro_f1": 0.20982868287991904,
+      "weighted_f1": 0.6069252709265738
+    },
+    "sd": {
+      "accuracy": 4.296564914670059e-05,
+      "balanced_accuracy": 0.0,
+      "macro_f1": 7.2353070038141106e-06,
+      "weighted_f1": 5.6990070287339935e-05
+    }
+  },
+  "label_diagnostics": {
+    "rows": 100000,
+    "unique_decision_profiles": 8545,
+    "conflicting_original_label_groups": 0,
+    "rows_in_conflicting_original_label_groups": 0,
+    "legacy_haz_category_disagreements": 2107,
+    "corrected_haz_category_disagreements": 2320,
+    "haz_reference_category_changes": 213,
+    "original_labels_preserved": true,
+    "definition": "HAZ<-3 severe; -3<=HAZ<-2 stunted; HAZ>3 tall; otherwise normal. Differences are diagnostics, not automatic source relabeling.",
+    "decision_profiles_across_multiple_grouped_folds": 0
+  },
+  "measurement_position": {
+    "fixed_primary_haz_cohort_n": 9760,
+    "source_label_comparison_n": 9760,
+    "as_recorded_source_label_disagreements": 430,
+    "standing_assumption_source_label_disagreements": 804,
+    "reference_binary_status_changes": 458,
+    "mean_haz_assumption_difference": 0.27619252049757803,
+    "min_haz_assumption_difference": 0.22056590378409133,
+    "max_haz_assumption_difference": 0.3757990097620991,
+    "alternative_haz_outside_primary_flag_range": 2,
+    "primary_cohort_refiltered": false,
+    "source_labels_changed": false,
+    "interpretation": "Alternative assumption that all recorded measurements below 24 months were standing heights; add 0.7 cm to represent length. Actual measurement position is unavailable. Primary analysis stays as recorded.",
+    "who_adjustment_source": "https://github.com/WorldHealthOrganization/anthro/blob/master/R/z-score-helper.R",
+    "fixed_primary_classification_cohort_n": 9755,
+    "classification_cohort_source_disagreements_as_recorded": 430,
+    "classification_cohort_source_disagreements_if_standing": 804,
+    "frozen_rf": {
+      "model_artifact": "results/revision_1/supervised/models/HAZ_rf.joblib",
+      "sha256": "07382bcefb7f08846f2ee90bc96b0cbab249d6bceec545725cdaa10bb1a3d8f6",
+      "selected_primary_haz_model": "Random Forest",
+      "as_recorded": {
+        "mae": 0.032166158525312495,
+        "rmse": 0.19099268308765904,
+        "r2": 0.9814820453238758
+      },
+      "standing_assumption_inputs_and_reference": {
+        "mae": 0.02439169488801606,
+        "rmse": 0.16573835396369346,
+        "r2": 0.9862331554721309
+      },
+      "standing_reference_only_original_inputs": {
+        "mae": 0.2893446452111704,
+        "rmse": 0.3192026956728567,
+        "r2": 0.9489352199223783
+      },
+      "rmse_difference_inputs_and_reference": -0.02525432912396558,
+      "mean_prediction_shift": 0.26457489782160604,
+      "refitted": false,
+      "primary_model_selection_changed": false
+    }
+  },
+  "source_hashes": {
+    "dataset/Stunting Wasting Dataset (Synthetic)/stunting_wasting_dataset.csv": "1093bc5463e4740c84f8e054edacf12212e8285cd30d0b8cbaa39e1375000f1f",
+    "dataset/revision/derived/jeneponto_2024_harmonized.csv": "a55040502990480a66d9fecf1fa5699d6acae1757e8bc19528556c1487d89722",
+    "dataset/revision/references/who_monthly_corrected.csv": "bbd729d0d0aefd3856f0ff99654dcc95483e0692309c54c0072510c8da2930ec",
+    "results/revision_1/supervised/model_freeze_manifest.json": "458c40e7be974424189a3390df7e5912417b07418dbc69907829ad8360c25f49"
+  },
+  "limitations": [
+    "Actual measurement position is absent; the standing scenario is a sensitivity assumption, not recovered metadata",
+    "Completed-month references remain approximate; exact-day clinical outcomes are not supplied",
+    "Comparing adjusted inputs with adjusted references checks function approximation under an assumption, not external clinical validation",
+    "Source classifications and primary QA cohorts are retained; the sensitivity does not tune or fit a model",
+    "Synthetic four-class and external binary baseline accuracies have different label spaces"
+  ]
+}

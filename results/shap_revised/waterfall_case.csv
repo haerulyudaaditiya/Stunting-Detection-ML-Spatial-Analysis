@@ -1,0 +1,5 @@
+Feature,Value,SHAP_for_Stunted
+Gender_Encoded,0.0,0.18677902203408436
+Age (months),18.0,0.29533098286429416
+Height (cm),74.1,0.23154899464349182
+Weight (kg),14.3,0.03668027135822428

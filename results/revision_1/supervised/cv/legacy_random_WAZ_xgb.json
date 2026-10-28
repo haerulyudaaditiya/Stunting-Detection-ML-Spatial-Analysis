@@ -1,0 +1,99 @@
+{
+  "protocol": "random",
+  "reference": "legacy",
+  "task": "WAZ",
+  "model": "XGBoost",
+  "fingerprint": "5dba2a8d7b5696688283648161a4ce22fa63e27d0d8f7f10484cd69a12112b6b",
+  "mean": {
+    "mae": 0.03032393032719392,
+    "rmse": 0.04121392288665939,
+    "r2": 0.9996821393832315
+  },
+  "sd": {
+    "mae": 0.001193935790717525,
+    "rmse": 0.0021941786241391433,
+    "r2": 3.437808530993898e-05
+  },
+  "folds": [
+    {
+      "mae": 0.029704682266980392,
+      "rmse": 0.040239640229129896,
+      "r2": 0.9996987489293208
+    },
+    {
+      "mae": 0.03127871968013673,
+      "rmse": 0.04313104024636526,
+      "r2": 0.999650903691733
+    },
+    {
+      "mae": 0.032105478197071304,
+      "rmse": 0.04396106419929523,
+      "r2": 0.999640658658501
+    },
+    {
+      "mae": 0.029722209792615535,
+      "rmse": 0.0409646771233144,
+      "r2": 0.9996840865226948
+    },
+    {
+      "mae": 0.028808561699165642,
+      "rmse": 0.03777319263519221,
+      "r2": 0.999736299113908
+    }
+  ],
+  "training_seconds": 1.2164126959978603,
+  "diagnostics": {
+    "n": 100000,
+    "unique_decision_groups": 4091,
+    "validation_input_overlap_by_fold": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "max_validation_input_overlap": 1.0
+  },
+  "parameters": {
+    "objective": "reg:squarederror",
+    "base_score": null,
+    "booster": null,
+    "callbacks": null,
+    "colsample_bylevel": null,
+    "colsample_bynode": null,
+    "colsample_bytree": null,
+    "device": null,
+    "early_stopping_rounds": null,
+    "enable_categorical": false,
+    "eval_metric": null,
+    "feature_types": null,
+    "feature_weights": null,
+    "gamma": null,
+    "grow_policy": null,
+    "importance_type": null,
+    "interaction_constraints": null,
+    "learning_rate": null,
+    "max_bin": null,
+    "max_cat_threshold": null,
+    "max_cat_to_onehot": null,
+    "max_delta_step": null,
+    "max_depth": null,
+    "max_leaves": null,
+    "min_child_weight": null,
+    "missing": null,
+    "monotone_constraints": null,
+    "multi_strategy": null,
+    "n_estimators": null,
+    "n_jobs": 4,
+    "num_parallel_tree": null,
+    "random_state": 42,
+    "reg_alpha": null,
+    "reg_lambda": null,
+    "sampling_method": null,
+    "scale_pos_weight": null,
+    "subsample": null,
+    "tree_method": null,
+    "validate_parameters": null,
+    "verbosity": null
+  }
+}

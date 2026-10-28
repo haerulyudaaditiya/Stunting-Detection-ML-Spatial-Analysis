@@ -1,0 +1,7 @@
+task,rank,feature,mean_absolute_shap
+HAZ,1,Height (cm),1.4754804041669771
+HAZ,2,Age (months),1.1355879880548565
+HAZ,3,Gender_Encoded,0.2689853552538594
+WAZ,1,Weight (kg),1.808070976116927
+WAZ,2,Age (months),1.1025860260643057
+WAZ,3,Gender_Encoded,0.23757500705904333

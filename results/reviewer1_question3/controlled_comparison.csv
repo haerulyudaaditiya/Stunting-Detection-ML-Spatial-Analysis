@@ -1,0 +1,10 @@
+scenario,algorithm,k,silhouette,davies_bouldin,calinski_harabasz,group_sizes
+original_reconstructed_k3,K-Means,3,0.21816450752244532,1.2721047423523013,12.096478508745676,"[19, 7, 8]"
+original_reconstructed_k3,GMM,3,0.19948357100085728,1.3235909043390577,11.343324571818432,"[18, 8, 8]"
+original_reconstructed_k3,Ward,3,0.319914988230883,0.987706472307767,12.37891350010066,"[24, 7, 3]"
+corrected_preprocessing_k3_original_model_settings,K-Means,3,0.2585927180122042,1.1702612372618624,18.00250793137815,"[8, 14, 12]"
+corrected_preprocessing_k3_original_model_settings,GMM,3,0.24490034989826212,1.1941210303763106,17.103102395467623,"[9, 13, 12]"
+corrected_preprocessing_k3_original_model_settings,Ward,3,0.2746036578356148,1.1655604239508721,18.304219037165915,"[15, 6, 13]"
+corrected_preprocessing_k2_original_model_settings,K-Means,2,0.2800429022001284,1.2066475914590493,17.02517997050089,"[19, 15]"
+corrected_preprocessing_k2_original_model_settings,GMM,2,0.3464249074603361,1.1306582434840193,18.959291564583356,"[10, 24]"
+corrected_preprocessing_k2_original_model_settings,Ward,2,0.3851651216847638,0.9358319412425391,17.20350718193539,"[28, 6]"

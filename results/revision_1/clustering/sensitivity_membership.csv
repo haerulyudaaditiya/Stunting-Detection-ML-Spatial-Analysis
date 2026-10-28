@@ -1,0 +1,35 @@
+Province,K-Means_primary,K-Means_sensitivity,K-Means_sensitivity_aligned,K-Means_changed_after_alignment,GMM_primary,GMM_sensitivity,GMM_sensitivity_aligned,GMM_changed_after_alignment,Ward_primary,Ward_sensitivity,Ward_sensitivity_aligned,Ward_changed_after_alignment
+Aceh,1,1,1,False,0,0,0,False,0,0,0,False
+Bali,0,0,0,False,0,0,0,False,0,0,0,False
+Bangka Belitung,0,0,0,False,0,0,0,False,0,0,0,False
+Banten,0,0,0,False,0,0,0,False,0,0,0,False
+Bengkulu,0,0,0,False,0,0,0,False,0,0,0,False
+DI Yogyakarta,0,0,0,False,0,0,0,False,0,0,0,False
+DKI Jakarta,0,0,0,False,0,0,0,False,0,0,0,False
+Gorontalo,1,1,1,False,1,1,1,False,0,1,1,True
+Jambi,0,0,0,False,0,0,0,False,0,0,0,False
+Jawa Barat,0,0,0,False,0,0,0,False,0,0,0,False
+Jawa Tengah,0,0,0,False,0,0,0,False,0,0,0,False
+Jawa Timur,0,0,0,False,0,0,0,False,0,0,0,False
+Kalimantan Barat,0,1,1,True,0,0,0,False,0,0,0,False
+Kalimantan Selatan,0,0,0,False,0,0,0,False,0,0,0,False
+Kalimantan Tengah,0,0,0,False,0,0,0,False,0,0,0,False
+Kalimantan Timur,0,0,0,False,0,0,0,False,0,0,0,False
+Kalimantan Utara,0,0,0,False,0,0,0,False,0,0,0,False
+Kepulauan Riau,0,0,0,False,0,0,0,False,0,0,0,False
+Lampung,0,0,0,False,0,0,0,False,0,0,0,False
+Maluku,1,1,1,False,1,1,1,False,1,1,1,False
+Maluku Utara,1,1,1,False,1,1,1,False,1,1,1,False
+Nusa Tenggara Barat,0,0,0,False,0,0,0,False,0,0,0,False
+Nusa Tenggara Timur,1,1,1,False,1,1,1,False,1,1,1,False
+Papua,1,1,1,False,1,1,1,False,1,1,1,False
+Papua Barat,1,1,1,False,1,1,1,False,1,1,1,False
+Riau,0,0,0,False,0,0,0,False,0,0,0,False
+Sulawesi Barat,1,1,1,False,1,1,1,False,0,0,0,False
+Sulawesi Selatan,0,0,0,False,0,0,0,False,0,0,0,False
+Sulawesi Tengah,1,1,1,False,1,1,1,False,0,1,1,True
+Sulawesi Tenggara,1,1,1,False,1,1,1,False,1,1,1,False
+Sulawesi Utara,0,0,0,False,0,0,0,False,0,0,0,False
+Sumatera Barat,0,0,0,False,0,0,0,False,0,0,0,False
+Sumatera Selatan,1,1,1,False,1,1,1,False,0,1,1,True
+Sumatera Utara,0,0,0,False,0,0,0,False,0,0,0,False

@@ -4,6 +4,8 @@
 class StuntingPredictor {
     constructor() {
         this.models = {}; // Cache for downloaded models
+        this.pendingModels = {};
+        this.modelDirectory = 'models/revision_1';
         this.CLASSES = ['Normal', 'Severely Stunted', 'Stunted', 'Tall'];
     }
 
@@ -15,10 +17,11 @@ class StuntingPredictor {
         if (this.models[cacheKey]) {
             return this.models[cacheKey]; // Return cached model
         }
+        if (this.pendingModels[cacheKey]) return this.pendingModels[cacheKey];
 
         console.log(`Downloading model: ${filename}...`);
-        try {
-            const response = await fetch(`models/${filename}`);
+        const pending = (async () => { try {
+            const response = await fetch(`${this.modelDirectory}/${filename}`);
             if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
             const data = await response.json();
             this.models[cacheKey] = data;
@@ -27,7 +30,19 @@ class StuntingPredictor {
         } catch (error) {
             console.error(`Error loading model ${filename}:`, error);
             throw error;
-        }
+        } finally { delete this.pendingModels[cacheKey]; } })();
+        this.pendingModels[cacheKey] = pending;
+        return pending;
+    }
+
+    featureValue(features, name) {
+        const aliases = {
+            'Age_(months)': 'Age (months)', 'Height_(cm)': 'Height (cm)',
+            'Weight_(kg)': 'Weight (kg)', 'Umur_(bulan)': 'Umur (bulan)',
+            'Tinggi_Badan_(cm)': 'Tinggi Badan (cm)', 'Berat_Badan_(kg)': 'Berat Badan (kg)',
+            'Jenis_Kelamin': 'Jenis Kelamin'
+        };
+        return features[aliases[name] || name];
     }
 
     // --- CLASSIFICATION INFERENCE LOGIC --- //
@@ -59,6 +74,11 @@ class StuntingPredictor {
                 const leafVals = this.evalCatBoostClassNode(tree, features, cbFeatures);
                 for (let j = 0; j < 4; j++) scores[j] += leafVals[j];
             }
+            const scale = modelData.scale_and_bias?.[0] ?? 1;
+            const bias = modelData.scale_and_bias?.[1] ?? [0, 0, 0, 0];
+            scores = scores.map((value, i) => scale * value + (bias[i] || 0));
+        } else {
+            throw new Error(`Unsupported classification model: ${modelName}`);
         }
         
         // Find argmax
@@ -66,17 +86,29 @@ class StuntingPredictor {
         for (let i = 1; i < 4; i++) {
             if (scores[i] > scores[maxIdx]) maxIdx = i;
         }
+        let probabilities;
+        if (modelName === 'rf' || modelName === 'et') {
+            const total = scores.reduce((sum, value) => sum + value, 0);
+            probabilities = scores.map(value => value / total);
+        } else {
+            const maximum = Math.max(...scores);
+            const exponentials = scores.map(value => Math.exp(value - maximum));
+            const total = exponentials.reduce((sum, value) => sum + value, 0);
+            probabilities = exponentials.map(value => value / total);
+        }
+        if (probabilities.some(value => !Number.isFinite(value))) throw new Error('Nonfinite model probability');
         return {
             classIndex: maxIdx,
             className: this.CLASSES[maxIdx],
-            scores: scores
+            scores: scores,
+            probabilities: probabilities
         };
     }
 
     evalSklearnClassNode(node, features) {
         if (node.leaf !== undefined) return node.leaf;
-        const val = features[node.split];
-        if (val <= node.split_condition) {
+        const val = this.featureValue(features, node.split);
+        if (Math.fround(val) <= node.split_condition) {
             return this.evalSklearnClassNode(node.left !== undefined ? node.left : node.yes, features);
         } else {
             return this.evalSklearnClassNode(node.right !== undefined ? node.right : node.no, features);
@@ -85,9 +117,9 @@ class StuntingPredictor {
 
     evalXgbClassNode(node, features) {
         if (node.leaf !== undefined) return node.leaf;
-        const val = features[node.split];
+        const val = this.featureValue(features, node.split);
         if (val === undefined || val === null) {
-            return this.evalXgbClassNode(node.missing === node.yes ? node.yes : (node.missing === node.no ? node.no : node.children.find(c => c.nodeid === node.missing)), features);
+            return this.evalXgbClassNode(node.children.find(c => c.nodeid === node.missing), features);
         }
         const children = node.children;
         if (Math.fround(val) < Math.fround(node.split_condition)) {
@@ -105,7 +137,7 @@ class StuntingPredictor {
         if (fname === 'Berat_Badan_(kg)') fname = 'Berat Badan (kg)';
         if (fname === 'Jenis_Kelamin') fname = 'Jenis Kelamin';
         
-        const val = features[fname];
+        const val = this.featureValue(features, fname);
         if (val === undefined || val === null) {
             return this.evalLgbmClassNode(node.default_left ? node.left_child : node.right_child, features, featureNames);
         }
@@ -122,8 +154,8 @@ class StuntingPredictor {
             const split = tree.splits[depth];
             const featureIdx = split.float_feature_index;
             const fname = cbFeatures[featureIdx];
-            const val = features[fname];
-            const isTrue = val > split.border;
+            const val = this.featureValue(features, fname);
+            const isTrue = Math.fround(val) > split.border;
             if (isTrue) {
                 nodeIdx |= (1 << depth);
             }
@@ -153,19 +185,24 @@ class StuntingPredictor {
                 sum += this.evalLgbmRegNode(tree.tree_structure, features, featureNames);
             }
         } else if (modelName === 'cb') {
-            sum = modelData.scale_and_bias ? modelData.scale_and_bias[1][0] : 0;
             const cbFeatures = modelData.features_info.float_features.map(f => f.feature_id);
             for (const tree of modelData.oblivious_trees) {
                 sum += this.evalCatBoostRegNode(tree, features, cbFeatures);
             }
+            sum = (modelData.scale_and_bias?.[0] ?? 1) * sum + (modelData.scale_and_bias?.[1]?.[0] ?? 0);
+        } else if (modelName === 'linear' || modelName === 'ridge') {
+            sum = modelData.intercept;
+            modelData.feature_names.forEach((name, i) => { sum += modelData.coefficients[i] * this.featureValue(features, name); });
+        } else {
+            throw new Error(`Unsupported regression model: ${modelName}`);
         }
         return sum;
     }
 
     evalSklearnRegNode(node, features) {
         if (node.leaf !== undefined) return node.leaf;
-        const val = features[node.split];
-        if (val <= node.split_condition) {
+        const val = this.featureValue(features, node.split);
+        if (Math.fround(val) <= node.split_condition) {
             return this.evalSklearnRegNode(node.left !== undefined ? node.left : node.yes, features);
         } else {
             return this.evalSklearnRegNode(node.right !== undefined ? node.right : node.no, features);
@@ -174,9 +211,9 @@ class StuntingPredictor {
 
     evalXgbRegNode(node, features) {
         if (node.leaf !== undefined) return node.leaf;
-        const val = features[node.split];
+        const val = this.featureValue(features, node.split);
         if (val === undefined || val === null) {
-            return this.evalXgbRegNode(node.missing === node.yes ? node.yes : (node.missing === node.no ? node.no : node.children.find(c => c.nodeid === node.missing)), features);
+            return this.evalXgbRegNode(node.children.find(c => c.nodeid === node.missing), features);
         }
         const children = node.children;
         if (Math.fround(val) < Math.fround(node.split_condition)) {
@@ -194,7 +231,7 @@ class StuntingPredictor {
         if (fname === 'Berat_Badan_(kg)') fname = 'Berat Badan (kg)';
         if (fname === 'Jenis_Kelamin') fname = 'Jenis Kelamin';
         
-        const val = features[fname];
+        const val = this.featureValue(features, fname);
         if (val === undefined || val === null) {
             return this.evalLgbmRegNode(node.default_left ? node.left_child : node.right_child, features, featureNames);
         }
@@ -211,8 +248,8 @@ class StuntingPredictor {
             const split = tree.splits[depth];
             const featureIdx = split.float_feature_index;
             const fname = cbFeatures[featureIdx];
-            const val = features[fname];
-            const isTrue = val > split.border;
+            const val = this.featureValue(features, fname);
+            const isTrue = Math.fround(val) > split.border;
             if (isTrue) {
                 nodeIdx |= (1 << depth);
             }
@@ -222,6 +259,15 @@ class StuntingPredictor {
 
     // Main entry point for the UI
     async predict(features, task, modelName) {
+        if (!['classification', 'haz', 'waz'].includes(task)) throw new Error(`Unsupported task: ${task}`);
+        const age = features['Age (months)'] ?? features['Umur (bulan)'];
+        const height = features['Height (cm)'] ?? features['Tinggi Badan (cm)'];
+        const weight = features['Weight (kg)'] ?? features['Berat Badan (kg)'];
+        if (![0, 1].includes(features.Gender_Encoded) || !Number.isInteger(age) || age < 0 || age > 24 ||
+            (task !== 'waz' && (!Number.isFinite(height) || height <= 0)) ||
+            (task !== 'haz' && (!Number.isFinite(weight) || weight <= 0))) {
+            throw new Error('Invalid measurement: age 0–24 months, encoded gender and positive sizes are required');
+        }
         const modelData = await this.loadModel(task, modelName);
         if (task === 'classification') {
             return this.predictClassification(modelName, modelData, features);

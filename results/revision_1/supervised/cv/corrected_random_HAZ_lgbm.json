@@ -1,0 +1,79 @@
+{
+  "protocol": "random",
+  "reference": "corrected",
+  "task": "HAZ",
+  "model": "LightGBM",
+  "fingerprint": "6db594a59367cba330eebc223de64e8c5533b143773052cd0d1e017663358e9b",
+  "mean": {
+    "mae": 0.07552343384273617,
+    "rmse": 0.09771155378365506,
+    "r2": 0.997539870627774
+  },
+  "sd": {
+    "mae": 0.0016675541089106686,
+    "rmse": 0.0023153854382434716,
+    "r2": 0.00012016893046498224
+  },
+  "folds": [
+    {
+      "mae": 0.07562280869912844,
+      "rmse": 0.09795025349149673,
+      "r2": 0.9975316163489045
+    },
+    {
+      "mae": 0.07694644407638139,
+      "rmse": 0.09965773810285279,
+      "r2": 0.9974519937794468
+    },
+    {
+      "mae": 0.07609387131621935,
+      "rmse": 0.09865279069739513,
+      "r2": 0.9974804583792239
+    },
+    {
+      "mae": 0.07231444331488592,
+      "rmse": 0.09321692422083735,
+      "r2": 0.997773824420107
+    },
+    {
+      "mae": 0.07663960180706579,
+      "rmse": 0.09908006240569327,
+      "r2": 0.9974614602111882
+    }
+  ],
+  "training_seconds": 1.3231277230006526,
+  "diagnostics": {
+    "n": 100000,
+    "unique_decision_groups": 8545,
+    "validation_input_overlap_by_fold": [
+      0.9998,
+      0.9999,
+      0.99965,
+      0.99995,
+      0.99995
+    ],
+    "max_validation_input_overlap": 0.99995
+  },
+  "parameters": {
+    "boosting_type": "gbdt",
+    "class_weight": null,
+    "colsample_bytree": 1.0,
+    "importance_type": "split",
+    "learning_rate": 0.1,
+    "max_depth": -1,
+    "min_child_samples": 20,
+    "min_child_weight": 0.001,
+    "min_split_gain": 0.0,
+    "n_estimators": 100,
+    "n_jobs": 4,
+    "num_leaves": 31,
+    "objective": null,
+    "random_state": 42,
+    "reg_alpha": 0.0,
+    "reg_lambda": 0.0,
+    "subsample": 1.0,
+    "subsample_for_bin": 200000,
+    "subsample_freq": 0,
+    "verbosity": -1
+  }
+}

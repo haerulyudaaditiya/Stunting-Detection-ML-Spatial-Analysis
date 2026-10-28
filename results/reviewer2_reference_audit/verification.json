@@ -1,0 +1,169 @@
+{
+  "scope": "Reviewer 2 phase 1 reference/cache verification only; no external evaluation or final model replacement",
+  "original_sources_sha256": {
+    "Stunting_Regression_Analysis.ipynb": "c27623824adf554d17af2258f9db1644c86ead11e16843b4fe0caee8de7af20d",
+    "Stunting_Classification_Analysis.ipynb": "96a1727feae7a21408fc2c0ac7c9487958d8a1127ed996f5977f18266e491fec",
+    "dataset/Stunting Wasting Dataset (Synthetic)/stunting_wasting_dataset.csv": "1093bc5463e4740c84f8e054edacf12212e8285cd30d0b8cbaa39e1375000f1f",
+    "dataset/revision/references/who_monthly_corrected.csv": "bbd729d0d0aefd3856f0ff99654dcc95483e0692309c54c0072510c8da2930ec",
+    "dataset/revision/references/manifest.json": "302f7255708fdce090d2fb9a1ac8d1c0ed51533f553b7d33baa9b4f1bef7fc0e",
+    "results/regression/stunting_random_forest_reg_haz.joblib": "db89609bf9054b42b499d9d0f301431885b259d1df4e39ae5a9f4acc526b0913",
+    "results/regression/stunting_random_forest_reg_waz.joblib": "4777c69ef2473c50b7312f4c092386df6dce06e9d00a21e5deabdd6c84fa6e9b",
+    "results/classification/stunting_random_forest_classifier.joblib": "00e19bf56386ae8bc3d40bb182d4c583dece89b264d9bb98550da1d84a78b9b0",
+    "results/shap_revised/summary.json": "78ad376de63bfe90b22fc4d2d524d768c4c6cdc04cc6ece0581bbf3fb4a7430f",
+    "results/revision_1/supervised/cv_metrics.csv": "0d6f281f67bd3e8a36826389cb6d79f7341aac8409f08271cf087baaa05e8add",
+    "dataset/revision/raw/who/hfa_boys.xlsx": "a44ed06039e0a9dd6920e4a4d928395c541c9732662e49eacd489d2194ccc80d",
+    "dataset/revision/raw/who/hfa_girls.xlsx": "a976c56a6d36885cc32bf77c5539ca066e396ef2adad06011cd71d9eb0f0eb5c",
+    "dataset/revision/raw/who/lfa_boys.xlsx": "ccfd8e455141c9a39dd728d99b7d7e080a925b06ea4a4d7592229665713dba54",
+    "dataset/revision/raw/who/lfa_girls.xlsx": "6757f5eb96b51ab5cdb4828105929c78b1fb3d73b0fd8fa65682ad9f60f8c083",
+    "dataset/revision/raw/who/wfa_boys.xlsx": "f8f5a77b944ff7a8c1524e76f9d33f8a93cc423d23c2e7f2b10ba6b96a428e69",
+    "dataset/revision/raw/who/wfa_girls.xlsx": "01e9a6fda2f3723dbc74d3c86bfbfcb9f6d474367d1d7b4a804501a2debd2ef1",
+    "dataset/Stunting Wasting Dataset (Synthetic)/z-scores who/lhfa_boys_0-to-5-years_zscores.csv": "f6ce9bf125a03abf1e3a8139d7e0b1cda74c5fc58069c9b6573a40a0718d3941",
+    "dataset/Stunting Wasting Dataset (Synthetic)/z-scores who/lhfa_girls_0-to-5-years_zscores.csv": "3286b3c6b0018d495d62e9cabada898f011ad042e4ee1b5d1704fc26ecb9ed6c",
+    "dataset/Stunting Wasting Dataset (Synthetic)/z-scores who/wfa_boys_0-to-5-years_zscores.csv": "d2ed0e2d18a6dc745de5f6619a73b29b9003944a8f73da488764979b1cb0fa2a",
+    "dataset/Stunting Wasting Dataset (Synthetic)/z-scores who/wfa_girls_0-to-5-years_zscores.csv": "64f2bd8bcb104b9da3000587f2c008c5c1e2d239254ec8b1cb225a81fa93303a",
+    "results/revision_1/supervised/cv/corrected_random_HAZ_cb.json": "dd633f269839cccfe9c1a548da39196efb84b5c61976a0a3b8dbdbb94108a6a4",
+    "results/revision_1/supervised/cv/corrected_random_HAZ_lgbm.json": "ddb2bd824f81679fdbe306c178f31d9dec3fa00b199b5ce9cb6d34a33fa47fa1",
+    "results/revision_1/supervised/cv/corrected_random_HAZ_linear.json": "fe82900f439a8b66ab36ac7141a97b07072a208fee930a78ca3de313aa96244a",
+    "results/revision_1/supervised/cv/corrected_random_HAZ_protocol.json": "275b01a139e7fa73d922fa307921de448f2ae7e98383b51a84cc2e1d89ce76c8",
+    "results/revision_1/supervised/cv/corrected_random_HAZ_rf.json": "41243174879d29f1bcb1894cfe5a2519506a116427405d5a860b830abcc85a7a",
+    "results/revision_1/supervised/cv/corrected_random_HAZ_ridge.json": "663b605c6b7a2eb6c654901a99d25aaf4389b8042cfb22f06c563c5728b07b30",
+    "results/revision_1/supervised/cv/corrected_random_HAZ_xgb.json": "18f11cd74052287ee0bc4c0dd7731abc7b4100fcd76b83353fdaed60d8b7b54b",
+    "results/revision_1/supervised/cv/corrected_random_WAZ_cb.json": "496fa28e332a54cbb367401c04f81b7ae3f5011dc717ca0c7e44d2d3e0a38d46",
+    "results/revision_1/supervised/cv/corrected_random_WAZ_lgbm.json": "447ec6b69ad8f438218e47c0c5d762588341e865435ed43e0abb7799fb721cdf",
+    "results/revision_1/supervised/cv/corrected_random_WAZ_linear.json": "2fa2fed1f61eb631546dea27fba39e148429412f6e3b703f04488000955abf29",
+    "results/revision_1/supervised/cv/corrected_random_WAZ_protocol.json": "275b01a139e7fa73d922fa307921de448f2ae7e98383b51a84cc2e1d89ce76c8",
+    "results/revision_1/supervised/cv/corrected_random_WAZ_rf.json": "4635d1372be4707ff2c59345261ebec1c16a65683e791c38e7fd682c5833a3cb",
+    "results/revision_1/supervised/cv/corrected_random_WAZ_ridge.json": "f7fea55570031f0e54b207283a934178ab3c504dbb4c67e5d478d9d255d487cb",
+    "results/revision_1/supervised/cv/corrected_random_WAZ_xgb.json": "a27bfcaa74e6c89b11a69028b68c92700b80ba1d434f024eaf93d3fc6fa9c0ff",
+    "results/revision_1/supervised/cv/legacy_random_HAZ_cb.json": "7da6c25960b96832e9017ef6b2816d38edde0e186b6644acfb4e23e2560b0ac9",
+    "results/revision_1/supervised/cv/legacy_random_HAZ_lgbm.json": "7acfc9824e99e3c2bf3cff29ca5f53d03ca4e4aae44f48fa5c5e663d7cd33597",
+    "results/revision_1/supervised/cv/legacy_random_HAZ_linear.json": "1e73d600ffea7586873d3c976c8dbdaf06f1c617ea8e402a2ebfd599d9ace1b0",
+    "results/revision_1/supervised/cv/legacy_random_HAZ_protocol.json": "275b01a139e7fa73d922fa307921de448f2ae7e98383b51a84cc2e1d89ce76c8",
+    "results/revision_1/supervised/cv/legacy_random_HAZ_rf.json": "b25d6372241592e3775a30b46322c0573f41391cc6865111dbd389dd9ced6c3d",
+    "results/revision_1/supervised/cv/legacy_random_HAZ_ridge.json": "587fbc275ab1285bfa35411e149b2349672d3ed941361f58d9a6afa0f432bcf9",
+    "results/revision_1/supervised/cv/legacy_random_HAZ_xgb.json": "0c08da4a1f056bef308ebfe2addfb30da04e4528ff7fe4a041ae103b513643ba",
+    "results/revision_1/supervised/cv/legacy_random_WAZ_cb.json": "7126d696adb7a19ff68146756a0c0eaf12dfdf80ac0ad90e1249a2f6dc0441b4",
+    "results/revision_1/supervised/cv/legacy_random_WAZ_lgbm.json": "2da8fb05c194ca89f33d8f36f8bf2e245e22a79736486a9017f3792f62cf2ff3",
+    "results/revision_1/supervised/cv/legacy_random_WAZ_linear.json": "88c824b95a73d97161221800aacdfe34c4fa72f54618abda0a16e7f30954b2fa",
+    "results/revision_1/supervised/cv/legacy_random_WAZ_protocol.json": "275b01a139e7fa73d922fa307921de448f2ae7e98383b51a84cc2e1d89ce76c8",
+    "results/revision_1/supervised/cv/legacy_random_WAZ_rf.json": "eeee0bf6c69f515e1257647f4bcff54b91494cbfc925b96f907b822d67572171",
+    "results/revision_1/supervised/cv/legacy_random_WAZ_ridge.json": "8d5fb362bf9ed840caee8a0b6dd5c1a28186dcba6f4e78fdfba6aa3bd3a25271",
+    "results/revision_1/supervised/cv/legacy_random_WAZ_xgb.json": "945829f10dd905c57c0b1d0532081bae0b53cd52b8b4ed6d4a3b927d8b36ada8",
+    "results/revision_1/supervised/cv/legacy_random_classification_cb.json": "468f8750a2d15a321a49147ca97b2ec319853db6f31292dc767711ea6f29ca81",
+    "results/revision_1/supervised/cv/legacy_random_classification_et.json": "6c74e1761920ebc369f3c1cbc0bb3ff85970dfa0d298da0b4b9a6e49f240b8fb",
+    "results/revision_1/supervised/cv/legacy_random_classification_lgbm.json": "558f7872878562cf479d23ef45e87f08b87d67dbc068b3421172088e03da7105",
+    "results/revision_1/supervised/cv/legacy_random_classification_protocol.json": "5d34279e3bc5a45c2eaaf5319faadf13b1cb6c5fc194ddec7449621753a0c9c7",
+    "results/revision_1/supervised/cv/legacy_random_classification_rf.json": "6939bd26ea1fcf447ab21377a8612a4fd2d18652ead3b906a94ec094cdb31b01",
+    "results/revision_1/supervised/cv/legacy_random_classification_xgb.json": "2c24c52c3e31070620ec6c3c3b7783991024d18f71af7d092d709a2e408ce428",
+    "results/revision_1/supervised/folds_corrected_random_HAZ.csv": "4505e83f8d13ff954e2ddd0975fa4f2175116d0b11e2d8c5e6718a70b870b5ed",
+    "results/revision_1/supervised/folds_corrected_random_WAZ.csv": "ee0ef9784c4c0bd360c79cbc2cbb1e5485a2fbcac55987e633df804c8d954ced",
+    "results/revision_1/supervised/folds_legacy_random_HAZ.csv": "4505e83f8d13ff954e2ddd0975fa4f2175116d0b11e2d8c5e6718a70b870b5ed",
+    "results/revision_1/supervised/folds_legacy_random_WAZ.csv": "ee0ef9784c4c0bd360c79cbc2cbb1e5485a2fbcac55987e633df804c8d954ced",
+    "results/revision_1/supervised/folds_legacy_random_classification.csv": "02ba1561d114d94d3dda28ef92decb5b4dfa2dbee2f728210180926ea0db8d25"
+  },
+  "protected_sources_unchanged": true,
+  "references": {
+    "rows": 244,
+    "coefficients": 732,
+    "changed_legacy_rows": 2,
+    "changed_legacy_coefficients": 4,
+    "sources": [
+      "https://www.who.int/tools/child-growth-standards/standards/length-height-for-age",
+      "https://www.who.int/tools/child-growth-standards/standards/weight-for-age"
+    ],
+    "algorithm": "https://github.com/WorldHealthOrganization/anthro/blob/master/R/z-score-helper.R",
+    "convention": "LFA for completed months 0\u201323; HFA for completed months 24\u201360; no measurement-position conversion when unknown."
+  },
+  "target_changes": [
+    {
+      "Target": "HAZ",
+      "Changed_records": 3954,
+      "Changed_below_24": 0,
+      "Changed_age_24": 3954,
+      "Maximum_absolute_change": 0.11459197584789171
+    },
+    {
+      "Target": "WAZ",
+      "Changed_records": 22063,
+      "Changed_below_24": 21601,
+      "Changed_age_24": 462,
+      "Maximum_absolute_change": 0.822981927697934
+    }
+  ],
+  "classification_labels_unchanged": true,
+  "independent_scalar_max_error": {
+    "HAZ": 0.0,
+    "WAZ": 0.0
+  },
+  "cache_checks": {
+    "verified_model_target_reference_caches": 24,
+    "notebook_metrics_matched_at_six_decimals": 36,
+    "original_five_fold_assignments_matched": true,
+    "input_target_parameter_fingerprints_matched": true,
+    "saved_fold_means_sd_and_aggregate_csv_matched": true
+  },
+  "fresh_verification": {
+    "algorithm": "Random Forest",
+    "fits": 20,
+    "absolute_metric_tolerance": 1e-10,
+    "note": "Other algorithms received cache/protocol/arithmetic verification, not fresh fitting"
+  },
+  "corrected_primary_rmse_ranking": {
+    "HAZ": [
+      "Random Forest",
+      "CatBoost",
+      "XGBoost",
+      "LightGBM",
+      "Linear Regression",
+      "Ridge Regression"
+    ],
+    "WAZ": [
+      "Random Forest",
+      "CatBoost",
+      "XGBoost",
+      "LightGBM",
+      "Ridge Regression",
+      "Linear Regression"
+    ]
+  },
+  "environment": {
+    "python": "3.12.3",
+    "packages": {
+      "numpy": "2.4.6",
+      "pandas": "3.0.3",
+      "scikit-learn": "1.8.0",
+      "xgboost": "3.2.0",
+      "lightgbm": "4.6.0",
+      "catboost": "1.2.10"
+    },
+    "original_notebook_declared_language": {
+      "codemirror_mode": {
+        "name": "ipython",
+        "version": 3
+      },
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "nbconvert_exporter": "python",
+      "pygments_lexer": "ipython3",
+      "version": "3.14.6"
+    },
+    "original_n_jobs": -1,
+    "verification_n_jobs": 4,
+    "timing_note": "Historical training times are not directly comparable; do not combine old times with corrected metrics"
+  },
+  "limitations": [
+    "Monthly references and assumed age-based position are not exact-day clinical gold standards",
+    "Reference correction changes regression targets, not source classification labels",
+    "Existing regression models, SHAP and prediction figures still use original targets",
+    "Primary random-fold ranking is distinct from grouped selection; RF is not best in grouped WAZ",
+    "No independence, clinical validity, or national generalizability claim follows from these checks"
+  ],
+  "output_sha256": {
+    "reference_differences.csv": "5592ae6919048670f1acb4a09f470607163d586b10586470c4129928baebf95f",
+    "target_changes.csv": "e902ce50d995345ae7b9777f0f179ef21fa740a80f920b68fdc6f53b3abe0561",
+    "regression_metrics.csv": "ffeaa485c445093e7f51685e5a71689b7c7a7ae352acd27b5dba71b0912a9d9f",
+    "fresh_rf_verification.csv": "a12d51ad04a4580591551a632d495c978bf12796fe43bd9146ddbc38cf2f343b",
+    "random_fold_overlap.csv": "9b43a105992660c85ea2380a707326102baeeef41a30b62483c1aecd3cf87e71"
+  }
+}

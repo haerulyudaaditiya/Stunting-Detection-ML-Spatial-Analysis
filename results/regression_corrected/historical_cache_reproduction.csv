@@ -1,0 +1,25 @@
+protocol,task,model,maximum_fold_metric_difference
+random,HAZ,Linear Regression,0.0
+random,HAZ,Ridge Regression,0.0
+random,HAZ,Random Forest,2.6020852139652106e-18
+random,HAZ,XGBoost,0.0
+random,HAZ,LightGBM,0.0
+random,HAZ,CatBoost,0.0
+random,WAZ,Linear Regression,0.0
+random,WAZ,Ridge Regression,0.0
+random,WAZ,Random Forest,2.112500170452225e-18
+random,WAZ,XGBoost,0.0
+random,WAZ,LightGBM,0.0
+random,WAZ,CatBoost,0.0
+grouped,HAZ,Linear Regression,0.0
+grouped,HAZ,Ridge Regression,0.0
+grouped,HAZ,Random Forest,6.938893903907228e-18
+grouped,HAZ,XGBoost,0.0
+grouped,HAZ,LightGBM,0.0
+grouped,HAZ,CatBoost,0.0
+grouped,WAZ,Linear Regression,0.0
+grouped,WAZ,Ridge Regression,0.0
+grouped,WAZ,Random Forest,1.3877787807814457e-17
+grouped,WAZ,XGBoost,0.0
+grouped,WAZ,LightGBM,0.0
+grouped,WAZ,CatBoost,0.0

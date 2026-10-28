@@ -1,0 +1,99 @@
+{
+  "protocol": "random",
+  "reference": "legacy",
+  "task": "HAZ",
+  "model": "XGBoost",
+  "fingerprint": "edee3d5aa37a16c91fd1b0741bf08b1f2bff05aca34625612fd9bd8f51ac6214",
+  "mean": {
+    "mae": 0.04223518577448791,
+    "rmse": 0.057138925081651235,
+    "r2": 0.9991592066943131
+  },
+  "sd": {
+    "mae": 0.0004829512222393652,
+    "rmse": 0.0008268237731288426,
+    "r2": 2.114856404547868e-05
+  },
+  "folds": [
+    {
+      "mae": 0.04269173490446986,
+      "rmse": 0.057855253284178426,
+      "r2": 0.9991389809550112
+    },
+    {
+      "mae": 0.04243241277179174,
+      "rmse": 0.057968619399080906,
+      "r2": 0.9991380085233976
+    },
+    {
+      "mae": 0.04150156428723411,
+      "rmse": 0.05586058722622967,
+      "r2": 0.9991920530958555
+    },
+    {
+      "mae": 0.04270955390067033,
+      "rmse": 0.057527908625047135,
+      "r2": 0.9991520457127662
+    },
+    {
+      "mae": 0.041840663008273556,
+      "rmse": 0.05648225687372008,
+      "r2": 0.9991749451845349
+    }
+  ],
+  "training_seconds": 2.8363396899985673,
+  "diagnostics": {
+    "n": 100000,
+    "unique_decision_groups": 8545,
+    "validation_input_overlap_by_fold": [
+      0.9998,
+      0.9999,
+      0.99965,
+      0.99995,
+      0.99995
+    ],
+    "max_validation_input_overlap": 0.99995
+  },
+  "parameters": {
+    "objective": "reg:squarederror",
+    "base_score": null,
+    "booster": null,
+    "callbacks": null,
+    "colsample_bylevel": null,
+    "colsample_bynode": null,
+    "colsample_bytree": null,
+    "device": null,
+    "early_stopping_rounds": null,
+    "enable_categorical": false,
+    "eval_metric": null,
+    "feature_types": null,
+    "feature_weights": null,
+    "gamma": null,
+    "grow_policy": null,
+    "importance_type": null,
+    "interaction_constraints": null,
+    "learning_rate": null,
+    "max_bin": null,
+    "max_cat_threshold": null,
+    "max_cat_to_onehot": null,
+    "max_delta_step": null,
+    "max_depth": null,
+    "max_leaves": null,
+    "min_child_weight": null,
+    "missing": null,
+    "monotone_constraints": null,
+    "multi_strategy": null,
+    "n_estimators": null,
+    "n_jobs": 4,
+    "num_parallel_tree": null,
+    "random_state": 42,
+    "reg_alpha": null,
+    "reg_lambda": null,
+    "sampling_method": null,
+    "scale_pos_weight": null,
+    "subsample": null,
+    "tree_method": null,
+    "validate_parameters": null,
+    "verbosity": null
+  }
+}

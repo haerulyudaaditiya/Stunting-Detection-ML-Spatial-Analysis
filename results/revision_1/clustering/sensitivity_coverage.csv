@@ -1,0 +1,137 @@
+Province,indicator,total_districts,observed_districts,coverage_pct
+Aceh,Stunting_2019,23,19,82.6086956521739
+Aceh,KEK,23,19,82.6086956521739
+Aceh,Immunization,23,19,82.6086956521739
+Aceh,BBLR,23,19,82.6086956521739
+Bali,Stunting_2019,9,9,100.0
+Bali,KEK,9,9,100.0
+Bali,Immunization,9,9,100.0
+Bali,BBLR,9,9,100.0
+Bangka Belitung,Stunting_2019,7,6,85.71428571428571
+Bangka Belitung,KEK,7,6,85.71428571428571
+Bangka Belitung,Immunization,7,6,85.71428571428571
+Bangka Belitung,BBLR,7,6,85.71428571428571
+Banten,Stunting_2019,8,8,100.0
+Banten,KEK,8,8,100.0
+Banten,Immunization,8,8,100.0
+Banten,BBLR,8,8,100.0
+Bengkulu,Stunting_2019,10,9,90.0
+Bengkulu,KEK,10,9,90.0
+Bengkulu,Immunization,10,9,90.0
+Bengkulu,BBLR,10,9,90.0
+DI Yogyakarta,Stunting_2019,5,5,100.0
+DI Yogyakarta,KEK,5,5,100.0
+DI Yogyakarta,Immunization,5,5,100.0
+DI Yogyakarta,BBLR,5,5,100.0
+DKI Jakarta,Stunting_2019,6,5,83.33333333333333
+DKI Jakarta,KEK,6,5,83.33333333333333
+DKI Jakarta,Immunization,6,5,83.33333333333333
+DKI Jakarta,BBLR,6,5,83.33333333333333
+Gorontalo,Stunting_2019,6,5,83.33333333333333
+Gorontalo,KEK,6,5,83.33333333333333
+Gorontalo,Immunization,6,5,83.33333333333333
+Gorontalo,BBLR,6,5,83.33333333333333
+Jambi,Stunting_2019,11,7,63.63636363636363
+Jambi,KEK,11,7,63.63636363636363
+Jambi,Immunization,11,7,63.63636363636363
+Jambi,BBLR,11,7,63.63636363636363
+Jawa Barat,Stunting_2019,27,26,96.29629629629629
+Jawa Barat,KEK,27,26,96.29629629629629
+Jawa Barat,Immunization,27,26,96.29629629629629
+Jawa Barat,BBLR,27,26,96.29629629629629
+Jawa Tengah,Stunting_2019,35,33,94.28571428571429
+Jawa Tengah,KEK,35,33,94.28571428571429
+Jawa Tengah,Immunization,35,33,94.28571428571429
+Jawa Tengah,BBLR,35,33,94.28571428571429
+Jawa Timur,Stunting_2019,38,35,92.10526315789474
+Jawa Timur,KEK,38,35,92.10526315789474
+Jawa Timur,Immunization,38,35,92.10526315789474
+Jawa Timur,BBLR,38,35,92.10526315789474
+Kalimantan Barat,Stunting_2019,14,11,78.57142857142857
+Kalimantan Barat,KEK,14,11,78.57142857142857
+Kalimantan Barat,Immunization,14,11,78.57142857142857
+Kalimantan Barat,BBLR,14,11,78.57142857142857
+Kalimantan Selatan,Stunting_2019,13,12,92.3076923076923
+Kalimantan Selatan,KEK,13,12,92.3076923076923
+Kalimantan Selatan,Immunization,13,12,92.3076923076923
+Kalimantan Selatan,BBLR,13,12,92.3076923076923
+Kalimantan Tengah,Stunting_2019,14,11,78.57142857142857
+Kalimantan Tengah,KEK,14,11,78.57142857142857
+Kalimantan Tengah,Immunization,14,11,78.57142857142857
+Kalimantan Tengah,BBLR,14,11,78.57142857142857
+Kalimantan Timur,Stunting_2019,10,8,80.0
+Kalimantan Timur,KEK,10,8,80.0
+Kalimantan Timur,Immunization,10,8,80.0
+Kalimantan Timur,BBLR,10,8,80.0
+Kalimantan Utara,Stunting_2019,5,3,60.0
+Kalimantan Utara,KEK,5,3,60.0
+Kalimantan Utara,Immunization,5,3,60.0
+Kalimantan Utara,BBLR,5,3,60.0
+Kepulauan Riau,Stunting_2019,7,4,57.142857142857146
+Kepulauan Riau,KEK,7,4,57.142857142857146
+Kepulauan Riau,Immunization,7,4,57.142857142857146
+Kepulauan Riau,BBLR,7,4,57.142857142857146
+Lampung,Stunting_2019,15,14,93.33333333333333
+Lampung,KEK,15,14,93.33333333333333
+Lampung,Immunization,15,14,93.33333333333333
+Lampung,BBLR,15,14,93.33333333333333
+Maluku,Stunting_2019,11,9,81.81818181818181
+Maluku,KEK,11,9,81.81818181818181
+Maluku,Immunization,11,9,81.81818181818181
+Maluku,BBLR,11,9,81.81818181818181
+Maluku Utara,Stunting_2019,10,8,80.0
+Maluku Utara,KEK,10,8,80.0
+Maluku Utara,Immunization,10,8,80.0
+Maluku Utara,BBLR,10,8,80.0
+Nusa Tenggara Barat,Stunting_2019,10,10,100.0
+Nusa Tenggara Barat,KEK,10,10,100.0
+Nusa Tenggara Barat,Immunization,10,10,100.0
+Nusa Tenggara Barat,BBLR,10,10,100.0
+Nusa Tenggara Timur,Stunting_2019,22,22,100.0
+Nusa Tenggara Timur,KEK,22,22,100.0
+Nusa Tenggara Timur,Immunization,22,22,100.0
+Nusa Tenggara Timur,BBLR,22,22,100.0
+Papua,Stunting_2019,29,12,41.37931034482759
+Papua,KEK,29,12,41.37931034482759
+Papua,Immunization,29,12,41.37931034482759
+Papua,BBLR,29,12,41.37931034482759
+Papua Barat,Stunting_2019,13,10,76.92307692307692
+Papua Barat,KEK,13,10,76.92307692307692
+Papua Barat,Immunization,13,10,76.92307692307692
+Papua Barat,BBLR,13,10,76.92307692307692
+Riau,Stunting_2019,12,10,83.33333333333333
+Riau,KEK,12,10,83.33333333333333
+Riau,Immunization,12,10,83.33333333333333
+Riau,BBLR,12,10,83.33333333333333
+Sulawesi Barat,Stunting_2019,6,5,83.33333333333333
+Sulawesi Barat,KEK,6,5,83.33333333333333
+Sulawesi Barat,Immunization,6,5,83.33333333333333
+Sulawesi Barat,BBLR,6,5,83.33333333333333
+Sulawesi Selatan,Stunting_2019,24,23,95.83333333333333
+Sulawesi Selatan,KEK,24,23,95.83333333333333
+Sulawesi Selatan,Immunization,24,23,95.83333333333333
+Sulawesi Selatan,BBLR,24,23,95.83333333333333
+Sulawesi Tengah,Stunting_2019,13,11,84.61538461538461
+Sulawesi Tengah,KEK,13,11,84.61538461538461
+Sulawesi Tengah,Immunization,13,11,84.61538461538461
+Sulawesi Tengah,BBLR,13,11,84.61538461538461
+Sulawesi Tenggara,Stunting_2019,17,13,76.47058823529412
+Sulawesi Tenggara,KEK,17,13,76.47058823529412
+Sulawesi Tenggara,Immunization,17,13,76.47058823529412
+Sulawesi Tenggara,BBLR,17,13,76.47058823529412
+Sulawesi Utara,Stunting_2019,15,13,86.66666666666667
+Sulawesi Utara,KEK,15,13,86.66666666666667
+Sulawesi Utara,Immunization,15,13,86.66666666666667
+Sulawesi Utara,BBLR,15,13,86.66666666666667
+Sumatera Barat,Stunting_2019,19,17,89.47368421052632
+Sumatera Barat,KEK,19,17,89.47368421052632
+Sumatera Barat,Immunization,19,17,89.47368421052632
+Sumatera Barat,BBLR,19,17,89.47368421052632
+Sumatera Selatan,Stunting_2019,17,15,88.23529411764706
+Sumatera Selatan,KEK,17,15,88.23529411764706
+Sumatera Selatan,Immunization,17,15,88.23529411764706
+Sumatera Selatan,BBLR,17,15,88.23529411764706
+Sumatera Utara,Stunting_2019,33,22,66.66666666666667
+Sumatera Utara,KEK,33,22,66.66666666666667
+Sumatera Utara,Immunization,33,22,66.66666666666667
+Sumatera Utara,BBLR,33,22,66.66666666666667

@@ -1,0 +1,56 @@
+{
+  "original_sources_sha256": {
+    "dataset/Stunting Wasting Dataset (Synthetic)/stunting_wasting_dataset.csv": "1093bc5463e4740c84f8e054edacf12212e8285cd30d0b8cbaa39e1375000f1f",
+    "results/regression/stunting_random_forest_reg_haz.joblib": "db89609bf9054b42b499d9d0f301431885b259d1df4e39ae5a9f4acc526b0913",
+    "results/regression/stunting_random_forest_reg_waz.joblib": "4777c69ef2473c50b7312f4c092386df6dce06e9d00a21e5deabdd6c84fa6e9b",
+    "results/classification/stunting_random_forest_classifier.joblib": "00e19bf56386ae8bc3d40bb182d4c583dece89b264d9bb98550da1d84a78b9b0",
+    "results/regression/regression_shap_summary.png": "36bc297eb61409cccee177a3747a0e85abc7ef723655648fb68819782b75d761",
+    "results/regression/shap_summary_komparasi.png": "3d4f1b574fbc3462ef0fa08cd3cfa961fc713afc744cdc2eb56a7f67beada676",
+    "results/classification/classification_shap_summary.png": "67369712822bce1bf9c9b43054a87ef6431d221b3272a3f2c5816768754570b2",
+    "results/classification/classification_shap_waterfall.png": "a81b6ad940a35e888286cbaf19a2069b5cc4410dfdae509699e9995ba2b7fed7",
+    "results/classification/stunting_target_encoder.joblib": "9c9164e021c19371e269517df64d746ac4cfb87c9b9cc9281b89a3aa38136468",
+    "Stunting_Regression_Analysis.ipynb": "c27623824adf554d17af2258f9db1644c86ead11e16843b4fe0caee8de7af20d",
+    "Stunting_Classification_Analysis.ipynb": "96a1727feae7a21408fc2c0ac7c9487958d8a1127ed996f5977f18266e491fec"
+  },
+  "original_sources_unchanged": {
+    "dataset/Stunting Wasting Dataset (Synthetic)/stunting_wasting_dataset.csv": true,
+    "results/regression/stunting_random_forest_reg_haz.joblib": true,
+    "results/regression/stunting_random_forest_reg_waz.joblib": true,
+    "results/classification/stunting_random_forest_classifier.joblib": true,
+    "results/regression/regression_shap_summary.png": true,
+    "results/regression/shap_summary_komparasi.png": true,
+    "results/classification/classification_shap_summary.png": true,
+    "results/classification/classification_shap_waterfall.png": true,
+    "results/classification/stunting_target_encoder.joblib": true,
+    "Stunting_Regression_Analysis.ipynb": true,
+    "Stunting_Classification_Analysis.ipynb": true
+  },
+  "max_additivity_error": {
+    "HAZ": 1.5942802633617248e-13,
+    "WAZ": 1.1612932837579137e-13,
+    "classification": 1.3433698597964394e-13
+  },
+  "additivity_tolerance": 1e-07,
+  "waterfall_additivity_error": 1.1191048088221578e-13,
+  "all_samples_in_holdout": true,
+  "classifier_bootstrap_root_max_error": 1.5382140006181544e-13,
+  "elapsed_shap_seconds": {
+    "HAZ": 17.54671145100292,
+    "WAZ": 7.867470493998553,
+    "classification": 9.017158863000077
+  },
+  "output_sha256": {
+    "classification/classification_shap_summary.pdf": "4c58a94bb428d61163d37cc71aabb3b1cf6e51edc4337311b20b678bb18eda88",
+    "classification/classification_shap_summary.png": "86260102a43040fd705e460e1e2c0355c44bec742f4cec1103c5229505e3c5aa",
+    "classification/classification_shap_waterfall.pdf": "3d1a7729e97711c2ee1336e5c88a444e93d841cc3ee81280af0bdb1e9e9b6ead",
+    "classification/classification_shap_waterfall.png": "da87210a6898d3cf2c7636834945d10945895bc1e2fae55d68b9158e8e8b77ed",
+    "explanations.npz": "9e1bf4270ce13641f3acac45bc59366d270cf633504d90f38543ff0631eea2d1",
+    "feature_importance.csv": "0762b36b34d06d06c867bf3fd13ec4959f030f5d4ef6c1b426e14aba1b52146a",
+    "regression/regression_shap_summary.pdf": "e9b3cc5179c45434bb3c1182a096d956b6e30f81c01a5530446b5053a1d7d4c7",
+    "regression/regression_shap_summary.png": "bb74e66665ccc1a324c95aef8c01a6eecac0dd390bd9161540ef612995ad7d60",
+    "regression/shap_summary_komparasi.pdf": "13ff7ba13f03e9f63d51309c0e080fcf89abf29840c131516dbcef5fabfc6434",
+    "regression/shap_summary_komparasi.png": "d5384af77dfd6750ae5975e8e6f159d87b62117d70caeb414a45440b4f00066d",
+    "summary.json": "78ad376de63bfe90b22fc4d2d524d768c4c6cdc04cc6ece0581bbf3fb4a7430f",
+    "waterfall_case.csv": "a95d4b106c247c17e695e6e381b0b4349b1fe7c1e85a4e758b75fd8211cc7df2"
+  }
+}

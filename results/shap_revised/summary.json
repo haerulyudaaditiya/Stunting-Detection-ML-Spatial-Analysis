@@ -1,0 +1,316 @@
+{
+  "purpose": "Reviewer 1 Comment 5: SHAP of original selected Random Forest configurations",
+  "model_fit": "Original 80:20 holdout training instances; not CV-fold or grouped revision models",
+  "model_selection_basis": "Primary original five-fold CV comparison, not supplementary grouped CV",
+  "split": {
+    "rows": 100000,
+    "train": 80000,
+    "test": 20000,
+    "test_size": 0.2,
+    "random_state": 42,
+    "stratify": null
+  },
+  "gender_encoding": {
+    "Female": 0,
+    "Male": 1
+  },
+  "classes": [
+    "Normal",
+    "Severely Stunted",
+    "Stunted",
+    "Tall"
+  ],
+  "stunted_output_index": 2,
+  "features": {
+    "HAZ": [
+      "Gender_Encoded",
+      "Age (months)",
+      "Height (cm)"
+    ],
+    "WAZ": [
+      "Gender_Encoded",
+      "Age (months)",
+      "Weight (kg)"
+    ],
+    "classification": [
+      "Gender_Encoded",
+      "Age (months)",
+      "Height (cm)",
+      "Weight (kg)"
+    ]
+  },
+  "models": {
+    "HAZ": {
+      "path": "results/regression/stunting_random_forest_reg_haz.joblib",
+      "sha256": "db89609bf9054b42b499d9d0f301431885b259d1df4e39ae5a9f4acc526b0913",
+      "class": "RandomForestRegressor",
+      "parameters": {
+        "bootstrap": true,
+        "ccp_alpha": 0.0,
+        "criterion": "squared_error",
+        "max_depth": null,
+        "max_features": 1.0,
+        "max_leaf_nodes": null,
+        "max_samples": null,
+        "min_impurity_decrease": 0.0,
+        "min_samples_leaf": 1,
+        "min_samples_split": 2,
+        "min_weight_fraction_leaf": 0.0,
+        "monotonic_cst": null,
+        "n_estimators": 30,
+        "n_jobs": -1,
+        "oob_score": false,
+        "random_state": 42,
+        "verbose": 0,
+        "warm_start": false
+      }
+    },
+    "WAZ": {
+      "path": "results/regression/stunting_random_forest_reg_waz.joblib",
+      "sha256": "4777c69ef2473c50b7312f4c092386df6dce06e9d00a21e5deabdd6c84fa6e9b",
+      "class": "RandomForestRegressor",
+      "parameters": {
+        "bootstrap": true,
+        "ccp_alpha": 0.0,
+        "criterion": "squared_error",
+        "max_depth": null,
+        "max_features": 1.0,
+        "max_leaf_nodes": null,
+        "max_samples": null,
+        "min_impurity_decrease": 0.0,
+        "min_samples_leaf": 1,
+        "min_samples_split": 2,
+        "min_weight_fraction_leaf": 0.0,
+        "monotonic_cst": null,
+        "n_estimators": 30,
+        "n_jobs": -1,
+        "oob_score": false,
+        "random_state": 42,
+        "verbose": 0,
+        "warm_start": false
+      }
+    },
+    "classification": {
+      "path": "results/classification/stunting_random_forest_classifier.joblib",
+      "sha256": "00e19bf56386ae8bc3d40bb182d4c583dece89b264d9bb98550da1d84a78b9b0",
+      "class": "RandomForestClassifier",
+      "parameters": {
+        "bootstrap": true,
+        "ccp_alpha": 0.0,
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": null,
+        "max_features": "sqrt",
+        "max_leaf_nodes": null,
+        "max_samples": null,
+        "min_impurity_decrease": 0.0,
+        "min_samples_leaf": 1,
+        "min_samples_split": 2,
+        "min_weight_fraction_leaf": 0.0,
+        "monotonic_cst": null,
+        "n_estimators": 50,
+        "n_jobs": -1,
+        "oob_score": false,
+        "random_state": 42,
+        "verbose": 0,
+        "warm_start": false
+      }
+    }
+  },
+  "tree_shap": {
+    "feature_perturbation": "tree_path_dependent",
+    "approximate": false,
+    "background_data": null,
+    "classification_scale": "class probability",
+    "regression_scale": "predicted Z-score",
+    "baseline": "Saved tree statistics; classifier baseline includes training class weights"
+  },
+  "samples": {
+    "rows_per_task": 500,
+    "random_state": 42,
+    "regression": "Original full-frame sample; all indices verified in original holdout",
+    "classification": "Original holdout sample",
+    "all_samples_in_holdout": true
+  },
+  "mean_absolute_shap_ranking": [
+    {
+      "Task": "HAZ",
+      "Output": "HAZ",
+      "Rank": 1,
+      "Feature": "Height (cm)",
+      "Mean_absolute_SHAP": 1.4736988707324714,
+      "Minimum_SHAP": -4.739474166231051,
+      "Maximum_SHAP": 4.135128933295528
+    },
+    {
+      "Task": "HAZ",
+      "Output": "HAZ",
+      "Rank": 2,
+      "Feature": "Age (months)",
+      "Mean_absolute_SHAP": 1.1378404610743516,
+      "Minimum_SHAP": -2.902689830900163,
+      "Maximum_SHAP": 3.7276915857887927
+    },
+    {
+      "Task": "HAZ",
+      "Output": "HAZ",
+      "Rank": 3,
+      "Feature": "Gender_Encoded",
+      "Mean_absolute_SHAP": 0.2692907603433997,
+      "Minimum_SHAP": -0.4260957645915403,
+      "Maximum_SHAP": 0.34705695984875845
+    },
+    {
+      "Task": "WAZ",
+      "Output": "WAZ",
+      "Rank": 1,
+      "Feature": "Weight (kg)",
+      "Mean_absolute_SHAP": 1.8299389793628822,
+      "Minimum_SHAP": -7.317586534047658,
+      "Maximum_SHAP": 3.782258233443701
+    },
+    {
+      "Task": "WAZ",
+      "Output": "WAZ",
+      "Rank": 2,
+      "Feature": "Age (months)",
+      "Mean_absolute_SHAP": 1.1101569014641814,
+      "Minimum_SHAP": -2.728557017345636,
+      "Maximum_SHAP": 4.514778657374732
+    },
+    {
+      "Task": "WAZ",
+      "Output": "WAZ",
+      "Rank": 3,
+      "Feature": "Gender_Encoded",
+      "Mean_absolute_SHAP": 0.23974314480916792,
+      "Minimum_SHAP": -0.35470341687280316,
+      "Maximum_SHAP": 0.3350961358106133
+    },
+    {
+      "Task": "classification",
+      "Output": "P(Stunted)",
+      "Rank": 1,
+      "Feature": "Height (cm)",
+      "Mean_absolute_SHAP": 0.17929593883343437,
+      "Minimum_SHAP": -0.34550803312158873,
+      "Maximum_SHAP": 0.4134814971035225
+    },
+    {
+      "Task": "classification",
+      "Output": "P(Stunted)",
+      "Rank": 2,
+      "Feature": "Age (months)",
+      "Mean_absolute_SHAP": 0.12315759971211976,
+      "Minimum_SHAP": -0.18774837173898087,
+      "Maximum_SHAP": 0.4539936915979993
+    },
+    {
+      "Task": "classification",
+      "Output": "P(Stunted)",
+      "Rank": 3,
+      "Feature": "Gender_Encoded",
+      "Mean_absolute_SHAP": 0.039236638765111666,
+      "Minimum_SHAP": -0.2228488573640761,
+      "Maximum_SHAP": 0.22587539781089536
+    },
+    {
+      "Task": "classification",
+      "Output": "P(Stunted)",
+      "Rank": 4,
+      "Feature": "Weight (kg)",
+      "Mean_absolute_SHAP": 0.010807025931284561,
+      "Minimum_SHAP": -0.071973304567653,
+      "Maximum_SHAP": 0.08837688441983187
+    }
+  ],
+  "waterfall": {
+    "row_index": 50074,
+    "selection": "First holdout RF prediction equal to Stunted",
+    "observed_label": "Stunted",
+    "predicted_label": "Stunted",
+    "features": {
+      "Gender_Encoded": 0.0,
+      "Age (months)": 18.0,
+      "Height (cm)": 74.1,
+      "Weight (kg)": 14.3
+    },
+    "baseline": 0.24966072910001744,
+    "predicted_stunted_probability": 1.0,
+    "sum_of_shap": 0.7503392709000946,
+    "additivity_error": 1.1191048088221578e-13
+  },
+  "plots": {
+    "regression/regression_shap_summary": {
+      "figure_inches": [
+        8.0,
+        2.7
+      ],
+      "png_pixels": [
+        3743,
+        1270
+      ],
+      "dpi": 500,
+      "font_family": [
+        "sans-serif"
+      ]
+    },
+    "regression/shap_summary_komparasi": {
+      "figure_inches": [
+        16.0,
+        6.0
+      ],
+      "png_pixels": [
+        7743,
+        2920
+      ],
+      "dpi": 500,
+      "font_family": [
+        "sans-serif"
+      ]
+    },
+    "classification/classification_shap_summary": {
+      "figure_inches": [
+        8.0,
+        3.1
+      ],
+      "png_pixels": [
+        3745,
+        1469
+      ],
+      "dpi": 500,
+      "font_family": [
+        "sans-serif"
+      ]
+    },
+    "classification/classification_shap_waterfall": {
+      "figure_inches": [
+        8.0,
+        3.5
+      ],
+      "png_pixels": [
+        3920,
+        1670
+      ],
+      "dpi": 500,
+      "font_family": [
+        "sans-serif"
+      ]
+    }
+  },
+  "versions": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.3",
+    "scikit-learn": "1.8.0",
+    "shap": "0.52.0",
+    "matplotlib": "3.10.9",
+    "seaborn": "0.13.2",
+    "joblib": "1.5.3"
+  },
+  "limitations": [
+    "Original synthetic data and original fitted targets; no WHO target revision in this analysis",
+    "One retained holdout-trained RF instance per task, not explanations pooled across CV folds",
+    "Classification figures explain Stunted only",
+    "SHAP contributions are model associations, not clinical or causal effects"
+  ]
+}

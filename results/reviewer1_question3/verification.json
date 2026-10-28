@@ -1,0 +1,9 @@
+{
+  "source_hashes_verified": true,
+  "controlled_fits": 9,
+  "saved_corrected_metric_rows_refitted": 6,
+  "saved_profiles_and_k_curve_verified": true,
+  "clustering_tests_passed": 9,
+  "input_and_notebook_unchanged": true,
+  "script_sha256": "7dc0367a828452be47661b4a15ad39bca689a775b770221e4ac4ca639f390f61"
+}

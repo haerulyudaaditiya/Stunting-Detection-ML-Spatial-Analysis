@@ -1,0 +1,105 @@
+{
+  "generated_at_utc": "2026-10-17T18:14:57.392130+00:00",
+  "source_notebook": "Stunting_Clustering_Analysis.ipynb",
+  "revised_notebook": "Stunting_Clustering_Analysis_Revised.ipynb",
+  "source_hashes": {
+    "dataset/Data-Status-Gizi-2018-2020-Kabupaten-Kota.xlsx": "7250df8148205e85843548c360e9c1282e1b5f8ea61841e43ffca1d5e45fd1fe",
+    "Stunting_Clustering_Analysis.ipynb": "fc85904f1c50b790523019344ec415f93d7e55cbeb12cf2ed82bb7242e363e2e"
+  },
+  "districts": 514,
+  "provinces": 34,
+  "features": [
+    "Stunting_2019",
+    "KEK",
+    "Immunization",
+    "BBLR"
+  ],
+  "feature_units": "percent",
+  "district_missing": {
+    "Stunting_2019": 0,
+    "KEK": 61,
+    "Immunization": 11,
+    "BBLR": 40
+  },
+  "aggregation": "Unweighted available-case district-indicator means within each historical province",
+  "interpretation": "Descriptive provincial profiles; not population-weighted prevalence or validated clinical-risk categories",
+  "province_imputation": "none; each province has observed values for every indicator",
+  "selected_k": 2,
+  "selection_rule": "Maximum K-Means silhouette over k=2..8; lower k breaks exact ties",
+  "constructor_policy": "Original notebook constructor settings retained except for selected number of groups; implicit defaults depend on recorded software version",
+  "models": {
+    "K-Means": {
+      "parameters": {
+        "algorithm": "lloyd",
+        "copy_x": true,
+        "init": "k-means++",
+        "max_iter": 300,
+        "n_clusters": 2,
+        "n_init": "auto",
+        "random_state": 42,
+        "tol": 0.0001,
+        "verbose": 0
+      },
+      "group_sizes": {
+        "Group 1": 15,
+        "Group 2": 19
+      }
+    },
+    "GMM": {
+      "parameters": {
+        "covariance_type": "full",
+        "init_params": "kmeans",
+        "max_iter": 100,
+        "means_init": null,
+        "n_components": 2,
+        "n_init": 1,
+        "precisions_init": null,
+        "random_state": 42,
+        "reg_covar": 1e-06,
+        "tol": 0.001,
+        "verbose": 0,
+        "verbose_interval": 10,
+        "warm_start": false,
+        "weights_init": null
+      },
+      "group_sizes": {
+        "Group 1": 24,
+        "Group 2": 10
+      }
+    },
+    "Hierarchical": {
+      "parameters": {
+        "compute_distances": false,
+        "compute_full_tree": "auto",
+        "connectivity": null,
+        "distance_threshold": null,
+        "linkage": "ward",
+        "memory": null,
+        "metric": "euclidean",
+        "n_clusters": 2
+      },
+      "group_sizes": {
+        "Group 1": 28,
+        "Group 2": 6
+      }
+    }
+  },
+  "metric_winners": {
+    "highest_silhouette": "Hierarchical",
+    "lowest_dbi": "Hierarchical",
+    "highest_chi": "GMM"
+  },
+  "versions": {
+    "python": "3.12.3",
+    "numpy": "2.4.6",
+    "pandas": "3.0.3",
+    "scikit_learn": "1.8.0"
+  },
+  "limitations": [
+    "Only 34 historical provincial profiles",
+    "Indicator coverage differs across provinces",
+    "Source indicator collection years and denominator populations can differ",
+    "K-Means k selection does not prove a universal optimum for all algorithms",
+    "Higher internal scores do not establish clinical validity"
+  ]
+}

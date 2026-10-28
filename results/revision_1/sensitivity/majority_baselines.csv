@@ -1,0 +1,4 @@
+cohort,n,constant_class,training_source,accuracy,balanced_accuracy,macro_f1,weighted_f1,confusion_matrix,sensitivity,specificity
+synthetic_four_class,100000,Normal,synthetic labels only,0.72312,0.25,0.2098286828543572,0.6069252685825711,"[[72312, 0, 0, 0], [5819, 0, 0, 0], [16160, 0, 0, 0], [5709, 0, 0, 0]]",,
+synthetic_binary,100000,Normal,"same frozen synthetic four-class majority, collapsed",0.78021,0.5,0.43826851888260376,0.6838829622347925,"[[78021, 0], [21979, 0]]",0.0,1.0
+external_primary_binary,9755,Normal,"same frozen synthetic four-class majority, collapsed",0.7494618144541261,0.5,0.42839564045470524,0.6421323479988417,"[[7311, 0], [2444, 0]]",0.0,1.0

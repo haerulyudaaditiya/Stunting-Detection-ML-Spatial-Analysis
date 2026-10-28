@@ -1,0 +1,106 @@
+{
+  "source": "dataset/Data-Status-Gizi-2018-2020-Kabupaten-Kota.xlsx",
+  "source_sha256": "7250df8148205e85843548c360e9c1282e1b5f8ea61841e43ffca1d5e45fd1fe",
+  "generated_at_utc": "2026-10-13T06:15:43.018325+00:00",
+  "source_url": "https://dashboard.stunting.go.id/wp-content/uploads/2021/04/Data-Status-Gizi-2018-2020-Kabupaten-Kota.xlsx",
+  "districts": 514,
+  "provinces": 34,
+  "historical_province_count": 34,
+  "features": [
+    "Stunting_2019",
+    "KEK",
+    "Immunization",
+    "BBLR"
+  ],
+  "feature_units": "percent",
+  "selected_k": 2,
+  "selection_rule": "K-Means maximum silhouette across k=2..8; exact ties prefer lower k",
+  "summary_method": "available-case unweighted mean of district indicators within each historical province",
+  "estimand": "average observed district indicator, not provincial population prevalence",
+  "province_imputation": "none",
+  "removed_feature": "column 4: estimated stunted under-five count incorrectly called live births",
+  "sensitivity_method": "unweighted means on shared complete-case district subset; scaler refitted, same primary k",
+  "sensitivity_complete_districts": 430,
+  "sensitivity_provinces": 34,
+  "sensitivity_ari": {
+    "K-Means": 0.8816705336426914,
+    "GMM": 1.0,
+    "Ward": 0.6398707833757843
+  },
+  "best_primary_algorithm_by_silhouette": "Ward",
+  "primary_metrics": [
+    {
+      "scenario": "primary",
+      "algorithm": "K-Means",
+      "k": 2,
+      "silhouette": 0.3449100414359471,
+      "davies_bouldin": 1.155961406594574,
+      "calinski_harabasz": 19.524770775214215,
+      "group_sizes": "[23, 11]"
+    },
+    {
+      "scenario": "primary",
+      "algorithm": "GMM",
+      "k": 2,
+      "silhouette": 0.3464249074603361,
+      "davies_bouldin": 1.1306582434840193,
+      "calinski_harabasz": 18.959291564583356,
+      "group_sizes": "[24, 10]"
+    },
+    {
+      "scenario": "primary",
+      "algorithm": "Ward",
+      "k": 2,
+      "silhouette": 0.3851651216847638,
+      "davies_bouldin": 0.9358319412425391,
+      "calinski_harabasz": 17.20350718193539,
+      "group_sizes": "[28, 6]"
+    }
+  ],
+  "kmeans": {
+    "n_init": 50,
+    "random_state": 42
+  },
+  "gmm": {
+    "n_init": 20,
+    "covariance_type": "full",
+    "reg_covar": 1e-06,
+    "max_iter": 1000,
+    "random_state": 42
+  },
+  "ward": {
+    "linkage": "ward",
+    "distance": "euclidean"
+  },
+  "neutral_group_order": "ascending within-group mean district stunting; IDs are not clinical risk levels",
+  "browser_units": {
+    "Stunting_2019": "percent",
+    "KEK_Ibu_Hamil": "proportion",
+    "Imunisasi_Dasar_Lengkap": "proportion",
+    "BBLR": "proportion"
+  },
+  "map_geometry": {
+    "status": "legacy_unverified",
+    "feature_count": 32,
+    "matched_provinces": 31,
+    "missing_provinces": [
+      "Kalimantan Utara",
+      "Kepulauan Riau",
+      "Sulawesi Barat"
+    ],
+    "warning": "Not a verified 34-province boundary layer; Irian polygons and absent provinces prevent complete cartographic validation"
+  },
+  "limitations": [
+    "District means are not population-weighted provincial prevalences",
+    "Missing indicators produce unequal available-district coverage",
+    "The compiled indicators can reflect different source years and denominator populations",
+    "Internal clustering scores and complete-case sensitivity do not establish intervention effectiveness",
+    "Historical 34-province profiles are not current 38-province data"
+  ],
+  "versions": {
+    "python": "3.14.7",
+    "numpy": "2.4.6",
+    "pandas": "3.0.3",
+    "scikit_learn": "1.8.0"
+  }
+}

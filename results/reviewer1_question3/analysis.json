@@ -1,0 +1,344 @@
+{
+  "checked_at_utc": "2026-10-17T17:51:40.862218+00:00",
+  "source_hashes": {
+    "Stunting_Clustering_Analysis.ipynb": "fc85904f1c50b790523019344ec415f93d7e55cbeb12cf2ed82bb7242e363e2e",
+    "dataset/Data-Status-Gizi-2018-2020-Kabupaten-Kota.xlsx": "7250df8148205e85843548c360e9c1282e1b5f8ea61841e43ffca1d5e45fd1fe"
+  },
+  "scope": "Analysis only. No notebook, paper, dashboard, or previous result is overwritten.",
+  "versions": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.3",
+    "scikit-learn": "1.8.0"
+  },
+  "original_missing_before_province_imputation": {
+    "Province": 0,
+    "Total_Births": 0,
+    "Stunting_2019": 0,
+    "Maternal_Wasting": 0,
+    "Complete_Basic_Immunization": 0,
+    "Low_Birth_Weight": 0
+  },
+  "original_imputation_changed_values": false,
+  "district_missing_by_indicator": {
+    "Stunting_2019": 0,
+    "KEK": 61,
+    "Immunization": 11,
+    "BBLR": 40
+  },
+  "districts": 514,
+  "provinces": 34,
+  "complete_case_districts": 430,
+  "corrected_has_missing_province_indicators": false,
+  "controlled_comparison": [
+    {
+      "scenario": "original_reconstructed_k3",
+      "algorithm": "K-Means",
+      "k": 3,
+      "silhouette": 0.21816450752244532,
+      "davies_bouldin": 1.2721047423523013,
+      "calinski_harabasz": 12.096478508745676,
+      "group_sizes": [
+        19,
+        7,
+        8
+      ],
+      "parameters": {
+        "algorithm": "lloyd",
+        "copy_x": true,
+        "init": "k-means++",
+        "max_iter": 300,
+        "n_clusters": 3,
+        "n_init": "auto",
+        "random_state": 42,
+        "tol": 0.0001,
+        "verbose": 0
+      }
+    },
+    {
+      "scenario": "original_reconstructed_k3",
+      "algorithm": "GMM",
+      "k": 3,
+      "silhouette": 0.19948357100085728,
+      "davies_bouldin": 1.3235909043390577,
+      "calinski_harabasz": 11.343324571818432,
+      "group_sizes": [
+        18,
+        8,
+        8
+      ],
+      "parameters": {
+        "covariance_type": "full",
+        "init_params": "kmeans",
+        "max_iter": 100,
+        "means_init": null,
+        "n_components": 3,
+        "n_init": 1,
+        "precisions_init": null,
+        "random_state": 42,
+        "reg_covar": 1e-06,
+        "tol": 0.001,
+        "verbose": 0,
+        "verbose_interval": 10,
+        "warm_start": false,
+        "weights_init": null
+      }
+    },
+    {
+      "scenario": "original_reconstructed_k3",
+      "algorithm": "Ward",
+      "k": 3,
+      "silhouette": 0.319914988230883,
+      "davies_bouldin": 0.987706472307767,
+      "calinski_harabasz": 12.37891350010066,
+      "group_sizes": [
+        24,
+        7,
+        3
+      ],
+      "parameters": {
+        "compute_distances": false,
+        "compute_full_tree": "auto",
+        "connectivity": null,
+        "distance_threshold": null,
+        "linkage": "ward",
+        "memory": null,
+        "metric": "euclidean",
+        "n_clusters": 3
+      }
+    },
+    {
+      "scenario": "corrected_preprocessing_k3_original_model_settings",
+      "algorithm": "K-Means",
+      "k": 3,
+      "silhouette": 0.2585927180122042,
+      "davies_bouldin": 1.1702612372618624,
+      "calinski_harabasz": 18.00250793137815,
+      "group_sizes": [
+        8,
+        14,
+        12
+      ],
+      "parameters": {
+        "algorithm": "lloyd",
+        "copy_x": true,
+        "init": "k-means++",
+        "max_iter": 300,
+        "n_clusters": 3,
+        "n_init": "auto",
+        "random_state": 42,
+        "tol": 0.0001,
+        "verbose": 0
+      }
+    },
+    {
+      "scenario": "corrected_preprocessing_k3_original_model_settings",
+      "algorithm": "GMM",
+      "k": 3,
+      "silhouette": 0.24490034989826212,
+      "davies_bouldin": 1.1941210303763106,
+      "calinski_harabasz": 17.103102395467623,
+      "group_sizes": [
+        9,
+        13,
+        12
+      ],
+      "parameters": {
+        "covariance_type": "full",
+        "init_params": "kmeans",
+        "max_iter": 100,
+        "means_init": null,
+        "n_components": 3,
+        "n_init": 1,
+        "precisions_init": null,
+        "random_state": 42,
+        "reg_covar": 1e-06,
+        "tol": 0.001,
+        "verbose": 0,
+        "verbose_interval": 10,
+        "warm_start": false,
+        "weights_init": null
+      }
+    },
+    {
+      "scenario": "corrected_preprocessing_k3_original_model_settings",
+      "algorithm": "Ward",
+      "k": 3,
+      "silhouette": 0.2746036578356148,
+      "davies_bouldin": 1.1655604239508721,
+      "calinski_harabasz": 18.304219037165915,
+      "group_sizes": [
+        15,
+        6,
+        13
+      ],
+      "parameters": {
+        "compute_distances": false,
+        "compute_full_tree": "auto",
+        "connectivity": null,
+        "distance_threshold": null,
+        "linkage": "ward",
+        "memory": null,
+        "metric": "euclidean",
+        "n_clusters": 3
+      }
+    },
+    {
+      "scenario": "corrected_preprocessing_k2_original_model_settings",
+      "algorithm": "K-Means",
+      "k": 2,
+      "silhouette": 0.2800429022001284,
+      "davies_bouldin": 1.2066475914590493,
+      "calinski_harabasz": 17.02517997050089,
+      "group_sizes": [
+        19,
+        15
+      ],
+      "parameters": {
+        "algorithm": "lloyd",
+        "copy_x": true,
+        "init": "k-means++",
+        "max_iter": 300,
+        "n_clusters": 2,
+        "n_init": "auto",
+        "random_state": 42,
+        "tol": 0.0001,
+        "verbose": 0
+      }
+    },
+    {
+      "scenario": "corrected_preprocessing_k2_original_model_settings",
+      "algorithm": "GMM",
+      "k": 2,
+      "silhouette": 0.3464249074603361,
+      "davies_bouldin": 1.1306582434840193,
+      "calinski_harabasz": 18.959291564583356,
+      "group_sizes": [
+        10,
+        24
+      ],
+      "parameters": {
+        "covariance_type": "full",
+        "init_params": "kmeans",
+        "max_iter": 100,
+        "means_init": null,
+        "n_components": 2,
+        "n_init": 1,
+        "precisions_init": null,
+        "random_state": 42,
+        "reg_covar": 1e-06,
+        "tol": 0.001,
+        "verbose": 0,
+        "verbose_interval": 10,
+        "warm_start": false,
+        "weights_init": null
+      }
+    },
+    {
+      "scenario": "corrected_preprocessing_k2_original_model_settings",
+      "algorithm": "Ward",
+      "k": 2,
+      "silhouette": 0.3851651216847638,
+      "davies_bouldin": 0.9358319412425391,
+      "calinski_harabasz": 17.20350718193539,
+      "group_sizes": [
+        28,
+        6
+      ],
+      "parameters": {
+        "compute_distances": false,
+        "compute_full_tree": "auto",
+        "connectivity": null,
+        "distance_threshold": null,
+        "linkage": "ward",
+        "memory": null,
+        "metric": "euclidean",
+        "n_clusters": 2
+      }
+    }
+  ],
+  "corrected_k_selection_recomputed": [
+    {
+      "k": 2,
+      "wss": 84.46422826384533,
+      "silhouette": 0.3449100414359471
+    },
+    {
+      "k": 3,
+      "wss": 60.26396648824756,
+      "silhouette": 0.2920500227699673
+    },
+    {
+      "k": 4,
+      "wss": 49.49185091630706,
+      "silhouette": 0.2845412089238603
+    },
+    {
+      "k": 5,
+      "wss": 43.89371603356486,
+      "silhouette": 0.2896521492078705
+    },
+    {
+      "k": 6,
+      "wss": 37.813691533779746,
+      "silhouette": 0.2386192409976318
+    },
+    {
+      "k": 7,
+      "wss": 33.50169863824351,
+      "silhouette": 0.24003227722081946
+    },
+    {
+      "k": 8,
+      "wss": 28.40607303020973,
+      "silhouette": 0.24674491994956912
+    }
+  ],
+  "corrected_k_selection_original_constructor_settings": [
+    {
+      "k": 2,
+      "wss": 88.77070930935199,
+      "silhouette": 0.2800429022001284
+    },
+    {
+      "k": 3,
+      "wss": 62.92066266554529,
+      "silhouette": 0.2585927180122042
+    },
+    {
+      "k": 4,
+      "wss": 56.29992638564545,
+      "silhouette": 0.18999101061867468
+    },
+    {
+      "k": 5,
+      "wss": 45.50436958957641,
+      "silhouette": 0.21347449586028433
+    },
+    {
+      "k": 6,
+      "wss": 40.014074927522095,
+      "silhouette": 0.2135102767171782
+    },
+    {
+      "k": 7,
+      "wss": 37.932664443871296,
+      "silhouette": 0.19904222695228635
+    },
+    {
+      "k": 8,
+      "wss": 32.80901067256653,
+      "silhouette": 0.2220052332543006
+    }
+  ],
+  "existing_corrected_profiles_and_six_metric_rows_reproduced": true,
+  "important_choice": "Corrected descriptive profiles use unweighted observed-district means. This is an explicit estimand choice, not the uniquely correct replacement for population weights.",
+  "changes_beyond_input_fix": [
+    "Four rate-only features",
+    "Available-case equal-district means",
+    "K-Means n_init=50",
+    "GMM n_init=20 and max_iter=1000",
+    "k=2 by maximum K-Means silhouette over 2..8"
+  ],
+  "legacy_execution_log": "Raw dataset loaded successfully. Total rows: 514, Total columns: 7\nMissing values before KNN Imputation:\nProvince                       0\nTotal_Births                   0\nStunting_2019                  0\nMaternal_Wasting               0\nComplete_Basic_Immunization    0\nLow_Birth_Weight               0\ndtype: int64\n\nMissing values after KNN Imputation:\nProvince                       0\nTotal_Births                   0\nStunting_2019                  0\nMaternal_Wasting               0\nComplete_Basic_Immunization    0\nLow_Birth_Weight               0\ndtype: int64\n",
+  "source_files_unchanged": true
+}

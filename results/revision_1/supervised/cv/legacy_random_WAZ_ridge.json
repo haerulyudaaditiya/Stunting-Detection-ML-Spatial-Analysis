@@ -1,0 +1,67 @@
+{
+  "protocol": "random",
+  "reference": "legacy",
+  "task": "WAZ",
+  "model": "Ridge Regression",
+  "fingerprint": "c27f1db3b41a61d19d59ae1c1aa4ccdd858e2057fa82d9b0adc7a1dff9562be7",
+  "mean": {
+    "mae": 0.6053566339189155,
+    "rmse": 0.8737507188166923,
+    "r2": 0.8575824818906904
+  },
+  "sd": {
+    "mae": 0.002296023796074786,
+    "rmse": 0.004900323586041103,
+    "r2": 0.0017260672172175649
+  },
+  "folds": [
+    {
+      "mae": 0.6047552081779435,
+      "rmse": 0.8666339885816261,
+      "r2": 0.8602692931188733
+    },
+    {
+      "mae": 0.6026583731358696,
+      "rmse": 0.8730018269159583,
+      "r2": 0.8569803549686543
+    },
+    {
+      "mae": 0.6093970265304173,
+      "rmse": 0.8819862824594911,
+      "r2": 0.8553579888906212
+    },
+    {
+      "mae": 0.6060151654596596,
+      "rmse": 0.8728714026707642,
+      "r2": 0.8565668249904549
+    },
+    {
+      "mae": 0.6039573962906879,
+      "rmse": 0.8742600934556218,
+      "r2": 0.8587379474848482
+    }
+  ],
+  "training_seconds": 0.03182956300042861,
+  "diagnostics": {
+    "n": 100000,
+    "unique_decision_groups": 4091,
+    "validation_input_overlap_by_fold": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "max_validation_input_overlap": 1.0
+  },
+  "parameters": {
+    "alpha": 1.0,
+    "copy_X": true,
+    "fit_intercept": true,
+    "max_iter": null,
+    "positive": false,
+    "random_state": null,
+    "solver": "auto",
+    "tol": 0.0001
+  }
+}

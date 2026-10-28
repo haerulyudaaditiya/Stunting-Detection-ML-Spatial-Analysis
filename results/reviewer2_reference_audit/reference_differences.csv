@@ -1,0 +1,3 @@
+Indicator,Gender_Encoded,Age (months),L_old,M_old,S_old,L_corrected,M_corrected,S_corrected
+HAZ,1,24,1.0,87.4661,0.03493,1.0,87.1161,0.03507
+HAZ,0,24,1.0,86.0653,0.03749,1.0,85.7153,0.03764

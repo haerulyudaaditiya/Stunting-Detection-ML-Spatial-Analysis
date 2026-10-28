@@ -1,0 +1,64 @@
+{
+  "protocol": "grouped",
+  "reference": "corrected",
+  "task": "HAZ",
+  "model": "CatBoost",
+  "fingerprint": "62ac18975ba4aa1c7f413d3dd258aeac72cee30b2b27107e895a5e1e338e63d6",
+  "mean": {
+    "mae": 0.030560746818878177,
+    "rmse": 0.04689845135744532,
+    "r2": 0.9994292357150275
+  },
+  "sd": {
+    "mae": 0.0010117523981043358,
+    "rmse": 0.004082477813478516,
+    "r2": 0.00010101376739587607
+  },
+  "folds": [
+    {
+      "mae": 0.029810169506392144,
+      "rmse": 0.044304287045875725,
+      "r2": 0.9995037425181639
+    },
+    {
+      "mae": 0.03215389339544026,
+      "rmse": 0.053308447347935786,
+      "r2": 0.9992724669368843
+    },
+    {
+      "mae": 0.029538715099963295,
+      "rmse": 0.04258628164955148,
+      "r2": 0.9995319312943114
+    },
+    {
+      "mae": 0.029959073664585036,
+      "rmse": 0.04424856886229496,
+      "r2": 0.9994902089557571
+    },
+    {
+      "mae": 0.03134188242801014,
+      "rmse": 0.05004467188156864,
+      "r2": 0.999347828870021
+    }
+  ],
+  "training_seconds": 36.19882533400232,
+  "diagnostics": {
+    "n": 100000,
+    "unique_decision_groups": 8545,
+    "validation_input_overlap_by_fold": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "max_validation_input_overlap": 0.0
+  },
+  "parameters": {
+    "loss_function": "RMSE",
+    "thread_count": 4,
+    "random_seed": 42,
+    "verbose": false,
+    "allow_writing_files": false
+  }
+}

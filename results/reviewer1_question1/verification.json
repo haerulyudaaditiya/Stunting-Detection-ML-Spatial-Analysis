@@ -1,0 +1,11 @@
+{
+  "checked_at_utc": "2026-10-17T14:51:55.716199+00:00",
+  "trials": 9,
+  "folds": 45,
+  "rows_per_trial": 100000,
+  "all_oof_metrics_and_group_overlaps_recomputed": true,
+  "original_notebook_and_csv_unchanged": true,
+  "python_tests_passed": 27,
+  "javascript_tests_passed": 6,
+  "study_script_sha256": "5348ccef3c9a9ed5f3e24784a393461a6ede2611d332d1e1a2d497e45352548f"
+}

@@ -1,0 +1,4 @@
+algorithm,k,adjusted_rand_index,changed_provinces_after_label_alignment
+K-Means,2,0.8816705336426914,1
+GMM,2,1.0,0
+Ward,2,0.6398707833757843,3

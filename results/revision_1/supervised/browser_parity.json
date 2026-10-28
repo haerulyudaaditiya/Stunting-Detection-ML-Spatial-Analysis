@@ -1,0 +1,86 @@
+{
+  "checked_at_utc": "2026-10-13T06:31:22.504Z",
+  "tolerance": 0.00001,
+  "predictor_sha256": "cb6322f896ffad3f7bbff7f41f01552b9a678cec86696ff81ed4d1e418e3a807",
+  "checks": [
+    {
+      "filename": "rf.json",
+      "predictions": 60,
+      "maximum_absolute_error": 1.1102230246251565e-16,
+      "sha256": "a19e19d313286c827efc2fdae0625c65a6b99979938343d7fc683734ee1e4bef"
+    },
+    {
+      "filename": "et.json",
+      "predictions": 60,
+      "maximum_absolute_error": 2.220446049250313e-16,
+      "sha256": "05744da32fbc498931178ee27d3e0a90b4b42cc73918c2f5cc4968ba9da6c3be"
+    },
+    {
+      "filename": "xgb.json",
+      "predictions": 60,
+      "maximum_absolute_error": 7.78292139624881e-8,
+      "sha256": "28f21715c3a7ea6697c0a18f7399782b3460e05fb84a5f41547994ec3b28a4f9"
+    },
+    {
+      "filename": "lgbm.json",
+      "predictions": 60,
+      "maximum_absolute_error": 1.734723475976807e-18,
+      "sha256": "309b68a34109c824a5be9ae175f5cb42c71105c7d77136b10a6f9295149b3a72"
+    },
+    {
+      "filename": "cb.json",
+      "predictions": 60,
+      "maximum_absolute_error": 1.1102230246251565e-16,
+      "sha256": "893831594b8b63fc04bf86552dd6ed255d4be4d69701189cbd4125a6614934b3"
+    },
+    {
+      "filename": "rf_haz.json",
+      "predictions": 60,
+      "maximum_absolute_error": 2.220446049250313e-16,
+      "sha256": "f06d0657e2b8f6bc82d31c772a155cf7310203145dad816ecf82046eabdca4a1"
+    },
+    {
+      "filename": "xgb_haz.json",
+      "predictions": 60,
+      "maximum_absolute_error": 8.121035417474332e-7,
+      "sha256": "bf91edf9489bd6cebd3be3fab312063fc9b9b72b7e5935c0ef215e7d5fa6a995"
+    },
+    {
+      "filename": "lgbm_haz.json",
+      "predictions": 60,
+      "maximum_absolute_error": 0,
+      "sha256": "00fb298d28d27d66f9c9a0329d43a2c36faf3a7b22ff9e55c00b5d2e62385450"
+    },
+    {
+      "filename": "cb_haz.json",
+      "predictions": 60,
+      "maximum_absolute_error": 0,
+      "sha256": "c243a2d8a750eb2a679c97768cc9b17387a9d9116bee6d53e4813b930963cb1a"
+    },
+    {
+      "filename": "rf_waz.json",
+      "predictions": 60,
+      "maximum_absolute_error": 4.440892098500626e-16,
+      "sha256": "fd26835614df48788265b4e6d52fa0772ec249c0e73a32a817cd25c1f079c23b"
+    },
+    {
+      "filename": "xgb_waz.json",
+      "predictions": 60,
+      "maximum_absolute_error": 9.866397379099112e-7,
+      "sha256": "5981f549bd311187e668c922beede4292be0bb7de2c9d6f502d611d1320b58ae"
+    },
+    {
+      "filename": "lgbm_waz.json",
+      "predictions": 60,
+      "maximum_absolute_error": 0,
+      "sha256": "dec42a4c1ef3c6f86bc4cb797c0c7ec957781a20141ba6230cd77763b877e250"
+    },
+    {
+      "filename": "cb_waz.json",
+      "predictions": 60,
+      "maximum_absolute_error": 0,
+      "sha256": "0d9c7b0ffdd7b0bca2a8e7a8a62ba609dd331048d435c3fc2aeec3b01347793c"
+    }
+  ],
+  "total_predictions": 780
+}

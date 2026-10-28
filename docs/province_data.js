@@ -1,410 +1,1183 @@
 const PROVINCE_DATA = [
   {
     "Provinsi": "Aceh",
-    "Jumlah_Lahir": 171718.723,
-    "Stunting_2019": 33.50434783,
-    "KEK_Ibu_Hamil": 0.12306009,
-    "Imunisasi_Dasar_Lengkap": 0.24219049,
-    "BBLR": 0.06475239,
+    "Provinsi_Map": "Aceh",
+    "Stunting_2019": 33.504347826086956,
+    "KEK_Ibu_Hamil": 0.12306009138472333,
+    "Imunisasi_Dasar_Lengkap": 0.24219048563909135,
+    "BBLR": 0.06475239419141338,
+    "summary_method": "available-case unweighted mean of district indicators within each historical province",
+    "coverage": {
+      "Stunting_2019": {
+        "total_districts": 23,
+        "observed_districts": 23,
+        "coverage_pct": 100.0
+      },
+      "KEK": {
+        "total_districts": 23,
+        "observed_districts": 20,
+        "coverage_pct": 86.95652173913044
+      },
+      "Immunization": {
+        "total_districts": 23,
+        "observed_districts": 23,
+        "coverage_pct": 100.0
+      },
+      "BBLR": {
+        "total_districts": 23,
+        "observed_districts": 22,
+        "coverage_pct": 95.65217391304348
+      }
+    },
     "Klaster_KMeans": 1,
-    "Klaster_GMM": 1,
-    "Klaster_HC": 0,
-    "Provinsi_Map": "Aceh"
+    "Klaster_GMM": 0,
+    "Klaster_HC": 0
   },
   {
     "Provinsi": "Bali",
-    "Jumlah_Lahir": 45182.469,
-    "Stunting_2019": 15.1,
-    "KEK_Ibu_Hamil": 0.14256298,
-    "Imunisasi_Dasar_Lengkap": 0.90927782,
-    "BBLR": 0.06196608,
-    "Klaster_KMeans": 2,
-    "Klaster_GMM": 2,
-    "Klaster_HC": 2,
-    "Provinsi_Map": "Bali"
+    "Provinsi_Map": "Bali",
+    "Stunting_2019": 15.100000000000001,
+    "KEK_Ibu_Hamil": 0.1425629772874769,
+    "Imunisasi_Dasar_Lengkap": 0.9092778216143366,
+    "BBLR": 0.0619660820797485,
+    "summary_method": "available-case unweighted mean of district indicators within each historical province",
+    "coverage": {
+      "Stunting_2019": {
+        "total_districts": 9,
+        "observed_districts": 9,
+        "coverage_pct": 100.0
+      },
+      "KEK": {
+        "total_districts": 9,
+        "observed_districts": 9,
+        "coverage_pct": 100.0
+      },
+      "Immunization": {
+        "total_districts": 9,
+        "observed_districts": 9,
+        "coverage_pct": 100.0
+      },
+      "BBLR": {
+        "total_districts": 9,
+        "observed_districts": 9,
+        "coverage_pct": 100.0
+      }
+    },
+    "Klaster_KMeans": 0,
+    "Klaster_GMM": 0,
+    "Klaster_HC": 0
   },
   {
     "Provinsi": "Bangka Belitung",
-    "Jumlah_Lahir": 24715.078,
-    "Stunting_2019": 19.75714286,
-    "KEK_Ibu_Hamil": 0.15428833,
-    "Imunisasi_Dasar_Lengkap": 0.75012584,
-    "BBLR": 0.06010139,
-    "Klaster_KMeans": 2,
-    "Klaster_GMM": 2,
-    "Klaster_HC": 2,
-    "Provinsi_Map": "Kepulauan Bangka Belitung"
+    "Provinsi_Map": "Bangka Belitung",
+    "Stunting_2019": 19.75714285714286,
+    "KEK_Ibu_Hamil": 0.15428833104293826,
+    "Imunisasi_Dasar_Lengkap": 0.7501258447249743,
+    "BBLR": 0.060101386099185056,
+    "summary_method": "available-case unweighted mean of district indicators within each historical province",
+    "coverage": {
+      "Stunting_2019": {
+        "total_districts": 7,
+        "observed_districts": 7,
+        "coverage_pct": 100.0
+      },
+      "KEK": {
+        "total_districts": 7,
+        "observed_districts": 6,
+        "coverage_pct": 85.71428571428571
+      },
+      "Immunization": {
+        "total_districts": 7,
+        "observed_districts": 7,
+        "coverage_pct": 100.0
+      },
+      "BBLR": {
+        "total_districts": 7,
+        "observed_districts": 7,
+        "coverage_pct": 100.0
+      }
+    },
+    "Klaster_KMeans": 0,
+    "Klaster_GMM": 0,
+    "Klaster_HC": 0
   },
   {
     "Provinsi": "Banten",
-    "Jumlah_Lahir": 254076.461,
+    "Provinsi_Map": "Banten",
     "Stunting_2019": 26.125,
-    "KEK_Ibu_Hamil": 0.19511413,
-    "Imunisasi_Dasar_Lengkap": 0.45385546,
-    "BBLR": 0.05469216,
-    "Klaster_KMeans": 1,
-    "Klaster_GMM": 1,
-    "Klaster_HC": 0,
-    "Provinsi_Map": "Banten"
+    "KEK_Ibu_Hamil": 0.19511413181229728,
+    "Imunisasi_Dasar_Lengkap": 0.4538554648988024,
+    "BBLR": 0.05469215628075849,
+    "summary_method": "available-case unweighted mean of district indicators within each historical province",
+    "coverage": {
+      "Stunting_2019": {
+        "total_districts": 8,
+        "observed_districts": 8,
+        "coverage_pct": 100.0
+      },
+      "KEK": {
+        "total_districts": 8,
+        "observed_districts": 8,
+        "coverage_pct": 100.0
+      },
+      "Immunization": {
+        "total_districts": 8,
+        "observed_districts": 8,
+        "coverage_pct": 100.0
+      },
+      "BBLR": {
+        "total_districts": 8,
+        "observed_districts": 8,
+        "coverage_pct": 100.0
+      }
+    },
+    "Klaster_KMeans": 0,
+    "Klaster_GMM": 0,
+    "Klaster_HC": 0
   },
   {
     "Provinsi": "Bengkulu",
-    "Jumlah_Lahir": 44151.077,
-    "Stunting_2019": 26.09,
-    "KEK_Ibu_Hamil": 0.150373,
-    "Imunisasi_Dasar_Lengkap": 0.62029176,
-    "BBLR": 0.05306426,
-    "Klaster_KMeans": 1,
-    "Klaster_GMM": 1,
-    "Klaster_HC": 2,
-    "Provinsi_Map": "Bengkulu"
+    "Provinsi_Map": "Bengkulu",
+    "Stunting_2019": 26.089999999999996,
+    "KEK_Ibu_Hamil": 0.1503730034047526,
+    "Imunisasi_Dasar_Lengkap": 0.6202917593516295,
+    "BBLR": 0.05306425676636201,
+    "summary_method": "available-case unweighted mean of district indicators within each historical province",
+    "coverage": {
+      "Stunting_2019": {
+        "total_districts": 10,
+        "observed_districts": 10,
+        "coverage_pct": 100.0
+      },
+      "KEK": {
+        "total_districts": 10,
+        "observed_districts": 9,
+        "coverage_pct": 90.0
+      },
+      "Immunization": {
+        "total_districts": 10,
+        "observed_districts": 10,
+        "coverage_pct": 100.0
+      },
+      "BBLR": {
+        "total_districts": 10,
+        "observed_districts": 9,
+        "coverage_pct": 90.0
+      }
+    },
+    "Klaster_KMeans": 0,
+    "Klaster_GMM": 0,
+    "Klaster_HC": 0
   },
   {
-    "Provinsi": "DIY",
-    "Jumlah_Lahir": 58717.335,
+    "Provinsi": "DI Yogyakarta",
+    "Provinsi_Map": "DIY",
     "Stunting_2019": 22.4,
-    "KEK_Ibu_Hamil": 0.25590594,
-    "Imunisasi_Dasar_Lengkap": 0.85994287,
-    "BBLR": 0.08161414,
-    "Klaster_KMeans": 2,
-    "Klaster_GMM": 2,
-    "Klaster_HC": 2,
-    "Provinsi_Map": "DIY"
+    "KEK_Ibu_Hamil": 0.2559059405299191,
+    "Imunisasi_Dasar_Lengkap": 0.8599428738578844,
+    "BBLR": 0.0816141361390849,
+    "summary_method": "available-case unweighted mean of district indicators within each historical province",
+    "coverage": {
+      "Stunting_2019": {
+        "total_districts": 5,
+        "observed_districts": 5,
+        "coverage_pct": 100.0
+      },
+      "KEK": {
+        "total_districts": 5,
+        "observed_districts": 5,
+        "coverage_pct": 100.0
+      },
+      "Immunization": {
+        "total_districts": 5,
+        "observed_districts": 5,
+        "coverage_pct": 100.0
+      },
+      "BBLR": {
+        "total_districts": 5,
+        "observed_districts": 5,
+        "coverage_pct": 100.0
+      }
+    },
+    "Klaster_KMeans": 0,
+    "Klaster_GMM": 0,
+    "Klaster_HC": 0
   },
   {
-    "Provinsi": "Dki Jakarta",
-    "Jumlah_Lahir": 169278.826,
-    "Stunting_2019": 21.98333333,
-    "KEK_Ibu_Hamil": 0.1550129,
-    "Imunisasi_Dasar_Lengkap": 0.68455114,
-    "BBLR": 0.05930368,
-    "Klaster_KMeans": 2,
-    "Klaster_GMM": 2,
-    "Klaster_HC": 2,
-    "Provinsi_Map": "Jakarta Raya"
+    "Provinsi": "DKI Jakarta",
+    "Provinsi_Map": "DKI Jakarta",
+    "Stunting_2019": 21.983333333333334,
+    "KEK_Ibu_Hamil": 0.1550128998149075,
+    "Imunisasi_Dasar_Lengkap": 0.6845511431637163,
+    "BBLR": 0.05930368060905855,
+    "summary_method": "available-case unweighted mean of district indicators within each historical province",
+    "coverage": {
+      "Stunting_2019": {
+        "total_districts": 6,
+        "observed_districts": 6,
+        "coverage_pct": 100.0
+      },
+      "KEK": {
+        "total_districts": 6,
+        "observed_districts": 5,
+        "coverage_pct": 83.33333333333333
+      },
+      "Immunization": {
+        "total_districts": 6,
+        "observed_districts": 6,
+        "coverage_pct": 100.0
+      },
+      "BBLR": {
+        "total_districts": 6,
+        "observed_districts": 6,
+        "coverage_pct": 100.0
+      }
+    },
+    "Klaster_KMeans": 0,
+    "Klaster_GMM": 0,
+    "Klaster_HC": 0
   },
   {
     "Provinsi": "Gorontalo",
-    "Jumlah_Lahir": 33877.525,
+    "Provinsi_Map": "Gorontalo",
     "Stunting_2019": 34.4,
-    "KEK_Ibu_Hamil": 0.12910197,
-    "Imunisasi_Dasar_Lengkap": 0.6089111,
-    "BBLR": 0.10110293,
-    "Klaster_KMeans": 0,
-    "Klaster_GMM": 0,
-    "Klaster_HC": 0,
-    "Provinsi_Map": "Gorontalo"
+    "KEK_Ibu_Hamil": 0.12910196798635598,
+    "Imunisasi_Dasar_Lengkap": 0.6089110996087208,
+    "BBLR": 0.10110292650870338,
+    "summary_method": "available-case unweighted mean of district indicators within each historical province",
+    "coverage": {
+      "Stunting_2019": {
+        "total_districts": 6,
+        "observed_districts": 6,
+        "coverage_pct": 100.0
+      },
+      "KEK": {
+        "total_districts": 6,
+        "observed_districts": 5,
+        "coverage_pct": 83.33333333333333
+      },
+      "Immunization": {
+        "total_districts": 6,
+        "observed_districts": 6,
+        "coverage_pct": 100.0
+      },
+      "BBLR": {
+        "total_districts": 6,
+        "observed_districts": 6,
+        "coverage_pct": 100.0
+      }
+    },
+    "Klaster_KMeans": 1,
+    "Klaster_GMM": 1,
+    "Klaster_HC": 0
   },
   {
     "Provinsi": "Jambi",
-    "Jumlah_Lahir": 63404.172,
-    "Stunting_2019": 22.31818182,
-    "KEK_Ibu_Hamil": 0.19441878,
-    "Imunisasi_Dasar_Lengkap": 0.63936476,
-    "BBLR": 0.03484982,
-    "Klaster_KMeans": 2,
-    "Klaster_GMM": 2,
-    "Klaster_HC": 2,
-    "Provinsi_Map": "Jambi"
+    "Provinsi_Map": "Jambi",
+    "Stunting_2019": 22.318181818181817,
+    "KEK_Ibu_Hamil": 0.1944187775540713,
+    "Imunisasi_Dasar_Lengkap": 0.6393647565121143,
+    "BBLR": 0.034849824750984124,
+    "summary_method": "available-case unweighted mean of district indicators within each historical province",
+    "coverage": {
+      "Stunting_2019": {
+        "total_districts": 11,
+        "observed_districts": 11,
+        "coverage_pct": 100.0
+      },
+      "KEK": {
+        "total_districts": 11,
+        "observed_districts": 9,
+        "coverage_pct": 81.81818181818181
+      },
+      "Immunization": {
+        "total_districts": 11,
+        "observed_districts": 11,
+        "coverage_pct": 100.0
+      },
+      "BBLR": {
+        "total_districts": 11,
+        "observed_districts": 9,
+        "coverage_pct": 81.81818181818181
+      }
+    },
+    "Klaster_KMeans": 0,
+    "Klaster_GMM": 0,
+    "Klaster_HC": 0
   },
   {
     "Provinsi": "Jawa Barat",
-    "Jumlah_Lahir": 1014717.483,
-    "Stunting_2019": 24.93703704,
-    "KEK_Ibu_Hamil": 0.17167378,
-    "Imunisasi_Dasar_Lengkap": 0.64618004,
-    "BBLR": 0.06144918,
-    "Klaster_KMeans": 2,
-    "Klaster_GMM": 2,
-    "Klaster_HC": 2,
-    "Provinsi_Map": "Jawa Barat"
+    "Provinsi_Map": "Jawa Barat",
+    "Stunting_2019": 24.937037037037037,
+    "KEK_Ibu_Hamil": 0.17167378246005593,
+    "Imunisasi_Dasar_Lengkap": 0.6461800436351623,
+    "BBLR": 0.06144917716165931,
+    "summary_method": "available-case unweighted mean of district indicators within each historical province",
+    "coverage": {
+      "Stunting_2019": {
+        "total_districts": 27,
+        "observed_districts": 27,
+        "coverage_pct": 100.0
+      },
+      "KEK": {
+        "total_districts": 27,
+        "observed_districts": 26,
+        "coverage_pct": 96.29629629629629
+      },
+      "Immunization": {
+        "total_districts": 27,
+        "observed_districts": 27,
+        "coverage_pct": 100.0
+      },
+      "BBLR": {
+        "total_districts": 27,
+        "observed_districts": 27,
+        "coverage_pct": 100.0
+      }
+    },
+    "Klaster_KMeans": 0,
+    "Klaster_GMM": 0,
+    "Klaster_HC": 0
   },
   {
     "Provinsi": "Jawa Tengah",
-    "Jumlah_Lahir": 665902.377,
-    "Stunting_2019": 26.83142857,
-    "KEK_Ibu_Hamil": 0.21310799,
-    "Imunisasi_Dasar_Lengkap": 0.761055,
-    "BBLR": 0.06114157,
-    "Klaster_KMeans": 2,
-    "Klaster_GMM": 2,
-    "Klaster_HC": 2,
-    "Provinsi_Map": "Jawa Tengah"
+    "Provinsi_Map": "Jawa Tengah",
+    "Stunting_2019": 26.83142857142857,
+    "KEK_Ibu_Hamil": 0.2131079855137016,
+    "Imunisasi_Dasar_Lengkap": 0.7610550000860806,
+    "BBLR": 0.06114156800213741,
+    "summary_method": "available-case unweighted mean of district indicators within each historical province",
+    "coverage": {
+      "Stunting_2019": {
+        "total_districts": 35,
+        "observed_districts": 35,
+        "coverage_pct": 100.0
+      },
+      "KEK": {
+        "total_districts": 35,
+        "observed_districts": 33,
+        "coverage_pct": 94.28571428571429
+      },
+      "Immunization": {
+        "total_districts": 35,
+        "observed_districts": 35,
+        "coverage_pct": 100.0
+      },
+      "BBLR": {
+        "total_districts": 35,
+        "observed_districts": 35,
+        "coverage_pct": 100.0
+      }
+    },
+    "Klaster_KMeans": 0,
+    "Klaster_GMM": 0,
+    "Klaster_HC": 0
   },
   {
     "Provinsi": "Jawa Timur",
-    "Jumlah_Lahir": 746674.374,
-    "Stunting_2019": 26.43157895,
-    "KEK_Ibu_Hamil": 0.18417759,
-    "Imunisasi_Dasar_Lengkap": 0.71086409,
-    "BBLR": 0.06355586,
-    "Klaster_KMeans": 2,
-    "Klaster_GMM": 2,
-    "Klaster_HC": 2,
-    "Provinsi_Map": "Jawa Timur"
+    "Provinsi_Map": "Jawa Timur",
+    "Stunting_2019": 26.431578947368422,
+    "KEK_Ibu_Hamil": 0.18417759310462534,
+    "Imunisasi_Dasar_Lengkap": 0.7108640882783618,
+    "BBLR": 0.06355585809056845,
+    "summary_method": "available-case unweighted mean of district indicators within each historical province",
+    "coverage": {
+      "Stunting_2019": {
+        "total_districts": 38,
+        "observed_districts": 38,
+        "coverage_pct": 100.0
+      },
+      "KEK": {
+        "total_districts": 38,
+        "observed_districts": 35,
+        "coverage_pct": 92.10526315789474
+      },
+      "Immunization": {
+        "total_districts": 38,
+        "observed_districts": 38,
+        "coverage_pct": 100.0
+      },
+      "BBLR": {
+        "total_districts": 38,
+        "observed_districts": 38,
+        "coverage_pct": 100.0
+      }
+    },
+    "Klaster_KMeans": 0,
+    "Klaster_GMM": 0,
+    "Klaster_HC": 0
   },
   {
     "Provinsi": "Kalimantan Barat",
-    "Jumlah_Lahir": 135167.325,
-    "Stunting_2019": 31.33571429,
-    "KEK_Ibu_Hamil": 0.18369889,
-    "Imunisasi_Dasar_Lengkap": 0.47766249,
-    "BBLR": 0.0650541,
-    "Klaster_KMeans": 1,
-    "Klaster_GMM": 1,
-    "Klaster_HC": 0,
-    "Provinsi_Map": "Kalimantan Barat"
+    "Provinsi_Map": "Kalimantan Barat",
+    "Stunting_2019": 31.335714285714285,
+    "KEK_Ibu_Hamil": 0.18369889460126887,
+    "Imunisasi_Dasar_Lengkap": 0.477662491731736,
+    "BBLR": 0.06505409805343527,
+    "summary_method": "available-case unweighted mean of district indicators within each historical province",
+    "coverage": {
+      "Stunting_2019": {
+        "total_districts": 14,
+        "observed_districts": 14,
+        "coverage_pct": 100.0
+      },
+      "KEK": {
+        "total_districts": 14,
+        "observed_districts": 11,
+        "coverage_pct": 78.57142857142857
+      },
+      "Immunization": {
+        "total_districts": 14,
+        "observed_districts": 14,
+        "coverage_pct": 100.0
+      },
+      "BBLR": {
+        "total_districts": 14,
+        "observed_districts": 14,
+        "coverage_pct": 100.0
+      }
+    },
+    "Klaster_KMeans": 0,
+    "Klaster_GMM": 0,
+    "Klaster_HC": 0
   },
   {
     "Provinsi": "Kalimantan Selatan",
-    "Jumlah_Lahir": 117336.919,
-    "Stunting_2019": 33.33076923,
-    "KEK_Ibu_Hamil": 0.19840088,
-    "Imunisasi_Dasar_Lengkap": 0.69513437,
-    "BBLR": 0.06604037,
-    "Klaster_KMeans": 1,
-    "Klaster_GMM": 1,
-    "Klaster_HC": 0,
-    "Provinsi_Map": "Kalimantan Selatan"
+    "Provinsi_Map": "Kalimantan Selatan",
+    "Stunting_2019": 33.330769230769235,
+    "KEK_Ibu_Hamil": 0.19840087943890783,
+    "Imunisasi_Dasar_Lengkap": 0.6951343693324447,
+    "BBLR": 0.06604037212198245,
+    "summary_method": "available-case unweighted mean of district indicators within each historical province",
+    "coverage": {
+      "Stunting_2019": {
+        "total_districts": 13,
+        "observed_districts": 13,
+        "coverage_pct": 100.0
+      },
+      "KEK": {
+        "total_districts": 13,
+        "observed_districts": 12,
+        "coverage_pct": 92.3076923076923
+      },
+      "Immunization": {
+        "total_districts": 13,
+        "observed_districts": 13,
+        "coverage_pct": 100.0
+      },
+      "BBLR": {
+        "total_districts": 13,
+        "observed_districts": 13,
+        "coverage_pct": 100.0
+      }
+    },
+    "Klaster_KMeans": 0,
+    "Klaster_GMM": 0,
+    "Klaster_HC": 0
   },
   {
     "Provinsi": "Kalimantan Tengah",
-    "Jumlah_Lahir": 71707.957,
-    "Stunting_2019": 30.67857143,
-    "KEK_Ibu_Hamil": 0.14039761,
-    "Imunisasi_Dasar_Lengkap": 0.45149576,
-    "BBLR": 0.05859918,
-    "Klaster_KMeans": 1,
-    "Klaster_GMM": 1,
-    "Klaster_HC": 0,
-    "Provinsi_Map": "Kalimantan Tengah"
+    "Provinsi_Map": "Kalimantan Tengah",
+    "Stunting_2019": 30.678571428571427,
+    "KEK_Ibu_Hamil": 0.14039760891485792,
+    "Imunisasi_Dasar_Lengkap": 0.4514957634018175,
+    "BBLR": 0.05859918091547861,
+    "summary_method": "available-case unweighted mean of district indicators within each historical province",
+    "coverage": {
+      "Stunting_2019": {
+        "total_districts": 14,
+        "observed_districts": 14,
+        "coverage_pct": 100.0
+      },
+      "KEK": {
+        "total_districts": 14,
+        "observed_districts": 11,
+        "coverage_pct": 78.57142857142857
+      },
+      "Immunization": {
+        "total_districts": 14,
+        "observed_districts": 14,
+        "coverage_pct": 100.0
+      },
+      "BBLR": {
+        "total_districts": 14,
+        "observed_districts": 14,
+        "coverage_pct": 100.0
+      }
+    },
+    "Klaster_KMeans": 0,
+    "Klaster_GMM": 0,
+    "Klaster_HC": 0
   },
   {
     "Provinsi": "Kalimantan Timur",
-    "Jumlah_Lahir": 87316.347,
+    "Provinsi_Map": "Kalimantan Timur",
     "Stunting_2019": 30.3,
-    "KEK_Ibu_Hamil": 0.13519886,
-    "Imunisasi_Dasar_Lengkap": 0.75718525,
-    "BBLR": 0.06599618,
-    "Klaster_KMeans": 1,
-    "Klaster_GMM": 1,
-    "Klaster_HC": 0,
-    "Provinsi_Map": "Kalimantan Timur"
+    "KEK_Ibu_Hamil": 0.13519885816039648,
+    "Imunisasi_Dasar_Lengkap": 0.7571852457209025,
+    "BBLR": 0.0659961771533319,
+    "summary_method": "available-case unweighted mean of district indicators within each historical province",
+    "coverage": {
+      "Stunting_2019": {
+        "total_districts": 10,
+        "observed_districts": 10,
+        "coverage_pct": 100.0
+      },
+      "KEK": {
+        "total_districts": 10,
+        "observed_districts": 8,
+        "coverage_pct": 80.0
+      },
+      "Immunization": {
+        "total_districts": 10,
+        "observed_districts": 10,
+        "coverage_pct": 100.0
+      },
+      "BBLR": {
+        "total_districts": 10,
+        "observed_districts": 10,
+        "coverage_pct": 100.0
+      }
+    },
+    "Klaster_KMeans": 0,
+    "Klaster_GMM": 0,
+    "Klaster_HC": 0
   },
   {
     "Provinsi": "Kalimantan Utara",
-    "Jumlah_Lahir": 17381.602,
+    "Provinsi_Map": "Kalimantan Utara",
     "Stunting_2019": 26.9,
-    "KEK_Ibu_Hamil": 0.04701314,
-    "Imunisasi_Dasar_Lengkap": 0.70019055,
-    "BBLR": 0.06536775,
-    "Klaster_KMeans": 1,
-    "Klaster_GMM": 1,
-    "Klaster_HC": 0,
-    "Provinsi_Map": "Kalimantan Utara"
+    "KEK_Ibu_Hamil": 0.04701313836919275,
+    "Imunisasi_Dasar_Lengkap": 0.7001905535597506,
+    "BBLR": 0.06536775432294183,
+    "summary_method": "available-case unweighted mean of district indicators within each historical province",
+    "coverage": {
+      "Stunting_2019": {
+        "total_districts": 5,
+        "observed_districts": 5,
+        "coverage_pct": 100.0
+      },
+      "KEK": {
+        "total_districts": 5,
+        "observed_districts": 3,
+        "coverage_pct": 60.0
+      },
+      "Immunization": {
+        "total_districts": 5,
+        "observed_districts": 5,
+        "coverage_pct": 100.0
+      },
+      "BBLR": {
+        "total_districts": 5,
+        "observed_districts": 5,
+        "coverage_pct": 100.0
+      }
+    },
+    "Klaster_KMeans": 0,
+    "Klaster_GMM": 0,
+    "Klaster_HC": 0
   },
   {
     "Provinsi": "Kepulauan Riau",
-    "Jumlah_Lahir": 36130.841,
-    "Stunting_2019": 17.02857143,
-    "KEK_Ibu_Hamil": 0.1873337,
-    "Imunisasi_Dasar_Lengkap": 0.64850401,
-    "BBLR": 0.06709001,
-    "Klaster_KMeans": 2,
-    "Klaster_GMM": 2,
-    "Klaster_HC": 2,
-    "Provinsi_Map": "Kepulauan Riau"
+    "Provinsi_Map": "Kepulauan Riau",
+    "Stunting_2019": 17.02857142857143,
+    "KEK_Ibu_Hamil": 0.1873337019760131,
+    "Imunisasi_Dasar_Lengkap": 0.6485040081717618,
+    "BBLR": 0.06709001437382538,
+    "summary_method": "available-case unweighted mean of district indicators within each historical province",
+    "coverage": {
+      "Stunting_2019": {
+        "total_districts": 7,
+        "observed_districts": 7,
+        "coverage_pct": 100.0
+      },
+      "KEK": {
+        "total_districts": 7,
+        "observed_districts": 4,
+        "coverage_pct": 57.142857142857146
+      },
+      "Immunization": {
+        "total_districts": 7,
+        "observed_districts": 7,
+        "coverage_pct": 100.0
+      },
+      "BBLR": {
+        "total_districts": 7,
+        "observed_districts": 7,
+        "coverage_pct": 100.0
+      }
+    },
+    "Klaster_KMeans": 0,
+    "Klaster_GMM": 0,
+    "Klaster_HC": 0
   },
   {
     "Provinsi": "Lampung",
-    "Jumlah_Lahir": 180903.663,
-    "Stunting_2019": 24.30666667,
-    "KEK_Ibu_Hamil": 0.1700745,
-    "Imunisasi_Dasar_Lengkap": 0.6398691,
-    "BBLR": 0.05067042,
-    "Klaster_KMeans": 2,
-    "Klaster_GMM": 2,
-    "Klaster_HC": 2,
-    "Provinsi_Map": "Lampung"
+    "Provinsi_Map": "Lampung",
+    "Stunting_2019": 24.30666666666667,
+    "KEK_Ibu_Hamil": 0.1700745015698438,
+    "Imunisasi_Dasar_Lengkap": 0.6398691033671162,
+    "BBLR": 0.050670421256059944,
+    "summary_method": "available-case unweighted mean of district indicators within each historical province",
+    "coverage": {
+      "Stunting_2019": {
+        "total_districts": 15,
+        "observed_districts": 15,
+        "coverage_pct": 100.0
+      },
+      "KEK": {
+        "total_districts": 15,
+        "observed_districts": 14,
+        "coverage_pct": 93.33333333333333
+      },
+      "Immunization": {
+        "total_districts": 15,
+        "observed_districts": 15,
+        "coverage_pct": 100.0
+      },
+      "BBLR": {
+        "total_districts": 15,
+        "observed_districts": 15,
+        "coverage_pct": 100.0
+      }
+    },
+    "Klaster_KMeans": 0,
+    "Klaster_GMM": 0,
+    "Klaster_HC": 0
   },
   {
     "Provinsi": "Maluku",
-    "Jumlah_Lahir": 51784.088,
-    "Stunting_2019": 32.54545455,
-    "KEK_Ibu_Hamil": 0.32446544,
-    "Imunisasi_Dasar_Lengkap": 0.30846889,
-    "BBLR": 0.06343284,
-    "Klaster_KMeans": 0,
-    "Klaster_GMM": 0,
-    "Klaster_HC": 1,
-    "Provinsi_Map": "Maluku"
+    "Provinsi_Map": "Maluku",
+    "Stunting_2019": 32.54545454545455,
+    "KEK_Ibu_Hamil": 0.3244654366423309,
+    "Imunisasi_Dasar_Lengkap": 0.3084688886716503,
+    "BBLR": 0.06343283896000092,
+    "summary_method": "available-case unweighted mean of district indicators within each historical province",
+    "coverage": {
+      "Stunting_2019": {
+        "total_districts": 11,
+        "observed_districts": 11,
+        "coverage_pct": 100.0
+      },
+      "KEK": {
+        "total_districts": 11,
+        "observed_districts": 11,
+        "coverage_pct": 100.0
+      },
+      "Immunization": {
+        "total_districts": 11,
+        "observed_districts": 11,
+        "coverage_pct": 100.0
+      },
+      "BBLR": {
+        "total_districts": 11,
+        "observed_districts": 9,
+        "coverage_pct": 81.81818181818181
+      }
+    },
+    "Klaster_KMeans": 1,
+    "Klaster_GMM": 1,
+    "Klaster_HC": 1
   },
   {
     "Provinsi": "Maluku Utara",
-    "Jumlah_Lahir": 33007.163,
+    "Provinsi_Map": "Maluku Utara",
     "Stunting_2019": 28.76,
-    "KEK_Ibu_Hamil": 0.33964255,
-    "Imunisasi_Dasar_Lengkap": 0.37682514,
-    "BBLR": 0.09084796,
-    "Klaster_KMeans": 0,
-    "Klaster_GMM": 0,
-    "Klaster_HC": 1,
-    "Provinsi_Map": "Maluku Utara"
+    "KEK_Ibu_Hamil": 0.339642553316136,
+    "Imunisasi_Dasar_Lengkap": 0.37682514201370865,
+    "BBLR": 0.09084795850512499,
+    "summary_method": "available-case unweighted mean of district indicators within each historical province",
+    "coverage": {
+      "Stunting_2019": {
+        "total_districts": 10,
+        "observed_districts": 10,
+        "coverage_pct": 100.0
+      },
+      "KEK": {
+        "total_districts": 10,
+        "observed_districts": 9,
+        "coverage_pct": 90.0
+      },
+      "Immunization": {
+        "total_districts": 10,
+        "observed_districts": 10,
+        "coverage_pct": 100.0
+      },
+      "BBLR": {
+        "total_districts": 10,
+        "observed_districts": 9,
+        "coverage_pct": 90.0
+      }
+    },
+    "Klaster_KMeans": 1,
+    "Klaster_GMM": 1,
+    "Klaster_HC": 1
   },
   {
     "Provinsi": "Nusa Tenggara Barat",
-    "Jumlah_Lahir": 104730.322,
+    "Provinsi_Map": "Nusa Tenggara Barat",
     "Stunting_2019": 21.55,
-    "KEK_Ibu_Hamil": 0.2338054,
-    "Imunisasi_Dasar_Lengkap": 0.67293321,
-    "BBLR": 0.05556447,
-    "Klaster_KMeans": 2,
-    "Klaster_GMM": 2,
-    "Klaster_HC": 2,
-    "Provinsi_Map": "Nusa Tenggara Barat"
+    "KEK_Ibu_Hamil": 0.23380539868046304,
+    "Imunisasi_Dasar_Lengkap": 0.672933208333527,
+    "BBLR": 0.055564468877423626,
+    "summary_method": "available-case unweighted mean of district indicators within each historical province",
+    "coverage": {
+      "Stunting_2019": {
+        "total_districts": 10,
+        "observed_districts": 10,
+        "coverage_pct": 100.0
+      },
+      "KEK": {
+        "total_districts": 10,
+        "observed_districts": 10,
+        "coverage_pct": 100.0
+      },
+      "Immunization": {
+        "total_districts": 10,
+        "observed_districts": 10,
+        "coverage_pct": 100.0
+      },
+      "BBLR": {
+        "total_districts": 10,
+        "observed_districts": 10,
+        "coverage_pct": 100.0
+      }
+    },
+    "Klaster_KMeans": 0,
+    "Klaster_GMM": 0,
+    "Klaster_HC": 0
   },
   {
     "Provinsi": "Nusa Tenggara Timur",
-    "Jumlah_Lahir": 253401.949,
-    "Stunting_2019": 42.34090909,
-    "KEK_Ibu_Hamil": 0.32783817,
-    "Imunisasi_Dasar_Lengkap": 0.53983197,
-    "BBLR": 0.09815194,
-    "Klaster_KMeans": 0,
-    "Klaster_GMM": 0,
-    "Klaster_HC": 1,
-    "Provinsi_Map": "Nusa Tenggara Timur"
+    "Provinsi_Map": "Nusa Tenggara Timur",
+    "Stunting_2019": 42.34090909090909,
+    "KEK_Ibu_Hamil": 0.32783817317080893,
+    "Imunisasi_Dasar_Lengkap": 0.5398319691652798,
+    "BBLR": 0.09815194324869334,
+    "summary_method": "available-case unweighted mean of district indicators within each historical province",
+    "coverage": {
+      "Stunting_2019": {
+        "total_districts": 22,
+        "observed_districts": 22,
+        "coverage_pct": 100.0
+      },
+      "KEK": {
+        "total_districts": 22,
+        "observed_districts": 22,
+        "coverage_pct": 100.0
+      },
+      "Immunization": {
+        "total_districts": 22,
+        "observed_districts": 22,
+        "coverage_pct": 100.0
+      },
+      "BBLR": {
+        "total_districts": 22,
+        "observed_districts": 22,
+        "coverage_pct": 100.0
+      }
+    },
+    "Klaster_KMeans": 1,
+    "Klaster_GMM": 1,
+    "Klaster_HC": 1
   },
   {
     "Provinsi": "Papua",
-    "Jumlah_Lahir": 97476.108,
-    "Stunting_2019": 31.18275862,
-    "KEK_Ibu_Hamil": 0.43471523,
-    "Imunisasi_Dasar_Lengkap": 0.32893815,
-    "BBLR": 0.09907189,
-    "Klaster_KMeans": 0,
-    "Klaster_GMM": 0,
-    "Klaster_HC": 1,
-    "Provinsi_Map": "Papua"
+    "Provinsi_Map": "Papua",
+    "Stunting_2019": 31.182758620689658,
+    "KEK_Ibu_Hamil": 0.4347152348237983,
+    "Imunisasi_Dasar_Lengkap": 0.3289381495202136,
+    "BBLR": 0.09907189392798481,
+    "summary_method": "available-case unweighted mean of district indicators within each historical province",
+    "coverage": {
+      "Stunting_2019": {
+        "total_districts": 29,
+        "observed_districts": 29,
+        "coverage_pct": 100.0
+      },
+      "KEK": {
+        "total_districts": 29,
+        "observed_districts": 16,
+        "coverage_pct": 55.172413793103445
+      },
+      "Immunization": {
+        "total_districts": 29,
+        "observed_districts": 21,
+        "coverage_pct": 72.41379310344827
+      },
+      "BBLR": {
+        "total_districts": 29,
+        "observed_districts": 15,
+        "coverage_pct": 51.724137931034484
+      }
+    },
+    "Klaster_KMeans": 1,
+    "Klaster_GMM": 1,
+    "Klaster_HC": 1
   },
   {
     "Provinsi": "Papua Barat",
-    "Jumlah_Lahir": 24386.833,
-    "Stunting_2019": 31.02307692,
-    "KEK_Ibu_Hamil": 0.29526173,
-    "Imunisasi_Dasar_Lengkap": 0.34452451,
-    "BBLR": 0.09721685,
-    "Klaster_KMeans": 0,
-    "Klaster_GMM": 0,
-    "Klaster_HC": 1,
-    "Provinsi_Map": "Papua Barat"
+    "Provinsi_Map": "Papua Barat",
+    "Stunting_2019": 31.023076923076925,
+    "KEK_Ibu_Hamil": 0.295261734430339,
+    "Imunisasi_Dasar_Lengkap": 0.34452450500478254,
+    "BBLR": 0.09721685153387004,
+    "summary_method": "available-case unweighted mean of district indicators within each historical province",
+    "coverage": {
+      "Stunting_2019": {
+        "total_districts": 13,
+        "observed_districts": 13,
+        "coverage_pct": 100.0
+      },
+      "KEK": {
+        "total_districts": 13,
+        "observed_districts": 12,
+        "coverage_pct": 92.3076923076923
+      },
+      "Immunization": {
+        "total_districts": 13,
+        "observed_districts": 12,
+        "coverage_pct": 92.3076923076923
+      },
+      "BBLR": {
+        "total_districts": 13,
+        "observed_districts": 10,
+        "coverage_pct": 76.92307692307692
+      }
+    },
+    "Klaster_KMeans": 1,
+    "Klaster_GMM": 1,
+    "Klaster_HC": 1
   },
   {
     "Provinsi": "Riau",
-    "Jumlah_Lahir": 153981.464,
-    "Stunting_2019": 24.20833333,
-    "KEK_Ibu_Hamil": 0.15141137,
-    "Imunisasi_Dasar_Lengkap": 0.3723247,
-    "BBLR": 0.05890643,
-    "Klaster_KMeans": 1,
-    "Klaster_GMM": 1,
-    "Klaster_HC": 0,
-    "Provinsi_Map": "Riau"
+    "Provinsi_Map": "Riau",
+    "Stunting_2019": 24.208333333333332,
+    "KEK_Ibu_Hamil": 0.15141137305874133,
+    "Imunisasi_Dasar_Lengkap": 0.37232470110555477,
+    "BBLR": 0.058906433521380815,
+    "summary_method": "available-case unweighted mean of district indicators within each historical province",
+    "coverage": {
+      "Stunting_2019": {
+        "total_districts": 12,
+        "observed_districts": 12,
+        "coverage_pct": 100.0
+      },
+      "KEK": {
+        "total_districts": 12,
+        "observed_districts": 10,
+        "coverage_pct": 83.33333333333333
+      },
+      "Immunization": {
+        "total_districts": 12,
+        "observed_districts": 12,
+        "coverage_pct": 100.0
+      },
+      "BBLR": {
+        "total_districts": 12,
+        "observed_districts": 12,
+        "coverage_pct": 100.0
+      }
+    },
+    "Klaster_KMeans": 0,
+    "Klaster_GMM": 0,
+    "Klaster_HC": 0
   },
   {
     "Provinsi": "Sulawesi Barat",
-    "Jumlah_Lahir": 51999.393,
-    "Stunting_2019": 39.31666667,
-    "KEK_Ibu_Hamil": 0.20325288,
-    "Imunisasi_Dasar_Lengkap": 0.49095783,
-    "BBLR": 0.06354983,
+    "Provinsi_Map": "Sulawesi Barat",
+    "Stunting_2019": 39.31666666666667,
+    "KEK_Ibu_Hamil": 0.20325288413640252,
+    "Imunisasi_Dasar_Lengkap": 0.4909578292511986,
+    "BBLR": 0.06354983198077774,
+    "summary_method": "available-case unweighted mean of district indicators within each historical province",
+    "coverage": {
+      "Stunting_2019": {
+        "total_districts": 6,
+        "observed_districts": 6,
+        "coverage_pct": 100.0
+      },
+      "KEK": {
+        "total_districts": 6,
+        "observed_districts": 6,
+        "coverage_pct": 100.0
+      },
+      "Immunization": {
+        "total_districts": 6,
+        "observed_districts": 6,
+        "coverage_pct": 100.0
+      },
+      "BBLR": {
+        "total_districts": 6,
+        "observed_districts": 5,
+        "coverage_pct": 83.33333333333333
+      }
+    },
     "Klaster_KMeans": 1,
     "Klaster_GMM": 1,
-    "Klaster_HC": 0,
-    "Provinsi_Map": "Sulawesi Barat"
+    "Klaster_HC": 0
   },
   {
     "Provinsi": "Sulawesi Selatan",
-    "Jumlah_Lahir": 211874.437,
-    "Stunting_2019": 30.97083333,
-    "KEK_Ibu_Hamil": 0.15692433,
-    "Imunisasi_Dasar_Lengkap": 0.63450531,
-    "BBLR": 0.0691108,
-    "Klaster_KMeans": 1,
-    "Klaster_GMM": 1,
-    "Klaster_HC": 0,
-    "Provinsi_Map": "Sulawesi Selatan"
+    "Provinsi_Map": "Sulawesi Selatan",
+    "Stunting_2019": 30.97083333333333,
+    "KEK_Ibu_Hamil": 0.15692433464171743,
+    "Imunisasi_Dasar_Lengkap": 0.6345053091525341,
+    "BBLR": 0.0691108035211085,
+    "summary_method": "available-case unweighted mean of district indicators within each historical province",
+    "coverage": {
+      "Stunting_2019": {
+        "total_districts": 24,
+        "observed_districts": 24,
+        "coverage_pct": 100.0
+      },
+      "KEK": {
+        "total_districts": 24,
+        "observed_districts": 23,
+        "coverage_pct": 95.83333333333333
+      },
+      "Immunization": {
+        "total_districts": 24,
+        "observed_districts": 24,
+        "coverage_pct": 100.0
+      },
+      "BBLR": {
+        "total_districts": 24,
+        "observed_districts": 24,
+        "coverage_pct": 100.0
+      }
+    },
+    "Klaster_KMeans": 0,
+    "Klaster_GMM": 0,
+    "Klaster_HC": 0
   },
   {
     "Provinsi": "Sulawesi Tengah",
-    "Jumlah_Lahir": 86803.477,
-    "Stunting_2019": 31.01538462,
-    "KEK_Ibu_Hamil": 0.23797162,
-    "Imunisasi_Dasar_Lengkap": 0.48203984,
-    "BBLR": 0.08561858,
-    "Klaster_KMeans": 0,
-    "Klaster_GMM": 0,
-    "Klaster_HC": 0,
-    "Provinsi_Map": "Sulawesi Tengah"
+    "Provinsi_Map": "Sulawesi Tengah",
+    "Stunting_2019": 31.015384615384615,
+    "KEK_Ibu_Hamil": 0.2379716186713631,
+    "Imunisasi_Dasar_Lengkap": 0.48203983766719233,
+    "BBLR": 0.08561858129838111,
+    "summary_method": "available-case unweighted mean of district indicators within each historical province",
+    "coverage": {
+      "Stunting_2019": {
+        "total_districts": 13,
+        "observed_districts": 13,
+        "coverage_pct": 100.0
+      },
+      "KEK": {
+        "total_districts": 13,
+        "observed_districts": 11,
+        "coverage_pct": 84.61538461538461
+      },
+      "Immunization": {
+        "total_districts": 13,
+        "observed_districts": 13,
+        "coverage_pct": 100.0
+      },
+      "BBLR": {
+        "total_districts": 13,
+        "observed_districts": 13,
+        "coverage_pct": 100.0
+      }
+    },
+    "Klaster_KMeans": 1,
+    "Klaster_GMM": 1,
+    "Klaster_HC": 0
   },
   {
     "Provinsi": "Sulawesi Tenggara",
-    "Jumlah_Lahir": 82398.695,
-    "Stunting_2019": 32.05294118,
-    "KEK_Ibu_Hamil": 0.31450031,
-    "Imunisasi_Dasar_Lengkap": 0.42565927,
-    "BBLR": 0.06558544,
-    "Klaster_KMeans": 0,
-    "Klaster_GMM": 0,
-    "Klaster_HC": 1,
-    "Provinsi_Map": "Sulawesi Tenggara"
+    "Provinsi_Map": "Sulawesi Tenggara",
+    "Stunting_2019": 32.05294117647059,
+    "KEK_Ibu_Hamil": 0.314500307955371,
+    "Imunisasi_Dasar_Lengkap": 0.4256592682672609,
+    "BBLR": 0.065585441470207,
+    "summary_method": "available-case unweighted mean of district indicators within each historical province",
+    "coverage": {
+      "Stunting_2019": {
+        "total_districts": 17,
+        "observed_districts": 17,
+        "coverage_pct": 100.0
+      },
+      "KEK": {
+        "total_districts": 17,
+        "observed_districts": 16,
+        "coverage_pct": 94.11764705882354
+      },
+      "Immunization": {
+        "total_districts": 17,
+        "observed_districts": 17,
+        "coverage_pct": 100.0
+      },
+      "BBLR": {
+        "total_districts": 17,
+        "observed_districts": 13,
+        "coverage_pct": 76.47058823529412
+      }
+    },
+    "Klaster_KMeans": 1,
+    "Klaster_GMM": 1,
+    "Klaster_HC": 1
   },
   {
     "Provinsi": "Sulawesi Utara",
-    "Jumlah_Lahir": 41954.187,
-    "Stunting_2019": 20.68666667,
-    "KEK_Ibu_Hamil": 0.19491188,
-    "Imunisasi_Dasar_Lengkap": 0.5692413,
-    "BBLR": 0.06579492,
-    "Klaster_KMeans": 2,
-    "Klaster_GMM": 2,
-    "Klaster_HC": 2,
-    "Provinsi_Map": "Sulawesi Utara"
+    "Provinsi_Map": "Sulawesi Utara",
+    "Stunting_2019": 20.686666666666667,
+    "KEK_Ibu_Hamil": 0.19491188238193272,
+    "Imunisasi_Dasar_Lengkap": 0.5692412975025435,
+    "BBLR": 0.06579491612113135,
+    "summary_method": "available-case unweighted mean of district indicators within each historical province",
+    "coverage": {
+      "Stunting_2019": {
+        "total_districts": 15,
+        "observed_districts": 15,
+        "coverage_pct": 100.0
+      },
+      "KEK": {
+        "total_districts": 15,
+        "observed_districts": 13,
+        "coverage_pct": 86.66666666666667
+      },
+      "Immunization": {
+        "total_districts": 15,
+        "observed_districts": 15,
+        "coverage_pct": 100.0
+      },
+      "BBLR": {
+        "total_districts": 15,
+        "observed_districts": 15,
+        "coverage_pct": 100.0
+      }
+    },
+    "Klaster_KMeans": 0,
+    "Klaster_GMM": 0,
+    "Klaster_HC": 0
   },
   {
     "Provinsi": "Sumatera Barat",
-    "Jumlah_Lahir": 136651.261,
-    "Stunting_2019": 26.12105263,
-    "KEK_Ibu_Hamil": 0.16561315,
-    "Imunisasi_Dasar_Lengkap": 0.40066779,
-    "BBLR": 0.0495582,
-    "Klaster_KMeans": 1,
-    "Klaster_GMM": 1,
-    "Klaster_HC": 0,
-    "Provinsi_Map": "Sumatera Barat"
+    "Provinsi_Map": "Sumatera Barat",
+    "Stunting_2019": 26.121052631578948,
+    "KEK_Ibu_Hamil": 0.16561315118178077,
+    "Imunisasi_Dasar_Lengkap": 0.40066779492226096,
+    "BBLR": 0.04955819602384731,
+    "summary_method": "available-case unweighted mean of district indicators within each historical province",
+    "coverage": {
+      "Stunting_2019": {
+        "total_districts": 19,
+        "observed_districts": 19,
+        "coverage_pct": 100.0
+      },
+      "KEK": {
+        "total_districts": 19,
+        "observed_districts": 17,
+        "coverage_pct": 89.47368421052632
+      },
+      "Immunization": {
+        "total_districts": 19,
+        "observed_districts": 19,
+        "coverage_pct": 100.0
+      },
+      "BBLR": {
+        "total_districts": 19,
+        "observed_districts": 19,
+        "coverage_pct": 100.0
+      }
+    },
+    "Klaster_KMeans": 0,
+    "Klaster_GMM": 0,
+    "Klaster_HC": 0
   },
   {
     "Provinsi": "Sumatera Selatan",
-    "Jumlah_Lahir": 227278.87,
-    "Stunting_2019": 29.51176471,
-    "KEK_Ibu_Hamil": 0.17802398,
-    "Imunisasi_Dasar_Lengkap": 0.48182459,
-    "BBLR": 0.07780116,
+    "Provinsi_Map": "Sumatera Selatan",
+    "Stunting_2019": 29.511764705882353,
+    "KEK_Ibu_Hamil": 0.17802398419914855,
+    "Imunisasi_Dasar_Lengkap": 0.481824587825022,
+    "BBLR": 0.07780116371032227,
+    "summary_method": "available-case unweighted mean of district indicators within each historical province",
+    "coverage": {
+      "Stunting_2019": {
+        "total_districts": 17,
+        "observed_districts": 17,
+        "coverage_pct": 100.0
+      },
+      "KEK": {
+        "total_districts": 17,
+        "observed_districts": 17,
+        "coverage_pct": 100.0
+      },
+      "Immunization": {
+        "total_districts": 17,
+        "observed_districts": 17,
+        "coverage_pct": 100.0
+      },
+      "BBLR": {
+        "total_districts": 17,
+        "observed_districts": 15,
+        "coverage_pct": 88.23529411764706
+      }
+    },
     "Klaster_KMeans": 1,
-    "Klaster_GMM": 0,
-    "Klaster_HC": 0,
-    "Provinsi_Map": "Sumatera Selatan"
+    "Klaster_GMM": 1,
+    "Klaster_HC": 0
   },
   {
     "Provinsi": "Sumatera Utara",
-    "Jumlah_Lahir": 407356.978,
-    "Stunting_2019": 32.86666667,
-    "KEK_Ibu_Hamil": 0.17753449,
-    "Imunisasi_Dasar_Lengkap": 0.30708879,
-    "BBLR": 0.04295331,
-    "Klaster_KMeans": 1,
-    "Klaster_GMM": 1,
-    "Klaster_HC": 0,
-    "Provinsi_Map": "Sumatera Utara"
+    "Provinsi_Map": "Sumatera Utara",
+    "Stunting_2019": 32.86666666666667,
+    "KEK_Ibu_Hamil": 0.17753448568153005,
+    "Imunisasi_Dasar_Lengkap": 0.30708879327891725,
+    "BBLR": 0.042953312020553025,
+    "summary_method": "available-case unweighted mean of district indicators within each historical province",
+    "coverage": {
+      "Stunting_2019": {
+        "total_districts": 33,
+        "observed_districts": 33,
+        "coverage_pct": 100.0
+      },
+      "KEK": {
+        "total_districts": 33,
+        "observed_districts": 27,
+        "coverage_pct": 81.81818181818181
+      },
+      "Immunization": {
+        "total_districts": 33,
+        "observed_districts": 31,
+        "coverage_pct": 93.93939393939394
+      },
+      "BBLR": {
+        "total_districts": 33,
+        "observed_districts": 24,
+        "coverage_pct": 72.72727272727273
+      }
+    },
+    "Klaster_KMeans": 0,
+    "Klaster_GMM": 0,
+    "Klaster_HC": 0
   }
 ];
+const PROVINCE_METADATA = {
+  "selected_k": 2,
+  "summary_method": "available-case unweighted mean of district indicators within each historical province",
+  "estimand": "average observed district indicator, not provincial population prevalence",
+  "source_sha256": "7250df8148205e85843548c360e9c1282e1b5f8ea61841e43ffca1d5e45fd1fe",
+  "units": {
+    "Stunting_2019": "percent",
+    "KEK_Ibu_Hamil": "proportion",
+    "Imunisasi_Dasar_Lengkap": "proportion",
+    "BBLR": "proportion"
+  },
+  "map_geometry": {
+    "status": "legacy_unverified",
+    "feature_count": 32,
+    "matched_provinces": 31,
+    "missing_provinces": [
+      "Kalimantan Utara",
+      "Kepulauan Riau",
+      "Sulawesi Barat"
+    ],
+    "warning": "Not a verified 34-province boundary layer; Irian polygons and absent provinces prevent complete cartographic validation"
+  },
+  "historical_province_count": 34,
+  "province_imputation": "none"
+};

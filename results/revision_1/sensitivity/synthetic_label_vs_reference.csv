@@ -1,0 +1,33 @@
+reference,original_label,haz_category,count
+legacy,Normal,Normal,71834
+legacy,Normal,Severely Stunted,0
+legacy,Normal,Stunted,204
+legacy,Normal,Tall,274
+legacy,Severely Stunted,Normal,0
+legacy,Severely Stunted,Severely Stunted,5819
+legacy,Severely Stunted,Stunted,0
+legacy,Severely Stunted,Tall,0
+legacy,Stunted,Normal,1373
+legacy,Stunted,Severely Stunted,256
+legacy,Stunted,Stunted,14531
+legacy,Stunted,Tall,0
+legacy,Tall,Normal,0
+legacy,Tall,Severely Stunted,0
+legacy,Tall,Stunted,0
+legacy,Tall,Tall,5709
+corrected,Normal,Normal,71767
+corrected,Normal,Severely Stunted,0
+corrected,Normal,Stunted,204
+corrected,Normal,Tall,341
+corrected,Severely Stunted,Normal,0
+corrected,Severely Stunted,Severely Stunted,5741
+corrected,Severely Stunted,Stunted,78
+corrected,Severely Stunted,Tall,0
+corrected,Stunted,Normal,1441
+corrected,Stunted,Severely Stunted,256
+corrected,Stunted,Stunted,14463
+corrected,Stunted,Tall,0
+corrected,Tall,Normal,0
+corrected,Tall,Severely Stunted,0
+corrected,Tall,Stunted,0
+corrected,Tall,Tall,5709

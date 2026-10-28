@@ -1,0 +1,83 @@
+{
+  "checked_at_utc": "2026-10-17T18:07:12.895348+00:00",
+  "selected_k": 2,
+  "district_rows": 514,
+  "province_rows": 34,
+  "independent_source_aggregation_matches": true,
+  "saved_metrics_recomputed": true,
+  "neutral_groups_checked": true,
+  "original_model_constructor_settings_checked": true,
+  "original_source_hashes_unchanged": true,
+  "executed_notebook_code_cells": 6,
+  "notebook_error_outputs": 0,
+  "python_tests_passed": 28,
+  "javascript_test_file_exit_code": 0,
+  "figures_visually_inspected": true,
+  "notebook_sha256": "54ddb751926a65dfdff87c7d7a017ecf01b7826681988c09b9685a3c03552df5",
+  "data_helper_sha256": "5bc520110d36aaf6f102782bb0bb596ae51c6892c6e9d3fad91ce33ac4c04af6",
+  "output_sha256": {
+    "k_selection.png": "1e1600b1f97d3f339fda215c01e531327944dd7172e11a3855acb93594836e11",
+    "k_selection.pdf": "844a39bb532df87cd7359b9f3221b824b6649dba6350d2ce42491cf1d8cfc2db",
+    "regional_profiles.png": "9491e7733e1cc54ef7fb83264a8946d56f4f55685d603a6ad3cc63d908d5d981",
+    "regional_profiles.pdf": "ebe4b185c5e3269d72e40c1d8fb547b2fa137de150ca8c252a090df68db00720",
+    "district_indicators.csv": "e6ba6f6b594f021a462fb6998d08950da38a0fd3e6d6ed01f6ba62c4e825235f",
+    "coverage.csv": "c1eac84342b5e1dba09608263c545de269bfa31014e4634459aae1cffae7d864",
+    "province_profiles.csv": "b016b3fd5a6e22aae28552cf1eb1fa3d8dd0e4250c9642bb26399a20912ef1b1",
+    "k_selection.csv": "8e8d4ab8c53430f1e09a75c2cf4f05066f2f47011b2938f5274d93b9e2e11884",
+    "metrics.csv": "0593f5318c5c119b92e6c404adb62911faf587ff1bc6c155089a95500f9a9c14",
+    "group_profiles.csv": "28fe923c6162bf290791f52d257505247e7e7e143bec5d8c3eee3d8329de9265",
+    "algorithm_agreement.csv": "22cb2375e2ea9366f909021692725a3b034742b929c6c8db937967aca2e4aad2",
+    "summary.json": "602f10133540665e8a4235aada880a112a3d31342c06727d1fc87890e9f4c19a"
+  },
+  "style_update_checked_at_utc": "2026-10-17T18:15:11.751012+00:00",
+  "numerical_outputs_unchanged_after_style_update": true,
+  "plot_style": {
+    "source": "Stunting_Clustering_Analysis.ipynb, cells 1, 17, 33 (zero-based)",
+    "matches_original_style_settings": true,
+    "theme": "seaborn whitegrid",
+    "resolved_font_family": "sans-serif, matching the original sns.set_theme after serif setup",
+    "selection": {
+      "figsize_inches": [
+        10,
+        5
+      ],
+      "png_pixels": [
+        4920,
+        2420
+      ],
+      "dpi": 500,
+      "line_colors": [
+        "tab:red",
+        "tab:blue"
+      ],
+      "markers": [
+        "o",
+        "s"
+      ]
+    },
+    "scatter": {
+      "figsize_inches": [
+        18,
+        5
+      ],
+      "png_pixels": [
+        8920,
+        2420
+      ],
+      "dpi": 500,
+      "palette": "Set1",
+      "marker_size": 100,
+      "independent_axes": true,
+      "legend_position": "upper left, matching original rendered figure"
+    },
+    "necessary_label_updates": [
+      "Mean district stunting (%)",
+      "Mean district KEK (%)",
+      "Cluster: Group 1 / Group 2"
+    ],
+    "actual_figure_properties_checked": true,
+    "figures_visually_inspected": true,
+    "notebook_integration_test_after_final_style_update": "1 passed"
+  },
+  "original_figure_hashes_unchanged": true
+}
