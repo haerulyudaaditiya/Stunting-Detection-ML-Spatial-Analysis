@@ -90,6 +90,7 @@ local/
 scratch/
 test_results/
 temp/
+/docs/superpowers/
 
 # Large/New Datasets
 dataset/new/
