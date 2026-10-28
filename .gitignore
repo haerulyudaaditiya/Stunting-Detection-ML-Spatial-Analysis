@@ -93,3 +93,46 @@ temp/
 
 # Large/New Datasets
 dataset/new/
+
+# Impeccable Design Tool
+.impeccable/
+.agent/
+.claude/
+.gemini/
+
+# Local conference submission package
+/paper/
+
+# Earlier working copies, screenshots, and document checks
+/results/revision_1/baseline/
+/results/revision_1/dashboard/
+/results/revision_1/document_review.json
+
+# Additional fitted models; keep the selected frozen artifacts
+/results/regression_corrected/models/*.joblib
+!/results/regression_corrected/models/stunting_random_forest_reg_haz.joblib
+!/results/regression_corrected/models/stunting_random_forest_reg_waz.joblib
+/results/revision_1/supervised/models/*.joblib
+!/results/revision_1/supervised/models/HAZ_rf.joblib
+!/results/revision_1/supervised/models/WAZ_cb.joblib
+!/results/revision_1/supervised/models/classification_et.joblib
+
+# Detailed run outputs retained locally; summaries and CV inputs stay in Git
+/results/regression_corrected/holdout_predictions_*.csv
+/results/regression_corrected/split_indices.npz
+/results/regression_corrected/explanations.npz
+/results/shap_revised/explanations.npz
+/results/reviewer1_question1/oof_predictions_and_folds.csv
+/results/reviewer2_validation/external_predictions_*.csv
+/results/revision_1/supervised/external_predictions_*.csv
+/results/revision_1/supervised/shap_*.npz
+/results/revision_1/sensitivity/synthetic_label_conflicts.csv
+/results/revision_1/sensitivity/synthetic_label_disagreements.csv
+
+# Figures and browser copies from earlier revision stages
+/results/revision_1/clustering/*.png
+/results/revision_1/clustering/*.pdf
+/results/revision_1/clustering/*.js
+/results/revision_1/supervised/shap_*.png
+/results/revision_1/supervised/shap_*.pdf
+/results/shap_revised/regression/
