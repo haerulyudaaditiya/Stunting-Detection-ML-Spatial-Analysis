@@ -1,0 +1,7598 @@
+[
+  {
+    "task": "classification",
+    "code": "rf",
+    "features": [
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 54.6,
+        "Weight (kg)": 7.0
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 8,
+        "Height (cm)": 66.0,
+        "Weight (kg)": 12.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 20,
+        "Height (cm)": 90.0,
+        "Weight (kg)": 10.9
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 13,
+        "Height (cm)": 82.4,
+        "Weight (kg)": 9.6
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 11,
+        "Height (cm)": 70.1,
+        "Weight (kg)": 13.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 16,
+        "Height (cm)": 80.0,
+        "Weight (kg)": 11.7
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 11,
+        "Height (cm)": 69.9,
+        "Weight (kg)": 11.8
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 6,
+        "Height (cm)": 66.1,
+        "Weight (kg)": 6.6
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 4,
+        "Height (cm)": 59.8,
+        "Weight (kg)": 8.8
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 18,
+        "Height (cm)": 74.1,
+        "Weight (kg)": 14.3
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 2,
+        "Height (cm)": 55.7,
+        "Weight (kg)": 3.9
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 15,
+        "Height (cm)": 77.7,
+        "Weight (kg)": 11.4
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 14,
+        "Height (cm)": 79.0,
+        "Weight (kg)": 9.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 12,
+        "Height (cm)": 74.2,
+        "Weight (kg)": 11.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 47.6,
+        "Weight (kg)": 6.4
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 23,
+        "Height (cm)": 84.9,
+        "Weight (kg)": 10.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 24,
+        "Height (cm)": 83.4,
+        "Weight (kg)": 10.0
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 16,
+        "Height (cm)": 82.8,
+        "Weight (kg)": 10.4
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 15,
+        "Height (cm)": 76.3,
+        "Weight (kg)": 8.4
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 60.5,
+        "Weight (kg)": 6.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 21,
+        "Height (cm)": 87.3,
+        "Weight (kg)": 14.1
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 17,
+        "Height (cm)": 79.1,
+        "Weight (kg)": 10.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 7,
+        "Height (cm)": 72.0,
+        "Weight (kg)": 6.6
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 2,
+        "Height (cm)": 61.2,
+        "Weight (kg)": 5.4
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 14,
+        "Height (cm)": 80.1,
+        "Weight (kg)": 10.5
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 13,
+        "Height (cm)": 77.4,
+        "Weight (kg)": 12.6
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 9,
+        "Height (cm)": 64.4,
+        "Weight (kg)": 6.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 11,
+        "Height (cm)": 71.5,
+        "Weight (kg)": 10.5
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 13,
+        "Height (cm)": 69.4,
+        "Weight (kg)": 12.7
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 0,
+        "Height (cm)": 48.4,
+        "Weight (kg)": 1.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 4,
+        "Height (cm)": 66.2,
+        "Weight (kg)": 9.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 3,
+        "Height (cm)": 60.8,
+        "Weight (kg)": 8.7
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 0,
+        "Height (cm)": 45.3,
+        "Weight (kg)": 2.1
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 17,
+        "Height (cm)": 79.6,
+        "Weight (kg)": 8.0
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 6,
+        "Height (cm)": 64.5,
+        "Weight (kg)": 8.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 14,
+        "Height (cm)": 71.7,
+        "Weight (kg)": 7.7
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 17,
+        "Height (cm)": 84.4,
+        "Weight (kg)": 11.8
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 6,
+        "Height (cm)": 64.1,
+        "Weight (kg)": 8.8
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 3,
+        "Height (cm)": 66.3,
+        "Weight (kg)": 3.9
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 2,
+        "Height (cm)": 56.0,
+        "Weight (kg)": 3.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 0,
+        "Height (cm)": 49.5,
+        "Weight (kg)": 3.1
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 50.5000001,
+        "Weight (kg)": 4.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 12,
+        "Height (cm)": 74.2,
+        "Weight (kg)": 8.5
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 23,
+        "Height (cm)": 84.5,
+        "Weight (kg)": 11.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 24,
+        "Height (cm)": 85.1,
+        "Weight (kg)": 11.5
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 0,
+        "Height (cm)": 49.5,
+        "Weight (kg)": 3.1
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 1,
+        "Height (cm)": 50.5000001,
+        "Weight (kg)": 4.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 12,
+        "Height (cm)": 74.2,
+        "Weight (kg)": 8.5
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 23,
+        "Height (cm)": 84.5,
+        "Weight (kg)": 11.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 24,
+        "Height (cm)": 85.1,
+        "Weight (kg)": 11.5
+      }
+    ],
+    "prediction": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      2,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0
+    ],
+    "probabilities": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.96,
+        0.0,
+        0.04,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.9,
+        0.0,
+        0.1,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.94,
+        0.0,
+        0.06,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.14,
+        0.0,
+        0.0,
+        0.86
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.02,
+        0.0,
+        0.98,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.02,
+        0.0,
+        0.98,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.02,
+        0.0,
+        0.98,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.94,
+        0.0,
+        0.0,
+        0.06
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.06,
+        0.0,
+        0.94,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ]
+  },
+  {
+    "task": "classification",
+    "code": "et",
+    "features": [
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 54.6,
+        "Weight (kg)": 7.0
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 8,
+        "Height (cm)": 66.0,
+        "Weight (kg)": 12.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 20,
+        "Height (cm)": 90.0,
+        "Weight (kg)": 10.9
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 13,
+        "Height (cm)": 82.4,
+        "Weight (kg)": 9.6
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 11,
+        "Height (cm)": 70.1,
+        "Weight (kg)": 13.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 16,
+        "Height (cm)": 80.0,
+        "Weight (kg)": 11.7
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 11,
+        "Height (cm)": 69.9,
+        "Weight (kg)": 11.8
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 6,
+        "Height (cm)": 66.1,
+        "Weight (kg)": 6.6
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 4,
+        "Height (cm)": 59.8,
+        "Weight (kg)": 8.8
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 18,
+        "Height (cm)": 74.1,
+        "Weight (kg)": 14.3
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 2,
+        "Height (cm)": 55.7,
+        "Weight (kg)": 3.9
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 15,
+        "Height (cm)": 77.7,
+        "Weight (kg)": 11.4
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 14,
+        "Height (cm)": 79.0,
+        "Weight (kg)": 9.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 12,
+        "Height (cm)": 74.2,
+        "Weight (kg)": 11.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 47.6,
+        "Weight (kg)": 6.4
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 23,
+        "Height (cm)": 84.9,
+        "Weight (kg)": 10.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 24,
+        "Height (cm)": 83.4,
+        "Weight (kg)": 10.0
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 16,
+        "Height (cm)": 82.8,
+        "Weight (kg)": 10.4
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 15,
+        "Height (cm)": 76.3,
+        "Weight (kg)": 8.4
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 60.5,
+        "Weight (kg)": 6.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 21,
+        "Height (cm)": 87.3,
+        "Weight (kg)": 14.1
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 17,
+        "Height (cm)": 79.1,
+        "Weight (kg)": 10.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 7,
+        "Height (cm)": 72.0,
+        "Weight (kg)": 6.6
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 2,
+        "Height (cm)": 61.2,
+        "Weight (kg)": 5.4
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 14,
+        "Height (cm)": 80.1,
+        "Weight (kg)": 10.5
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 13,
+        "Height (cm)": 77.4,
+        "Weight (kg)": 12.6
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 9,
+        "Height (cm)": 64.4,
+        "Weight (kg)": 6.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 11,
+        "Height (cm)": 71.5,
+        "Weight (kg)": 10.5
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 13,
+        "Height (cm)": 69.4,
+        "Weight (kg)": 12.7
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 0,
+        "Height (cm)": 48.4,
+        "Weight (kg)": 1.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 4,
+        "Height (cm)": 66.2,
+        "Weight (kg)": 9.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 3,
+        "Height (cm)": 60.8,
+        "Weight (kg)": 8.7
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 0,
+        "Height (cm)": 45.3,
+        "Weight (kg)": 2.1
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 17,
+        "Height (cm)": 79.6,
+        "Weight (kg)": 8.0
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 6,
+        "Height (cm)": 64.5,
+        "Weight (kg)": 8.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 14,
+        "Height (cm)": 71.7,
+        "Weight (kg)": 7.7
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 17,
+        "Height (cm)": 84.4,
+        "Weight (kg)": 11.8
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 6,
+        "Height (cm)": 64.1,
+        "Weight (kg)": 8.8
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 3,
+        "Height (cm)": 66.3,
+        "Weight (kg)": 3.9
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 2,
+        "Height (cm)": 56.0,
+        "Weight (kg)": 3.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 0,
+        "Height (cm)": 49.5,
+        "Weight (kg)": 3.1
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 50.5000001,
+        "Weight (kg)": 4.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 12,
+        "Height (cm)": 74.2,
+        "Weight (kg)": 8.5
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 23,
+        "Height (cm)": 84.5,
+        "Weight (kg)": 11.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 24,
+        "Height (cm)": 85.1,
+        "Weight (kg)": 11.5
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 0,
+        "Height (cm)": 49.5,
+        "Weight (kg)": 3.1
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 1,
+        "Height (cm)": 50.5000001,
+        "Weight (kg)": 4.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 12,
+        "Height (cm)": 74.2,
+        "Weight (kg)": 8.5
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 23,
+        "Height (cm)": 84.5,
+        "Weight (kg)": 11.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 24,
+        "Height (cm)": 85.1,
+        "Weight (kg)": 11.5
+      }
+    ],
+    "prediction": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      2,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0
+    ],
+    "probabilities": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.88,
+        0.0,
+        0.12,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.78,
+        0.0,
+        0.22,
+        0.0
+      ],
+      [
+        0.06,
+        0.0,
+        0.94,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.06,
+        0.0,
+        0.0,
+        0.94
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.06,
+        0.0,
+        0.94,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.94,
+        0.0,
+        0.06,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.98,
+        0.0,
+        0.0,
+        0.02
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.1,
+        0.0,
+        0.9,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ]
+  },
+  {
+    "task": "classification",
+    "code": "xgb",
+    "features": [
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 54.6,
+        "Weight (kg)": 7.0
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 8,
+        "Height (cm)": 66.0,
+        "Weight (kg)": 12.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 20,
+        "Height (cm)": 90.0,
+        "Weight (kg)": 10.9
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 13,
+        "Height (cm)": 82.4,
+        "Weight (kg)": 9.6
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 11,
+        "Height (cm)": 70.1,
+        "Weight (kg)": 13.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 16,
+        "Height (cm)": 80.0,
+        "Weight (kg)": 11.7
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 11,
+        "Height (cm)": 69.9,
+        "Weight (kg)": 11.8
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 6,
+        "Height (cm)": 66.1,
+        "Weight (kg)": 6.6
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 4,
+        "Height (cm)": 59.8,
+        "Weight (kg)": 8.8
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 18,
+        "Height (cm)": 74.1,
+        "Weight (kg)": 14.3
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 2,
+        "Height (cm)": 55.7,
+        "Weight (kg)": 3.9
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 15,
+        "Height (cm)": 77.7,
+        "Weight (kg)": 11.4
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 14,
+        "Height (cm)": 79.0,
+        "Weight (kg)": 9.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 12,
+        "Height (cm)": 74.2,
+        "Weight (kg)": 11.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 47.6,
+        "Weight (kg)": 6.4
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 23,
+        "Height (cm)": 84.9,
+        "Weight (kg)": 10.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 24,
+        "Height (cm)": 83.4,
+        "Weight (kg)": 10.0
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 16,
+        "Height (cm)": 82.8,
+        "Weight (kg)": 10.4
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 15,
+        "Height (cm)": 76.3,
+        "Weight (kg)": 8.4
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 60.5,
+        "Weight (kg)": 6.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 21,
+        "Height (cm)": 87.3,
+        "Weight (kg)": 14.1
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 17,
+        "Height (cm)": 79.1,
+        "Weight (kg)": 10.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 7,
+        "Height (cm)": 72.0,
+        "Weight (kg)": 6.6
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 2,
+        "Height (cm)": 61.2,
+        "Weight (kg)": 5.4
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 14,
+        "Height (cm)": 80.1,
+        "Weight (kg)": 10.5
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 13,
+        "Height (cm)": 77.4,
+        "Weight (kg)": 12.6
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 9,
+        "Height (cm)": 64.4,
+        "Weight (kg)": 6.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 11,
+        "Height (cm)": 71.5,
+        "Weight (kg)": 10.5
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 13,
+        "Height (cm)": 69.4,
+        "Weight (kg)": 12.7
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 0,
+        "Height (cm)": 48.4,
+        "Weight (kg)": 1.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 4,
+        "Height (cm)": 66.2,
+        "Weight (kg)": 9.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 3,
+        "Height (cm)": 60.8,
+        "Weight (kg)": 8.7
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 0,
+        "Height (cm)": 45.3,
+        "Weight (kg)": 2.1
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 17,
+        "Height (cm)": 79.6,
+        "Weight (kg)": 8.0
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 6,
+        "Height (cm)": 64.5,
+        "Weight (kg)": 8.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 14,
+        "Height (cm)": 71.7,
+        "Weight (kg)": 7.7
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 17,
+        "Height (cm)": 84.4,
+        "Weight (kg)": 11.8
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 6,
+        "Height (cm)": 64.1,
+        "Weight (kg)": 8.8
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 3,
+        "Height (cm)": 66.3,
+        "Weight (kg)": 3.9
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 2,
+        "Height (cm)": 56.0,
+        "Weight (kg)": 3.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 0,
+        "Height (cm)": 49.5,
+        "Weight (kg)": 3.1
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 50.5000001,
+        "Weight (kg)": 4.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 12,
+        "Height (cm)": 74.2,
+        "Weight (kg)": 8.5
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 23,
+        "Height (cm)": 84.5,
+        "Weight (kg)": 11.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 24,
+        "Height (cm)": 85.1,
+        "Weight (kg)": 11.5
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 0,
+        "Height (cm)": 49.5,
+        "Weight (kg)": 3.1
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 1,
+        "Height (cm)": 50.5000001,
+        "Weight (kg)": 4.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 12,
+        "Height (cm)": 74.2,
+        "Weight (kg)": 8.5
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 23,
+        "Height (cm)": 84.5,
+        "Weight (kg)": 11.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 24,
+        "Height (cm)": 85.1,
+        "Weight (kg)": 11.5
+      }
+    ],
+    "prediction": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      2,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0
+    ],
+    "probabilities": [
+      [
+        0.9997523427009583,
+        6.552052946062759e-05,
+        0.00018005822494160384,
+        2.1195194221945712e-06
+      ],
+      [
+        0.971898078918457,
+        0.00033847682061605155,
+        0.027755824849009514,
+        7.629791070939973e-06
+      ],
+      [
+        0.9993888139724731,
+        7.52642736188136e-05,
+        4.1010291170096025e-05,
+        0.000494944688398391
+      ],
+      [
+        0.9966296553611755,
+        2.0338763988547726e-06,
+        0.0001520515070296824,
+        0.003216302255168557
+      ],
+      [
+        0.893385648727417,
+        0.012311214581131935,
+        0.09428391605615616,
+        1.92449788301019e-05
+      ],
+      [
+        0.9997177720069885,
+        1.5894518128334312e-06,
+        0.00027572756516747177,
+        4.923444066662341e-06
+      ],
+      [
+        0.9991241097450256,
+        1.5551273463643156e-05,
+        0.0008539088303223252,
+        6.439257958845701e-06
+      ],
+      [
+        0.9974702596664429,
+        0.0007418074528686702,
+        0.00177848304156214,
+        9.434706953470595e-06
+      ],
+      [
+        0.9306342005729675,
+        0.0047407192178070545,
+        0.06447817385196686,
+        0.00014693074626848102
+      ],
+      [
+        0.055280350148677826,
+        0.0015510780503973365,
+        0.9431647062301636,
+        3.817362085101195e-06
+      ],
+      [
+        0.9981626868247986,
+        5.181629603612237e-05,
+        0.0016627422301098704,
+        0.00012279587099328637
+      ],
+      [
+        0.9976590871810913,
+        4.623191671271343e-06,
+        0.0023279027082026005,
+        8.357064871233888e-06
+      ],
+      [
+        0.9980096220970154,
+        1.7621650840737857e-06,
+        0.0019498630426824093,
+        3.8741320167900994e-05
+      ],
+      [
+        0.9982240796089172,
+        3.372387482158956e-06,
+        0.0017652102978900075,
+        7.299036496988265e-06
+      ],
+      [
+        0.004204060882329941,
+        0.8994977474212646,
+        0.09606479853391647,
+        0.00023339872132055461
+      ],
+      [
+        0.9998723268508911,
+        8.508755126968026e-05,
+        4.2368192225694656e-05,
+        1.8194079132172192e-07
+      ],
+      [
+        0.9996503591537476,
+        0.00017439729708712548,
+        0.00017405320249963552,
+        1.1935675274798996e-06
+      ],
+      [
+        0.9998958110809326,
+        2.4336413844139315e-06,
+        6.018786734784953e-05,
+        4.1504623368382454e-05
+      ],
+      [
+        0.9961581826210022,
+        3.893812845490174e-06,
+        0.0038349428214132786,
+        2.9462651127687423e-06
+      ],
+      [
+        0.004157347604632378,
+        1.4906784599588718e-05,
+        9.947543003363535e-05,
+        0.9957281947135925
+      ],
+      [
+        0.99986732006073,
+        2.3093294657883234e-05,
+        3.991423000115901e-05,
+        6.95971175446175e-05
+      ],
+      [
+        0.9971875548362732,
+        4.934484422847163e-06,
+        0.002804658142849803,
+        2.9031141366431257e-06
+      ],
+      [
+        0.9996960163116455,
+        3.3057312975870445e-06,
+        3.887497587129474e-05,
+        0.0002618310390971601
+      ],
+      [
+        0.9981669187545776,
+        5.9794558183057234e-05,
+        0.0007027979008853436,
+        0.0010704840533435345
+      ],
+      [
+        0.9998619556427002,
+        5.15349043439528e-08,
+        8.508496102876961e-05,
+        5.2943683840567246e-05
+      ],
+      [
+        0.9993855953216553,
+        9.285795385949314e-07,
+        0.0005892616463825107,
+        2.4251949071185663e-05
+      ],
+      [
+        0.01903836987912655,
+        0.024228349328041077,
+        0.9567002654075623,
+        3.30384646076709e-05
+      ],
+      [
+        0.9997239708900452,
+        4.390871708892519e-06,
+        0.0002566789626143873,
+        1.4930594261386432e-05
+      ],
+      [
+        0.028639914467930794,
+        0.003492622636258602,
+        0.9678119421005249,
+        5.55176920897793e-05
+      ],
+      [
+        0.9941019415855408,
+        0.004221155308187008,
+        0.0016650415491312742,
+        1.1848578651552089e-05
+      ],
+      [
+        0.9939541220664978,
+        1.2474557479436044e-05,
+        5.093268191558309e-05,
+        0.005982451140880585
+      ],
+      [
+        0.9975965619087219,
+        0.0005087227327749133,
+        0.0017199843423441052,
+        0.00017475333879701793
+      ],
+      [
+        0.11997818201780319,
+        0.041835978627204895,
+        0.838068425655365,
+        0.00011743146023945883
+      ],
+      [
+        0.9999120235443115,
+        1.0401350181155067e-07,
+        8.68508213898167e-05,
+        1.0684656217563315e-06
+      ],
+      [
+        0.9418520331382751,
+        0.006043099798262119,
+        0.05207541957497597,
+        2.9441631340887398e-05
+      ],
+      [
+        0.849903404712677,
+        0.0001792558905435726,
+        0.14990369975566864,
+        1.365857769997092e-05
+      ],
+      [
+        0.9999382495880127,
+        7.824942258594092e-07,
+        9.353612767881714e-06,
+        5.162716479389928e-05
+      ],
+      [
+        0.9234604835510254,
+        0.005136533640325069,
+        0.07137943059206009,
+        2.3484019038733095e-05
+      ],
+      [
+        0.986156702041626,
+        4.411475674714893e-05,
+        3.090731115662493e-05,
+        0.013768238015472889
+      ],
+      [
+        0.9768717885017395,
+        0.001366179552860558,
+        0.021473241969943047,
+        0.0002888264716602862
+      ],
+      [
+        0.9985028505325317,
+        0.00041633137152530253,
+        0.0010450868867337704,
+        3.5746761568589136e-05
+      ],
+      [
+        0.9652568101882935,
+        0.0034832123201340437,
+        0.031204666942358017,
+        5.5243530368898064e-05
+      ],
+      [
+        0.9997841715812683,
+        7.058876860810415e-08,
+        0.00020519460667856038,
+        1.0549873877607752e-05
+      ],
+      [
+        0.9999370574951172,
+        2.527592732803896e-05,
+        3.4764882002491504e-05,
+        2.9506240935006645e-06
+      ],
+      [
+        0.9995935559272766,
+        0.00020175575627945364,
+        0.00020135767408646643,
+        3.2972884582704864e-06
+      ],
+      [
+        0.9941657781600952,
+        0.002468370134010911,
+        0.003353916108608246,
+        1.1923464626306668e-05
+      ],
+      [
+        0.02103433571755886,
+        0.05346017703413963,
+        0.9254224896430969,
+        8.29703058116138e-05
+      ],
+      [
+        0.9982516169548035,
+        3.351857003508485e-06,
+        0.0017377643380314112,
+        7.25631753084599e-06
+      ],
+      [
+        0.999859094619751,
+        9.392241190653294e-05,
+        4.676744356402196e-05,
+        1.8542455393344426e-07
+      ],
+      [
+        0.9997044205665588,
+        0.0002615183184389025,
+        3.38587851729244e-05,
+        1.31849816398244e-07
+      ]
+    ]
+  },
+  {
+    "task": "classification",
+    "code": "lgbm",
+    "features": [
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 54.6,
+        "Weight (kg)": 7.0
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 8,
+        "Height (cm)": 66.0,
+        "Weight (kg)": 12.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 20,
+        "Height (cm)": 90.0,
+        "Weight (kg)": 10.9
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 13,
+        "Height (cm)": 82.4,
+        "Weight (kg)": 9.6
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 11,
+        "Height (cm)": 70.1,
+        "Weight (kg)": 13.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 16,
+        "Height (cm)": 80.0,
+        "Weight (kg)": 11.7
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 11,
+        "Height (cm)": 69.9,
+        "Weight (kg)": 11.8
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 6,
+        "Height (cm)": 66.1,
+        "Weight (kg)": 6.6
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 4,
+        "Height (cm)": 59.8,
+        "Weight (kg)": 8.8
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 18,
+        "Height (cm)": 74.1,
+        "Weight (kg)": 14.3
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 2,
+        "Height (cm)": 55.7,
+        "Weight (kg)": 3.9
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 15,
+        "Height (cm)": 77.7,
+        "Weight (kg)": 11.4
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 14,
+        "Height (cm)": 79.0,
+        "Weight (kg)": 9.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 12,
+        "Height (cm)": 74.2,
+        "Weight (kg)": 11.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 47.6,
+        "Weight (kg)": 6.4
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 23,
+        "Height (cm)": 84.9,
+        "Weight (kg)": 10.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 24,
+        "Height (cm)": 83.4,
+        "Weight (kg)": 10.0
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 16,
+        "Height (cm)": 82.8,
+        "Weight (kg)": 10.4
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 15,
+        "Height (cm)": 76.3,
+        "Weight (kg)": 8.4
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 60.5,
+        "Weight (kg)": 6.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 21,
+        "Height (cm)": 87.3,
+        "Weight (kg)": 14.1
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 17,
+        "Height (cm)": 79.1,
+        "Weight (kg)": 10.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 7,
+        "Height (cm)": 72.0,
+        "Weight (kg)": 6.6
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 2,
+        "Height (cm)": 61.2,
+        "Weight (kg)": 5.4
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 14,
+        "Height (cm)": 80.1,
+        "Weight (kg)": 10.5
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 13,
+        "Height (cm)": 77.4,
+        "Weight (kg)": 12.6
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 9,
+        "Height (cm)": 64.4,
+        "Weight (kg)": 6.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 11,
+        "Height (cm)": 71.5,
+        "Weight (kg)": 10.5
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 13,
+        "Height (cm)": 69.4,
+        "Weight (kg)": 12.7
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 0,
+        "Height (cm)": 48.4,
+        "Weight (kg)": 1.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 4,
+        "Height (cm)": 66.2,
+        "Weight (kg)": 9.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 3,
+        "Height (cm)": 60.8,
+        "Weight (kg)": 8.7
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 0,
+        "Height (cm)": 45.3,
+        "Weight (kg)": 2.1
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 17,
+        "Height (cm)": 79.6,
+        "Weight (kg)": 8.0
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 6,
+        "Height (cm)": 64.5,
+        "Weight (kg)": 8.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 14,
+        "Height (cm)": 71.7,
+        "Weight (kg)": 7.7
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 17,
+        "Height (cm)": 84.4,
+        "Weight (kg)": 11.8
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 6,
+        "Height (cm)": 64.1,
+        "Weight (kg)": 8.8
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 3,
+        "Height (cm)": 66.3,
+        "Weight (kg)": 3.9
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 2,
+        "Height (cm)": 56.0,
+        "Weight (kg)": 3.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 0,
+        "Height (cm)": 49.5,
+        "Weight (kg)": 3.1
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 50.5000001,
+        "Weight (kg)": 4.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 12,
+        "Height (cm)": 74.2,
+        "Weight (kg)": 8.5
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 23,
+        "Height (cm)": 84.5,
+        "Weight (kg)": 11.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 24,
+        "Height (cm)": 85.1,
+        "Weight (kg)": 11.5
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 0,
+        "Height (cm)": 49.5,
+        "Weight (kg)": 3.1
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 1,
+        "Height (cm)": 50.5000001,
+        "Weight (kg)": 4.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 12,
+        "Height (cm)": 74.2,
+        "Weight (kg)": 8.5
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 23,
+        "Height (cm)": 84.5,
+        "Weight (kg)": 11.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 24,
+        "Height (cm)": 85.1,
+        "Weight (kg)": 11.5
+      }
+    ],
+    "prediction": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      2,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0
+    ],
+    "probabilities": [
+      [
+        0.9746256541177346,
+        0.002392278540040969,
+        0.006362443163376275,
+        0.01661962417884819
+      ],
+      [
+        0.8876263728561293,
+        0.0012773189743836492,
+        0.11077281473526084,
+        0.0003234934342261041
+      ],
+      [
+        0.9984825114692122,
+        0.0002630894760489753,
+        9.44791907008731e-05,
+        0.0011599198640379787
+      ],
+      [
+        0.9939026412829469,
+        0.00026083320631899745,
+        0.00029064327797708307,
+        0.005545882232757052
+      ],
+      [
+        0.9024889563573796,
+        0.0025347982332488803,
+        0.09480180752210565,
+        0.00017443788726588421
+      ],
+      [
+        0.9996985514706807,
+        7.905613350750556e-05,
+        0.00017291093899722052,
+        4.9481456814785126e-05
+      ],
+      [
+        0.9495616695197335,
+        0.0003250338906810894,
+        0.04994825951403656,
+        0.00016503707554876384
+      ],
+      [
+        0.9900797432311553,
+        0.00039278587132654107,
+        0.009493160726580007,
+        3.431017093795959e-05
+      ],
+      [
+        0.9133020308082999,
+        0.01380670522634007,
+        0.07240025005598255,
+        0.0004910139093774041
+      ],
+      [
+        0.04372065540947,
+        0.006986300872892257,
+        0.9490163199417037,
+        0.00027672377593412635
+      ],
+      [
+        0.9941489621576595,
+        0.0006480991628114347,
+        0.004332889193001402,
+        0.0008700494865276894
+      ],
+      [
+        0.9995817907235458,
+        0.00021735122266517724,
+        0.00018279868260412805,
+        1.8059371184895667e-05
+      ],
+      [
+        0.999803846537141,
+        2.2649553605523812e-05,
+        0.00015096118624594677,
+        2.2542723007428594e-05
+      ],
+      [
+        0.9989400457565045,
+        0.00020752393145861078,
+        0.0008294047288864465,
+        2.3025583150416055e-05
+      ],
+      [
+        0.009651202299036021,
+        0.9145387154249519,
+        0.07538079583474849,
+        0.00042928644126361497
+      ],
+      [
+        0.9997760272949182,
+        0.00014450097345250173,
+        3.497658949951133e-05,
+        4.44951421298392e-05
+      ],
+      [
+        0.9984098269794034,
+        0.0005395096654757045,
+        0.0007085132018005583,
+        0.0003421501533204345
+      ],
+      [
+        0.9995663724944966,
+        9.213657486328995e-05,
+        0.0001487595373017846,
+        0.00019273139333812983
+      ],
+      [
+        0.9984357282809926,
+        0.00032374594381789684,
+        0.0012288313623577236,
+        1.1694412832065415e-05
+      ],
+      [
+        0.009591734223706933,
+        0.00043517426878889466,
+        0.0017196189822000808,
+        0.9882534725253042
+      ],
+      [
+        0.9985594067886541,
+        2.8412859942853476e-05,
+        1.767441323658855e-05,
+        0.001394505938166553
+      ],
+      [
+        0.9984925435903229,
+        9.552858926092537e-05,
+        0.0013819368292843773,
+        2.999099113176134e-05
+      ],
+      [
+        0.9991425162345763,
+        6.385057498292933e-05,
+        0.0007301275204223271,
+        6.350567001843075e-05
+      ],
+      [
+        0.9968511833248802,
+        0.0008053974631101019,
+        0.0010471379859727458,
+        0.0012962812260369483
+      ],
+      [
+        0.9964369404719766,
+        7.500832103552741e-05,
+        0.00012060754183340314,
+        0.003367443665154483
+      ],
+      [
+        0.9996421376193835,
+        0.00017938298887534975,
+        0.00013946082781700288,
+        3.9018563924107834e-05
+      ],
+      [
+        0.046936572450273925,
+        0.015108568401109487,
+        0.9370763090218038,
+        0.0008785501268128637
+      ],
+      [
+        0.9903451530780422,
+        0.00025095888479665914,
+        0.009122515318207607,
+        0.0002813727189536752
+      ],
+      [
+        0.0357778007065423,
+        0.00987927108083096,
+        0.9539752593519881,
+        0.00036766886063854993
+      ],
+      [
+        0.9807359853547808,
+        0.004500020112979788,
+        0.014720771732286116,
+        4.3222799953362483e-05
+      ],
+      [
+        0.9879918051930882,
+        0.00034648666973500293,
+        0.006142945756952624,
+        0.005518762380224208
+      ],
+      [
+        0.9916753046232853,
+        0.0015597275215061643,
+        0.00649336830161396,
+        0.0002715995535945712
+      ],
+      [
+        0.007093017359776851,
+        0.0047922485064481836,
+        0.9880692664403822,
+        4.546769339285146e-05
+      ],
+      [
+        0.9994623544181214,
+        3.380795953529071e-05,
+        0.00012304140582652018,
+        0.000380796216516739
+      ],
+      [
+        0.9234812656077659,
+        0.0023602539868810344,
+        0.07404216694511513,
+        0.00011631346023787927
+      ],
+      [
+        0.5778936332543042,
+        0.002579095952812683,
+        0.41870811545207165,
+        0.0008191553408115055
+      ],
+      [
+        0.9981235774903897,
+        5.6711609309682495e-05,
+        3.8216476869043115e-05,
+        0.0017814944234315739
+      ],
+      [
+        0.9233424827140293,
+        0.002039224470137524,
+        0.07453993610087328,
+        7.835671495997652e-05
+      ],
+      [
+        0.9793946108248152,
+        0.001329659178922978,
+        0.00338497491997852,
+        0.015890755076283434
+      ],
+      [
+        0.9523347754869452,
+        0.009231428849983812,
+        0.037962133969871414,
+        0.0004716616931994841
+      ],
+      [
+        0.9827055616399395,
+        0.005442730802837627,
+        0.011662510384866584,
+        0.00018919717235625793
+      ],
+      [
+        0.8896438807998809,
+        0.014921154074961453,
+        0.09519998455732896,
+        0.0002349805678286366
+      ],
+      [
+        0.9993516782311764,
+        7.362248180301682e-05,
+        0.0004861335087785972,
+        8.856577824195478e-05
+      ],
+      [
+        0.9998030484305237,
+        5.410083555921186e-05,
+        2.0895695735207827e-05,
+        0.00012195503818189353
+      ],
+      [
+        0.998581936247039,
+        0.00047596066405852864,
+        0.0006250572243703651,
+        0.000317045864532315
+      ],
+      [
+        0.9809169024052544,
+        0.005535295969022159,
+        0.013469701590538875,
+        7.810003518449959e-05
+      ],
+      [
+        0.037651295475141934,
+        0.03612011545410821,
+        0.9261375343549078,
+        9.105471584223484e-05
+      ],
+      [
+        0.9989400457565045,
+        0.00020752393145861078,
+        0.0008294047288864465,
+        2.3025583150416055e-05
+      ],
+      [
+        0.9997760272949182,
+        0.00014450097345250173,
+        3.497658949951133e-05,
+        4.44951421298392e-05
+      ],
+      [
+        0.9998038933542388,
+        0.00013976145739523127,
+        3.382938541084142e-05,
+        2.251580295506155e-05
+      ]
+    ]
+  },
+  {
+    "task": "classification",
+    "code": "cb",
+    "features": [
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 54.6,
+        "Weight (kg)": 7.0
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 8,
+        "Height (cm)": 66.0,
+        "Weight (kg)": 12.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 20,
+        "Height (cm)": 90.0,
+        "Weight (kg)": 10.9
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 13,
+        "Height (cm)": 82.4,
+        "Weight (kg)": 9.6
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 11,
+        "Height (cm)": 70.1,
+        "Weight (kg)": 13.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 16,
+        "Height (cm)": 80.0,
+        "Weight (kg)": 11.7
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 11,
+        "Height (cm)": 69.9,
+        "Weight (kg)": 11.8
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 6,
+        "Height (cm)": 66.1,
+        "Weight (kg)": 6.6
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 4,
+        "Height (cm)": 59.8,
+        "Weight (kg)": 8.8
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 18,
+        "Height (cm)": 74.1,
+        "Weight (kg)": 14.3
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 2,
+        "Height (cm)": 55.7,
+        "Weight (kg)": 3.9
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 15,
+        "Height (cm)": 77.7,
+        "Weight (kg)": 11.4
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 14,
+        "Height (cm)": 79.0,
+        "Weight (kg)": 9.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 12,
+        "Height (cm)": 74.2,
+        "Weight (kg)": 11.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 47.6,
+        "Weight (kg)": 6.4
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 23,
+        "Height (cm)": 84.9,
+        "Weight (kg)": 10.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 24,
+        "Height (cm)": 83.4,
+        "Weight (kg)": 10.0
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 16,
+        "Height (cm)": 82.8,
+        "Weight (kg)": 10.4
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 15,
+        "Height (cm)": 76.3,
+        "Weight (kg)": 8.4
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 60.5,
+        "Weight (kg)": 6.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 21,
+        "Height (cm)": 87.3,
+        "Weight (kg)": 14.1
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 17,
+        "Height (cm)": 79.1,
+        "Weight (kg)": 10.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 7,
+        "Height (cm)": 72.0,
+        "Weight (kg)": 6.6
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 2,
+        "Height (cm)": 61.2,
+        "Weight (kg)": 5.4
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 14,
+        "Height (cm)": 80.1,
+        "Weight (kg)": 10.5
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 13,
+        "Height (cm)": 77.4,
+        "Weight (kg)": 12.6
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 9,
+        "Height (cm)": 64.4,
+        "Weight (kg)": 6.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 11,
+        "Height (cm)": 71.5,
+        "Weight (kg)": 10.5
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 13,
+        "Height (cm)": 69.4,
+        "Weight (kg)": 12.7
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 0,
+        "Height (cm)": 48.4,
+        "Weight (kg)": 1.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 4,
+        "Height (cm)": 66.2,
+        "Weight (kg)": 9.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 3,
+        "Height (cm)": 60.8,
+        "Weight (kg)": 8.7
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 0,
+        "Height (cm)": 45.3,
+        "Weight (kg)": 2.1
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 17,
+        "Height (cm)": 79.6,
+        "Weight (kg)": 8.0
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 6,
+        "Height (cm)": 64.5,
+        "Weight (kg)": 8.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 14,
+        "Height (cm)": 71.7,
+        "Weight (kg)": 7.7
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 17,
+        "Height (cm)": 84.4,
+        "Weight (kg)": 11.8
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 6,
+        "Height (cm)": 64.1,
+        "Weight (kg)": 8.8
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 3,
+        "Height (cm)": 66.3,
+        "Weight (kg)": 3.9
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 2,
+        "Height (cm)": 56.0,
+        "Weight (kg)": 3.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 0,
+        "Height (cm)": 49.5,
+        "Weight (kg)": 3.1
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 50.5000001,
+        "Weight (kg)": 4.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 12,
+        "Height (cm)": 74.2,
+        "Weight (kg)": 8.5
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 23,
+        "Height (cm)": 84.5,
+        "Weight (kg)": 11.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 24,
+        "Height (cm)": 85.1,
+        "Weight (kg)": 11.5
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 0,
+        "Height (cm)": 49.5,
+        "Weight (kg)": 3.1
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 1,
+        "Height (cm)": 50.5000001,
+        "Weight (kg)": 4.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 12,
+        "Height (cm)": 74.2,
+        "Weight (kg)": 8.5
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 23,
+        "Height (cm)": 84.5,
+        "Weight (kg)": 11.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 24,
+        "Height (cm)": 85.1,
+        "Weight (kg)": 11.5
+      }
+    ],
+    "prediction": [
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      2,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0
+    ],
+    "probabilities": [
+      [
+        0.9945860415782608,
+        4.6031779573001605e-05,
+        0.00043742641934274313,
+        0.004930500222823376
+      ],
+      [
+        0.9766114637971265,
+        3.1085799417878836e-05,
+        0.023357025591409175,
+        4.248120464763349e-07
+      ],
+      [
+        0.9972752578522681,
+        2.7028636627794976e-08,
+        1.7208837753455823e-06,
+        0.002722994235319988
+      ],
+      [
+        0.959122411443368,
+        1.9508798551260457e-12,
+        1.2427481138954878e-07,
+        0.04087746427987
+      ],
+      [
+        0.4846473350412318,
+        0.0024331668265773552,
+        0.5129194504777767,
+        4.7654414249602416e-08
+      ],
+      [
+        0.9998964955189569,
+        3.0046893667904e-10,
+        9.888043653863205e-05,
+        4.623744035428606e-06
+      ],
+      [
+        0.9935249088513799,
+        4.678256009649905e-06,
+        0.0064703848233633385,
+        2.8069247035446242e-08
+      ],
+      [
+        0.9966519956448332,
+        6.3722888684871285e-06,
+        0.003313306467160612,
+        2.832559913740348e-05
+      ],
+      [
+        0.6044106510316862,
+        0.014130941099510467,
+        0.38142629075672174,
+        3.21171120814548e-05
+      ],
+      [
+        0.022562585469554832,
+        0.0020574730178506803,
+        0.9753799388610127,
+        2.651581723775857e-09
+      ],
+      [
+        0.9984780247065914,
+        4.2365576092143274e-05,
+        0.0007110438945130809,
+        0.0007685658228033282
+      ],
+      [
+        0.9997399945940539,
+        3.813363455589591e-09,
+        0.00025698352192513805,
+        3.018070657434507e-06
+      ],
+      [
+        0.9999598611279575,
+        9.725963531152882e-13,
+        1.9315124308844934e-06,
+        3.820735863907237e-05
+      ],
+      [
+        0.9995827780957014,
+        3.5069610076226226e-08,
+        0.000411431518267896,
+        5.755316420671823e-06
+      ],
+      [
+        0.001237217170554094,
+        0.9936896512701815,
+        0.005061845957273347,
+        1.1285601991113469e-05
+      ],
+      [
+        0.9986582328890142,
+        1.5857942511855326e-05,
+        0.0013259054699304806,
+        3.698543245502418e-09
+      ],
+      [
+        0.961381447686633,
+        8.36242577992278e-07,
+        0.038617715373987685,
+        6.968014446734594e-10
+      ],
+      [
+        0.9999528134296494,
+        7.42827247584635e-11,
+        2.383582175357153e-06,
+        4.480291389273713e-05
+      ],
+      [
+        0.9968095846995322,
+        3.064325193787086e-07,
+        0.003189061192842965,
+        1.0476751052086354e-06
+      ],
+      [
+        0.02897579738742937,
+        6.895816867125853e-09,
+        2.2986100356816125e-07,
+        0.9710239658557502
+      ],
+      [
+        0.9999911181512041,
+        3.208050633627519e-09,
+        3.6128412019163543e-06,
+        5.265799543192348e-06
+      ],
+      [
+        0.9983798239354637,
+        3.2667401733630744e-09,
+        0.0016193665219026276,
+        8.062758935391949e-07
+      ],
+      [
+        0.9988513231917366,
+        2.2254814973706634e-12,
+        2.525347782238597e-07,
+        0.0011484242712597038
+      ],
+      [
+        0.9439315431672867,
+        4.034694804101762e-07,
+        5.1558558892731516e-05,
+        0.05601649480434011
+      ],
+      [
+        0.9996640361628455,
+        2.568116922733469e-13,
+        2.493329827825299e-09,
+        0.00033596134356786146
+      ],
+      [
+        0.9999504363718653,
+        4.906635963383304e-11,
+        7.128014775789123e-06,
+        4.24355642925218e-05
+      ],
+      [
+        0.02641374801489668,
+        0.014700217486189398,
+        0.9588860210367603,
+        1.346215366893687e-08
+      ],
+      [
+        0.9998811584471009,
+        1.225086385088016e-07,
+        0.0001180851996785513,
+        6.338445820062128e-07
+      ],
+      [
+        0.04112746713776384,
+        0.004070057814299779,
+        0.954802470521238,
+        4.526698421431215e-09
+      ],
+      [
+        0.9915768341099411,
+        0.003682627173188766,
+        0.00473289441488331,
+        7.644301986703688e-06
+      ],
+      [
+        0.9699979441188941,
+        7.697336296927571e-10,
+        6.352238027525258e-07,
+        0.03000141988756973
+      ],
+      [
+        0.9975868905350925,
+        7.181798831734921e-06,
+        0.0015691725355970387,
+        0.000836755130478502
+      ],
+      [
+        0.0005422634252130057,
+        0.08802496939479551,
+        0.9114311020693421,
+        1.6651106495846776e-06
+      ],
+      [
+        0.9999970519551507,
+        5.6756358202177e-11,
+        1.312371768599906e-06,
+        1.6356163244243184e-06
+      ],
+      [
+        0.9336131747273183,
+        0.0003075995364570039,
+        0.0660587590423253,
+        2.046669389923781e-05
+      ],
+      [
+        0.8291134429349716,
+        0.00013636932945764528,
+        0.17075015996003357,
+        2.7775537426048697e-08
+      ],
+      [
+        0.9992039700266069,
+        2.984890191523936e-11,
+        1.2862914975228019e-08,
+        0.0007960170806292094
+      ],
+      [
+        0.7948384584229525,
+        0.0012851199957424205,
+        0.20386951509513218,
+        6.906486172957298e-06
+      ],
+      [
+        0.8413443959770508,
+        5.4912093650011496e-11,
+        2.0789074190211662e-07,
+        0.15865539607729515
+      ],
+      [
+        0.9697139539505395,
+        0.0013951896471820194,
+        0.02703569820300158,
+        0.0018551581992766505
+      ],
+      [
+        0.9946609514979678,
+        0.000651415797403961,
+        0.0045961861785996806,
+        9.144652602831584e-05
+      ],
+      [
+        0.7876984130538355,
+        0.014468183283005394,
+        0.19768335934004172,
+        0.00015004432311737075
+      ],
+      [
+        0.99998555099524,
+        2.350513063565646e-09,
+        1.7215021828506958e-06,
+        1.2725152064083763e-05
+      ],
+      [
+        0.9993785140331439,
+        4.664081026738129e-08,
+        0.0006214361835448146,
+        3.1425009328441725e-09
+      ],
+      [
+        0.9958169470631855,
+        2.771960424491907e-07,
+        0.0041827731956956505,
+        2.5450764766416278e-09
+      ],
+      [
+        0.9787466564658456,
+        0.003906267798303291,
+        0.017332197032169767,
+        1.4878703681411476e-05
+      ],
+      [
+        0.048655727070073894,
+        0.024341919955343586,
+        0.9269960843014399,
+        6.268673142657153e-06
+      ],
+      [
+        0.9996060935341238,
+        3.3922151279373856e-08,
+        0.00038769873786681806,
+        6.173805858400441e-06
+      ],
+      [
+        0.9983218471638934,
+        1.9519301524056056e-05,
+        0.0016586293864894912,
+        4.148093275452986e-09
+      ],
+      [
+        0.9961372633333004,
+        8.048847581823078e-05,
+        0.0037822453942809,
+        2.7966004191798904e-09
+      ]
+    ]
+  },
+  {
+    "task": "HAZ",
+    "code": "linear",
+    "features": [
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 54.6,
+        "Weight (kg)": 7.0
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 8,
+        "Height (cm)": 66.0,
+        "Weight (kg)": 12.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 20,
+        "Height (cm)": 90.0,
+        "Weight (kg)": 10.9
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 13,
+        "Height (cm)": 82.4,
+        "Weight (kg)": 9.6
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 11,
+        "Height (cm)": 70.1,
+        "Weight (kg)": 13.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 16,
+        "Height (cm)": 80.0,
+        "Weight (kg)": 11.7
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 11,
+        "Height (cm)": 69.9,
+        "Weight (kg)": 11.8
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 6,
+        "Height (cm)": 66.1,
+        "Weight (kg)": 6.6
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 4,
+        "Height (cm)": 59.8,
+        "Weight (kg)": 8.8
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 18,
+        "Height (cm)": 74.1,
+        "Weight (kg)": 14.3
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 2,
+        "Height (cm)": 55.7,
+        "Weight (kg)": 3.9
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 15,
+        "Height (cm)": 77.7,
+        "Weight (kg)": 11.4
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 14,
+        "Height (cm)": 79.0,
+        "Weight (kg)": 9.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 12,
+        "Height (cm)": 74.2,
+        "Weight (kg)": 11.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 47.6,
+        "Weight (kg)": 6.4
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 23,
+        "Height (cm)": 84.9,
+        "Weight (kg)": 10.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 24,
+        "Height (cm)": 83.4,
+        "Weight (kg)": 10.0
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 16,
+        "Height (cm)": 82.8,
+        "Weight (kg)": 10.4
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 15,
+        "Height (cm)": 76.3,
+        "Weight (kg)": 8.4
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 60.5,
+        "Weight (kg)": 6.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 21,
+        "Height (cm)": 87.3,
+        "Weight (kg)": 14.1
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 17,
+        "Height (cm)": 79.1,
+        "Weight (kg)": 10.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 7,
+        "Height (cm)": 72.0,
+        "Weight (kg)": 6.6
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 2,
+        "Height (cm)": 61.2,
+        "Weight (kg)": 5.4
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 14,
+        "Height (cm)": 80.1,
+        "Weight (kg)": 10.5
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 13,
+        "Height (cm)": 77.4,
+        "Weight (kg)": 12.6
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 9,
+        "Height (cm)": 64.4,
+        "Weight (kg)": 6.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 11,
+        "Height (cm)": 71.5,
+        "Weight (kg)": 10.5
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 13,
+        "Height (cm)": 69.4,
+        "Weight (kg)": 12.7
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 0,
+        "Height (cm)": 48.4,
+        "Weight (kg)": 1.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 4,
+        "Height (cm)": 66.2,
+        "Weight (kg)": 9.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 3,
+        "Height (cm)": 60.8,
+        "Weight (kg)": 8.7
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 0,
+        "Height (cm)": 45.3,
+        "Weight (kg)": 2.1
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 17,
+        "Height (cm)": 79.6,
+        "Weight (kg)": 8.0
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 6,
+        "Height (cm)": 64.5,
+        "Weight (kg)": 8.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 14,
+        "Height (cm)": 71.7,
+        "Weight (kg)": 7.7
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 17,
+        "Height (cm)": 84.4,
+        "Weight (kg)": 11.8
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 6,
+        "Height (cm)": 64.1,
+        "Weight (kg)": 8.8
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 3,
+        "Height (cm)": 66.3,
+        "Weight (kg)": 3.9
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 2,
+        "Height (cm)": 56.0,
+        "Weight (kg)": 3.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 0,
+        "Height (cm)": 49.5,
+        "Weight (kg)": 3.1
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 50.5000001,
+        "Weight (kg)": 4.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 12,
+        "Height (cm)": 74.2,
+        "Weight (kg)": 8.5
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 23,
+        "Height (cm)": 84.5,
+        "Weight (kg)": 11.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 24,
+        "Height (cm)": 85.1,
+        "Weight (kg)": 11.5
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 0,
+        "Height (cm)": 49.5,
+        "Weight (kg)": 3.1
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 1,
+        "Height (cm)": 50.5000001,
+        "Weight (kg)": 4.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 12,
+        "Height (cm)": 74.2,
+        "Weight (kg)": 8.5
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 23,
+        "Height (cm)": 84.5,
+        "Weight (kg)": 11.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 24,
+        "Height (cm)": 85.1,
+        "Weight (kg)": 11.5
+      }
+    ],
+    "prediction": [
+      -0.8449763902148675,
+      -0.27002221217840017,
+      1.6604484233744223,
+      2.3348082809761515,
+      -0.8024560125943374,
+      0.18591586789598935,
+      -0.34768346091102487,
+      0.1488965306693757,
+      -1.0157666539986963,
+      -2.1398506135574635,
+      -0.9366168434224917,
+      -0.1169639006768719,
+      0.7637169960917163,
+      0.09220408864925034,
+      -3.146344350601021,
+      -1.3761144887118277,
+      -1.802022833797107,
+      1.1064630520504473,
+      -0.5772374927541044,
+      1.094748033539176,
+      0.8400198565086576,
+      -0.5632582882791084,
+      1.63533696458369,
+      0.35107491775799815,
+      1.6458864547038843,
+      0.6909740235574695,
+      -1.2493331643921088,
+      0.17834350146295108,
+      -1.4186348663323578,
+      -2.95057280155436,
+      1.6088671174772777,
+      -0.233715812675225,
+      -3.969750041153942,
+      0.12165105944281862,
+      -0.37713043170460026,
+      -1.1157550977594966,
+      1.6997319465647571,
+      -0.5086371722980942,
+      1.5745018704853244,
+      -1.3585127099574308,
+      -2.06840334294219,
+      -2.1929204484215,
+      0.6127300106293099,
+      -0.9870953073252657,
+      -1.2431191862747575,
+      -2.5889292649222497,
+      -2.7134463704015594,
+      0.09220408864925034,
+      -1.5076212293053253,
+      -1.763645108254817
+    ]
+  },
+  {
+    "task": "HAZ",
+    "code": "ridge",
+    "features": [
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 54.6,
+        "Weight (kg)": 7.0
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 8,
+        "Height (cm)": 66.0,
+        "Weight (kg)": 12.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 20,
+        "Height (cm)": 90.0,
+        "Weight (kg)": 10.9
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 13,
+        "Height (cm)": 82.4,
+        "Weight (kg)": 9.6
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 11,
+        "Height (cm)": 70.1,
+        "Weight (kg)": 13.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 16,
+        "Height (cm)": 80.0,
+        "Weight (kg)": 11.7
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 11,
+        "Height (cm)": 69.9,
+        "Weight (kg)": 11.8
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 6,
+        "Height (cm)": 66.1,
+        "Weight (kg)": 6.6
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 4,
+        "Height (cm)": 59.8,
+        "Weight (kg)": 8.8
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 18,
+        "Height (cm)": 74.1,
+        "Weight (kg)": 14.3
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 2,
+        "Height (cm)": 55.7,
+        "Weight (kg)": 3.9
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 15,
+        "Height (cm)": 77.7,
+        "Weight (kg)": 11.4
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 14,
+        "Height (cm)": 79.0,
+        "Weight (kg)": 9.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 12,
+        "Height (cm)": 74.2,
+        "Weight (kg)": 11.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 47.6,
+        "Weight (kg)": 6.4
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 23,
+        "Height (cm)": 84.9,
+        "Weight (kg)": 10.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 24,
+        "Height (cm)": 83.4,
+        "Weight (kg)": 10.0
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 16,
+        "Height (cm)": 82.8,
+        "Weight (kg)": 10.4
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 15,
+        "Height (cm)": 76.3,
+        "Weight (kg)": 8.4
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 60.5,
+        "Weight (kg)": 6.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 21,
+        "Height (cm)": 87.3,
+        "Weight (kg)": 14.1
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 17,
+        "Height (cm)": 79.1,
+        "Weight (kg)": 10.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 7,
+        "Height (cm)": 72.0,
+        "Weight (kg)": 6.6
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 2,
+        "Height (cm)": 61.2,
+        "Weight (kg)": 5.4
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 14,
+        "Height (cm)": 80.1,
+        "Weight (kg)": 10.5
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 13,
+        "Height (cm)": 77.4,
+        "Weight (kg)": 12.6
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 9,
+        "Height (cm)": 64.4,
+        "Weight (kg)": 6.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 11,
+        "Height (cm)": 71.5,
+        "Weight (kg)": 10.5
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 13,
+        "Height (cm)": 69.4,
+        "Weight (kg)": 12.7
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 0,
+        "Height (cm)": 48.4,
+        "Weight (kg)": 1.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 4,
+        "Height (cm)": 66.2,
+        "Weight (kg)": 9.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 3,
+        "Height (cm)": 60.8,
+        "Weight (kg)": 8.7
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 0,
+        "Height (cm)": 45.3,
+        "Weight (kg)": 2.1
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 17,
+        "Height (cm)": 79.6,
+        "Weight (kg)": 8.0
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 6,
+        "Height (cm)": 64.5,
+        "Weight (kg)": 8.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 14,
+        "Height (cm)": 71.7,
+        "Weight (kg)": 7.7
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 17,
+        "Height (cm)": 84.4,
+        "Weight (kg)": 11.8
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 6,
+        "Height (cm)": 64.1,
+        "Weight (kg)": 8.8
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 3,
+        "Height (cm)": 66.3,
+        "Weight (kg)": 3.9
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 2,
+        "Height (cm)": 56.0,
+        "Weight (kg)": 3.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 0,
+        "Height (cm)": 49.5,
+        "Weight (kg)": 3.1
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 50.5000001,
+        "Weight (kg)": 4.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 12,
+        "Height (cm)": 74.2,
+        "Weight (kg)": 8.5
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 23,
+        "Height (cm)": 84.5,
+        "Weight (kg)": 11.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 24,
+        "Height (cm)": 85.1,
+        "Weight (kg)": 11.5
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 0,
+        "Height (cm)": 49.5,
+        "Weight (kg)": 3.1
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 1,
+        "Height (cm)": 50.5000001,
+        "Weight (kg)": 4.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 12,
+        "Height (cm)": 74.2,
+        "Weight (kg)": 8.5
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 23,
+        "Height (cm)": 84.5,
+        "Weight (kg)": 11.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 24,
+        "Height (cm)": 85.1,
+        "Weight (kg)": 11.5
+      }
+    ],
+    "prediction": [
+      -0.8449886016508366,
+      -0.27003501550912645,
+      1.6604584558946307,
+      2.3348160075928774,
+      -0.8024412209765259,
+      0.18592889677249502,
+      -0.3476957662264262,
+      0.14890858581543398,
+      -1.0157521093224595,
+      -2.139858020202528,
+      -0.9366287363376529,
+      -0.11695027522698709,
+      0.7637284728324296,
+      0.09221691105241092,
+      -3.146351223987592,
+      -1.376097094969925,
+      -1.8020303882792454,
+      1.1064739457071973,
+      -0.57722279969434,
+      1.0947313228901443,
+      0.8400058558990047,
+      -0.5632434157248305,
+      1.6353456778738256,
+      0.351086080110079,
+      1.6458698431593497,
+      0.6909855630666222,
+      -1.2493435902401195,
+      0.1783299760219741,
+      -1.4186444756442356,
+      -2.9505541929119463,
+      1.6088495322022958,
+      -0.23370318793461564,
+      -3.969729068518225,
+      0.12163830125894748,
+      -0.3771171564329663,
+      -1.1157653036447535,
+      1.6997155280041554,
+      -0.5086235919950681,
+      1.5745103010442634,
+      -1.3584975821972272,
+      -2.0684128225850245,
+      -2.1929295332857563,
+      0.612715583583558,
+      -0.9871048580008797,
+      -1.2431280371403268,
+      -2.5889114951161716,
+      -2.7134282058169035,
+      0.09221691105241092,
+      -1.5076035305320268,
+      -1.763626709671474
+    ]
+  },
+  {
+    "task": "HAZ",
+    "code": "rf",
+    "features": [
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 54.6,
+        "Weight (kg)": 7.0
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 8,
+        "Height (cm)": 66.0,
+        "Weight (kg)": 12.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 20,
+        "Height (cm)": 90.0,
+        "Weight (kg)": 10.9
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 13,
+        "Height (cm)": 82.4,
+        "Weight (kg)": 9.6
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 11,
+        "Height (cm)": 70.1,
+        "Weight (kg)": 13.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 16,
+        "Height (cm)": 80.0,
+        "Weight (kg)": 11.7
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 11,
+        "Height (cm)": 69.9,
+        "Weight (kg)": 11.8
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 6,
+        "Height (cm)": 66.1,
+        "Weight (kg)": 6.6
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 4,
+        "Height (cm)": 59.8,
+        "Weight (kg)": 8.8
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 18,
+        "Height (cm)": 74.1,
+        "Weight (kg)": 14.3
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 2,
+        "Height (cm)": 55.7,
+        "Weight (kg)": 3.9
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 15,
+        "Height (cm)": 77.7,
+        "Weight (kg)": 11.4
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 14,
+        "Height (cm)": 79.0,
+        "Weight (kg)": 9.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 12,
+        "Height (cm)": 74.2,
+        "Weight (kg)": 11.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 47.6,
+        "Weight (kg)": 6.4
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 23,
+        "Height (cm)": 84.9,
+        "Weight (kg)": 10.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 24,
+        "Height (cm)": 83.4,
+        "Weight (kg)": 10.0
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 16,
+        "Height (cm)": 82.8,
+        "Weight (kg)": 10.4
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 15,
+        "Height (cm)": 76.3,
+        "Weight (kg)": 8.4
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 60.5,
+        "Weight (kg)": 6.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 21,
+        "Height (cm)": 87.3,
+        "Weight (kg)": 14.1
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 17,
+        "Height (cm)": 79.1,
+        "Weight (kg)": 10.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 7,
+        "Height (cm)": 72.0,
+        "Weight (kg)": 6.6
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 2,
+        "Height (cm)": 61.2,
+        "Weight (kg)": 5.4
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 14,
+        "Height (cm)": 80.1,
+        "Weight (kg)": 10.5
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 13,
+        "Height (cm)": 77.4,
+        "Weight (kg)": 12.6
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 9,
+        "Height (cm)": 64.4,
+        "Weight (kg)": 6.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 11,
+        "Height (cm)": 71.5,
+        "Weight (kg)": 10.5
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 13,
+        "Height (cm)": 69.4,
+        "Weight (kg)": 12.7
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 0,
+        "Height (cm)": 48.4,
+        "Weight (kg)": 1.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 4,
+        "Height (cm)": 66.2,
+        "Weight (kg)": 9.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 3,
+        "Height (cm)": 60.8,
+        "Weight (kg)": 8.7
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 0,
+        "Height (cm)": 45.3,
+        "Weight (kg)": 2.1
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 17,
+        "Height (cm)": 79.6,
+        "Weight (kg)": 8.0
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 6,
+        "Height (cm)": 64.5,
+        "Weight (kg)": 8.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 14,
+        "Height (cm)": 71.7,
+        "Weight (kg)": 7.7
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 17,
+        "Height (cm)": 84.4,
+        "Weight (kg)": 11.8
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 6,
+        "Height (cm)": 64.1,
+        "Weight (kg)": 8.8
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 3,
+        "Height (cm)": 66.3,
+        "Weight (kg)": 3.9
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 2,
+        "Height (cm)": 56.0,
+        "Weight (kg)": 3.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 0,
+        "Height (cm)": 49.5,
+        "Weight (kg)": 3.1
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 50.5000001,
+        "Weight (kg)": 4.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 12,
+        "Height (cm)": 74.2,
+        "Weight (kg)": 8.5
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 23,
+        "Height (cm)": 84.5,
+        "Weight (kg)": 11.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 24,
+        "Height (cm)": 85.1,
+        "Weight (kg)": 11.5
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 0,
+        "Height (cm)": 49.5,
+        "Weight (kg)": 3.1
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 1,
+        "Height (cm)": 50.5000001,
+        "Weight (kg)": 4.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 12,
+        "Height (cm)": 74.2,
+        "Weight (kg)": 8.5
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 23,
+        "Height (cm)": 84.5,
+        "Weight (kg)": 11.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 24,
+        "Height (cm)": 85.1,
+        "Weight (kg)": 11.5
+      }
+    ],
+    "prediction": [
+      0.46709314467737617,
+      -1.1627095135058978,
+      2.061301265927824,
+      2.259427630584106,
+      -1.9056062077736706,
+      -0.08175953369927332,
+      -1.1389298258325167,
+      -0.7118671667454081,
+      -1.9636989440557362,
+      -2.2755493356510645,
+      -0.6715086983405064,
+      -0.5713966776407688,
+      0.3836035068211524,
+      -0.6517860543788491,
+      -3.1149094985540144,
+      -0.6814423921839851,
+      -0.7176278878078609,
+      1.001660695160047,
+      -1.1246926720363204,
+      3.486209658258118,
+      1.1849997804688919,
+      -0.8137218952899696,
+      1.3060358378306625,
+      1.3872249898315807,
+      1.3853303514835489,
+      0.19843260140898547,
+      -2.3775302441840913,
+      -0.5042075265179841,
+      -2.2250217141675184,
+      -0.7840028388488204,
+      1.8989085299600403,
+      -0.30777301348544545,
+      -2.421523927941487,
+      -0.024920719119576575,
+      -1.4594304817839043,
+      -1.7442651498105426,
+      1.6598602917810488,
+      -1.6463213105435321,
+      2.382550530967734,
+      -1.212166004051244,
+      0.18913427305597733,
+      -1.630936974929583,
+      0.07184516659797242,
+      -0.321459050057906,
+      -0.1907124084862364,
+      -0.20294696852561508,
+      -2.170202003680664,
+      -0.6517860543788491,
+      -0.814993081490009,
+      -0.6588085713301862
+    ]
+  },
+  {
+    "task": "HAZ",
+    "code": "xgb",
+    "features": [
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 54.6,
+        "Weight (kg)": 7.0
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 8,
+        "Height (cm)": 66.0,
+        "Weight (kg)": 12.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 20,
+        "Height (cm)": 90.0,
+        "Weight (kg)": 10.9
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 13,
+        "Height (cm)": 82.4,
+        "Weight (kg)": 9.6
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 11,
+        "Height (cm)": 70.1,
+        "Weight (kg)": 13.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 16,
+        "Height (cm)": 80.0,
+        "Weight (kg)": 11.7
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 11,
+        "Height (cm)": 69.9,
+        "Weight (kg)": 11.8
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 6,
+        "Height (cm)": 66.1,
+        "Weight (kg)": 6.6
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 4,
+        "Height (cm)": 59.8,
+        "Weight (kg)": 8.8
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 18,
+        "Height (cm)": 74.1,
+        "Weight (kg)": 14.3
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 2,
+        "Height (cm)": 55.7,
+        "Weight (kg)": 3.9
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 15,
+        "Height (cm)": 77.7,
+        "Weight (kg)": 11.4
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 14,
+        "Height (cm)": 79.0,
+        "Weight (kg)": 9.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 12,
+        "Height (cm)": 74.2,
+        "Weight (kg)": 11.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 47.6,
+        "Weight (kg)": 6.4
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 23,
+        "Height (cm)": 84.9,
+        "Weight (kg)": 10.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 24,
+        "Height (cm)": 83.4,
+        "Weight (kg)": 10.0
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 16,
+        "Height (cm)": 82.8,
+        "Weight (kg)": 10.4
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 15,
+        "Height (cm)": 76.3,
+        "Weight (kg)": 8.4
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 60.5,
+        "Weight (kg)": 6.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 21,
+        "Height (cm)": 87.3,
+        "Weight (kg)": 14.1
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 17,
+        "Height (cm)": 79.1,
+        "Weight (kg)": 10.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 7,
+        "Height (cm)": 72.0,
+        "Weight (kg)": 6.6
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 2,
+        "Height (cm)": 61.2,
+        "Weight (kg)": 5.4
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 14,
+        "Height (cm)": 80.1,
+        "Weight (kg)": 10.5
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 13,
+        "Height (cm)": 77.4,
+        "Weight (kg)": 12.6
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 9,
+        "Height (cm)": 64.4,
+        "Weight (kg)": 6.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 11,
+        "Height (cm)": 71.5,
+        "Weight (kg)": 10.5
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 13,
+        "Height (cm)": 69.4,
+        "Weight (kg)": 12.7
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 0,
+        "Height (cm)": 48.4,
+        "Weight (kg)": 1.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 4,
+        "Height (cm)": 66.2,
+        "Weight (kg)": 9.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 3,
+        "Height (cm)": 60.8,
+        "Weight (kg)": 8.7
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 0,
+        "Height (cm)": 45.3,
+        "Weight (kg)": 2.1
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 17,
+        "Height (cm)": 79.6,
+        "Weight (kg)": 8.0
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 6,
+        "Height (cm)": 64.5,
+        "Weight (kg)": 8.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 14,
+        "Height (cm)": 71.7,
+        "Weight (kg)": 7.7
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 17,
+        "Height (cm)": 84.4,
+        "Weight (kg)": 11.8
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 6,
+        "Height (cm)": 64.1,
+        "Weight (kg)": 8.8
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 3,
+        "Height (cm)": 66.3,
+        "Weight (kg)": 3.9
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 2,
+        "Height (cm)": 56.0,
+        "Weight (kg)": 3.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 0,
+        "Height (cm)": 49.5,
+        "Weight (kg)": 3.1
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 50.5000001,
+        "Weight (kg)": 4.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 12,
+        "Height (cm)": 74.2,
+        "Weight (kg)": 8.5
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 23,
+        "Height (cm)": 84.5,
+        "Weight (kg)": 11.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 24,
+        "Height (cm)": 85.1,
+        "Weight (kg)": 11.5
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 0,
+        "Height (cm)": 49.5,
+        "Weight (kg)": 3.1
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 1,
+        "Height (cm)": 50.5000001,
+        "Weight (kg)": 4.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 12,
+        "Height (cm)": 74.2,
+        "Weight (kg)": 8.5
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 23,
+        "Height (cm)": 84.5,
+        "Weight (kg)": 11.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 24,
+        "Height (cm)": 85.1,
+        "Weight (kg)": 11.5
+      }
+    ],
+    "prediction": [
+      0.37620997428894043,
+      -1.2018519639968872,
+      1.9767893552780151,
+      2.2243432998657227,
+      -1.8894877433776855,
+      -0.04051017016172409,
+      -1.1560702323913574,
+      -0.7038533687591553,
+      -1.9642688035964966,
+      -2.4349215030670166,
+      -0.737881064414978,
+      -0.5751335024833679,
+      0.37854355573654175,
+      -0.761753261089325,
+      -3.309544324874878,
+      -0.7059313058853149,
+      -0.7461931109428406,
+      1.0073984861373901,
+      -1.0898734331130981,
+      3.4566776752471924,
+      1.160017490386963,
+      -0.7897745370864868,
+      1.3039053678512573,
+      1.3676186800003052,
+      1.4480137825012207,
+      0.2710329592227936,
+      -2.3418731689453125,
+      -0.5503830313682556,
+      -2.3642866611480713,
+      -0.6610783338546753,
+      1.8291513919830322,
+      -0.2684251070022583,
+      -2.7262368202209473,
+      0.01025985088199377,
+      -1.4997844696044922,
+      -1.6945466995239258,
+      1.6589936017990112,
+      -1.6014785766601562,
+      2.3915774822235107,
+      -1.2208813428878784,
+      0.08649451285600662,
+      -1.6579487323760986,
+      -0.017411641776561737,
+      -0.3367181718349457,
+      -0.14138655364513397,
+      -0.32173892855644226,
+      -2.173250913619995,
+      -0.761753261089325,
+      -0.8086097240447998,
+      -0.6072412729263306
+    ]
+  },
+  {
+    "task": "HAZ",
+    "code": "lgbm",
+    "features": [
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 54.6,
+        "Weight (kg)": 7.0
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 8,
+        "Height (cm)": 66.0,
+        "Weight (kg)": 12.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 20,
+        "Height (cm)": 90.0,
+        "Weight (kg)": 10.9
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 13,
+        "Height (cm)": 82.4,
+        "Weight (kg)": 9.6
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 11,
+        "Height (cm)": 70.1,
+        "Weight (kg)": 13.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 16,
+        "Height (cm)": 80.0,
+        "Weight (kg)": 11.7
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 11,
+        "Height (cm)": 69.9,
+        "Weight (kg)": 11.8
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 6,
+        "Height (cm)": 66.1,
+        "Weight (kg)": 6.6
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 4,
+        "Height (cm)": 59.8,
+        "Weight (kg)": 8.8
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 18,
+        "Height (cm)": 74.1,
+        "Weight (kg)": 14.3
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 2,
+        "Height (cm)": 55.7,
+        "Weight (kg)": 3.9
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 15,
+        "Height (cm)": 77.7,
+        "Weight (kg)": 11.4
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 14,
+        "Height (cm)": 79.0,
+        "Weight (kg)": 9.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 12,
+        "Height (cm)": 74.2,
+        "Weight (kg)": 11.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 47.6,
+        "Weight (kg)": 6.4
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 23,
+        "Height (cm)": 84.9,
+        "Weight (kg)": 10.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 24,
+        "Height (cm)": 83.4,
+        "Weight (kg)": 10.0
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 16,
+        "Height (cm)": 82.8,
+        "Weight (kg)": 10.4
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 15,
+        "Height (cm)": 76.3,
+        "Weight (kg)": 8.4
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 60.5,
+        "Weight (kg)": 6.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 21,
+        "Height (cm)": 87.3,
+        "Weight (kg)": 14.1
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 17,
+        "Height (cm)": 79.1,
+        "Weight (kg)": 10.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 7,
+        "Height (cm)": 72.0,
+        "Weight (kg)": 6.6
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 2,
+        "Height (cm)": 61.2,
+        "Weight (kg)": 5.4
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 14,
+        "Height (cm)": 80.1,
+        "Weight (kg)": 10.5
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 13,
+        "Height (cm)": 77.4,
+        "Weight (kg)": 12.6
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 9,
+        "Height (cm)": 64.4,
+        "Weight (kg)": 6.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 11,
+        "Height (cm)": 71.5,
+        "Weight (kg)": 10.5
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 13,
+        "Height (cm)": 69.4,
+        "Weight (kg)": 12.7
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 0,
+        "Height (cm)": 48.4,
+        "Weight (kg)": 1.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 4,
+        "Height (cm)": 66.2,
+        "Weight (kg)": 9.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 3,
+        "Height (cm)": 60.8,
+        "Weight (kg)": 8.7
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 0,
+        "Height (cm)": 45.3,
+        "Weight (kg)": 2.1
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 17,
+        "Height (cm)": 79.6,
+        "Weight (kg)": 8.0
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 6,
+        "Height (cm)": 64.5,
+        "Weight (kg)": 8.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 14,
+        "Height (cm)": 71.7,
+        "Weight (kg)": 7.7
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 17,
+        "Height (cm)": 84.4,
+        "Weight (kg)": 11.8
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 6,
+        "Height (cm)": 64.1,
+        "Weight (kg)": 8.8
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 3,
+        "Height (cm)": 66.3,
+        "Weight (kg)": 3.9
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 2,
+        "Height (cm)": 56.0,
+        "Weight (kg)": 3.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 0,
+        "Height (cm)": 49.5,
+        "Weight (kg)": 3.1
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 50.5000001,
+        "Weight (kg)": 4.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 12,
+        "Height (cm)": 74.2,
+        "Weight (kg)": 8.5
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 23,
+        "Height (cm)": 84.5,
+        "Weight (kg)": 11.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 24,
+        "Height (cm)": 85.1,
+        "Weight (kg)": 11.5
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 0,
+        "Height (cm)": 49.5,
+        "Weight (kg)": 3.1
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 1,
+        "Height (cm)": 50.5000001,
+        "Weight (kg)": 4.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 12,
+        "Height (cm)": 74.2,
+        "Weight (kg)": 8.5
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 23,
+        "Height (cm)": 84.5,
+        "Weight (kg)": 11.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 24,
+        "Height (cm)": 85.1,
+        "Weight (kg)": 11.5
+      }
+    ],
+    "prediction": [
+      0.5432341821921425,
+      -1.3627137213783103,
+      2.129591814465683,
+      2.256066860283003,
+      -1.8625073154319067,
+      -0.08634401970213294,
+      -1.2064140913361467,
+      -0.767889670841024,
+      -1.9988291111032095,
+      -2.3150808010154287,
+      -0.6122367334411922,
+      -0.8189853612940281,
+      0.2850821709033059,
+      -0.7088839044013606,
+      -3.1744700716670278,
+      -0.6816592448925257,
+      -0.6428473541697259,
+      1.056391128986761,
+      -1.1957526944296046,
+      3.265057406778017,
+      1.2259083214303,
+      -0.6860398302649838,
+      1.45473967068438,
+      1.4852729059478256,
+      1.3486343339178797,
+      0.23584687745483693,
+      -2.4535354374505904,
+      -0.4229546344339132,
+      -2.380011863125855,
+      -0.8867571206590082,
+      2.033579551534242,
+      -0.197055832527022,
+      -2.6179367166570198,
+      0.1523035310844546,
+      -1.5656599611394355,
+      -1.8519001871244023,
+      1.6640742094693837,
+      -1.6535753941943399,
+      2.4142646407255666,
+      -1.347677679205267,
+      0.2844900464078886,
+      -1.7601830412322896,
+      0.22301598556358118,
+      -0.32972727884341263,
+      -0.1253805196637228,
+      -0.1346616149909199,
+      -2.2437048182988035,
+      -0.7088839044013606,
+      -0.8090500566879634,
+      -0.6011968245370405
+    ]
+  },
+  {
+    "task": "HAZ",
+    "code": "cb",
+    "features": [
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 54.6,
+        "Weight (kg)": 7.0
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 8,
+        "Height (cm)": 66.0,
+        "Weight (kg)": 12.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 20,
+        "Height (cm)": 90.0,
+        "Weight (kg)": 10.9
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 13,
+        "Height (cm)": 82.4,
+        "Weight (kg)": 9.6
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 11,
+        "Height (cm)": 70.1,
+        "Weight (kg)": 13.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 16,
+        "Height (cm)": 80.0,
+        "Weight (kg)": 11.7
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 11,
+        "Height (cm)": 69.9,
+        "Weight (kg)": 11.8
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 6,
+        "Height (cm)": 66.1,
+        "Weight (kg)": 6.6
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 4,
+        "Height (cm)": 59.8,
+        "Weight (kg)": 8.8
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 18,
+        "Height (cm)": 74.1,
+        "Weight (kg)": 14.3
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 2,
+        "Height (cm)": 55.7,
+        "Weight (kg)": 3.9
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 15,
+        "Height (cm)": 77.7,
+        "Weight (kg)": 11.4
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 14,
+        "Height (cm)": 79.0,
+        "Weight (kg)": 9.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 12,
+        "Height (cm)": 74.2,
+        "Weight (kg)": 11.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 47.6,
+        "Weight (kg)": 6.4
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 23,
+        "Height (cm)": 84.9,
+        "Weight (kg)": 10.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 24,
+        "Height (cm)": 83.4,
+        "Weight (kg)": 10.0
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 16,
+        "Height (cm)": 82.8,
+        "Weight (kg)": 10.4
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 15,
+        "Height (cm)": 76.3,
+        "Weight (kg)": 8.4
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 60.5,
+        "Weight (kg)": 6.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 21,
+        "Height (cm)": 87.3,
+        "Weight (kg)": 14.1
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 17,
+        "Height (cm)": 79.1,
+        "Weight (kg)": 10.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 7,
+        "Height (cm)": 72.0,
+        "Weight (kg)": 6.6
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 2,
+        "Height (cm)": 61.2,
+        "Weight (kg)": 5.4
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 14,
+        "Height (cm)": 80.1,
+        "Weight (kg)": 10.5
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 13,
+        "Height (cm)": 77.4,
+        "Weight (kg)": 12.6
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 9,
+        "Height (cm)": 64.4,
+        "Weight (kg)": 6.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 11,
+        "Height (cm)": 71.5,
+        "Weight (kg)": 10.5
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 13,
+        "Height (cm)": 69.4,
+        "Weight (kg)": 12.7
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 0,
+        "Height (cm)": 48.4,
+        "Weight (kg)": 1.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 4,
+        "Height (cm)": 66.2,
+        "Weight (kg)": 9.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 3,
+        "Height (cm)": 60.8,
+        "Weight (kg)": 8.7
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 0,
+        "Height (cm)": 45.3,
+        "Weight (kg)": 2.1
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 17,
+        "Height (cm)": 79.6,
+        "Weight (kg)": 8.0
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 6,
+        "Height (cm)": 64.5,
+        "Weight (kg)": 8.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 14,
+        "Height (cm)": 71.7,
+        "Weight (kg)": 7.7
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 17,
+        "Height (cm)": 84.4,
+        "Weight (kg)": 11.8
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 6,
+        "Height (cm)": 64.1,
+        "Weight (kg)": 8.8
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 3,
+        "Height (cm)": 66.3,
+        "Weight (kg)": 3.9
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 2,
+        "Height (cm)": 56.0,
+        "Weight (kg)": 3.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 0,
+        "Height (cm)": 49.5,
+        "Weight (kg)": 3.1
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 50.5000001,
+        "Weight (kg)": 4.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 12,
+        "Height (cm)": 74.2,
+        "Weight (kg)": 8.5
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 23,
+        "Height (cm)": 84.5,
+        "Weight (kg)": 11.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 24,
+        "Height (cm)": 85.1,
+        "Weight (kg)": 11.5
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 0,
+        "Height (cm)": 49.5,
+        "Weight (kg)": 3.1
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 1,
+        "Height (cm)": 50.5000001,
+        "Weight (kg)": 4.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 12,
+        "Height (cm)": 74.2,
+        "Weight (kg)": 8.5
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 23,
+        "Height (cm)": 84.5,
+        "Weight (kg)": 11.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 24,
+        "Height (cm)": 85.1,
+        "Weight (kg)": 11.5
+      }
+    ],
+    "prediction": [
+      0.4344504336848729,
+      -1.1581846445853798,
+      2.0250193416329245,
+      2.2745409200061038,
+      -1.889598388688395,
+      -0.04781438264263604,
+      -1.1607106323010221,
+      -0.7008802791081667,
+      -1.9692643452317964,
+      -2.2549908466104984,
+      -0.6133079437370272,
+      -0.5640260506199396,
+      0.3469927388677497,
+      -0.625156094556576,
+      -3.294222413380283,
+      -0.6787218549632329,
+      -0.6841136242199887,
+      1.019572833635797,
+      -1.104318583623539,
+      3.4515834855014633,
+      1.199571320085467,
+      -0.7794021773362324,
+      1.2608466053310963,
+      1.4095296875475816,
+      1.3668257858081607,
+      0.22754354063636648,
+      -2.4086359701061175,
+      -0.5432932915419163,
+      -2.255238320244901,
+      -0.677401565880448,
+      1.8968005559027095,
+      -0.32832402918963915,
+      -2.7347683591688456,
+      -0.042717972396429,
+      -1.444964104714694,
+      -1.7365515865803678,
+      1.6748979741031602,
+      -1.599469374162333,
+      2.3830656472413616,
+      -1.1354461899545298,
+      0.09031372171405566,
+      -1.6644198489691493,
+      0.11598542409779448,
+      -0.34113091297677656,
+      -0.15750525168000096,
+      -0.31858470296535635,
+      -2.189435420462265,
+      -0.625156094556576,
+      -0.8422566357850526,
+      -0.6494768657758091
+    ]
+  },
+  {
+    "task": "WAZ",
+    "code": "linear",
+    "features": [
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 54.6,
+        "Weight (kg)": 7.0
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 8,
+        "Height (cm)": 66.0,
+        "Weight (kg)": 12.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 20,
+        "Height (cm)": 90.0,
+        "Weight (kg)": 10.9
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 13,
+        "Height (cm)": 82.4,
+        "Weight (kg)": 9.6
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 11,
+        "Height (cm)": 70.1,
+        "Weight (kg)": 13.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 16,
+        "Height (cm)": 80.0,
+        "Weight (kg)": 11.7
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 11,
+        "Height (cm)": 69.9,
+        "Weight (kg)": 11.8
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 6,
+        "Height (cm)": 66.1,
+        "Weight (kg)": 6.6
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 4,
+        "Height (cm)": 59.8,
+        "Weight (kg)": 8.8
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 18,
+        "Height (cm)": 74.1,
+        "Weight (kg)": 14.3
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 2,
+        "Height (cm)": 55.7,
+        "Weight (kg)": 3.9
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 15,
+        "Height (cm)": 77.7,
+        "Weight (kg)": 11.4
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 14,
+        "Height (cm)": 79.0,
+        "Weight (kg)": 9.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 12,
+        "Height (cm)": 74.2,
+        "Weight (kg)": 11.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 47.6,
+        "Weight (kg)": 6.4
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 23,
+        "Height (cm)": 84.9,
+        "Weight (kg)": 10.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 24,
+        "Height (cm)": 83.4,
+        "Weight (kg)": 10.0
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 16,
+        "Height (cm)": 82.8,
+        "Weight (kg)": 10.4
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 15,
+        "Height (cm)": 76.3,
+        "Weight (kg)": 8.4
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 60.5,
+        "Weight (kg)": 6.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 21,
+        "Height (cm)": 87.3,
+        "Weight (kg)": 14.1
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 17,
+        "Height (cm)": 79.1,
+        "Weight (kg)": 10.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 7,
+        "Height (cm)": 72.0,
+        "Weight (kg)": 6.6
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 2,
+        "Height (cm)": 61.2,
+        "Weight (kg)": 5.4
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 14,
+        "Height (cm)": 80.1,
+        "Weight (kg)": 10.5
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 13,
+        "Height (cm)": 77.4,
+        "Weight (kg)": 12.6
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 9,
+        "Height (cm)": 64.4,
+        "Weight (kg)": 6.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 11,
+        "Height (cm)": 71.5,
+        "Weight (kg)": 10.5
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 13,
+        "Height (cm)": 69.4,
+        "Weight (kg)": 12.7
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 0,
+        "Height (cm)": 48.4,
+        "Weight (kg)": 1.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 4,
+        "Height (cm)": 66.2,
+        "Weight (kg)": 9.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 3,
+        "Height (cm)": 60.8,
+        "Weight (kg)": 8.7
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 0,
+        "Height (cm)": 45.3,
+        "Weight (kg)": 2.1
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 17,
+        "Height (cm)": 79.6,
+        "Weight (kg)": 8.0
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 6,
+        "Height (cm)": 64.5,
+        "Weight (kg)": 8.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 14,
+        "Height (cm)": 71.7,
+        "Weight (kg)": 7.7
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 17,
+        "Height (cm)": 84.4,
+        "Weight (kg)": 11.8
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 6,
+        "Height (cm)": 64.1,
+        "Weight (kg)": 8.8
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 3,
+        "Height (cm)": 66.3,
+        "Weight (kg)": 3.9
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 2,
+        "Height (cm)": 56.0,
+        "Weight (kg)": 3.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 0,
+        "Height (cm)": 49.5,
+        "Weight (kg)": 3.1
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 50.5000001,
+        "Weight (kg)": 4.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 12,
+        "Height (cm)": 74.2,
+        "Weight (kg)": 8.5
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 23,
+        "Height (cm)": 84.5,
+        "Weight (kg)": 11.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 24,
+        "Height (cm)": 85.1,
+        "Weight (kg)": 11.5
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 0,
+        "Height (cm)": 49.5,
+        "Weight (kg)": 3.1
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 1,
+        "Height (cm)": 50.5000001,
+        "Weight (kg)": 4.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 12,
+        "Height (cm)": 74.2,
+        "Weight (kg)": 8.5
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 23,
+        "Height (cm)": 84.5,
+        "Weight (kg)": 11.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 24,
+        "Height (cm)": 85.1,
+        "Weight (kg)": 11.5
+      }
+    ],
+    "prediction": [
+      1.3340700988870307,
+      3.9395533706595813,
+      -0.8342573136742715,
+      -0.07096121405002087,
+      3.577602013125814,
+      0.9346158132570022,
+      2.785656441943013,
+      -0.7761074045218108,
+      1.6631504072808143,
+      3.058907841210086,
+      -1.6131379718331544,
+      0.9449393037851026,
+      -0.6859374122647273,
+      1.580562483056009,
+      0.8157963494413689,
+      -2.247291117113674,
+      -2.2721495546560826,
+      -0.18831064387526553,
+      -1.646429443443207,
+      0.6430384329594814,
+      2.077768828975403,
+      -0.6305289256080853,
+      -1.0455677697727421,
+      -0.7348134424094086,
+      0.8543488890579507,
+      2.5204075331782896,
+      -1.51264448904797,
+      1.6627299848107455,
+      3.024146335609643,
+      -3.82380895802718,
+      2.426026084434996,
+      1.8462318142908005,
+      -3.046398333858687,
+      -2.1135061627184353,
+      0.6059559273332873,
+      -1.5642619416884722,
+      1.1688942504374245,
+      1.1242296767789508,
+      -2.299958181274495,
+      -2.6351505237101693,
+      -1.765248907258841,
+      -1.0845407318593918,
+      -0.3343095452590603,
+      -0.9661416905138278,
+      -0.9764651810419265,
+      -2.18260875144925,
+      -1.5019005760498008,
+      -0.7516693894494688,
+      -1.3835015347042372,
+      -1.3938250252323359
+    ]
+  },
+  {
+    "task": "WAZ",
+    "code": "ridge",
+    "features": [
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 54.6,
+        "Weight (kg)": 7.0
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 8,
+        "Height (cm)": 66.0,
+        "Weight (kg)": 12.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 20,
+        "Height (cm)": 90.0,
+        "Weight (kg)": 10.9
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 13,
+        "Height (cm)": 82.4,
+        "Weight (kg)": 9.6
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 11,
+        "Height (cm)": 70.1,
+        "Weight (kg)": 13.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 16,
+        "Height (cm)": 80.0,
+        "Weight (kg)": 11.7
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 11,
+        "Height (cm)": 69.9,
+        "Weight (kg)": 11.8
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 6,
+        "Height (cm)": 66.1,
+        "Weight (kg)": 6.6
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 4,
+        "Height (cm)": 59.8,
+        "Weight (kg)": 8.8
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 18,
+        "Height (cm)": 74.1,
+        "Weight (kg)": 14.3
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 2,
+        "Height (cm)": 55.7,
+        "Weight (kg)": 3.9
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 15,
+        "Height (cm)": 77.7,
+        "Weight (kg)": 11.4
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 14,
+        "Height (cm)": 79.0,
+        "Weight (kg)": 9.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 12,
+        "Height (cm)": 74.2,
+        "Weight (kg)": 11.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 47.6,
+        "Weight (kg)": 6.4
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 23,
+        "Height (cm)": 84.9,
+        "Weight (kg)": 10.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 24,
+        "Height (cm)": 83.4,
+        "Weight (kg)": 10.0
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 16,
+        "Height (cm)": 82.8,
+        "Weight (kg)": 10.4
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 15,
+        "Height (cm)": 76.3,
+        "Weight (kg)": 8.4
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 60.5,
+        "Weight (kg)": 6.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 21,
+        "Height (cm)": 87.3,
+        "Weight (kg)": 14.1
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 17,
+        "Height (cm)": 79.1,
+        "Weight (kg)": 10.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 7,
+        "Height (cm)": 72.0,
+        "Weight (kg)": 6.6
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 2,
+        "Height (cm)": 61.2,
+        "Weight (kg)": 5.4
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 14,
+        "Height (cm)": 80.1,
+        "Weight (kg)": 10.5
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 13,
+        "Height (cm)": 77.4,
+        "Weight (kg)": 12.6
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 9,
+        "Height (cm)": 64.4,
+        "Weight (kg)": 6.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 11,
+        "Height (cm)": 71.5,
+        "Weight (kg)": 10.5
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 13,
+        "Height (cm)": 69.4,
+        "Weight (kg)": 12.7
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 0,
+        "Height (cm)": 48.4,
+        "Weight (kg)": 1.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 4,
+        "Height (cm)": 66.2,
+        "Weight (kg)": 9.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 3,
+        "Height (cm)": 60.8,
+        "Weight (kg)": 8.7
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 0,
+        "Height (cm)": 45.3,
+        "Weight (kg)": 2.1
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 17,
+        "Height (cm)": 79.6,
+        "Weight (kg)": 8.0
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 6,
+        "Height (cm)": 64.5,
+        "Weight (kg)": 8.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 14,
+        "Height (cm)": 71.7,
+        "Weight (kg)": 7.7
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 17,
+        "Height (cm)": 84.4,
+        "Weight (kg)": 11.8
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 6,
+        "Height (cm)": 64.1,
+        "Weight (kg)": 8.8
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 3,
+        "Height (cm)": 66.3,
+        "Weight (kg)": 3.9
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 2,
+        "Height (cm)": 56.0,
+        "Weight (kg)": 3.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 0,
+        "Height (cm)": 49.5,
+        "Weight (kg)": 3.1
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 50.5000001,
+        "Weight (kg)": 4.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 12,
+        "Height (cm)": 74.2,
+        "Weight (kg)": 8.5
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 23,
+        "Height (cm)": 84.5,
+        "Weight (kg)": 11.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 24,
+        "Height (cm)": 85.1,
+        "Weight (kg)": 11.5
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 0,
+        "Height (cm)": 49.5,
+        "Weight (kg)": 3.1
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 1,
+        "Height (cm)": 50.5000001,
+        "Weight (kg)": 4.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 12,
+        "Height (cm)": 74.2,
+        "Weight (kg)": 8.5
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 23,
+        "Height (cm)": 84.5,
+        "Weight (kg)": 11.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 24,
+        "Height (cm)": 85.1,
+        "Weight (kg)": 11.5
+      }
+    ],
+    "prediction": [
+      1.33405629227195,
+      3.939533227021677,
+      -0.8342443059648694,
+      -0.07095046563480523,
+      3.5776033622696914,
+      0.9346241292003601,
+      2.785639376292874,
+      -0.77609516828824,
+      1.6631563301004348,
+      3.0588903898335147,
+      -1.6131442133735625,
+      0.9449475488788739,
+      -0.68592505007123,
+      1.5805689726723253,
+      0.8157838653365976,
+      -2.2472743701613513,
+      -2.272153135413654,
+      -0.1882994624929033,
+      -1.6464145857978902,
+      0.6430263896914798,
+      2.077754014749827,
+      -0.6305165712842129,
+      -1.0455548014344296,
+      -0.7348014895741848,
+      0.8543368851610396,
+      2.520411669041959,
+      -1.5126506754780396,
+      1.6627157845996088,
+      3.0241287504035217,
+      -3.8237892118292756,
+      2.426009624929673,
+      1.8462372254240647,
+      -3.046380571426246,
+      -2.1135104598415007,
+      0.6059646368727005,
+      -1.5642677738706068,
+      1.1688815774157346,
+      1.1242370638080548,
+      -2.2999421900587573,
+      -2.6351337216704787,
+      -1.7652548496616531,
+      -1.0845483667596962,
+      -0.33431860499775645,
+      -0.966148648396759,
+      -0.9764720680752719,
+      -2.182593193200658,
+      -1.501886710298701,
+      -0.7516569485367617,
+      -1.3834869919357633,
+      -1.393810411614277
+    ]
+  },
+  {
+    "task": "WAZ",
+    "code": "rf",
+    "features": [
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 54.6,
+        "Weight (kg)": 7.0
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 8,
+        "Height (cm)": 66.0,
+        "Weight (kg)": 12.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 20,
+        "Height (cm)": 90.0,
+        "Weight (kg)": 10.9
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 13,
+        "Height (cm)": 82.4,
+        "Weight (kg)": 9.6
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 11,
+        "Height (cm)": 70.1,
+        "Weight (kg)": 13.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 16,
+        "Height (cm)": 80.0,
+        "Weight (kg)": 11.7
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 11,
+        "Height (cm)": 69.9,
+        "Weight (kg)": 11.8
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 6,
+        "Height (cm)": 66.1,
+        "Weight (kg)": 6.6
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 4,
+        "Height (cm)": 59.8,
+        "Weight (kg)": 8.8
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 18,
+        "Height (cm)": 74.1,
+        "Weight (kg)": 14.3
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 2,
+        "Height (cm)": 55.7,
+        "Weight (kg)": 3.9
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 15,
+        "Height (cm)": 77.7,
+        "Weight (kg)": 11.4
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 14,
+        "Height (cm)": 79.0,
+        "Weight (kg)": 9.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 12,
+        "Height (cm)": 74.2,
+        "Weight (kg)": 11.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 47.6,
+        "Weight (kg)": 6.4
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 23,
+        "Height (cm)": 84.9,
+        "Weight (kg)": 10.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 24,
+        "Height (cm)": 83.4,
+        "Weight (kg)": 10.0
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 16,
+        "Height (cm)": 82.8,
+        "Weight (kg)": 10.4
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 15,
+        "Height (cm)": 76.3,
+        "Weight (kg)": 8.4
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 60.5,
+        "Weight (kg)": 6.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 21,
+        "Height (cm)": 87.3,
+        "Weight (kg)": 14.1
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 17,
+        "Height (cm)": 79.1,
+        "Weight (kg)": 10.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 7,
+        "Height (cm)": 72.0,
+        "Weight (kg)": 6.6
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 2,
+        "Height (cm)": 61.2,
+        "Weight (kg)": 5.4
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 14,
+        "Height (cm)": 80.1,
+        "Weight (kg)": 10.5
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 13,
+        "Height (cm)": 77.4,
+        "Weight (kg)": 12.6
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 9,
+        "Height (cm)": 64.4,
+        "Weight (kg)": 6.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 11,
+        "Height (cm)": 71.5,
+        "Weight (kg)": 10.5
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 13,
+        "Height (cm)": 69.4,
+        "Weight (kg)": 12.7
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 0,
+        "Height (cm)": 48.4,
+        "Weight (kg)": 1.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 4,
+        "Height (cm)": 66.2,
+        "Weight (kg)": 9.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 3,
+        "Height (cm)": 60.8,
+        "Weight (kg)": 8.7
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 0,
+        "Height (cm)": 45.3,
+        "Weight (kg)": 2.1
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 17,
+        "Height (cm)": 79.6,
+        "Weight (kg)": 8.0
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 6,
+        "Height (cm)": 64.5,
+        "Weight (kg)": 8.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 14,
+        "Height (cm)": 71.7,
+        "Weight (kg)": 7.7
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 17,
+        "Height (cm)": 84.4,
+        "Weight (kg)": 11.8
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 6,
+        "Height (cm)": 64.1,
+        "Weight (kg)": 8.8
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 3,
+        "Height (cm)": 66.3,
+        "Weight (kg)": 3.9
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 2,
+        "Height (cm)": 56.0,
+        "Weight (kg)": 3.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 0,
+        "Height (cm)": 49.5,
+        "Weight (kg)": 3.1
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 50.5000001,
+        "Weight (kg)": 4.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 12,
+        "Height (cm)": 74.2,
+        "Weight (kg)": 8.5
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 23,
+        "Height (cm)": 84.5,
+        "Weight (kg)": 11.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 24,
+        "Height (cm)": 85.1,
+        "Weight (kg)": 11.5
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 0,
+        "Height (cm)": 49.5,
+        "Weight (kg)": 3.1
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 1,
+        "Height (cm)": 50.5000001,
+        "Weight (kg)": 4.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 12,
+        "Height (cm)": 74.2,
+        "Weight (kg)": 8.5
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 23,
+        "Height (cm)": 84.5,
+        "Weight (kg)": 11.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 24,
+        "Height (cm)": 85.1,
+        "Weight (kg)": 11.5
+      }
+    ],
+    "prediction": [
+      4.011812743395779,
+      3.466998842305727,
+      -0.35780122941487613,
+      -0.25765511917403466,
+      3.1477851266931607,
+      0.9622099766347533,
+      2.4019147446981544,
+      -1.6606509302372954,
+      2.055639740870369,
+      2.603262859415197,
+      -2.0784946217097744,
+      0.9142363798081118,
+      -0.8441764057192953,
+      1.3720122774379293,
+      3.220044199213869,
+      -1.3947133203206383,
+      -1.1350610539494108,
+      -0.10629619247688459,
+      -1.854230463192145,
+      2.9582950702288184,
+      2.045314488467021,
+      -0.4585014990864536,
+      -2.0719227934885684,
+      -0.24590583309794825,
+      0.8998826153646639,
+      2.2411191025499098,
+      -2.367284338734982,
+      1.4914023604598559,
+      2.560406275491486,
+      -5.322683558743618,
+      2.8937818357770904,
+      2.7227375921116086,
+      -2.945244099021819,
+      -1.8855542647074157,
+      0.301563006891416,
+      -1.6483123859699877,
+      1.2992838221560492,
+      0.9515589547581912,
+      -3.917267895493082,
+      -4.09647555088901,
+      -0.2923613209930266,
+      0.022072111456097897,
+      -0.42095770210198297,
+      -0.049555450472967603,
+      0.01580205269456753,
+      -0.516861724776769,
+      -0.46329703286324314,
+      -1.1547718252910573,
+      -0.5713092592181661,
+      -0.4824644644355938
+    ]
+  },
+  {
+    "task": "WAZ",
+    "code": "xgb",
+    "features": [
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 54.6,
+        "Weight (kg)": 7.0
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 8,
+        "Height (cm)": 66.0,
+        "Weight (kg)": 12.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 20,
+        "Height (cm)": 90.0,
+        "Weight (kg)": 10.9
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 13,
+        "Height (cm)": 82.4,
+        "Weight (kg)": 9.6
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 11,
+        "Height (cm)": 70.1,
+        "Weight (kg)": 13.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 16,
+        "Height (cm)": 80.0,
+        "Weight (kg)": 11.7
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 11,
+        "Height (cm)": 69.9,
+        "Weight (kg)": 11.8
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 6,
+        "Height (cm)": 66.1,
+        "Weight (kg)": 6.6
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 4,
+        "Height (cm)": 59.8,
+        "Weight (kg)": 8.8
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 18,
+        "Height (cm)": 74.1,
+        "Weight (kg)": 14.3
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 2,
+        "Height (cm)": 55.7,
+        "Weight (kg)": 3.9
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 15,
+        "Height (cm)": 77.7,
+        "Weight (kg)": 11.4
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 14,
+        "Height (cm)": 79.0,
+        "Weight (kg)": 9.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 12,
+        "Height (cm)": 74.2,
+        "Weight (kg)": 11.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 47.6,
+        "Weight (kg)": 6.4
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 23,
+        "Height (cm)": 84.9,
+        "Weight (kg)": 10.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 24,
+        "Height (cm)": 83.4,
+        "Weight (kg)": 10.0
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 16,
+        "Height (cm)": 82.8,
+        "Weight (kg)": 10.4
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 15,
+        "Height (cm)": 76.3,
+        "Weight (kg)": 8.4
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 60.5,
+        "Weight (kg)": 6.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 21,
+        "Height (cm)": 87.3,
+        "Weight (kg)": 14.1
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 17,
+        "Height (cm)": 79.1,
+        "Weight (kg)": 10.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 7,
+        "Height (cm)": 72.0,
+        "Weight (kg)": 6.6
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 2,
+        "Height (cm)": 61.2,
+        "Weight (kg)": 5.4
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 14,
+        "Height (cm)": 80.1,
+        "Weight (kg)": 10.5
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 13,
+        "Height (cm)": 77.4,
+        "Weight (kg)": 12.6
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 9,
+        "Height (cm)": 64.4,
+        "Weight (kg)": 6.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 11,
+        "Height (cm)": 71.5,
+        "Weight (kg)": 10.5
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 13,
+        "Height (cm)": 69.4,
+        "Weight (kg)": 12.7
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 0,
+        "Height (cm)": 48.4,
+        "Weight (kg)": 1.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 4,
+        "Height (cm)": 66.2,
+        "Weight (kg)": 9.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 3,
+        "Height (cm)": 60.8,
+        "Weight (kg)": 8.7
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 0,
+        "Height (cm)": 45.3,
+        "Weight (kg)": 2.1
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 17,
+        "Height (cm)": 79.6,
+        "Weight (kg)": 8.0
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 6,
+        "Height (cm)": 64.5,
+        "Weight (kg)": 8.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 14,
+        "Height (cm)": 71.7,
+        "Weight (kg)": 7.7
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 17,
+        "Height (cm)": 84.4,
+        "Weight (kg)": 11.8
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 6,
+        "Height (cm)": 64.1,
+        "Weight (kg)": 8.8
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 3,
+        "Height (cm)": 66.3,
+        "Weight (kg)": 3.9
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 2,
+        "Height (cm)": 56.0,
+        "Weight (kg)": 3.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 0,
+        "Height (cm)": 49.5,
+        "Weight (kg)": 3.1
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 50.5000001,
+        "Weight (kg)": 4.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 12,
+        "Height (cm)": 74.2,
+        "Weight (kg)": 8.5
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 23,
+        "Height (cm)": 84.5,
+        "Weight (kg)": 11.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 24,
+        "Height (cm)": 85.1,
+        "Weight (kg)": 11.5
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 0,
+        "Height (cm)": 49.5,
+        "Weight (kg)": 3.1
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 1,
+        "Height (cm)": 50.5000001,
+        "Weight (kg)": 4.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 12,
+        "Height (cm)": 74.2,
+        "Weight (kg)": 8.5
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 23,
+        "Height (cm)": 84.5,
+        "Weight (kg)": 11.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 24,
+        "Height (cm)": 85.1,
+        "Weight (kg)": 11.5
+      }
+    ],
+    "prediction": [
+      3.9842581748962402,
+      3.4696481227874756,
+      -0.29866352677345276,
+      -0.27857545018196106,
+      3.1417062282562256,
+      0.9198978543281555,
+      2.4518566131591797,
+      -1.7366175651550293,
+      2.048233985900879,
+      2.5792269706726074,
+      -2.0743751525878906,
+      0.9341806173324585,
+      -0.8099016547203064,
+      1.3925622701644897,
+      3.210050106048584,
+      -1.3752081394195557,
+      -1.1391379833221436,
+      0.02596312388777733,
+      -1.820896863937378,
+      2.862605333328247,
+      2.055694580078125,
+      -0.43371427059173584,
+      -2.119887590408325,
+      -0.2965245842933655,
+      0.8995593786239624,
+      2.2126564979553223,
+      -2.3368043899536133,
+      1.4317890405654907,
+      2.527611255645752,
+      -5.313721656799316,
+      2.8662235736846924,
+      2.7213945388793945,
+      -2.9355926513671875,
+      -1.7929984331130981,
+      0.3114341199398041,
+      -1.5372827053070068,
+      1.3171753883361816,
+      0.9542206525802612,
+      -3.9363553524017334,
+      -4.122516632080078,
+      -0.2259921282529831,
+      0.006793735083192587,
+      -0.3811868727207184,
+      -0.02467644400894642,
+      0.01881852000951767,
+      -0.4967842996120453,
+      -0.4549180865287781,
+      -1.13682222366333,
+      -0.5814085006713867,
+      -0.500845193862915
+    ]
+  },
+  {
+    "task": "WAZ",
+    "code": "lgbm",
+    "features": [
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 54.6,
+        "Weight (kg)": 7.0
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 8,
+        "Height (cm)": 66.0,
+        "Weight (kg)": 12.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 20,
+        "Height (cm)": 90.0,
+        "Weight (kg)": 10.9
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 13,
+        "Height (cm)": 82.4,
+        "Weight (kg)": 9.6
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 11,
+        "Height (cm)": 70.1,
+        "Weight (kg)": 13.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 16,
+        "Height (cm)": 80.0,
+        "Weight (kg)": 11.7
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 11,
+        "Height (cm)": 69.9,
+        "Weight (kg)": 11.8
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 6,
+        "Height (cm)": 66.1,
+        "Weight (kg)": 6.6
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 4,
+        "Height (cm)": 59.8,
+        "Weight (kg)": 8.8
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 18,
+        "Height (cm)": 74.1,
+        "Weight (kg)": 14.3
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 2,
+        "Height (cm)": 55.7,
+        "Weight (kg)": 3.9
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 15,
+        "Height (cm)": 77.7,
+        "Weight (kg)": 11.4
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 14,
+        "Height (cm)": 79.0,
+        "Weight (kg)": 9.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 12,
+        "Height (cm)": 74.2,
+        "Weight (kg)": 11.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 47.6,
+        "Weight (kg)": 6.4
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 23,
+        "Height (cm)": 84.9,
+        "Weight (kg)": 10.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 24,
+        "Height (cm)": 83.4,
+        "Weight (kg)": 10.0
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 16,
+        "Height (cm)": 82.8,
+        "Weight (kg)": 10.4
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 15,
+        "Height (cm)": 76.3,
+        "Weight (kg)": 8.4
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 60.5,
+        "Weight (kg)": 6.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 21,
+        "Height (cm)": 87.3,
+        "Weight (kg)": 14.1
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 17,
+        "Height (cm)": 79.1,
+        "Weight (kg)": 10.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 7,
+        "Height (cm)": 72.0,
+        "Weight (kg)": 6.6
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 2,
+        "Height (cm)": 61.2,
+        "Weight (kg)": 5.4
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 14,
+        "Height (cm)": 80.1,
+        "Weight (kg)": 10.5
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 13,
+        "Height (cm)": 77.4,
+        "Weight (kg)": 12.6
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 9,
+        "Height (cm)": 64.4,
+        "Weight (kg)": 6.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 11,
+        "Height (cm)": 71.5,
+        "Weight (kg)": 10.5
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 13,
+        "Height (cm)": 69.4,
+        "Weight (kg)": 12.7
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 0,
+        "Height (cm)": 48.4,
+        "Weight (kg)": 1.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 4,
+        "Height (cm)": 66.2,
+        "Weight (kg)": 9.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 3,
+        "Height (cm)": 60.8,
+        "Weight (kg)": 8.7
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 0,
+        "Height (cm)": 45.3,
+        "Weight (kg)": 2.1
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 17,
+        "Height (cm)": 79.6,
+        "Weight (kg)": 8.0
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 6,
+        "Height (cm)": 64.5,
+        "Weight (kg)": 8.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 14,
+        "Height (cm)": 71.7,
+        "Weight (kg)": 7.7
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 17,
+        "Height (cm)": 84.4,
+        "Weight (kg)": 11.8
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 6,
+        "Height (cm)": 64.1,
+        "Weight (kg)": 8.8
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 3,
+        "Height (cm)": 66.3,
+        "Weight (kg)": 3.9
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 2,
+        "Height (cm)": 56.0,
+        "Weight (kg)": 3.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 0,
+        "Height (cm)": 49.5,
+        "Weight (kg)": 3.1
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 50.5000001,
+        "Weight (kg)": 4.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 12,
+        "Height (cm)": 74.2,
+        "Weight (kg)": 8.5
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 23,
+        "Height (cm)": 84.5,
+        "Weight (kg)": 11.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 24,
+        "Height (cm)": 85.1,
+        "Weight (kg)": 11.5
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 0,
+        "Height (cm)": 49.5,
+        "Weight (kg)": 3.1
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 1,
+        "Height (cm)": 50.5000001,
+        "Weight (kg)": 4.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 12,
+        "Height (cm)": 74.2,
+        "Weight (kg)": 8.5
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 23,
+        "Height (cm)": 84.5,
+        "Weight (kg)": 11.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 24,
+        "Height (cm)": 85.1,
+        "Weight (kg)": 11.5
+      }
+    ],
+    "prediction": [
+      3.9418762326561168,
+      3.400740052111204,
+      -0.4154204429865957,
+      -0.33805925836040146,
+      3.0970604500617767,
+      0.9125787319878614,
+      2.444841781048661,
+      -1.6902101955136801,
+      2.175666905537486,
+      2.643117264593443,
+      -2.082292875629248,
+      0.8814248780766396,
+      -0.7640388604355342,
+      1.4807321357889538,
+      3.2410631936874057,
+      -1.3651603034269717,
+      -1.15814165450212,
+      -0.0660390782898344,
+      -1.8645528952306132,
+      2.8839047243131377,
+      2.070162581056905,
+      -0.4766234665077737,
+      -1.9894864454323349,
+      -0.20675900594267882,
+      0.8676562410400832,
+      2.3135961416543007,
+      -2.4975901063603096,
+      1.5068364235139258,
+      2.634789771003668,
+      -5.315009077679699,
+      2.894328739093379,
+      2.826537341185797,
+      -2.9517125018703294,
+      -1.8892151804377395,
+      0.2234474390888486,
+      -1.559512766863799,
+      1.2306749602677736,
+      0.8176895534680836,
+      -3.8727539299556204,
+      -4.063228632282053,
+      -0.23892037930652923,
+      0.045852902228896854,
+      -0.34379669665478024,
+      -0.062047519795639855,
+      -0.03657792380640811,
+      -0.48822150285448424,
+      -0.46174967358372754,
+      -1.0860270517041009,
+      -0.5341172592162919,
+      -0.49834299721894354
+    ]
+  },
+  {
+    "task": "WAZ",
+    "code": "cb",
+    "features": [
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 54.6,
+        "Weight (kg)": 7.0
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 8,
+        "Height (cm)": 66.0,
+        "Weight (kg)": 12.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 20,
+        "Height (cm)": 90.0,
+        "Weight (kg)": 10.9
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 13,
+        "Height (cm)": 82.4,
+        "Weight (kg)": 9.6
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 11,
+        "Height (cm)": 70.1,
+        "Weight (kg)": 13.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 16,
+        "Height (cm)": 80.0,
+        "Weight (kg)": 11.7
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 11,
+        "Height (cm)": 69.9,
+        "Weight (kg)": 11.8
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 6,
+        "Height (cm)": 66.1,
+        "Weight (kg)": 6.6
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 4,
+        "Height (cm)": 59.8,
+        "Weight (kg)": 8.8
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 18,
+        "Height (cm)": 74.1,
+        "Weight (kg)": 14.3
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 2,
+        "Height (cm)": 55.7,
+        "Weight (kg)": 3.9
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 15,
+        "Height (cm)": 77.7,
+        "Weight (kg)": 11.4
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 14,
+        "Height (cm)": 79.0,
+        "Weight (kg)": 9.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 12,
+        "Height (cm)": 74.2,
+        "Weight (kg)": 11.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 47.6,
+        "Weight (kg)": 6.4
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 23,
+        "Height (cm)": 84.9,
+        "Weight (kg)": 10.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 24,
+        "Height (cm)": 83.4,
+        "Weight (kg)": 10.0
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 16,
+        "Height (cm)": 82.8,
+        "Weight (kg)": 10.4
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 15,
+        "Height (cm)": 76.3,
+        "Weight (kg)": 8.4
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 60.5,
+        "Weight (kg)": 6.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 21,
+        "Height (cm)": 87.3,
+        "Weight (kg)": 14.1
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 17,
+        "Height (cm)": 79.1,
+        "Weight (kg)": 10.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 7,
+        "Height (cm)": 72.0,
+        "Weight (kg)": 6.6
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 2,
+        "Height (cm)": 61.2,
+        "Weight (kg)": 5.4
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 14,
+        "Height (cm)": 80.1,
+        "Weight (kg)": 10.5
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 13,
+        "Height (cm)": 77.4,
+        "Weight (kg)": 12.6
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 9,
+        "Height (cm)": 64.4,
+        "Weight (kg)": 6.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 11,
+        "Height (cm)": 71.5,
+        "Weight (kg)": 10.5
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 13,
+        "Height (cm)": 69.4,
+        "Weight (kg)": 12.7
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 0,
+        "Height (cm)": 48.4,
+        "Weight (kg)": 1.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 4,
+        "Height (cm)": 66.2,
+        "Weight (kg)": 9.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 3,
+        "Height (cm)": 60.8,
+        "Weight (kg)": 8.7
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 0,
+        "Height (cm)": 45.3,
+        "Weight (kg)": 2.1
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 17,
+        "Height (cm)": 79.6,
+        "Weight (kg)": 8.0
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 6,
+        "Height (cm)": 64.5,
+        "Weight (kg)": 8.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 14,
+        "Height (cm)": 71.7,
+        "Weight (kg)": 7.7
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 17,
+        "Height (cm)": 84.4,
+        "Weight (kg)": 11.8
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 6,
+        "Height (cm)": 64.1,
+        "Weight (kg)": 8.8
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 3,
+        "Height (cm)": 66.3,
+        "Weight (kg)": 3.9
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 2,
+        "Height (cm)": 56.0,
+        "Weight (kg)": 3.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 0,
+        "Height (cm)": 49.5,
+        "Weight (kg)": 3.1
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 1,
+        "Height (cm)": 50.5000001,
+        "Weight (kg)": 4.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 12,
+        "Height (cm)": 74.2,
+        "Weight (kg)": 8.5
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 23,
+        "Height (cm)": 84.5,
+        "Weight (kg)": 11.2
+      },
+      {
+        "Gender_Encoded": 0,
+        "Age (months)": 24,
+        "Height (cm)": 85.1,
+        "Weight (kg)": 11.5
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 0,
+        "Height (cm)": 49.5,
+        "Weight (kg)": 3.1
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 1,
+        "Height (cm)": 50.5000001,
+        "Weight (kg)": 4.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 12,
+        "Height (cm)": 74.2,
+        "Weight (kg)": 8.5
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 23,
+        "Height (cm)": 84.5,
+        "Weight (kg)": 11.2
+      },
+      {
+        "Gender_Encoded": 1,
+        "Age (months)": 24,
+        "Height (cm)": 85.1,
+        "Weight (kg)": 11.5
+      }
+    ],
+    "prediction": [
+      4.008295217422218,
+      3.4644052724651653,
+      -0.36071271906793456,
+      -0.2606492066530891,
+      3.143708847451135,
+      0.9491785339194407,
+      2.4155150844601194,
+      -1.6483000160564183,
+      2.03884603524921,
+      2.599027733066323,
+      -2.0940439171159073,
+      0.9117116028495575,
+      -0.8422801727973542,
+      1.3716310173571962,
+      3.2187945386369448,
+      -1.407531598705656,
+      -1.1334174294761126,
+      -0.10719599068231761,
+      -1.856079125682708,
+      2.9623381668614717,
+      2.0559245543430142,
+      -0.46244175608893245,
+      -2.0702380587606672,
+      -0.2604365224291131,
+      0.9067448118461635,
+      2.2504199687231554,
+      -2.358566617927491,
+      1.4834660399197621,
+      2.5462637645977986,
+      -5.316231859420809,
+      2.901718028148074,
+      2.7318995729771425,
+      -2.9347302235626183,
+      -1.8880692868634559,
+      0.3116386845999909,
+      -1.6562157146207948,
+      1.2764069229894288,
+      0.9422272776851928,
+      -3.9230664147117054,
+      -4.074732626038619,
+      -0.28083532667880295,
+      0.032958973224865795,
+      -0.42247669543531774,
+      -0.062199156620013435,
+      0.02247573585881929,
+      -0.5112427293573902,
+      -0.47050789538926263,
+      -1.1439933632497186,
+      -0.5884655555730006,
+      -0.47915556274700266
+    ]
+  }
+]

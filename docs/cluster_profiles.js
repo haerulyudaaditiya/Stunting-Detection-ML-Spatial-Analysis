@@ -7,20 +7,19 @@ const CLUSTER_METRICS = {
         "en": "Group 1"
       },
       "desc": {
-        "id": "23 provinsi. Rerata indikator kabupaten/kota: stunting 25.32%, KEK 17.21%, imunisasi 62.44%, BBLR 5.97%.",
-        "en": "23 provinces. Mean district indicators: stunting 25.32%, maternal KEK 17.21%, immunization 62.44%, low birth weight 5.97%."
+        "id": "15 provinsi. Rerata indikator kabupaten/kota: stunting 23.11%, KEK 17.27%, imunisasi 70.46%, BBLR 6.05%.",
+        "en": "15 provinces. Mean district indicators: stunting 23.11%, KEK 17.27%, immunization 70.46%, BBLR 6.05%."
       },
-      "province_count": 23,
+      "province_count": 15,
       "indicator_means_pct": {
-        "Stunting_2019": 25.315545575494095,
-        "KEK": 17.212841874701702,
-        "Immunization": 62.44483232914752,
-        "BBLR": 5.967149018530638
+        "Stunting_2019": 23.10804048842645,
+        "KEK": 17.265725145668604,
+        "Immunization": 70.46384498586575,
+        "BBLR": 6.050198145356683
       },
       "provinces": [
         "Bali",
         "Bangka Belitung",
-        "Banten",
         "Bengkulu",
         "DI Yogyakarta",
         "DKI Jakarta",
@@ -28,19 +27,12 @@ const CLUSTER_METRICS = {
         "Jawa Barat",
         "Jawa Tengah",
         "Jawa Timur",
-        "Kalimantan Barat",
-        "Kalimantan Selatan",
-        "Kalimantan Tengah",
         "Kalimantan Timur",
         "Kalimantan Utara",
         "Kepulauan Riau",
         "Lampung",
         "Nusa Tenggara Barat",
-        "Riau",
-        "Sulawesi Selatan",
-        "Sulawesi Utara",
-        "Sumatera Barat",
-        "Sumatera Utara"
+        "Sulawesi Utara"
       ]
     },
     {
@@ -50,28 +42,36 @@ const CLUSTER_METRICS = {
         "en": "Group 2"
       },
       "desc": {
-        "id": "11 provinsi. Rerata indikator kabupaten/kota: stunting 33.24%, KEK 26.43%, imunisasi 42.09%, BBLR 8.25%.",
-        "en": "11 provinces. Mean district indicators: stunting 33.24%, maternal KEK 26.43%, immunization 42.09%, low birth weight 8.25%."
+        "id": "19 provinsi. Rerata indikator kabupaten/kota: stunting 31.65%, KEK 22.51%, imunisasi 44.33%, BBLR 7.22%.",
+        "en": "19 provinces. Mean district indicators: stunting 31.65%, KEK 22.51%, immunization 44.33%, BBLR 7.22%."
       },
-      "province_count": 11,
+      "province_count": 19,
       "indicator_means_pct": {
-        "Stunting_2019": 33.241209470056496,
-        "KEK": 26.43485442469798,
-        "Immunization": 42.092470569401094,
-        "BBLR": 8.246652957595263
+        "Stunting_2019": 31.6468550042415,
+        "KEK": 22.510151821304632,
+        "Immunization": 44.33108658135889,
+        "BBLR": 7.221296725231703
       },
       "provinces": [
         "Aceh",
+        "Banten",
         "Gorontalo",
+        "Kalimantan Barat",
+        "Kalimantan Selatan",
+        "Kalimantan Tengah",
         "Maluku",
         "Maluku Utara",
         "Nusa Tenggara Timur",
         "Papua",
         "Papua Barat",
+        "Riau",
         "Sulawesi Barat",
+        "Sulawesi Selatan",
         "Sulawesi Tengah",
         "Sulawesi Tenggara",
-        "Sumatera Selatan"
+        "Sumatera Barat",
+        "Sumatera Selatan",
+        "Sumatera Utara"
       ]
     }
   ],
@@ -84,7 +84,7 @@ const CLUSTER_METRICS = {
       },
       "desc": {
         "id": "24 provinsi. Rerata indikator kabupaten/kota: stunting 25.66%, KEK 17.01%, imunisasi 60.85%, BBLR 5.99%.",
-        "en": "24 provinces. Mean district indicators: stunting 25.66%, maternal KEK 17.01%, immunization 60.85%, low birth weight 5.99%."
+        "en": "24 provinces. Mean district indicators: stunting 25.66%, KEK 17.01%, immunization 60.85%, BBLR 5.99%."
       },
       "province_count": 24,
       "indicator_means_pct": {
@@ -128,7 +128,7 @@ const CLUSTER_METRICS = {
       },
       "desc": {
         "id": "10 provinsi. Rerata indikator kabupaten/kota: stunting 33.21%, KEK 27.85%, imunisasi 43.88%, BBLR 8.42%.",
-        "en": "10 provinces. Mean district indicators: stunting 33.21%, maternal KEK 27.85%, immunization 43.88%, low birth weight 8.42%."
+        "en": "10 provinces. Mean district indicators: stunting 33.21%, KEK 27.85%, immunization 43.88%, BBLR 8.42%."
       },
       "province_count": 10,
       "indicator_means_pct": {
@@ -160,11 +160,11 @@ const CLUSTER_METRICS = {
       },
       "desc": {
         "id": "28 provinsi. Rerata indikator kabupaten/kota: stunting 26.79%, KEK 17.25%, imunisasi 59.53%, BBLR 6.30%.",
-        "en": "28 provinces. Mean district indicators: stunting 26.79%, maternal KEK 17.25%, immunization 59.53%, low birth weight 6.30%."
+        "en": "28 provinces. Mean district indicators: stunting 26.79%, KEK 17.25%, immunization 59.53%, BBLR 6.30%."
       },
       "province_count": 28,
       "indicator_means_pct": {
-        "Stunting_2019": 26.785918287513738,
+        "Stunting_2019": 26.785918287513734,
         "KEK": 17.251300634140666,
         "Immunization": 59.52941169891127,
         "BBLR": 6.30453275697016
@@ -208,7 +208,7 @@ const CLUSTER_METRICS = {
       },
       "desc": {
         "id": "6 provinsi. Rerata indikator kabupaten/kota: stunting 32.98%, KEK 33.94%, imunisasi 38.74%, BBLR 8.57%.",
-        "en": "6 provinces. Mean district indicators: stunting 32.98%, maternal KEK 33.94%, immunization 38.74%, low birth weight 8.57%."
+        "en": "6 provinces. Mean district indicators: stunting 32.98%, KEK 33.94%, immunization 38.74%, BBLR 8.57%."
       },
       "province_count": 6,
       "indicator_means_pct": {
@@ -234,4 +234,3 @@ const REFERENCE_AVERAGES = {
   "Imunisasi_Dasar_Lengkap": 0.5586024470099427,
   "BBLR": 0.06704635587051547
 };
-// Reference is an equal-province mean of district summaries, not national prevalence.

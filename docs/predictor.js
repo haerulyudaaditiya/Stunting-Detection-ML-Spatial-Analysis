@@ -2,16 +2,81 @@
 // Handles dynamic fetching of JSON models and inference for Classification, HAZ Regression, and WAZ Regression.
 
 class StuntingPredictor {
-    constructor() {
+    constructor(options = {}) {
         this.models = {}; // Cache for downloaded models
         this.pendingModels = {};
-        this.modelDirectory = 'models/revision_1';
+        this.manifest = options.manifest || null;
+        this.manifestUrl = options.manifestUrl || 'revision_manifest.json';
+        this.pendingManifest = null;
         this.CLASSES = ['Normal', 'Severely Stunted', 'Stunted', 'Tall'];
     }
 
+    async loadManifest() {
+        if (this.manifest) {
+            this.validateManifest(this.manifest);
+            this.CLASSES = [...this.manifest.classes];
+            return this.manifest;
+        }
+        if (this.pendingManifest) return this.pendingManifest;
+        this.pendingManifest = (async () => {
+            try {
+                const response = await fetch(this.manifestUrl);
+                if (!response.ok) throw new Error(`Manifest request failed: HTTP ${response.status}`);
+                const data = await response.json();
+                this.validateManifest(data);
+                this.manifest = data;
+                this.CLASSES = data.classes;
+                return data;
+            } finally {
+                this.pendingManifest = null;
+            }
+        })();
+        return this.pendingManifest;
+    }
+
+    validateManifest(data) {
+        const equal = (a, b) => JSON.stringify(a) === JSON.stringify(b);
+        const classes = ['Normal', 'Severely Stunted', 'Stunted', 'Tall'];
+        const available = {classification: ['rf', 'et', 'xgb', 'lgbm', 'cb'],
+            haz: ['linear', 'ridge', 'rf', 'xgb', 'lgbm', 'cb'],
+            waz: ['linear', 'ridge', 'rf', 'xgb', 'lgbm', 'cb']};
+        const names = {rf: 'Random Forest', et: 'Extra Trees', xgb: 'XGBoost',
+            lgbm: 'LightGBM', cb: 'CatBoost', linear: 'Linear Regression', ridge: 'Ridge Regression'};
+        if (!data || data.version !== 'paper-final' || data.model_directory !== 'models/paper_final' ||
+            !equal(data.classes, classes) || data.gender_encoding?.Female !== 0 ||
+            data.gender_encoding?.Male !== 1 || Object.keys(data.artifacts || {}).length !== 17) {
+            throw new Error('Invalid model manifest: class order, encoding or artifact catalog');
+        }
+        for (const [task, codes] of Object.entries(available)) {
+            const key = task === 'classification' ? task : task.toUpperCase();
+            const features = ['Gender_Encoded', 'Age (months)',
+                ...(task !== 'waz' ? ['Height (cm)'] : []),
+                ...(task !== 'haz' ? ['Weight (kg)'] : [])];
+            const selected = data.selected?.[key];
+            if (!equal(data.available?.[task], codes) || selected?.code !== 'rf' ||
+                selected.model !== names.rf || !equal(selected.features, features)) {
+                throw new Error('Invalid model manifest: availability or default');
+            }
+            for (const code of codes) {
+                const artifact = data.artifacts[`${key}_${code}`];
+                const filename = task === 'classification' ? `${code}.json` : `${code}_${task}.json`;
+                if (!artifact || artifact.task !== key || artifact.code !== code || artifact.model !== names[code] ||
+                    artifact.browser_path !== `models/paper_final/${filename}` ||
+                    !equal(artifact.features, features) || !equal(artifact.classes, task === 'classification' ? classes : null)) {
+                    throw new Error('Invalid model manifest: artifact binding');
+                }
+            }
+        }
+    }
+
     async loadModel(task, modelName) {
-        // Build filename: e.g. xgb.json for classification, xgb_haz.json for HAZ, xgb_waz.json for WAZ
-        const filename = task === 'classification' ? `${modelName}.json` : `${modelName}_${task}.json`;
+        if (!['classification', 'haz', 'waz'].includes(task)) throw new Error(`Unsupported task: ${task}`);
+        const manifest = await this.loadManifest();
+        const artifactKey = `${task === 'classification' ? task : task.toUpperCase()}_${modelName}`;
+        const artifact = manifest.artifacts[artifactKey];
+        if (!manifest.available[task]?.includes(modelName) || !artifact) {
+            throw new Error(`Unsupported ${task} model: ${modelName}`);
+        }
         const cacheKey = `${task}_${modelName}`;
         
         if (this.models[cacheKey]) {
@@ -19,17 +84,12 @@ class StuntingPredictor {
         }
         if (this.pendingModels[cacheKey]) return this.pendingModels[cacheKey];
 
-        console.log(`Downloading model: ${filename}...`);
         const pending = (async () => { try {
-            const response = await fetch(`${this.modelDirectory}/${filename}`);
+            const response = await fetch(artifact.browser_path);
             if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
             const data = await response.json();
             this.models[cacheKey] = data;
-            console.log(`Model ${filename} loaded successfully.`);
             return data;
-        } catch (error) {
-            console.error(`Error loading model ${filename}:`, error);
-            throw error;
         } finally { delete this.pendingModels[cacheKey]; } })();
         this.pendingModels[cacheKey] = pending;
         return pending;

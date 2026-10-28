@@ -22,6 +22,9 @@ optuna==4.9.0
 nbformat==5.10.4
 ipython==9.13.0
 
+# Dashboard browser verification.
+playwright==1.63.0
+
 # Document preparation; versions observed in host Python.
 python-docx==1.2.0
 Pillow==12.2.0

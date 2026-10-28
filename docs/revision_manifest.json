@@ -1,82 +1,6 @@
 {
-  "paper_id": "1571345184",
-  "model_directory": "models/revision_1",
-  "selected": {
-    "classification": {
-      "model": "Extra Trees",
-      "code": "et",
-      "features": [
-        "Gender_Encoded",
-        "Age (months)",
-        "Height (cm)",
-        "Weight (kg)"
-      ],
-      "cv_mean": {
-        "accuracy": 0.979100018479075,
-        "balanced_accuracy": 0.9534229549878198,
-        "macro_f1": 0.9563326037207874,
-        "weighted_f1": 0.9790808100248661,
-        "weighted_precision": 0.9791507862148044,
-        "weighted_recall": 0.979100018479075,
-        "recall_0": 0.9909697125277436,
-        "recall_1": 0.9298867131751336,
-        "recall_2": 0.9600866336633663,
-        "recall_3": 0.9327487605850356,
-        "auc": 0.9994059483754919
-      },
-      "cv_sd": {
-        "accuracy": 0.001753917127780415,
-        "balanced_accuracy": 0.006737957583999,
-        "macro_f1": 0.0036683797800118193,
-        "weighted_f1": 0.0018048888042044152,
-        "weighted_precision": 0.0018639203238297929,
-        "weighted_recall": 0.001753917127780415,
-        "recall_0": 0.0011313794741548786,
-        "recall_1": 0.015405137028776994,
-        "recall_2": 0.008849226266135567,
-        "recall_3": 0.018873793099554295,
-        "auc": 0.00012458733301937483
-      }
-    },
-    "HAZ": {
-      "model": "Random Forest",
-      "code": "rf",
-      "features": [
-        "Gender_Encoded",
-        "Age (months)",
-        "Height (cm)"
-      ],
-      "cv_mean": {
-        "mae": 0.03733451709345875,
-        "rmse": 0.04182848305713267,
-        "r2": 0.9995475209727142
-      },
-      "cv_sd": {
-        "mae": 0.0009566680045702504,
-        "rmse": 0.002662156443316434,
-        "r2": 5.9062486411716364e-05
-      }
-    },
-    "WAZ": {
-      "model": "CatBoost",
-      "code": "cb",
-      "features": [
-        "Gender_Encoded",
-        "Age (months)",
-        "Weight (kg)"
-      ],
-      "cv_mean": {
-        "mae": 0.016965811773499734,
-        "rmse": 0.028130285711818546,
-        "r2": 0.9998422400900239
-      },
-      "cv_sd": {
-        "mae": 0.0011860622397795975,
-        "rmse": 0.006203505754394477,
-        "r2": 6.851205388385819e-05
-      }
-    }
-  },
+  "version": "paper-final",
+  "model_directory": "models/paper_final",
   "classes": [
     "Normal",
     "Severely Stunted",
@@ -84,287 +8,862 @@
     "Tall"
   ],
   "gender_encoding": {
-    "Male": 1,
-    "Female": 0
+    "Female": 0,
+    "Male": 1
+  },
+  "selection_basis": "Primary random five-fold CV on synthetic data; grouped CV supplementary; external data not used",
+  "selected": {
+    "classification": {
+      "code": "rf",
+      "model": "Random Forest",
+      "features": [
+        "Gender_Encoded",
+        "Age (months)",
+        "Height (cm)",
+        "Weight (kg)"
+      ]
+    },
+    "HAZ": {
+      "code": "rf",
+      "model": "Random Forest",
+      "features": [
+        "Gender_Encoded",
+        "Age (months)",
+        "Height (cm)"
+      ]
+    },
+    "WAZ": {
+      "code": "rf",
+      "model": "Random Forest",
+      "features": [
+        "Gender_Encoded",
+        "Age (months)",
+        "Weight (kg)"
+      ]
+    }
+  },
+  "available": {
+    "classification": [
+      "rf",
+      "et",
+      "xgb",
+      "lgbm",
+      "cb"
+    ],
+    "haz": [
+      "linear",
+      "ridge",
+      "rf",
+      "xgb",
+      "lgbm",
+      "cb"
+    ],
+    "waz": [
+      "linear",
+      "ridge",
+      "rf",
+      "xgb",
+      "lgbm",
+      "cb"
+    ]
+  },
+  "artifacts": {
+    "classification_rf": {
+      "task": "classification",
+      "model": "Random Forest",
+      "code": "rf",
+      "source": "results/classification/stunting_random_forest_classifier.joblib",
+      "source_sha256": "00e19bf56386ae8bc3d40bb182d4c583dece89b264d9bb98550da1d84a78b9b0",
+      "features": [
+        "Gender_Encoded",
+        "Age (months)",
+        "Height (cm)",
+        "Weight (kg)"
+      ],
+      "browser_path": "models/paper_final/rf.json",
+      "json_sha256": "64c4f4aadd1ffb32cfcb816c6b2020126db92a0bb9701099062b135a682151b9",
+      "classes": [
+        "Normal",
+        "Severely Stunted",
+        "Stunted",
+        "Tall"
+      ]
+    },
+    "classification_et": {
+      "task": "classification",
+      "model": "Extra Trees",
+      "code": "et",
+      "source": "results/classification/stunting_extra_trees_classifier.joblib",
+      "source_sha256": "6e17cc1137883421298da17d301cab748980463317e92e9f5beef5cc74216c56",
+      "features": [
+        "Gender_Encoded",
+        "Age (months)",
+        "Height (cm)",
+        "Weight (kg)"
+      ],
+      "browser_path": "models/paper_final/et.json",
+      "json_sha256": "2106600df677f84724a36006047d2baac89a24b7a42a7949093574632664fcc6",
+      "classes": [
+        "Normal",
+        "Severely Stunted",
+        "Stunted",
+        "Tall"
+      ]
+    },
+    "classification_xgb": {
+      "task": "classification",
+      "model": "XGBoost",
+      "code": "xgb",
+      "source": "results/classification/stunting_xgboost_classifier.joblib",
+      "source_sha256": "b6e0a3dbdce5c4dcd14a90b631a3da7b82fcd7f749625ca3be960c23904514a6",
+      "features": [
+        "Gender_Encoded",
+        "Age (months)",
+        "Height (cm)",
+        "Weight (kg)"
+      ],
+      "browser_path": "models/paper_final/xgb.json",
+      "json_sha256": "74e8a6dbe089e98412cf5a544ad0e271a1c36b688cd2aed847bde6de6cc9a979",
+      "classes": [
+        "Normal",
+        "Severely Stunted",
+        "Stunted",
+        "Tall"
+      ]
+    },
+    "classification_lgbm": {
+      "task": "classification",
+      "model": "LightGBM",
+      "code": "lgbm",
+      "source": "results/classification/stunting_lightgbm_classifier.joblib",
+      "source_sha256": "6f764e84ec94bb7c8c20908eefcccdb346020a745a7d43bae8bdc2815b0fa522",
+      "features": [
+        "Gender_Encoded",
+        "Age (months)",
+        "Height (cm)",
+        "Weight (kg)"
+      ],
+      "browser_path": "models/paper_final/lgbm.json",
+      "json_sha256": "30a5e0fcebaa563afe9bc5ec3c18f76d78294834c3e99d63a282fe513cacd51c",
+      "classes": [
+        "Normal",
+        "Severely Stunted",
+        "Stunted",
+        "Tall"
+      ]
+    },
+    "classification_cb": {
+      "task": "classification",
+      "model": "CatBoost",
+      "code": "cb",
+      "source": "results/classification/stunting_catboost_classifier.joblib",
+      "source_sha256": "e0480f23c403db686ed7cb89a9521c84924c2a9ef59703a133d6689d279e228f",
+      "features": [
+        "Gender_Encoded",
+        "Age (months)",
+        "Height (cm)",
+        "Weight (kg)"
+      ],
+      "browser_path": "models/paper_final/cb.json",
+      "json_sha256": "f5893d90daa37464ca917c96f96f19ccee9c046550169623eb5d3f71fd1ccdd5",
+      "classes": [
+        "Normal",
+        "Severely Stunted",
+        "Stunted",
+        "Tall"
+      ]
+    },
+    "HAZ_linear": {
+      "task": "HAZ",
+      "model": "Linear Regression",
+      "code": "linear",
+      "source": "results/regression_corrected/models/stunting_linear_regression_reg_haz.joblib",
+      "source_sha256": "d313f0e7ab3d68adf75e76ab7e4bfe6627ad0b5eb4ec8f11eaff87a9b0c460c9",
+      "features": [
+        "Gender_Encoded",
+        "Age (months)",
+        "Height (cm)"
+      ],
+      "browser_path": "models/paper_final/linear_haz.json",
+      "json_sha256": "1a7ad91475435fa2b6aeb3cc034f4ed1f553ccc2298855ae5657b987fa217415",
+      "classes": null
+    },
+    "HAZ_ridge": {
+      "task": "HAZ",
+      "model": "Ridge Regression",
+      "code": "ridge",
+      "source": "results/regression_corrected/models/stunting_ridge_regression_reg_haz.joblib",
+      "source_sha256": "e6aef8d02cd92ea60677071abbb159c4bcbbc5361e05e3e05d37ce710346810e",
+      "features": [
+        "Gender_Encoded",
+        "Age (months)",
+        "Height (cm)"
+      ],
+      "browser_path": "models/paper_final/ridge_haz.json",
+      "json_sha256": "ac555d8536412bab36d716b84fc47b46c0e7cbc1e223def8935a599a9dfc669a",
+      "classes": null
+    },
+    "HAZ_rf": {
+      "task": "HAZ",
+      "model": "Random Forest",
+      "code": "rf",
+      "source": "results/regression_corrected/models/stunting_random_forest_reg_haz.joblib",
+      "source_sha256": "36e28b6785989d9697cc3c9b602000019f57699d54804e897957e1d78531f61e",
+      "features": [
+        "Gender_Encoded",
+        "Age (months)",
+        "Height (cm)"
+      ],
+      "browser_path": "models/paper_final/rf_haz.json",
+      "json_sha256": "e77701434bed971666cdfcac857574d8daae1030c250f5841f703f6343d5f587",
+      "classes": null
+    },
+    "HAZ_xgb": {
+      "task": "HAZ",
+      "model": "XGBoost",
+      "code": "xgb",
+      "source": "results/regression_corrected/models/stunting_xgboost_reg_haz.joblib",
+      "source_sha256": "a757b2138c7e305442ec899b810a5c09b507e98ad8ecba1509d1949e15626351",
+      "features": [
+        "Gender_Encoded",
+        "Age (months)",
+        "Height (cm)"
+      ],
+      "browser_path": "models/paper_final/xgb_haz.json",
+      "json_sha256": "754f561aae8db44916ac96fac2eadc7e90f3ad4f205baf7c10eca0e762668ec8",
+      "classes": null
+    },
+    "HAZ_lgbm": {
+      "task": "HAZ",
+      "model": "LightGBM",
+      "code": "lgbm",
+      "source": "results/regression_corrected/models/stunting_lightgbm_reg_haz.joblib",
+      "source_sha256": "1dbeda4771d5eba8c6c9571373bbbad659c22770c2ebe84c0a19839609b04bd4",
+      "features": [
+        "Gender_Encoded",
+        "Age (months)",
+        "Height (cm)"
+      ],
+      "browser_path": "models/paper_final/lgbm_haz.json",
+      "json_sha256": "93a49f55340c278684605e20956ff48ad5c6a8ca825e2469c5683431764da75f",
+      "classes": null
+    },
+    "HAZ_cb": {
+      "task": "HAZ",
+      "model": "CatBoost",
+      "code": "cb",
+      "source": "results/regression_corrected/models/stunting_catboost_reg_haz.joblib",
+      "source_sha256": "f36ed051c6f9911eaaddda91c3840ec16b03565d4096c97c3f82ee3eb3ea5690",
+      "features": [
+        "Gender_Encoded",
+        "Age (months)",
+        "Height (cm)"
+      ],
+      "browser_path": "models/paper_final/cb_haz.json",
+      "json_sha256": "08048a166cd13a872bff64bea75161cb9d46baa7cece98409e21b503c21b9707",
+      "classes": null
+    },
+    "WAZ_linear": {
+      "task": "WAZ",
+      "model": "Linear Regression",
+      "code": "linear",
+      "source": "results/regression_corrected/models/stunting_linear_regression_reg_waz.joblib",
+      "source_sha256": "c97091b3a2360ab673ce4739db126144e8457e3a4951416d54e262b2899bc981",
+      "features": [
+        "Gender_Encoded",
+        "Age (months)",
+        "Weight (kg)"
+      ],
+      "browser_path": "models/paper_final/linear_waz.json",
+      "json_sha256": "a768a549e7053937facded88517ea13b1bccdd19d565bf772b0301135e4bd723",
+      "classes": null
+    },
+    "WAZ_ridge": {
+      "task": "WAZ",
+      "model": "Ridge Regression",
+      "code": "ridge",
+      "source": "results/regression_corrected/models/stunting_ridge_regression_reg_waz.joblib",
+      "source_sha256": "79c6c096aff9c5cc410030c8b306c5ee60282ffc82a2e170cfbc3338003d8af3",
+      "features": [
+        "Gender_Encoded",
+        "Age (months)",
+        "Weight (kg)"
+      ],
+      "browser_path": "models/paper_final/ridge_waz.json",
+      "json_sha256": "efbc173adb8f9457e6da7b4dc84dbe3282469976c1221b1ae0aacf9a517e9798",
+      "classes": null
+    },
+    "WAZ_rf": {
+      "task": "WAZ",
+      "model": "Random Forest",
+      "code": "rf",
+      "source": "results/regression_corrected/models/stunting_random_forest_reg_waz.joblib",
+      "source_sha256": "f14b90ed11d9a4b339663a4fe10f8e20e4b6b5c533ccf1578f9f365d53525ee5",
+      "features": [
+        "Gender_Encoded",
+        "Age (months)",
+        "Weight (kg)"
+      ],
+      "browser_path": "models/paper_final/rf_waz.json",
+      "json_sha256": "bc4f516097e61b436883d7bd994689b302c5a4e47ab47e5e7a93cc7c2f02e03e",
+      "classes": null
+    },
+    "WAZ_xgb": {
+      "task": "WAZ",
+      "model": "XGBoost",
+      "code": "xgb",
+      "source": "results/regression_corrected/models/stunting_xgboost_reg_waz.joblib",
+      "source_sha256": "b598d2d295843ff612168a901a3a323c17d9d629eed12204423850c5f4805daa",
+      "features": [
+        "Gender_Encoded",
+        "Age (months)",
+        "Weight (kg)"
+      ],
+      "browser_path": "models/paper_final/xgb_waz.json",
+      "json_sha256": "1de3e6e2bc7f082fd704b8428d3c2ca679d2640b741ea6162599819a932b5288",
+      "classes": null
+    },
+    "WAZ_lgbm": {
+      "task": "WAZ",
+      "model": "LightGBM",
+      "code": "lgbm",
+      "source": "results/regression_corrected/models/stunting_lightgbm_reg_waz.joblib",
+      "source_sha256": "42d57ba91baa7dd35c11f11a8b3652516ebd5485e949489731e847cf1a381d8a",
+      "features": [
+        "Gender_Encoded",
+        "Age (months)",
+        "Weight (kg)"
+      ],
+      "browser_path": "models/paper_final/lgbm_waz.json",
+      "json_sha256": "82f329fb40f19ad82b259c99b15c485bb79f99ae762fbc241dab1211472bfdf0",
+      "classes": null
+    },
+    "WAZ_cb": {
+      "task": "WAZ",
+      "model": "CatBoost",
+      "code": "cb",
+      "source": "results/regression_corrected/models/stunting_catboost_reg_waz.joblib",
+      "source_sha256": "404a736b63c01f9c18c90716fa5021de287484928e62691b1b78d4a35cebc3d3",
+      "features": [
+        "Gender_Encoded",
+        "Age (months)",
+        "Weight (kg)"
+      ],
+      "browser_path": "models/paper_final/cb_waz.json",
+      "json_sha256": "a41bda275fe72d0234ec7f3ffc349121d9044e31225fae1a5bf4bf350f9ec1f8",
+      "classes": null
+    }
+  },
+  "classification_cv": {
+    "source": "Stunting_Classification_Analysis.ipynb",
+    "cell_index": 22,
+    "protocol": "Primary random stratified five-fold CV on synthetic data",
+    "recorded_precision": "Rounded notebook display values, four decimals",
+    "rows": [
+      {
+        "model": "Random Forest",
+        "accuracy": 0.9998,
+        "weighted_f1": 0.9998,
+        "weighted_auc": 1.0
+      },
+      {
+        "model": "Extra Trees",
+        "accuracy": 0.9985,
+        "weighted_f1": 0.9984,
+        "weighted_auc": 1.0
+      },
+      {
+        "model": "XGBoost",
+        "accuracy": 0.9876,
+        "weighted_f1": 0.9877,
+        "weighted_auc": 0.9998
+      },
+      {
+        "model": "LightGBM",
+        "accuracy": 0.9861,
+        "weighted_f1": 0.9862,
+        "weighted_auc": 0.9996
+      },
+      {
+        "model": "CatBoost",
+        "accuracy": 0.9637,
+        "weighted_f1": 0.965,
+        "weighted_auc": 0.9991
+      }
+    ]
+  },
+  "classification_grouped_cv": {
+    "source": "results/revision_1/supervised/cv_metrics.csv",
+    "protocol": "Supplementary grouped five-fold CV on synthetic data",
+    "rows": [
+      {
+        "model": "Random Forest",
+        "accuracy": 0.978090000476325,
+        "macro_f1": 0.9539831923897066,
+        "balanced_accuracy": 0.9454987132947164
+      },
+      {
+        "model": "Extra Trees",
+        "accuracy": 0.979100018479075,
+        "macro_f1": 0.9563326037207874,
+        "balanced_accuracy": 0.9534229549878198
+      },
+      {
+        "model": "XGBoost",
+        "accuracy": 0.9712699904768248,
+        "macro_f1": 0.9426209443607836,
+        "balanced_accuracy": 0.9533722042880176
+      },
+      {
+        "model": "LightGBM",
+        "accuracy": 0.9700800264713252,
+        "macro_f1": 0.9416306904199502,
+        "balanced_accuracy": 0.9502926767442544
+      },
+      {
+        "model": "CatBoost",
+        "accuracy": 0.9497300844549252,
+        "macro_f1": 0.9082880495421484,
+        "balanced_accuracy": 0.9537627188792523
+      }
+    ]
+  },
+  "regression_cv": {
+    "source": "results/regression_corrected/summary.json",
+    "rows": [
+      {
+        "protocol": "random",
+        "reference": "corrected",
+        "task": "HAZ",
+        "model": "Linear Regression",
+        "mae": 0.6200847816404083,
+        "rmse": 0.8381951171006976,
+        "r2": 0.8190745902127778,
+        "mae_sd": 0.002689753885957032,
+        "rmse_sd": 0.0063135705304491595,
+        "r2_sd": 0.0030290495908712758,
+        "training_seconds_5_folds": 0.09404505900602089
+      },
+      {
+        "protocol": "random",
+        "reference": "corrected",
+        "task": "HAZ",
+        "model": "Ridge Regression",
+        "mae": 0.6200841550352141,
+        "rmse": 0.838195117564499,
+        "r2": 0.819074590271985,
+        "mae_sd": 0.0026897290130463774,
+        "rmse_sd": 0.006313509148013774,
+        "r2_sd": 0.003029022349871758,
+        "training_seconds_5_folds": 0.07647964200441493
+      },
+      {
+        "protocol": "random",
+        "reference": "corrected",
+        "task": "HAZ",
+        "model": "Random Forest",
+        "mae": 0.00010639512137268565,
+        "rmse": 0.0008002000915595126,
+        "r2": 0.9999998327794313,
+        "mae_sd": 1.223914326415364e-06,
+        "rmse_sd": 9.520442192484184e-05,
+        "r2_sd": 3.948758894233374e-08,
+        "training_seconds_5_folds": 3.7522434320053435
+      },
+      {
+        "protocol": "random",
+        "reference": "corrected",
+        "task": "HAZ",
+        "model": "XGBoost",
+        "mae": 0.042182333359723934,
+        "rmse": 0.05686713712791366,
+        "r2": 0.9991669205511775,
+        "mae_sd": 0.0009794216085307658,
+        "rmse_sd": 0.0012194396541820069,
+        "r2_sd": 3.5256954601259154e-05,
+        "training_seconds_5_folds": 1.038632513002085
+      },
+      {
+        "protocol": "random",
+        "reference": "corrected",
+        "task": "HAZ",
+        "model": "LightGBM",
+        "mae": 0.07552343384273617,
+        "rmse": 0.09771155378365506,
+        "r2": 0.997539870627774,
+        "mae_sd": 0.0016675541089106686,
+        "rmse_sd": 0.0023153854382434716,
+        "r2_sd": 0.00012016893046498224,
+        "training_seconds_5_folds": 1.2193571509997128
+      },
+      {
+        "protocol": "random",
+        "reference": "corrected",
+        "task": "HAZ",
+        "model": "CatBoost",
+        "mae": 0.026598674237249497,
+        "rmse": 0.04076095660946072,
+        "r2": 0.9995721579943933,
+        "mae_sd": 0.00015412798968546273,
+        "rmse_sd": 0.0003839087226860366,
+        "r2_sd": 7.156920028917899e-06,
+        "training_seconds_5_folds": 27.45352663599624
+      },
+      {
+        "protocol": "random",
+        "reference": "corrected",
+        "task": "WAZ",
+        "model": "Linear Regression",
+        "mae": 0.5964514930433392,
+        "rmse": 0.8566160044103075,
+        "r2": 0.8605089104074812,
+        "mae_sd": 0.0023004657644856924,
+        "rmse_sd": 0.005276294117957122,
+        "r2_sd": 0.001780330961394376,
+        "training_seconds_5_folds": 0.045259168997290544
+      },
+      {
+        "protocol": "random",
+        "reference": "corrected",
+        "task": "WAZ",
+        "model": "Ridge Regression",
+        "mae": 0.5964505928374446,
+        "rmse": 0.8566160030735173,
+        "r2": 0.8605089106022298,
+        "mae_sd": 0.002300449986812576,
+        "rmse_sd": 0.0052762922978221855,
+        "r2_sd": 0.0017803493665092512,
+        "training_seconds_5_folds": 0.05654868800047552
+      },
+      {
+        "protocol": "random",
+        "reference": "corrected",
+        "task": "WAZ",
+        "model": "Random Forest",
+        "mae": 2.3712728558927507e-06,
+        "rmse": 0.00013614509672838193,
+        "r2": 0.9999999955350329,
+        "mae_sd": 1.2184239626778925e-06,
+        "rmse_sd": 6.96942887252109e-05,
+        "r2_sd": 3.222706189051108e-09,
+        "training_seconds_5_folds": 3.4245574360029423
+      },
+      {
+        "protocol": "random",
+        "reference": "corrected",
+        "task": "WAZ",
+        "model": "XGBoost",
+        "mae": 0.029301951722923138,
+        "rmse": 0.0394897358950828,
+        "r2": 0.9997034008726239,
+        "mae_sd": 0.000536320085219251,
+        "rmse_sd": 0.0009882733974276834,
+        "r2_sd": 1.447649926167956e-05,
+        "training_seconds_5_folds": 0.8931956909946166
+      },
+      {
+        "protocol": "random",
+        "reference": "corrected",
+        "task": "WAZ",
+        "model": "LightGBM",
+        "mae": 0.04594625523927211,
+        "rmse": 0.06096061883123227,
+        "r2": 0.9992934162917987,
+        "mae_sd": 0.0007813245682332927,
+        "rmse_sd": 0.0010551546029713055,
+        "r2_sd": 2.3589978500040838e-05,
+        "training_seconds_5_folds": 1.0496440249989973
+      },
+      {
+        "protocol": "random",
+        "reference": "corrected",
+        "task": "WAZ",
+        "model": "CatBoost",
+        "mae": 0.010320935662631908,
+        "rmse": 0.013098785685525638,
+        "r2": 0.9999673509302834,
+        "mae_sd": 0.0003138426927630184,
+        "rmse_sd": 0.0004252531035616891,
+        "r2_sd": 2.141930560448766e-06,
+        "training_seconds_5_folds": 24.47509696999623
+      },
+      {
+        "protocol": "grouped",
+        "reference": "corrected",
+        "task": "HAZ",
+        "model": "Linear Regression",
+        "mae": 0.6204069207315053,
+        "rmse": 0.838471124637657,
+        "r2": 0.8188531949155344,
+        "mae_sd": 0.009021919797289954,
+        "rmse_sd": 0.017143780102212163,
+        "r2_sd": 0.008026034956314413,
+        "training_seconds_5_folds": 0.04276431299513206
+      },
+      {
+        "protocol": "grouped",
+        "reference": "corrected",
+        "task": "HAZ",
+        "model": "Ridge Regression",
+        "mae": 0.6204062828131816,
+        "rmse": 0.8384711022326838,
+        "r2": 0.8188532013294687,
+        "mae_sd": 0.00902236078848775,
+        "rmse_sd": 0.017144224137772873,
+        "r2_sd": 0.00802620487156267,
+        "training_seconds_5_folds": 0.03728226901148446
+      },
+      {
+        "protocol": "grouped",
+        "reference": "corrected",
+        "task": "HAZ",
+        "model": "Random Forest",
+        "mae": 0.037334517093458766,
+        "rmse": 0.04182848305713267,
+        "r2": 0.9995475209727142,
+        "mae_sd": 0.0009566680045702507,
+        "rmse_sd": 0.0026621564433164367,
+        "r2_sd": 5.9062486411716364e-05,
+        "training_seconds_5_folds": 3.308439657994313
+      },
+      {
+        "protocol": "grouped",
+        "reference": "corrected",
+        "task": "HAZ",
+        "model": "XGBoost",
+        "mae": 0.056230609729736834,
+        "rmse": 0.07382808658723536,
+        "r2": 0.9985948791787239,
+        "mae_sd": 0.0012362296026611243,
+        "rmse_sd": 0.0023627630342854286,
+        "r2_sd": 9.090169655324564e-05,
+        "training_seconds_5_folds": 0.9801894549891585
+      },
+      {
+        "protocol": "grouped",
+        "reference": "corrected",
+        "task": "HAZ",
+        "model": "LightGBM",
+        "mae": 0.08714372866002876,
+        "rmse": 0.11154067845759323,
+        "r2": 0.9967930692430574,
+        "mae_sd": 0.002507092565062666,
+        "rmse_sd": 0.0036493137505283846,
+        "r2_sd": 0.0002013565890632723,
+        "training_seconds_5_folds": 1.2905993439999293
+      },
+      {
+        "protocol": "grouped",
+        "reference": "corrected",
+        "task": "HAZ",
+        "model": "CatBoost",
+        "mae": 0.030560746818878177,
+        "rmse": 0.04689845135744532,
+        "r2": 0.9994292357150275,
+        "mae_sd": 0.0010117523981043358,
+        "rmse_sd": 0.004082477813478516,
+        "r2_sd": 0.00010101376739587607,
+        "training_seconds_5_folds": 37.99483255598898
+      },
+      {
+        "protocol": "grouped",
+        "reference": "corrected",
+        "task": "WAZ",
+        "model": "Linear Regression",
+        "mae": 0.5968899891418202,
+        "rmse": 0.8568965396405647,
+        "r2": 0.8597983938873357,
+        "mae_sd": 0.027681170478970334,
+        "rmse_sd": 0.034583403224350405,
+        "r2_sd": 0.01347530992198697,
+        "training_seconds_5_folds": 0.05866767599945888
+      },
+      {
+        "protocol": "grouped",
+        "reference": "corrected",
+        "task": "WAZ",
+        "model": "Ridge Regression",
+        "mae": 0.596889064688179,
+        "rmse": 0.8568965335443963,
+        "r2": 0.8597984021337396,
+        "mae_sd": 0.027681045931020002,
+        "rmse_sd": 0.034583315094771715,
+        "r2_sd": 0.0134752250453063,
+        "training_seconds_5_folds": 0.04433804299333133
+      },
+      {
+        "protocol": "grouped",
+        "reference": "corrected",
+        "task": "WAZ",
+        "model": "Random Forest",
+        "mae": 0.07750678261881783,
+        "rmse": 0.09943635475910412,
+        "r2": 0.9981113283408366,
+        "mae_sd": 0.0032572736749302694,
+        "rmse_sd": 0.004241551485833002,
+        "r2_sd": 0.00019231388228880305,
+        "training_seconds_5_folds": 2.906144820000918
+      },
+      {
+        "protocol": "grouped",
+        "reference": "corrected",
+        "task": "WAZ",
+        "model": "XGBoost",
+        "mae": 0.05829346652367949,
+        "rmse": 0.08106873365107854,
+        "r2": 0.9987469040699344,
+        "mae_sd": 0.0015751157769293982,
+        "rmse_sd": 0.0038004256013561984,
+        "r2_sd": 0.00010557728581225344,
+        "training_seconds_5_folds": 0.9155201660032617
+      },
+      {
+        "protocol": "grouped",
+        "reference": "corrected",
+        "task": "WAZ",
+        "model": "LightGBM",
+        "mae": 0.0692448814201122,
+        "rmse": 0.09414806846355353,
+        "r2": 0.9983125277233194,
+        "mae_sd": 0.00331809606410999,
+        "rmse_sd": 0.0047623279763961196,
+        "r2_sd": 0.00011935323034208244,
+        "training_seconds_5_folds": 1.0180941539947526
+      },
+      {
+        "protocol": "grouped",
+        "reference": "corrected",
+        "task": "WAZ",
+        "model": "CatBoost",
+        "mae": 0.016965811773499734,
+        "rmse": 0.028130285711818546,
+        "r2": 0.9998422400900239,
+        "mae_sd": 0.0011860622397795975,
+        "rmse_sd": 0.006203505754394477,
+        "r2_sd": 6.851205388385819e-05,
+        "training_seconds_5_folds": 28.1874519960038
+      }
+    ]
   },
   "external": {
+    "source": "results/reviewer2_validation/external_metrics.csv",
     "primary": {
       "classification": {
+        "model": "Random Forest",
+        "code": "rf",
         "n": 9755,
-        "unique_decision_profiles": 3190,
-        "model": "Extra Trees",
         "metrics": {
           "accuracy": 0.9227063044592516,
-          "balanced_accuracy": 0.899949317453399,
-          "macro_f1": 0.8976720729444041,
-          "weighted_f1": 0.9229242190133706,
-          "weighted_precision": 0.9231847360858364,
-          "weighted_recall": 0.9227063044592516,
-          "recall_0": 0.9455614826973054,
-          "recall_1": 0.8543371522094927,
           "sensitivity": 0.8543371522094927,
           "specificity": 0.9455614826973054,
-          "auc": 0.9458408915024128
-        },
-        "ci95": {
-          "accuracy": [
-            0.9075242542163408,
-            0.9365609603815215
-          ],
-          "balanced_accuracy": [
-            0.8814878153540634,
-            0.9169156472484388
-          ],
-          "macro_f1": [
-            0.8785522556393338,
-            0.9156137049647671
-          ],
-          "sensitivity": [
-            0.8213987851619726,
-            0.8844506699147381
-          ],
-          "specificity": [
-            0.9279351801070026,
-            0.9607410289881477
-          ]
-        },
-        "profile_balanced_metrics": {
-          "accuracy": 0.9462669983667514,
-          "balanced_accuracy": 0.9280819755780394,
-          "macro_f1": 0.9264237793881795,
-          "weighted_f1": 0.9463704820472021,
-          "weighted_precision": 0.9464921088165653,
-          "weighted_recall": 0.9462669983667493,
-          "recall_0": 0.9629171136467695,
-          "recall_1": 0.8932468375093072,
-          "sensitivity": 0.8932468375093072,
-          "specificity": 0.9629171136467695,
-          "auc": 0.9606141715687
-        },
-        "bootstrap_repetitions": 2000,
-        "confusion_matrix": [
-          [
-            6913,
-            398
-          ],
-          [
-            356,
-            2088
-          ]
-        ],
-        "class_counts": {
-          "0": 7311,
-          "1": 2444
+          "auc": 0.9415912752592837,
+          "macro_f1": 0.8976720729444041,
+          "balanced_accuracy": 0.899949317453399
         }
       },
       "HAZ": {
-        "n": 9760,
-        "unique_decision_profiles": 3190,
         "model": "Random Forest",
+        "code": "rf",
+        "n": 9760,
         "metrics": {
-          "mae": 0.032166158525312495,
-          "rmse": 0.19099268308765904,
-          "r2": 0.9814820453238758
-        },
-        "ci95": {
-          "mae": [
-            0.02661225404356849,
-            0.038142163762181665
-          ],
-          "rmse": [
-            0.1701456127134271,
-            0.21197721055599333
-          ],
-          "r2": [
-            0.9776610402830425,
-            0.984970178263473
-          ]
-        },
-        "profile_balanced_metrics": {
-          "mae": 0.05532474121145227,
-          "rmse": 0.25887302449512195,
-          "r2": 0.977863411667881
-        },
-        "bootstrap_repetitions": 2000
+          "mae": 0.0322998371163621,
+          "rmse": 0.1913006211715288,
+          "r2": 0.981422284076764
+        }
       },
       "WAZ": {
+        "model": "Random Forest",
+        "code": "rf",
         "n": 9758,
-        "unique_decision_profiles": 1843,
-        "model": "CatBoost",
         "metrics": {
-          "mae": 0.0092954315640096,
-          "rmse": 0.01640619887582186,
-          "r2": 0.9997397281003161
-        },
-        "ci95": {
-          "mae": [
-            0.008756167606063469,
-            0.009903212901106436
-          ],
-          "rmse": [
-            0.011610108348456957,
-            0.023029091328331273
-          ],
-          "r2": [
-            0.9994898623640033,
-            0.9998694578073763
-          ]
-        },
-        "profile_balanced_metrics": {
-          "mae": 0.010468865827364027,
-          "rmse": 0.022628606241585508,
-          "r2": 0.9997509933197689
-        },
-        "bootstrap_repetitions": 2000
+          "mae": 0.0006277660304096,
+          "rmse": 0.0168236925316534,
+          "r2": 0.9997263131168774
+        }
       }
     },
     "age24": {
       "classification": {
+        "model": "Random Forest",
+        "code": "rf",
         "n": 666,
-        "unique_decision_profiles": 189,
-        "model": "Extra Trees",
         "metrics": {
           "accuracy": 0.7852852852852853,
-          "balanced_accuracy": 0.8442265795206971,
-          "macro_f1": 0.7793756877280361,
-          "weighted_f1": 0.7930382435484654,
-          "weighted_precision": 0.8730115830115831,
-          "weighted_recall": 0.7852852852852853,
-          "recall_0": 0.6884531590413944,
-          "recall_1": 1.0,
           "sensitivity": 1.0,
           "specificity": 0.6884531590413944,
-          "auc": 0.905865513140307
-        },
-        "ci95": {
-          "accuracy": [
-            0.691725809851732,
-            0.877554140922424
-          ],
-          "balanced_accuracy": [
-            0.7778911780083655,
-            0.9066717557251909
-          ],
-          "macro_f1": [
-            0.6841006583497197,
-            0.8726676901823489
-          ],
-          "sensitivity": [
-            1.0,
-            1.0
-          ],
-          "specificity": [
-            0.555782356016731,
-            0.8133435114503816
-          ]
-        },
-        "profile_balanced_metrics": {
-          "accuracy": 0.812962962962963,
-          "balanced_accuracy": 0.8578608765581022,
-          "macro_f1": 0.8098059878170105,
-          "weighted_f1": 0.8175460870454853,
-          "weighted_precision": 0.8790805555555558,
-          "weighted_recall": 0.8129629629629629,
-          "recall_0": 0.7157217531162041,
-          "recall_1": 1.0,
-          "sensitivity": 1.0,
-          "specificity": 0.7157217531162041,
-          "auc": 0.9177234233654069
-        },
-        "bootstrap_repetitions": 2000,
-        "confusion_matrix": [
-          [
-            316,
-            143
-          ],
-          [
-            0,
-            207
-          ]
-        ],
-        "class_counts": {
-          "0": 459,
-          "1": 207
+          "auc": 0.9225369160009682,
+          "macro_f1": 0.7793756877280361,
+          "balanced_accuracy": 0.8442265795206971
         }
       },
       "HAZ": {
-        "n": 666,
-        "unique_decision_profiles": 189,
         "model": "Random Forest",
+        "code": "rf",
+        "n": 666,
         "metrics": {
-          "mae": 0.03137739708111914,
-          "rmse": 0.186519197702628,
-          "r2": 0.9780575058226922
-        },
-        "ci95": {
-          "mae": [
-            0.012601319184640811,
-            0.05534385504272175
-          ],
-          "rmse": [
-            0.09101999353094942,
-            0.2631343562667343
-          ],
-          "r2": [
-            0.9590660252542628,
-            0.9944224105611276
-          ]
-        },
-        "profile_balanced_metrics": {
-          "mae": 0.05535351227536984,
-          "rmse": 0.25084693553055826,
-          "r2": 0.9741819323723233
-        },
-        "bootstrap_repetitions": 2000
+          "mae": 0.0315897102663222,
+          "rmse": 0.1874772742184243,
+          "r2": 0.9778315067721326
+        }
       },
       "WAZ": {
+        "model": "Random Forest",
+        "code": "rf",
         "n": 666,
-        "unique_decision_profiles": 107,
-        "model": "CatBoost",
         "metrics": {
-          "mae": 0.00829170879826268,
-          "rmse": 0.011657071328991069,
-          "r2": 0.9998681891091007
-        },
-        "ci95": {
-          "mae": [
-            0.006936749673380423,
-            0.009787008987372585
-          ],
-          "rmse": [
-            0.008633133622443402,
-            0.015683094792553188
-          ],
-          "r2": [
-            0.9997692791436161,
-            0.9999296919233168
-          ]
-        },
-        "profile_balanced_metrics": {
-          "mae": 0.009227430412878218,
-          "rmse": 0.01543504504300814,
-          "r2": 0.9998847688027189
-        },
-        "bootstrap_repetitions": 2000
+          "mae": 0.0013922317276327,
+          "rmse": 0.0192582795308471,
+          "r2": 0.9996402445682298
+        }
       }
-    },
-    "limitations": [
-      "No tuning or fitting on external data",
-      "Source_Row is not a unique child identifier",
-      "Profile bootstrap cannot identify repeated visits or facility/family dependence",
-      "Source measurement position unavailable; age-conventional length/height assumed without undocumented corrections",
-      "Monthly reference-derived Z-scores are not independent clinical outcomes",
-      "One regency is not nationally representative"
-    ]
+    }
   },
-  "scope": "Current anthropometric status and reference-function approximation; interface-level integration; no prospective prediction or national generalizability claim",
-  "versions": {
-    "numpy": "2.4.6",
-    "pandas": "3.0.3",
-    "scikit-learn": "1.8.0",
-    "xgboost": "3.2.0",
-    "lightgbm": "4.6.0",
-    "catboost": "1.2.10",
-    "shap": "0.52.0"
+  "parity_sha256": "a8ad1b0bb107f5362d36af0ce076e6e09eaccd696f280b86b9652e7e270c8569",
+  "regional": {
+    "selected_k": 2,
+    "summary_method": "available-case unweighted mean of district indicators within each historical province",
+    "historical_province_count": 34,
+    "results_source": "results/clustering_revised/province_profiles.csv",
+    "results_sha256": "b016b3fd5a6e22aae28552cf1eb1fa3d8dd0e4250c9642bb26399a20912ef1b1",
+    "units": {
+      "Stunting_2019": "percent",
+      "KEK_Ibu_Hamil": "proportion",
+      "Imunisasi_Dasar_Lengkap": "proportion",
+      "BBLR": "proportion"
+    },
+    "map_geometry": {
+      "status": "legacy_unverified",
+      "matched_provinces": 31,
+      "feature_count": 32,
+      "missing_provinces": [
+        "Kalimantan Utara",
+        "Kepulauan Riau",
+        "Sulawesi Barat"
+      ]
+    },
+    "algorithm_metrics": [
+      {
+        "Algorithm": "K-Means",
+        "Silhouette": 0.2800429022001284,
+        "DBI": 1.206647591459049,
+        "CHI": 17.02517997050089
+      },
+      {
+        "Algorithm": "GMM",
+        "Silhouette": 0.3464249074603361,
+        "DBI": 1.130658243484019,
+        "CHI": 18.95929156458336
+      },
+      {
+        "Algorithm": "Hierarchical",
+        "Silhouette": 0.3851651216847638,
+        "DBI": 0.9358319412425392,
+        "CHI": 17.20350718193539
+      }
+    ],
+    "browser_sha256": {
+      "docs/province_data.js": "7e50d7db7266a016bb880c5ae96107fb582377ae04a350b9444005eca43b20f0",
+      "docs/cluster_profiles.js": "97c5bb27fd2b759d6c29421699076658621a93f5ad7996ba31b10ee5edbcb3b5"
+    }
   }
 }
